@@ -13,7 +13,7 @@ class Main extends React.Component {
     this.state = {
       photos: Photos.instagramResponse().data
     }
-    console.log(this.state.photos[0]);
+    console.log(this.state.photos[2].caption.text)
   }
 
   render () {

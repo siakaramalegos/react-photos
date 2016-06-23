@@ -59,11 +59,11 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _photos = __webpack_require__(/*! ./photos.js */ 169);
+	var _photos = __webpack_require__(/*! ./photos.js */ 168);
 	
 	var Photos = _interopRequireWildcard(_photos);
 	
-	var _PhotosFrame = __webpack_require__(/*! ./PhotosFrame.js */ 168);
+	var _PhotosFrame = __webpack_require__(/*! ./PhotosFrame.js */ 169);
 	
 	var _PhotosFrame2 = _interopRequireDefault(_PhotosFrame);
 	
@@ -94,7 +94,7 @@
 	    _this.state = {
 	      photos: Photos.instagramResponse().data
 	    };
-	    console.log(_this.state.photos[0]);
+	    console.log(_this.state.photos[2].caption.text);
 	    return _this;
 	  }
 	
@@ -20915,12 +20915,23 @@
 
 /***/ },
 /* 168 */
+/*!***********************!*\
+  !*** ./app/photos.js ***!
+  \***********************/
+/***/ function(module, exports) {
+
+	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.instagramResponse=instagramResponse;// this is a giant JSON object you have received back from the Instagram API
+	// Use it for good, solely on the front end, to create a photo gallery widget!
+	function instagramResponse(){return{"meta":{"code":200},"data":[{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":62,"data":[{"created_time":"1440698882","text":"@kashrafiq82 i dnt know what im not ready means.","from":{"username":"el_capit4n","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11056014_930580873660876_1764685772_a.jpg","id":"1813181663","full_name":"Aidan Shah"},"id":"1060981586725475242"},{"created_time":"1440699089","text":"@chelphill someday this boat will be called lopster","from":{"username":"a_grillz10","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10864973_677675199015449_1525007523_a.jpg","id":"55897168","full_name":"Adam Grillo"},"id":"1060983319694446650"},{"created_time":"1440699117","text":"Omg you're so creative I luh dat name. @a_grillz10","from":{"username":"chelphill","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10249235_681947635271742_1429097030_a.jpg","id":"176724813","full_name":"Chelsea Phillips"},"id":"1060983558862049358"},{"created_time":"1440699161","text":"@milademadzadeh","from":{"username":"mahsa_shabani64","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11084925_460968970727762_1341672594_a.jpg","id":"1779523061","full_name":"Mahsa"},"id":"1060983926434074734"},{"created_time":"1440699219","text":"@el_capit4n You don't know what you're ready means","from":{"username":"kashrafiq82","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10549667_1438012593153662_318172580_a.jpg","id":"1226513641","full_name":"Kash"},"id":"1060984408904863890"},{"created_time":"1440699334","text":"@ilaydadalyan","from":{"username":"cinar_eylul","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11821727_824606154321928_942058662_a.jpg","id":"1576801832","full_name":"Ayşegül Çetinn"},"id":"1060985377025724643"},{"created_time":"1440699386","text":"@babyfaceace183","from":{"username":"matt_devorak_","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11246298_922399471153605_795389302_a.jpg","id":"444869841","full_name":""},"id":"1060985813577273605"},{"created_time":"1440699436","text":"@bernadogann","from":{"username":"yagmuratav","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11252367_450327991803984_594320170_a.jpg","id":"277822033","full_name":"Yağmur Atav"},"id":"1060986234274353451"}]},"filter":"Normal","created_time":"1440696547","link":"https://instagram.com/p/65S1D8AJKt/","likes":{"count":7677,"data":[{"username":"odemiskardesler","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2144844568","full_name":""},{"username":"saffetcangundogan","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/1389461_1484569361843849_317684180_a.jpg","id":"2144600875","full_name":"Saffet Can GÜNDOĞAN"},{"username":"kabiri_shahir","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11351749_506970872802901_243107600_a.jpg","id":"2144606381","full_name":"Shahir Kabiri"},{"username":"dali_ala","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11950668_1080544918624669_968459361_a.jpg","id":"2147856286","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11934634_844560522259226_320398962_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11934634_844560522259226_320398962_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11934634_844560522259226_320398962_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.972,"x":0.934640519},"user":{"username":"ialbeshari","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11249787_1635104710107137_1129673237_a.jpg","id":"193652315","full_name":"Ibrahim Albeshari"}}],"caption":{"created_time":"1440696547","text":"Picture: @ialbeshari","from":{"username":"thisisamans.world","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11809655_1657096704507515_1715105450_a.jpg","id":"290825035","full_name":""},"id":"1060962000122713031"},"user_has_liked":false,"id":"1060961998419825325_290825035","user":{"username":"thisisamans.world","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11809655_1657096704507515_1715105450_a.jpg","id":"290825035","full_name":""}},{"attribution":null,"tags":["ilovegettingagiftforabsolutelynoreason","squad","family","spoiled","blessed","givenchy"],"type":"image","location":null,"comments":{"count":571,"data":[{"created_time":"1440699177","text":"Hi","from":{"username":"ps_fashionista","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11899734_559027044245565_1036410027_a.jpg","id":"34732340","full_name":"👑Fashionista👑"},"id":"1060984056610284325"},{"created_time":"1440699218","text":"@elligkou","from":{"username":"boriko18","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11379142_1616085855333888_617453217_a.jpg","id":"286042006","full_name":"Georgia"},"id":"1060984401726006086"},{"created_time":"1440699259","text":"@arnaudpadovani  trop beau 😍","from":{"username":"holy_laura","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11939688_687602341339656_784309305_a.jpg","id":"337914110","full_name":"Holy_Laura"},"id":"1060984745843483492"},{"created_time":"1440699320","text":"@eevvaa_tz","from":{"username":"foreverstill","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11232480_1387311368265829_624517907_a.jpg","id":"2556758","full_name":""},"id":"1060985259603780492"},{"created_time":"1440699348","text":"Grave BB @holy_laura","from":{"username":"arnaudpadovani","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11311260_1613738268887258_381057663_a.jpg","id":"233558775","full_name":""},"id":"1060985495415940006"},{"created_time":"1440699359","text":"I like this @kswiss377","from":{"username":"camillamalagon","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11313671_117433221934224_1824995132_a.jpg","id":"24172914","full_name":"camilamalagon"},"id":"1060985585375372209"},{"created_time":"1440699380","text":"@lisouu_s thank u","from":{"username":"anayce","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10919115_1409314416037554_227245193_a.jpg","id":"24896869","full_name":"anayce"},"id":"1060985761594860479"},{"created_time":"1440699401","text":"@nadarad she gets one for free!","from":{"username":"alexandrarose04","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_21930700_75sq_1382775377.jpg","id":"21930700","full_name":""},"id":"1060985937805960137"}]},"filter":"Lark","created_time":"1440692472","link":"https://instagram.com/p/65LDpGm-MU/","likes":{"count":79234,"data":[{"username":"karina_evdokimova","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910232_1649212515317728_302707568_a.jpg","id":"2149049586","full_name":""},{"username":"flyboy122102","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149065349","full_name":"jazhyer allah"},{"username":"thiphanie3007","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11809882_837241649727025_2073921795_a.jpg","id":"2149051790","full_name":"thiphanie"},{"username":"kenyimatos","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11363706_1492420707736729_1320655462_a.jpg","id":"2149056967","full_name":"Kenyi Matos"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11931191_1638017563150835_247280115_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11931191_1638017563150835_247280115_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11931191_1638017563150835_247280115_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440692472","text":"Thank you @riccardotisci17 !!!!! I love love love my beautiful new Givenchy bag ❤️ you are the best!!! Thanks Ricky love you, and you too @lamarquisette ... #ilovegettingagiftforabsolutelynoreason #family #squad #givenchy #spoiled #blessed","from":{"username":"krisjenner","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/10723790_1558166717804655_760366473_a.jpg","id":"144646783","full_name":""},"id":"1060927818082017960"},"user_has_liked":false,"id":"1060927816026809108_144646783","user":{"username":"krisjenner","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/10723790_1558166717804655_760366473_a.jpg","id":"144646783","full_name":""}},{"attribution":null,"tags":["49ers"],"type":"image","location":{"latitude":39.57901523,"name":"Broncos Training Facility","longitude":-104.831924412,"id":441851658},"comments":{"count":46,"data":[{"created_time":"1440696538","text":"@acecruz408","from":{"username":"raulduran7","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11084852_737580199694916_166862007_a.jpg","id":"144433991","full_name":"raulduran7"},"id":"1060961924533578359"},{"created_time":"1440696893","text":"@broncolorenzo","from":{"username":"niner1919","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374441_808729205912846_228973248_a.jpg","id":"483630626","full_name":"niner1919"},"id":"1060964895258438450"},{"created_time":"1440696901","text":"Nobody believes in us, lets shock the world.","from":{"username":"throw_to_ten","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850426_999125133473151_2133178337_a.jpg","id":"1542914620","full_name":"Jared Schablein"},"id":"1060964965110377269"},{"created_time":"1440696930","text":"\"You! Yeah, I'm talkinA you!!!\"","from":{"username":"scotland7jimw","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10881802_764674903608866_1214909083_a.jpg","id":"1577373557","full_name":"Jim Walker"},"id":"1060965208832994113"},{"created_time":"1440697099","text":"@marty_357 I know. Tension at home lol","from":{"username":"4reazons2luv","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11848939_150884521915281_659060936_a.jpg","id":"30758616","full_name":"♥♥Mz. Leelee♥♥"},"id":"1060966627078171571"},{"created_time":"1440697462","text":"< - - - - DOPE THROWBACK PICS 🔥 🔥 🔥","from":{"username":"rare_sports_images","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/11142791_1575390722720655_1718343516_a.jpg","id":"1760273485","full_name":"Rare Sports Images"},"id":"1060969672511973539"},{"created_time":"1440698301","text":"@_summerlove03 me either","from":{"username":"millimill1","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11335160_852636978153739_1644181834_a.jpg","id":"28634799","full_name":"Milli Mill"},"id":"1060976713624316614"},{"created_time":"1440698819","text":"This dude is a fckn beast","from":{"username":"m_ort3ga","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11352311_863154653770826_2146176195_a.jpg","id":"42723727","full_name":"M_OrTeGa!!!!!"},"id":"1060981056624781355"}]},"filter":"Normal","created_time":"1440693592","link":"https://instagram.com/p/65NMVrieqv/","likes":{"count":10252,"data":[{"username":"alessandro_pizzorno_balotelli","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11856786_899300113457845_354988069_a.jpg","id":"2147883705","full_name":"Alessandro pizzorno balotelli"},{"username":"ericsalas12","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11856701_389424627919564_429113003_a.jpg","id":"2147463282","full_name":"Eric Salas"},{"username":"55_guy","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11925880_834220076685647_28111524_a.jpg","id":"2147410653","full_name":"Dimitri vanderpool"},{"username":"trevorbvrber","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11875456_1467587216880401_148384007_a.jpg","id":"2147765094","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11918031_950707525024218_1019529226_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11918031_950707525024218_1019529226_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s480x480/e35/11918031_950707525024218_1019529226_n.jpg","width":480,"height":480}},"users_in_photo":[{"position":{"y":0.442666667,"x":0.458666667},"user":{"username":"mpurcell50","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11374382_1638581709692703_193703922_a.jpg","id":"210335780","full_name":"Mike Purcell"}}],"caption":{"created_time":"1440693592","text":"No you the man 👉🏽 @mpurcell50. \n#49ers","from":{"username":"49ers","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10784805_820116174718705_328397595_a.jpg","id":"23435633","full_name":"San Francisco 49ers"},"id":"1060937213271468509"},"user_has_liked":false,"id":"1060937209739864751_23435633","user":{"username":"49ers","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10784805_820116174718705_328397595_a.jpg","id":"23435633","full_name":"San Francisco 49ers"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":186,"data":[{"created_time":"1440699236","text":"@iamdfh yo quiero :(","from":{"username":"kevinpiedrahitam","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11349376_1653247014951297_882925072_a.jpg","id":"1622755859","full_name":"Kevin piedrahita marulanda."},"id":"1060984552312274227"},{"created_time":"1440699249","text":"@fannyrgarcia","from":{"username":"scltellechea","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11875488_442964662558570_957792836_a.jpg","id":"961629453","full_name":"🌸Sasha C. López Tellechea🌸"},"id":"1060984663033511226"},{"created_time":"1440699261","text":"@o_r3za where and when hahaha","from":{"username":"aprilsm_","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821861_1622651041335129_1698988051_a.jpg","id":"2085493566","full_name":"April"},"id":"1060984762891500864"},{"created_time":"1440699264","text":"@belindapop gracias por compartir. Nunca cambies, reina hermosa.","from":{"username":"lpleyvag","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11330817_113384485676825_1934302759_a.jpg","id":"29973855","full_name":"LPLeyv"},"id":"1060984791639260484"},{"created_time":"1440699320","text":"I want!!! @saraidominguez","from":{"username":"_paige_leilani_","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11376358_1627475950868566_436574961_a.jpg","id":"13020634","full_name":"Paige Leilani ®"},"id":"1060985255562837346"},{"created_time":"1440699352","text":"Que pobreza @eugeniamelendeza","from":{"username":"valerieazuaje","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11358040_1598350497104450_1918527017_a.jpg","id":"181463495","full_name":"Valerie Azuaje 🐘🌸"},"id":"1060985530415578492"},{"created_time":"1440699426","text":"@_ixsael_ @carlos_amt @gabymag29 @jaggedvacance @_oscaromarortiz @giovanilandaverde you think this bitch needs Atlanta's coins??? No gracias.  #Cartier","from":{"username":"moedano","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11260890_1437641066557414_1112859163_a.jpg","id":"21663523","full_name":""},"id":"1060986147691298217"},{"created_time":"1440699447","text":"🙀🙀🙀😍Morí!!!! Yo quiero @rauspian @andres.a12  sí ves por q tienen q trabajar tanto 😍para q me den esos gusticos","from":{"username":"adrimejia13","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10747902_823152297707959_409042804_a.jpg","id":"295672947","full_name":"DISEÑO INTERIOR"},"id":"1060986327039737265"}]},"filter":"Normal","created_time":"1440696186","link":"https://instagram.com/p/65SI9Mv_6q/","likes":{"count":10778,"data":[{"username":"_chynadoll3hunna","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11246073_796460053808693_1482866894_a.jpg","id":"2148947970","full_name":""},{"username":"guada_paz_9","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11906347_683982005071764_913101615_a.jpg","id":"2147501381","full_name":""},{"username":"rafaelladuarte22","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11375798_891002014282323_2114912388_a.jpg","id":"2145355134","full_name":""},{"username":"mayooficial","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11925556_673353712766452_917440831_a.jpg","id":"2147464407","full_name":"Mayo"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11371029_774513175991219_48279618_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11371029_774513175991219_48279618_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11371029_774513175991219_48279618_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.484,"x":0.548},"user":{"username":"cartier","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_479089799_75sq_1378213167.jpg","id":"479089799","full_name":"Cartier Official"}}],"caption":{"created_time":"1440696186","text":"@cartier 💎","from":{"username":"belindapop","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-19/924647_855514301158164_215057745_a.jpg","id":"17399094","full_name":"Beli"},"id":"1060973633381334468"},"user_has_liked":false,"id":"1060958967527636650_17399094","user":{"username":"belindapop","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-19/924647_855514301158164_215057745_a.jpg","id":"17399094","full_name":"Beli"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":51,"data":[{"created_time":"1440699017","text":"@ryan_bougenoy it's like MC... Looks dialed ✊☝🏻️","from":{"username":"cmireau134","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/928335_1483135971930011_1789271109_a.jpg","id":"187843936","full_name":"Caleb Mireau CMDESiGNS"},"id":"1060982712570646877"},{"created_time":"1440699037","text":"He's riding blue but wearing red gear.... Hmmmmm","from":{"username":"doug.leonard.1656","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11373715_1651383711745604_72282980_a.jpg","id":"1654443956","full_name":"Doug Leonard"},"id":"1060982883488534890"},{"created_time":"1440699086","text":"@francois.monot  wouaaa magique ! Faudrait voir son kit déco !","from":{"username":"maximep123","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324453_1631022167183451_75613868_a.jpg","id":"1541484383","full_name":"maxime prudhomme"},"id":"1060983291661422989"},{"created_time":"1440699256","text":"@evo412","from":{"username":"drpochucha","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_27942274_75sq_1394841766.jpg","id":"27942274","full_name":""},"id":"1060984719134069225"},{"created_time":"1440699267","text":"▇███▇██▇███▇█🖖🖖🏿🖖🏼🖖🏽🖖🏾 C͟L͟I͟C͟K͟ T͟H͟E͟ L͟I͟N͟K͟ I͟N͟ M͟Y͟ B͟I͟O͟ T͟O͟ G͟E͟T͟ T͟H͟E͟ N͟E͟W͟ S͟E͟C͟R͟E͟T͟ E͟M͟O͟J͟I͟S͟ T͟H͟A͟T͟ D͟I͟D͟N͟T͟ C͟O͟M͟E͟ W͟I͟T͟H͟ I͟O͟S͟ 8.3! 😱😱😱🖖🏿🖖🏼🖖🏽🖖🏾","from":{"username":"crazycoolcomedy","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11356933_1119915574703414_1473580913_a.jpg","id":"1586159004","full_name":"Get SECRET Emojis! Click Link"},"id":"1060984810200797679"},{"created_time":"1440699277","text":"@andrewr417 YZ! Good to see @crtwotwo back on it!","from":{"username":"p_dohm","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326431_864090093687070_2117242567_a.jpg","id":"24604924","full_name":"Paul Dohm"},"id":"1060984897064833534"},{"created_time":"1440699297","text":"#hero","from":{"username":"gnride","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11374048_1623403974598994_606926653_a.jpg","id":"14401412","full_name":"gary norman"},"id":"1060985068074996235"},{"created_time":"1440699339","text":"@drowe56 yami","from":{"username":"j.r_o_c_k_intheusa","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11850119_488890014626041_1783548986_a.jpg","id":"975497729","full_name":"Jared Austfjord"},"id":"1060985420446863913"}]},"filter":"Normal","created_time":"1440697327","link":"https://instagram.com/p/65UUTFGpMZ/","likes":{"count":4833,"data":[{"username":"mbituu","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11380935_326740654163063_777019930_a.jpg","id":"2132194457","full_name":"Leonardo"},{"username":"thomasbu02","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11379269_476872269144397_1655062252_a.jpg","id":"2135371138","full_name":""},{"username":"josht____","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/10932527_506977026145142_489504055_a.jpg","id":"2137033349","full_name":""},{"username":"marc.defelice","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11930968_498218187003200_74367174_a.jpg","id":"2134836615","full_name":"Marc DeFelice"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11881743_1484550645174360_1894197779_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11881743_1484550645174360_1894197779_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11881743_1484550645174360_1894197779_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440697327","text":"Beat the rain☁️⚡️","from":{"username":"crtwotwo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11230503_571796462960846_2117053725_a.jpg","id":"15441699","full_name":"Chad Reed"},"id":"1060968545134481652"},"user_has_liked":false,"id":"1060968543028941593_15441699","user":{"username":"crtwotwo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11230503_571796462960846_2117053725_a.jpg","id":"15441699","full_name":"Chad Reed"}},{"attribution":null,"tags":["ขอบค","ร","nnyellowbd","ใครม","เพ","แมทหน"],"type":"image","location":null,"comments":{"count":93,"data":[{"created_time":"1440698206","text":"👗👗👗150.-💰#พร้อมส่ง-ส่งเอง #สต็อกเองทุกตัว ‼️‼️ #22K 🎉🎉🎉","from":{"username":"vaninya_wholesalez","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11326961_494226650753653_404761391_a.jpg","id":"1277306501","full_name":"เสื้อผ้าแฟชัน 150.-💰Wholesale"},"id":"1060975914895878521"},{"created_time":"1440698270","text":"👍🏻😍😍😍","from":{"username":"misstar_byhappy","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11925849_877622005668213_144046049_a.jpg","id":"1989950089","full_name":"Misstarfresh By Happy"},"id":"1060976446725237160"},{"created_time":"1440698386","text":"รบกวนฝาก#คิตตี้ค่ะ","from":{"username":"kittylovelyy.shop","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11348307_114858885521310_1831985945_a.jpg","id":"1951036920","full_name":"Kittylovelyy.shop"},"id":"1060977424753043963"},{"created_time":"1440698459","text":"👙 #ยานมโต #ยานมใหญ่ 💊 กราวเครือขาวอัดเม็ด เห็นผลจริง ปลอดภัย100% ✔ #ระวังของปลอมลอกเลียนแบบ ⚠ รับสมัครตัวแทนจำหน่ายจ้า 💓","from":{"username":"milkbig_shop","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10707146_295912780614672_206026576_a.jpg","id":"1505186234","full_name":""},"id":"1060978034772617774"},{"created_time":"1440698537","text":"รับวาดมาสคอต สนใจติดต่อline: pimryp","from":{"username":"pimryp","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11334569_911562995566037_682527712_a.jpg","id":"383076701","full_name":"รับวาดมาสคอต สติ๊กเกอร์ บลาๆ"},"id":"1060978688094186080"},{"created_time":"1440698655","text":"#เสื้อเรย่อนราคาถูกจ้า#กางเกงยีนส์เอวสูงขาสั้นขายาว#เสื้อครอปแขนสั้นแขนยาว#เสื้อยืด#เสื้อสีพื้น#นาฬิกาแฟชั่นน่ารักๆราคาไม่แพง","from":{"username":"shopp_nook","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/10914366_863170747109167_847071672_a.jpg","id":"1793267820","full_name":"กางเกงยีนส์-เสื้อผ้าแฟชั่น"},"id":"1060979683352193720"},{"created_time":"1440698926","text":"ZARA ราคาถูกกว่าช็อป!!","from":{"username":"sqweez.b","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10507782_695992230435930_912295612_a.jpg","id":"1420391126","full_name":"ZARA , MANGO ,ASOS..❣"},"id":"1060981949006162821"},{"created_time":"1440699024","text":"#👗👗👗 #สำหรับสาวๆ #ราคาถูก","from":{"username":"hshop210","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/s150x150/10004376_111186732561124_683019151_a.jpg","id":"1373207877","full_name":""},"id":"1060982775737035712"}]},"filter":"Normal","created_time":"1440693711","link":"https://instagram.com/p/65NazbnSpT/","likes":{"count":11375,"data":[{"username":"jjmongsad1974","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11809544_172831916381382_1688614747_a.jpg","id":"2149029544","full_name":""},{"username":"adrian_vasconcelos","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11909247_1456866671287042_856239071_a.jpg","id":"2149003081","full_name":"Adrián"},{"username":"lovelivs1394","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326270_792392640873753_146853956_a.jpg","id":"2149031242","full_name":""},{"username":"elgentel_gentel2000","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/1208158_415623875295071_2142314707_a.jpg","id":"2149061435","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11881684_1167550063271743_1623982216_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11881684_1167550063271743_1623982216_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11881684_1167550063271743_1623982216_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.889333333,"x":0.705333333},"user":{"username":"antapsd","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10553976_1580292552208979_1582959875_a.jpg","id":"1397106647","full_name":""}}],"caption":{"created_time":"1440693711","text":"Thx for everything na ka my bff ❤️ @antapsd #ขอบคุณจริงๆ#เพื่อนที่น่ารัก#ขอบคุณที่คอยช่วยเหลือทุกอย่าง#รักมากนะ#แมทหน้าชาบู#nnyellowbd#ใครมีเพื่อนดีรักษาไว้นะ","from":{"username":"baifernbah","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10349712_426225390882710_1613663242_a.jpg","id":"14191865","full_name":"baifernbah"},"id":"1060938979754191411"},"user_has_liked":false,"id":"1060938203757619795_14191865","user":{"username":"baifernbah","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10349712_426225390882710_1613663242_a.jpg","id":"14191865","full_name":"baifernbah"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":2153,"data":[{"created_time":"1440699323","text":"Belice 💪💪","from":{"username":"norman.the.junior","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11282664_511716352319621_410109502_a.jpg","id":"1559638901","full_name":"Norman Santoya"},"id":"1060985282578954002"},{"created_time":"1440699349","text":"Paraguay💙❤️💙❤️💙❤️💙❤️","from":{"username":"patty14.06","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11055400_847231608648981_253641590_a.jpg","id":"1754717926","full_name":"Patty Acosta"},"id":"1060985503979484973"},{"created_time":"1440699353","text":"Síganme bebes mucho","from":{"username":"diaancamp","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11250164_477519142414888_1980233925_a.jpg","id":"252814259","full_name":"Dianyz⚓️❤️💁"},"id":"1060985537080932148"},{"created_time":"1440699356","text":"🙏🙏🙏🙏","from":{"username":"diaancamp","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11250164_477519142414888_1980233925_a.jpg","id":"252814259","full_name":"Dianyz⚓️❤️💁"},"id":"1060985563832203063"},{"created_time":"1440699363","text":"#somosuno chile","from":{"username":"nicol_fabijanovic","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10724168_1380051318988699_640959751_a.jpg","id":"1590741650","full_name":"nicol"},"id":"1060985621906536253"},{"created_time":"1440699375","text":"#Guatemala 💃✌","from":{"username":"candy_1920","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11249878_724299671035793_921654631_a.jpg","id":"1483930392","full_name":"Candy"},"id":"1060985715716339534"},{"created_time":"1440699398","text":"Honduras 😊👐","from":{"username":"rich_sexx","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11856762_414989948687585_1709389294_a.jpg","id":"478289685","full_name":"Rocio Gonzales Paz"},"id":"1060985912160761698"},{"created_time":"1440699423","text":"Colombia me gusta por me gusta😘","from":{"username":"gabitoo_rojas","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/1516050_652028108276232_806135205_a.jpg","id":"1753886728","full_name":"Gabriel Rojas"},"id":"1060986125256570749"}]},"filter":"Normal","created_time":"1440691457","link":"https://instagram.com/p/65JHtjCTef/","likes":{"count":49010,"data":[{"username":"javier_aguero01","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11419047_1029685020396659_1414005481_a.jpg","id":"2148972568","full_name":""},{"username":"tiffasanchez.12","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11809812_482976255209145_1203693502_a.jpg","id":"2148967889","full_name":"Tiffany Sanchez"},{"username":"edras.vasquez","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11324440_925201910906608_372566560_a.jpg","id":"2148987379","full_name":""},{"username":"ileana_quintero24","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2148983768","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11931050_1070760386270350_55268173_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11931050_1070760386270350_55268173_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11931050_1070760386270350_55268173_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440691457","text":"💪💪💪💪","from":{"username":"nickyjampr","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11333359_992950590745022_254018987_a.jpg","id":"55795588","full_name":"NICKY JAM"},"id":"1060919302779647334"},"user_has_liked":false,"id":"1060919299583588255_55795588","user":{"username":"nickyjampr","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11333359_992950590745022_254018987_a.jpg","id":"55795588","full_name":"NICKY JAM"}},{"attribution":null,"tags":["f21xalec"],"type":"image","location":null,"comments":{"count":360,"data":[{"created_time":"1440698888","text":"@kelsdelo","from":{"username":"kim_deraney","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11881655_525747980907049_690504965_a.jpg","id":"52270193","full_name":"Kim Deraney"},"id":"1060981635239400388"},{"created_time":"1440698930","text":"Dope.","from":{"username":"alexandra_darlene","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11809843_1471687386480931_1833319230_a.jpg","id":"176210034","full_name":"•Alexandra Reyes•"},"id":"1060981983702176736"},{"created_time":"1440699124","text":"▇███▇██▇███▇█🖖🖖🏿🖖🏼🖖🏽🖖🏾 C͟L͟I͟C͟K͟ T͟H͟E͟ L͟I͟N͟K͟ I͟N͟ M͟Y͟ B͟I͟O͟ T͟O͟ G͟E͟T͟ T͟H͟E͟ N͟E͟W͟ S͟E͟C͟R͟E͟T͟ E͟M͟O͟J͟I͟S͟ T͟H͟A͟T͟ D͟I͟D͟N͟T͟ C͟O͟M͟E͟ W͟I͟T͟H͟ I͟O͟S͟ 8.3! 😱🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾 🖖🖖🏿🖖🏼🖖🏽","from":{"username":"lock.apps","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11374133_854091477972138_1805599187_a.jpg","id":"2125881098","full_name":"Get The Newest Emojis!"},"id":"1060983611528335472"},{"created_time":"1440699127","text":"😝","from":{"username":"valentinagurina","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11809607_816427578472323_235675920_a.jpg","id":"938768067","full_name":""},"id":"1060983637390413938"},{"created_time":"1440699155","text":"Metieron en la licuadora un cholo; un mafioso; un grafitero; un motociclista; un padrote y los pantalones de un teenager y esto fue lo que resultó.","from":{"username":"frencinidiudaneth","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/1515471_641166195984117_77671191_a.jpg","id":"2061349883","full_name":"Frencini Diudaneth"},"id":"1060983870920872069"},{"created_time":"1440699284","text":"@jkobe18","from":{"username":"lynseybelle310_","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/1921891_1600973390168530_1290639611_a.jpg","id":"1382711684","full_name":"lynsssss"},"id":"1060984954963906756"},{"created_time":"1440699300","text":"Круто Он похож на герой Subway surface","from":{"username":"jenifer_or_jeny","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849259_437620496429883_18012828_a.jpg","id":"2033166563","full_name":""},"id":"1060985092771958993"},{"created_time":"1440699309","text":"@jploayzam","from":{"username":"cataborja","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11252280_1587751748180325_681559037_a.jpg","id":"53191532","full_name":"Catalina Borja Aguirre"},"id":"1060985168672084180"}]},"filter":"Normal","created_time":"1440690568","link":"https://instagram.com/p/65HbOjKFBR/","likes":{"count":47185,"data":[{"username":"olyazaxarova007","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11371003_1483176701995192_444926913_a.jpg","id":"2149038273","full_name":""},{"username":"julianaflorena","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11336112_443361959181297_315656542_a.jpg","id":"2148979842","full_name":""},{"username":"niklas_brogamer","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324438_836001213181174_1150107583_a.jpg","id":"2148984270","full_name":""},{"username":"an_de_r_so_n","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149053263","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11925842_1490200057962711_519716219_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11925842_1490200057962711_519716219_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11925842_1490200057962711_519716219_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.389333333,"x":0.776},"user":{"username":"forever21men","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11249252_1656772584567696_675232121_a.jpg","id":"1680557315","full_name":"Forever 21 Men"}},{"position":{"y":0.618666667,"x":0.342666667},"user":{"username":"alecmonopoly","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11881777_906469786069446_1428659606_a.jpg","id":"274891071","full_name":"Alec Monopoly"}},{"position":{"y":0.597333333,"x":0.826666667},"user":{"username":"forever21","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/1391132_770482496346869_1929750985_a.jpg","id":"11707579","full_name":"forever21"}}],"caption":{"created_time":"1440690568","text":"His signature move may be to hide his face, but artist @alecmonopoly is baring all with the launch of his @dreamworksanimation #F21xAlec Collection! Get it in-stores and online. -------------------------------------------------\nUpload a photo of you rocking the F21 x Alec Monopoly Collection to Instagram with #F21xAlec for a chance to win one of six limited edition tees tagged by @alecmonopoly himself!","from":{"username":"forever21","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/1391132_770482496346869_1929750985_a.jpg","id":"11707579","full_name":"forever21"},"id":"1060911847389548556"},"user_has_liked":false,"id":"1060911844596142161_11707579","user":{"username":"forever21","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/1391132_770482496346869_1929750985_a.jpg","id":"11707579","full_name":"forever21"}},{"attribution":null,"tags":["hindukush","afghanistan","bamiyan"],"type":"image","location":null,"comments":{"count":457,"data":[{"created_time":"1440699401","text":"Beautiful 😍","from":{"username":"batikwarisanarcadia","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xft1/t51.2885-19/11192831_818229471595523_18062574_a.jpg","id":"1743635749","full_name":"Batik Warisan Arcadia"},"id":"1060985936430585832"},{"created_time":"1440699402","text":"@salymohsin","from":{"username":"ash_ehmed","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_656165707_75sq_1384060940.jpg","id":"656165707","full_name":"Ahmed Ashfaque"},"id":"1060985946429806570"},{"created_time":"1440699402","text":"Beautiful picture @stevemccurryofficial","from":{"username":"sgresp1","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/11191070_741684959283155_1125825339_a.jpg","id":"1505879319","full_name":"Shaun G. Reichard"},"id":"1060985947713263595"},{"created_time":"1440699407","text":"I MADE $7,OOO IN LESS THAN A HOUR. THANKS @SOURCE._OF___ASSISTANCE","from":{"username":"financial__freedom__6","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11378312_1417799201878745_195583007_a.jpg","id":"1725679022","full_name":""},"id":"1060985989236873197"},{"created_time":"1440699416","text":"Paraíso!!","from":{"username":"sofiborsotti","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11372116_1011114078908375_1450242745_a.jpg","id":"1527320553","full_name":"Sofía Borsotti"},"id":"1060986064272971761"},{"created_time":"1440699424","text":"FREE FOLLOWERS!!!! LINK IN MY BIO!! LIMITED TIME OFFER SO HURRY!!! 😍😂😇😇☺️😏😊😎😍😓😜😝😜😝😍😍FREE FOLLOWERS!!!! LINK IN MY BIO!! LIMITED TIME OFFER SO HURRY!!! 😍😂😇😇☺️😏😊😎😍😓😜😝😜😝","from":{"username":"brandonzingale","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11055408_748484795266641_1957785954_a.jpg","id":"35574464","full_name":"Brandon Zingale"},"id":"1060986131121788920"},{"created_time":"1440699426","text":"😍😍😍😍😍","from":{"username":"0o_marina_0o","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11410665_1637359206475719_1149912376_a.jpg","id":"558874524","full_name":""},"id":"1060986148712699898"},{"created_time":"1440699443","text":"@eve_ansary WOW","from":{"username":"hoolitabuelita","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10948951_1481439865503863_1413027564_a.jpg","id":"176361965","full_name":"Julia Reeder"},"id":"1060986291302257674"}]},"filter":"Normal","created_time":"1440698012","link":"https://instagram.com/p/65Vn39IVbn/","likes":{"count":86502,"data":[{"username":"dawulka2303wka","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11848969_1483967548570722_1265709954_a.jpg","id":"2149185561","full_name":""},{"username":"belka357","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149184132","full_name":""},{"username":"nua_venus","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11371082_813229145458439_1264795714_a.jpg","id":"2149184414","full_name":"Nua_Venus"},{"username":"yojhanna_acosta","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11917835_122172171465040_429271187_a.jpg","id":"2149185383","full_name":"Yojhanna Acosta"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11887267_883806931687447_761893927_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11887267_883806931687447_761893927_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11887267_883806931687447_761893927_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440698012","text":"Photo by @stevemccurryofficial // A farmer walks through his fields in Bamiyan, Afghanistan, which is in the Central Highlands region between the high mountains of the Hindu Kush and the Koh-i-Baba mountain ranges. Bamiyan was on the Silk Route which caravans traveled to take goods from China to points west.\n\n#Afghanistan #Bamiyan #HinduKush","from":{"username":"natgeo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11349315_1620970341492406_1971976479_a.jpg","id":"787132","full_name":"National Geographic"},"id":"1060974290106668341"},"user_has_liked":false,"id":"1060974286340183783_787132","user":{"username":"natgeo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11349315_1620970341492406_1971976479_a.jpg","id":"787132","full_name":"National Geographic"}},{"attribution":null,"tags":["turkey","istanbul","quattro","black","yenikoymotors","2015","new","rs6","izmir","audi"],"type":"image","location":{"latitude":41.1207199,"name":"Yeniköy Motors","longitude":29.0694904,"id":27091386},"comments":{"count":31,"data":[{"created_time":"1440697076","text":"Bllllaaaaaaa @japhetolle petit cc en mm temps a Jaja !","from":{"username":"sii2them","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11375831_885662731487257_1526839594_a.jpg","id":"1785650693","full_name":"Simon HUEZz😴"},"id":"1060966434299561057"},{"created_time":"1440697333","text":"@yenikoymotors muhte$em 👌","from":{"username":"soner__asci","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10899192_329343693936121_1712331271_a.jpg","id":"1492509397","full_name":"Soner Asci"},"id":"1060968590868071735"},{"created_time":"1440697806","text":"@ccnordmann","from":{"username":"rajdkapoor","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11373833_109583426059330_1645488491_a.jpg","id":"204567299","full_name":""},"id":"1060972560533538460"},{"created_time":"1440697840","text":"Bi allroadu bunun yakisir abi artik ikimize @oguzhanrenda","from":{"username":"iamcevdetkeresteci","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10809007_742077912554907_2068341366_a.jpg","id":"178455439","full_name":"Cevdet Keresteci"},"id":"1060972843607115440"},{"created_time":"1440698521","text":"@metinboztoprak","from":{"username":"denizzs2","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xft1/t51.2885-19/10952570_775016909242796_888688844_a.jpg","id":"1140919209","full_name":"Deniz"},"id":"1060978558514087068"},{"created_time":"1440698934","text":"@naief040","from":{"username":"peddddi","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xft1/t51.2885-19/10666067_280624845464773_1393979529_a.jpg","id":"523241903","full_name":"P"},"id":"1060982016910673385"},{"created_time":"1440698966","text":"@jonlitton1","from":{"username":"ashapster","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11350896_892796717435103_1080073675_a.jpg","id":"246710720","full_name":"Ashap"},"id":"1060982290429625857"},{"created_time":"1440699419","text":"Tren 😂 @kandemir_kerem","from":{"username":"esercinar","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10809816_572237222910648_1363035415_a.jpg","id":"272548718","full_name":"ESER CINAR"},"id":"1060986087088441185"}]},"filter":"Normal","created_time":"1440692636","link":"https://instagram.com/p/65LXosicdG/","likes":{"count":10944,"data":[{"username":"ahmed_fof","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/s150x150/10890918_1660166464195059_841243290_a.jpg","id":"2149047131","full_name":"Ryan Fofana"},{"username":"troublebae","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149054173","full_name":"Sara"},{"username":"mashynya_ignatova","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11370992_1157360827691415_1042585273_a.jpg","id":"2149053102","full_name":""},{"username":"beaverjake47","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149034903","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11856769_1535457013376392_289632007_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11856769_1535457013376392_289632007_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11856769_1535457013376392_289632007_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440692636","text":"New 2015 Audi RS6 Avant Quattro Exclusive #yenikoymotors #2015 #new #audi #rs6 #black #quattro #istanbul #izmir #turkey","from":{"username":"yenikoymotors","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11351636_1458075654485798_648102951_a.jpg","id":"261460624","full_name":"Yenikoy Motors"},"id":"1060929193426666778"},"user_has_liked":false,"id":"1060929189978949446_261460624","user":{"username":"yenikoymotors","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11351636_1458075654485798_648102951_a.jpg","id":"261460624","full_name":"Yenikoy Motors"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":681,"data":[{"created_time":"1440699384","text":"@cerentemizz yyjluffu","from":{"username":"ndilaysen","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11419150_567143800090137_113693553_a.jpg","id":"280091678","full_name":"Dilay Şen"},"id":"1060985791616454032"},{"created_time":"1440699386","text":"@fth__ylmz @ikan_topal","from":{"username":"omer.ozkarakaya","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"1915013271","full_name":"Ömer Özkarakaya"},"id":"1060985810323049875"},{"created_time":"1440699399","text":"@caansenn  aynen seviyem budur","from":{"username":"senaekmekci","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11330755_136734853337111_194453656_a.jpg","id":"284608066","full_name":"SENA🍀"},"id":"1060985918812917159"},{"created_time":"1440699414","text":"@elif_arbc1","from":{"username":"tugcedikmenn","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11821832_1694592310764703_1234401178_a.jpg","id":"706145746","full_name":""},"id":"1060986047829708209"},{"created_time":"1440699419","text":"@demettani :)","from":{"username":"hzr_dogru84","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11313588_1617045875217752_85810928_a.jpg","id":"1989658899","full_name":"HIZ."},"id":"1060986085502946741"},{"created_time":"1440699426","text":"Bundan sonra böle olcam @makbule_akagunduz","from":{"username":"zeynu_eb","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850105_834494076642042_1815720319_a.jpg","id":"1158423058","full_name":""},"id":"1060986149768072635"},{"created_time":"1440699441","text":"Tam bir Gamze @gamzeeonder @ecemmkayhan @ipeekcan","from":{"username":"cmileyildizz","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11352264_1165666496783170_824298835_a.jpg","id":"317414164","full_name":"Cemile Yıldız"},"id":"1060986270832463306"},{"created_time":"1440699448","text":"@senaekmekci bu olayi izledinmi","from":{"username":"caansenn","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xta1/t51.2885-19/10358248_1413940255554574_1766411459_a.jpg","id":"820533607","full_name":""},"id":"1060986332044135888"}]},"filter":"Normal","created_time":"1440695048","link":"https://instagram.com/p/65P-A8CQ0D/","likes":{"count":16962,"data":[{"username":"sezginakturk","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11849846_738357089644419_450894404_a.jpg","id":"2149045322","full_name":"Sezgin Aktürk"},{"username":"deminin_lovatici55","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11248286_883995371686150_109296511_a.jpg","id":"2149072323","full_name":""},{"username":"aysenur_balkaya","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149082938","full_name":""},{"username":"lenormens","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11363871_1618861651701557_246628980_a.jpg","id":"2149053734","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11909922_918180431578254_62598068_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11909922_918180431578254_62598068_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11909922_918180431578254_62598068_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":null,"user_has_liked":false,"id":"1060949419534912771_297635578","user":{"username":"karikaturhane","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10985974_431413690361385_360940966_a.jpg","id":"297635578","full_name":"Karikatür"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":1125,"data":[{"created_time":"1440699394","text":"YOU LOOK SO PRECIOUS","from":{"username":"laa.dispute","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/11203430_1620887914791771_803504102_a.jpg","id":"1947247300","full_name":"blurry face"},"id":"1060985876056703238"},{"created_time":"1440699396","text":"@screamo.bands","from":{"username":"piercingtheblacksireninreverse","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849821_849411165156007_974484274_a.jpg","id":"856203500","full_name":"Bringing The Horizon"},"id":"1060985893127520521"},{"created_time":"1440699402","text":"EVEN IF YOU DID CUT YOUR HAIR","from":{"username":"laa.dispute","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/11203430_1620887914791771_803504102_a.jpg","id":"1947247300","full_name":"blurry face"},"id":"1060985946789445903"},{"created_time":"1440699408","text":"@steph_giraldy why do u care again?","from":{"username":"jessiemarquezz","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11939699_883475465032933_359819926_a.jpg","id":"592521299","full_name":"smhs"},"id":"1060985998295499028"},{"created_time":"1440699424","text":"You look different?? @piercethevic","from":{"username":"autumn_hates_you_","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11376246_980705911981767_1270496503_a.jpg","id":"646543764","full_name":"αυτυми👻"},"id":"1060986128805462313"},{"created_time":"1440699429","text":"amore mio","from":{"username":"giuls.xx","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910414_108998502786803_2086024784_a.jpg","id":"462322846","full_name":"giuls💦💭"},"id":"1060986170161299760"},{"created_time":"1440699437","text":"@steph_giraldy  how bout you stfu they're taking their time so what","from":{"username":"aliens.wasteland","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/11138001_462162013939470_1913456106_a.jpg","id":"1679934224","full_name":"✖️britney✖️"},"id":"1060986241942618423"},{"created_time":"1440699439","text":"See you soon😩😩 @piercethevic","from":{"username":"lunadavey","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/l/t51.2885-19/s150x150/11356659_470665656447131_507318514_a.jpg","id":"202035568","full_name":"Luna Davey"},"id":"1060986258870829368"}]},"filter":"Reyes","created_time":"1440696367","link":"https://instagram.com/p/65SfF5EQDN/","likes":{"count":25208,"data":[{"username":"punk_owl","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849860_1633644830254092_1169861150_a.jpg","id":"2148726367","full_name":"Anika Jelli Weber"},{"username":"murat_pt","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821749_965585713504732_1972265453_a.jpg","id":"2148710140","full_name":"Murat Guleryuz 😄"},{"username":"amyf.b","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11371281_424512094417725_179930798_a.jpg","id":"2148879389","full_name":"Amy F B"},{"username":"lydiamagoo","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11881701_981539821896825_636520185_a.jpg","id":"2148775663","full_name":"Lydia"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11849064_830971917010695_901273990_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11849064_830971917010695_901273990_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11849064_830971917010695_901273990_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440696367","text":"San Diego ✈️ London. Jet lag is real but I'm happy to be back in the UK!  I missed ya! ❤️","from":{"username":"piercethevic","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849040_770071126437656_779284544_a.jpg","id":"581087","full_name":"Vic Fuentes"},"id":"1060960491290034850"},"user_has_liked":false,"id":"1060960488689565901_581087","user":{"username":"piercethevic","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849040_770071126437656_779284544_a.jpg","id":"581087","full_name":"Vic Fuentes"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":261,"data":[{"created_time":"1440699002","text":"The poor you will always have with you because face it thus land us your land thus land us my land and we can sell out are new frontiers on the horizon","from":{"username":"crjhnsn3","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11254046_1442470619390037_1158729023_a.jpg","id":"1735087845","full_name":"Corafran"},"id":"1060982592805861424"},{"created_time":"1440699031","text":"We must not sell freedom out","from":{"username":"crjhnsn3","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11254046_1442470619390037_1158729023_a.jpg","id":"1735087845","full_name":"Corafran"},"id":"1060982834137724990"},{"created_time":"1440699137","text":"So stupid.","from":{"username":"af_edc","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11032776_409439225895750_663994424_a.jpg","id":"1732553993","full_name":"AF"},"id":"1060983726912108682"},{"created_time":"1440699256","text":"ily hillary! thank you for fighting for us!! ❤️❤️❤️","from":{"username":"atessasavitt1","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11856633_898076673585625_1667265011_a.jpg","id":"1512483995","full_name":""},"id":"1060984720282679507"},{"created_time":"1440699291","text":"@abascumbe","from":{"username":"harlemglobetrttr","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11850259_730804383732838_2085462418_a.jpg","id":"26411692","full_name":"Ty McKeiver"},"id":"1060985014664100079"},{"created_time":"1440699392","text":"Stop guns from being sold over the internet would be some help!!!!!!!!!!","from":{"username":"lorie_murchison","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/927650_308703252621980_346527796_a.jpg","id":"1361655423","full_name":"Lorie RoyalOne Murchison"},"id":"1060985860160289081"},{"created_time":"1440699428","text":"I wish politicians protected our right to vote as vigorously as they protect our right to bear arms!!","from":{"username":"pvgoff","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10369339_780412502040147_332031482_a.jpg","id":"871664940","full_name":"Sara and Ed Williams"},"id":"1060986161596528974"},{"created_time":"1440699431","text":"It's sad to say that this is happening in the United States of America. A country that we should feel safe from terrorism and violence. How about we start by educating people about gun violence and actually do something about gun control...","from":{"username":"snightlinger","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11263462_853923567976391_798148602_a.jpg","id":"40922796","full_name":"Sara Nightlinger"},"id":"1060986190319122767"}]},"filter":"Normal","created_time":"1440694133","link":"https://instagram.com/p/65OOY-kPvr/","likes":{"count":5866,"data":[{"username":"romani.gabr","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2146596770","full_name":"Gabriella Romani"},{"username":"mariamzahraa4","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2142666229","full_name":""},{"username":"kvrlx_","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11934903_1038825299469592_1058832366_a.jpg","id":"2143318861","full_name":"karla"},{"username":"hillaryclinton_germany","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2147629351","full_name":"Help our future -Help Hillary"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11326558_880130825368609_1369631963_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11326558_880130825368609_1369631963_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11326558_880130825368609_1369631963_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":null,"user_has_liked":false,"id":"1060941748765785067_1834271085","user":{"username":"hillaryclinton","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11820691_1451677718473497_1023799471_a.jpg","id":"1834271085","full_name":"Hillary Clinton"}},{"attribution":null,"tags":["aus","naturalbeauty","bondi"],"type":"image","location":null,"comments":{"count":110,"data":[{"created_time":"1440699239","text":"I was there  in 2007... Beautiful beach !! But the best for me ...the city of Sidney !! #inlove","from":{"username":"_emilysweets","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11007881_521781941295804_736864416_a.jpg","id":"1486074278","full_name":"Emi Carrillo"},"id":"1060984576786698333"},{"created_time":"1440699262","text":"@deiaozzy 😁😁😁😁","from":{"username":"falalara","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11374056_937867299585637_1802819090_a.jpg","id":"470205360","full_name":"Lara Silva"},"id":"1060984773860266091"},{"created_time":"1440699316","text":"The pool which we saw from far @imransid96 @danishkhann","from":{"username":"shayansiddiqui","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11820571_490346117799213_2003482571_a.jpg","id":"452572171","full_name":"Shayan Siddiqui"},"id":"1060985222491410569"},{"created_time":"1440699348","text":"منور ضلع","from":{"username":"sha3r_sha3bi_3iraqi","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11850008_427488227451236_903842065_a.jpg","id":"1646828854","full_name":"متذوق الشعر الشعبي العراقي"},"id":"1060985492671697058"},{"created_time":"1440699351","text":"Yes BC😍😍😍😍 @shayansiddiqui","from":{"username":"imransid96","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11372399_792744517490219_2070424039_a.jpg","id":"389817125","full_name":"IMRAN SIDDIQUI"},"id":"1060985521285238949"},{"created_time":"1440699374","text":"X Man For ever","from":{"username":"sha3r_sha3bi_3iraqi","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11850008_427488227451236_903842065_a.jpg","id":"1646828854","full_name":"متذوق الشعر الشعبي العراقي"},"id":"1060985707025797294"},{"created_time":"1440699390","text":"Told ya before... It's your fav hangout, Right!! ?","from":{"username":"beenapatre","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11325858_595663333909821_1470110808_a.jpg","id":"1483160852","full_name":"Beenapatre"},"id":"1060985842677977274"},{"created_time":"1440699396","text":"I'm so jealous!!!","from":{"username":"elin.k72","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2085949456","full_name":"Elin.K."},"id":"1060985897774354623"}]},"filter":"Normal","created_time":"1440697894","link":"https://instagram.com/p/65VZftihLv/","likes":{"count":17124,"data":[{"username":"mbanohina","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11931037_470473623114459_1898654160_a.jpg","id":"2148755055","full_name":"Марина Анохина"},{"username":"lorelei.30","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11887087_159162511086590_913214415_a.jpg","id":"2148682947","full_name":"Anja Schütz-Thara"},{"username":"lovetoplaywithgirls","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11374232_1069182443106799_775732520_a.jpg","id":"2148938708","full_name":"nkromeo"},{"username":"vikyxman","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850060_1625809521007066_1484307596_a.jpg","id":"2148933191","full_name":"viknesh"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11809737_1643371035911563_1479489724_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11809737_1643371035911563_1479489724_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11809737_1643371035911563_1479489724_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440697894","text":"If you ever get a chance to visit Bondi Beach - I promise it's one of the most extraordinarily beautiful sights you will ever see. I could stand there and watch the surf all day ... and never get bored. #Bondi #AUS #naturalbeauty","from":{"username":"thehughjackman","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11371023_973787049331051_1947183287_a.jpg","id":"489110643","full_name":"Hugh Jackman"},"id":"1060976285746598318"},"user_has_liked":false,"id":"1060973298236134127_489110643","user":{"username":"thehughjackman","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11371023_973787049331051_1947183287_a.jpg","id":"489110643","full_name":"Hugh Jackman"}},{"attribution":null,"videos":{"low_bandwidth":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11912853_1616355338651932_2004061384_s.mp4","width":480,"height":480},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11883684_109402386080648_1782647713_n.mp4","width":640,"height":640},"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11912853_1616355338651932_2004061384_s.mp4","width":480,"height":480}},"tags":["fashionarttut"],"type":"video","location":null,"comments":{"count":62,"data":[{"created_time":"1440698431","text":"@linneamaria, detta var rätt snyggt till den 31 oktober 😉 hehe","from":{"username":"futter96","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/l/t51.2885-19/10860057_406661049490369_805368661_a.jpg","id":"915784874","full_name":""},"id":"1060977798762048293"},{"created_time":"1440698562","text":"Jaa det var superfint! Vi kör på något liknande då?👌😃 @futter96","from":{"username":"linneamaria","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11950479_110401542647766_1927286575_a.jpg","id":"8583688","full_name":"Linnea Karlsson"},"id":"1060978898642774924"},{"created_time":"1440698657","text":"😷😷","from":{"username":"julie.pistone","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374213_610440582431989_1974412646_a.jpg","id":"1678936050","full_name":"Julianna Pistone :)"},"id":"1060979696684608451"},{"created_time":"1440698705","text":"@amanda_zolanski","from":{"username":"miss.l.or","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11324964_1626839530927301_851000494_a.jpg","id":"371998147","full_name":"L'or !!! 😜"},"id":"1060980096166898660"},{"created_time":"1440698870","text":"@sweetandcheezy  ma ei kujuta ette kui ma prooviks endal nii meiki teha😹","from":{"username":"nunnuannu","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11910008_448198502033960_959139552_a.jpg","id":"1076082299","full_name":""},"id":"1060981479876175968"},{"created_time":"1440698901","text":"Elle était mieux avant","from":{"username":"oceanevb.36","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11881605_885855011508775_1885052209_a.jpg","id":"1062613194","full_name":"♥ Océane ♥"},"id":"1060981742255057022"},{"created_time":"1440699207","text":"Mdr sur nous ça rend pas pareil mdrrrrrr @ambre.romane","from":{"username":"alexandra30740","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11351558_1455858211385588_793264446_a.jpg","id":"1545059245","full_name":"A°R°A ma base🔐💘💍"},"id":"1060984311366920537"},{"created_time":"1440699375","text":"This one looks a little too caked","from":{"username":"foreverangela___","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xta1/t51.2885-19/10731706_350100748517135_1102621432_a.jpg","id":"1417288048","full_name":"Angela 🐢"},"id":"1060985718077761996"}]},"filter":"Normal","created_time":"1440695355","link":"https://instagram.com/p/65QjfTSagz/","likes":{"count":10329,"data":[{"username":"fatimakhateri64","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11931106_865825526819831_104769725_a.jpg","id":"2148930249","full_name":"fatima"},{"username":"mahmood5066","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11371070_519870388170852_436082724_a.jpg","id":"2149050722","full_name":"محمود"},{"username":"zelenyperez1235","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11325022_1484058945243669_453058645_a.jpg","id":"2148877870","full_name":"Zeleny Perez"},{"username":"_nail.tips_","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11848831_488768291291331_2106711317_a.jpg","id":"2149004967","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11809665_523387214482524_2093629807_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11809665_523387214482524_2093629807_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11809665_523387214482524_2093629807_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440695355","text":"Beauty contouring & highlight by @j_make_up 🎀 #fashionarttut 💥","from":{"username":"fashionarttut","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/10891047_1587069661516655_1408885287_a.jpg","id":"1651034713","full_name":"Fashion Tutorial"},"id":"1060952026139699710"},"user_has_liked":false,"id":"1060951994757916723_1651034713","user":{"username":"fashionarttut","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/10891047_1587069661516655_1408885287_a.jpg","id":"1651034713","full_name":"Fashion Tutorial"}},{"attribution":null,"tags":[],"type":"image","location":{"latitude":34.049105278,"name":"Link in profile to shop","longitude":-118.254478932,"id":433128873},"comments":{"count":28,"data":[{"created_time":"1440698236","text":"@valeriega foto goals","from":{"username":"sandymarquezg","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11856635_910333462392877_1593420740_a.jpg","id":"24171573","full_name":"sandy"},"id":"1060976166019943392"},{"created_time":"1440698294","text":"@sandymarquezg goals goals porfavor 📷 antes de gastarme mas 💸","from":{"username":"valeriega","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11909412_542368859249783_1326619933_a.jpg","id":"53370029","full_name":""},"id":"1060976650478831628"},{"created_time":"1440698302","text":"@lila_scherer outfit","from":{"username":"caitbishop","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11352046_1658243217743298_1515227573_a.jpg","id":"185730706","full_name":"Caitlin Bishop"},"id":"1060976722411145238"},{"created_time":"1440698340","text":"Is that Melodie Monrose? Slay girl slay!","from":{"username":"manhattangyrl","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11909153_933793766686118_371288459_a.jpg","id":"14019611","full_name":""},"id":"1060977034970679354"},{"created_time":"1440698401","text":"@jes_estrada ???","from":{"username":"missrenata","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10838900_756219171092425_819748643_a.jpg","id":"4876309","full_name":"Renata Bresciani"},"id":"1060977546667378786"},{"created_time":"1440698585","text":"Cool😍","from":{"username":"libra_air","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11371116_1059152914102838_2011656211_a.jpg","id":"220344196","full_name":"✨natalie♎️ Tang✨Vn/Us"},"id":"1060979093744797953"},{"created_time":"1440698867","text":":-)","from":{"username":"leanasm1th","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11373930_449386861899819_1842952244_a.jpg","id":"311500470","full_name":"leana smith"},"id":"1060981455809038914"},{"created_time":"1440698935","text":"@melodiemonrose","from":{"username":"jeneilwilliams","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11352372_863405313754100_975398773_a.jpg","id":"217720988","full_name":"Jeneil"},"id":"1060982028121819778"}]},"filter":"Normal","created_time":"1440697619","link":"https://instagram.com/p/65U34bxkt6/","likes":{"count":4155,"data":[{"username":"meredithlawe","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11251186_1488626324769794_414769933_a.jpg","id":"2142561649","full_name":"Meredith Lawe"},{"username":"atelier_store_paris","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11350852_450715878463507_503057514_a.jpg","id":"2141398083","full_name":""},{"username":"stylebyartgeek","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11243678_437082939811135_945348087_a.jpg","id":"2141507947","full_name":"Minna"},{"username":"2lenguazz","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11881594_1461433107518005_1163239699_a.jpg","id":"2140531653","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11917800_992767424101999_462846115_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11917800_992767424101999_462846115_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11917800_992767424101999_462846115_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440697619","text":"This fall, it's not about following rules, it's about breaking them.","from":{"username":"nastygal","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_5459497_75sq_1352228548.jpg","id":"5459497","full_name":"Nasty Gal"},"id":"1060970990592739643"},"user_has_liked":false,"id":"1060970988319427450_5459497","user":{"username":"nastygal","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_5459497_75sq_1352228548.jpg","id":"5459497","full_name":"Nasty Gal"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":147,"data":[{"created_time":"1440699259","text":"@leinalaine like this 😍😍😍","from":{"username":"alina_are","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11015661_754286704678750_2025950624_a.jpg","id":"16284350","full_name":"Alina Blanco"},"id":"1060984749476100440"},{"created_time":"1440699260","text":"@bdx_69","from":{"username":"dinz_ms","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11374126_955648631154790_1620992180_a.jpg","id":"1419473567","full_name":"Didiin"},"id":"1060984758435133786"},{"created_time":"1440699264","text":"@jonsindicic croatia","from":{"username":"fuck_teamufasa","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11374268_1619904428263417_163306467_a.jpg","id":"187696615","full_name":"Ryan McDonough"},"id":"1060984787082230108"},{"created_time":"1440699271","text":"@vidur been there ✔️","from":{"username":"riidawg","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850039_1646149882336102_239559509_a.jpg","id":"46540908","full_name":"Riya"},"id":"1060984851104086372"},{"created_time":"1440699281","text":"@anilakasakasa mos me thuaj qe nuk u ngive akoma me Kroaci? 😂","from":{"username":"armanda_sellaj","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910420_117151521967620_201851314_a.jpg","id":"310160645","full_name":"Armanda Sellaj"},"id":"1060984932700076396"},{"created_time":"1440699398","text":"Take me here @murtz","from":{"username":"deepikaoswal","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11910395_482254781955133_2004164903_a.jpg","id":"1097703164","full_name":"Deepika Oswal"},"id":"1060985915417115067"},{"created_time":"1440699425","text":"@prettylilmissfit 😎😍","from":{"username":"crawltoys","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10995064_1538879279709231_2119121573_a.jpg","id":"1419754999","full_name":"Charlie C"},"id":"1060986142723226056"},{"created_time":"1440699429","text":"Wonderful 💚💚👍🏻","from":{"username":"aysesivil","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/10831739_1571613323073868_171723784_a.jpg","id":"195883670","full_name":"İstanbul/ Turkey"},"id":"1060986175480740299"}]},"filter":"Valencia","created_time":"1440696050","link":"https://instagram.com/p/65R4YeoTr8/","likes":{"count":9551,"data":[{"username":"guzeldere33","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2148789666","full_name":"Emera Güzeldere"},{"username":"susanna.toivanen00","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/s150x150/11201540_1477040489257839_378144165_a.jpg","id":"2148859187","full_name":""},{"username":"redstrobe53","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11410516_1485678315078571_328440603_a.jpg","id":"2148831925","full_name":"Staceyann"},{"username":"plugsnapbacks","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11363774_729834483789905_885725249_a.jpg","id":"2148842963","full_name":"Plug"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11910019_868350999907695_789953391_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11910019_868350999907695_789953391_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/11910019_868350999907695_789953391_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.949333333,"x":0.065359481},"user":{"username":"michaelmatti","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/11199437_485353061624257_1622510478_a.jpg","id":"367480491","full_name":"Michael Matti"}}],"caption":{"created_time":"1440696050","text":"Plitvice, Croatia 😍 Stunning photo by ✨@michaelmatti✨ check out his gallery for more amazing photos 🙌 @michaelmatti👈","from":{"username":"warrenjc","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/1169871_672864692809815_1987264049_a.jpg","id":"1077125","full_name":"Beautiful Places"},"id":"1060957831892646038"},"user_has_liked":false,"id":"1060957828587535100_1077125","user":{"username":"warrenjc","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/1169871_672864692809815_1987264049_a.jpg","id":"1077125","full_name":"Beautiful Places"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":182,"data":[{"created_time":"1440699011","text":"@arianagrande","from":{"username":"laurenjacob_","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11372286_451209011725786_1922571999_a.jpg","id":"18045886","full_name":"Lauren"},"id":"1060982667871073845"},{"created_time":"1440699015","text":"😍😍😍😍","from":{"username":"mrsmollyjones","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374137_404687823061474_48353075_a.jpg","id":"292235322","full_name":"Amy Laird💃"},"id":"1060982703463937594"},{"created_time":"1440699191","text":"@tashasalomonsgreen  @teefarnee @audreylange this drawing is sooooo cute and pretty 😍😍😍💕💕💕","from":{"username":"ninipiggles","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11420839_866527240105934_1231486415_a.jpg","id":"146131074","full_name":"nicole green"},"id":"1060984175614310033"},{"created_time":"1440699278","text":"THIS OS GOALS","from":{"username":"coloursforlovers","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850252_1041119985899300_387525593_a.jpg","id":"1549241117","full_name":"A R T"},"id":"1060984901463783104"},{"created_time":"1440699340","text":"Parfümüm 💁🏻💁🏻 @begumkaramustafaoglu @cerenakarsu @sinemozcelikk @begumusmangil","from":{"username":"edanursenkardes","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11324470_732144560247905_1747646222_a.jpg","id":"28136795","full_name":""},"id":"1060985430734616293"},{"created_time":"1440699347","text":"@arianagrande 😍","from":{"username":"cerenverim","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324432_1686736314879791_2095853373_a.jpg","id":"522550213","full_name":"Ceren🐱"},"id":"1060985486837626603"},{"created_time":"1440699364","text":"@melis_kudat woa","from":{"username":"cerenverim","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324432_1686736314879791_2095853373_a.jpg","id":"522550213","full_name":"Ceren🐱"},"id":"1060985624998000377"},{"created_time":"1440699409","text":"I know, I liked it too! @ninipiggles","from":{"username":"tashasalomonsgreen","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11856612_882956648441711_1772350462_a.jpg","id":"46094705","full_name":"Tasha Green"},"id":"1060986006788716309"}]},"filter":"Normal","created_time":"1440694688","link":"https://instagram.com/p/65PSDdzTfG/","likes":{"count":12735,"data":[{"username":"leilanadimkar","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849047_883272638416316_740694894_a.jpg","id":"2149054314","full_name":""},{"username":"tieuvannt1990","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11934613_941421345904484_992113907_a.jpg","id":"2149012843","full_name":"Tiểu Vân"},{"username":"malih5051","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149008853","full_name":"malih"},{"username":"dobywilliams","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821075_897524947006856_1884927769_a.jpg","id":"2148865511","full_name":"Doby Lee Williams"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11849107_1605714063049356_1055606968_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11849107_1605714063049356_1055606968_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11849107_1605714063049356_1055606968_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.55,"x":0.46875},"user":{"username":"arianagrande","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326372_412386375614564_557953691_a.jpg","id":"7719696","full_name":"Ariana Grande"}}],"caption":{"created_time":"1440694688","text":"Ari 💜","from":{"username":"hayden_williams","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326372_1604012133156886_1032422936_a.jpg","id":"37504940","full_name":"Hayden Williams"},"id":"1060946403272767385"},"user_has_liked":false,"id":"1060946398591924166_37504940","user":{"username":"hayden_williams","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326372_1604012133156886_1032422936_a.jpg","id":"37504940","full_name":"Hayden Williams"}},{"attribution":null,"tags":["ie","audiopush"],"type":"image","location":null,"comments":{"count":30,"data":[{"created_time":"1440697263","text":"Ye","from":{"username":"raffaellocrespi","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/923798_866471910069075_1438729726_a.jpg","id":"1424938477","full_name":"Raffaello Crespi"},"id":"1060968003299271360"},{"created_time":"1440697520","text":"You're so cute","from":{"username":"jlynneruss","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11313781_1479366362379915_403097081_a.jpg","id":"24944382","full_name":"Jenna russ"},"id":"1060970157326033781"},{"created_time":"1440697707","text":"Yr shoes are cool","from":{"username":"cacti35th","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11355256_832231383536269_682022130_a.jpg","id":"1618074686","full_name":"Pamela Smothers"},"id":"1060971727186912239"},{"created_time":"1440698022","text":"RIALTO 909","from":{"username":"fuctheworldx2","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11280350_836249633122163_1833534577_a.jpg","id":"13822066","full_name":"BowManagement"},"id":"1060974373666906322"},{"created_time":"1440698144","text":"OMG I JUST GOT SOME NEW EMOJIS!✌🏿✌🏻✌🏾 JUST GO TO THE LINK IN MY BIO!!!👀 FOLLoW THE DIREcTIONS TO gET YOuRS!🖖🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾","from":{"username":"hillarioushappenings","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11348105_485281938298895_286957191_a.jpg","id":"232394937","full_name":"Secret Emojis"},"id":"1060975390928232739"},{"created_time":"1440698460","text":"@travisbarker yes brother used to see you in Corona","from":{"username":"conscience_spirit23","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11351831_1106111069418313_1259994937_a.jpg","id":"187091162","full_name":"Brandon D"},"id":"1060978039463436780"},{"created_time":"1440698786","text":"▇███▇██▇███▇█🖖🖖🏿🖖🏼🖖🏽🖖🏾 C͟L͟I͟C͟K͟ T͟H͟E͟ L͟I͟N͟K͟ I͟N͟ M͟Y͟ B͟I͟O͟ T͟O͟ G͟E͟T͟ T͟H͟E͟ N͟E͟W͟ S͟E͟C͟R͟E͟T͟ E͟M͟O͟J͟I͟S͟ T͟H͟A͟T͟ D͟I͟D͟N͟T͟ C͟O͟M͟E͟ W͟I͟T͟H͟ I͟O͟S͟ 8.3! 😱😱😱🖖🏿🖖🏼🖖🏽🖖🏾","from":{"username":"crazycoolcomedy","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11356933_1119915574703414_1473580913_a.jpg","id":"1586159004","full_name":"Get SECRET Emojis! Click Link"},"id":"1060980777815466679"},{"created_time":"1440699144","text":"🙊😖😔","from":{"username":"talony_1","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10514117_277127525805192_44684269_a.jpg","id":"1421303016","full_name":""},"id":"1060983779645285296"}]},"filter":"Inkwell","created_time":"1440695706","link":"https://instagram.com/p/65ROUWNWAe/","likes":{"count":7267,"data":[{"username":"alex.chervachuk","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11925777_425762137608717_1632298163_a.jpg","id":"2142720049","full_name":"Spoodermen"},{"username":"jeeh_carlos.f","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374042_933499406709267_1388316112_a.jpg","id":"2142920338","full_name":""},{"username":"florz777","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2142949806","full_name":""},{"username":"my_chemical_green_day6","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11248405_1515763382047540_23898809_a.jpg","id":"2142429279","full_name":"I just got so emo I fell apart"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11887294_1478439649145562_1751119788_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11887294_1478439649145562_1751119788_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11887294_1478439649145562_1751119788_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.32,"x":0.472},"user":{"username":"audiopush","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/11094471_396150120591895_1865072535_a.jpg","id":"1475306472","full_name":"Audio Push"}}],"caption":{"created_time":"1440695706","text":"Leaving @realsway yesterday I ran into @audiopush We're both from the #IE and I'm proud to see these guys making noise doin big things #AudioPush","from":{"username":"travisbarker","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10616838_677440055666689_985002380_a.jpg","id":"14198415","full_name":"travisbarker"},"id":"1060956935889969906"},"user_has_liked":false,"id":"1060954937933258782_14198415","user":{"username":"travisbarker","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10616838_677440055666689_985002380_a.jpg","id":"14198415","full_name":"travisbarker"}},{"attribution":null,"tags":["хб","камеди"],"type":"image","location":null,"comments":{"count":96,"data":[{"created_time":"1440699085","text":"🌟 Милые девушки🌟 хотите расширить свою аудиторию и стать популярнее? Присылайте свои фото😉🙌","from":{"username":"instagirls._","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11410485_101292330223415_436174749_a.jpg","id":"1705033537","full_name":"Insta_girls"},"id":"1060983287317047336"},{"created_time":"1440699088","text":"Обожаю тебя Тимка💋","from":{"username":"kusochek_ray","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xta1/t51.2885-19/11116858_920638357987364_673412216_a.jpg","id":"1705035051","full_name":""},"id":"1060983309806905386"},{"created_time":"1440699088","text":"Всем🚨Всем🚨 Я набираю команду из 3 человек😍2-3 часа работы и 400-4600Р У ВАС НА КАРТЕ😱НЕ ЛОХОТРОН ,НЕ КОСМЕТИКА❗ВСЕ ЛЕГАЛЬНО❗ ЛЕНТЯЕВ ПРОЗЬБА НЕ БЕСПОКОИТЬ❗❗❗Интересно❓Пиши❗","from":{"username":"nastya.89000","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11849093_508132322680445_207137512_a.jpg","id":"2099398838","full_name":""},"id":"1060983315460827180"},{"created_time":"1440699089","text":"Гарику идет шапочка)))","from":{"username":"_borodina_fan","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11265047_117981848551793_1270274128_a.jpg","id":"1329859898","full_name":"Ксения&Курбан"},"id":"1060983321752283181"},{"created_time":"1440699220","text":"Взаимные лайки на первые три фотки","from":{"username":"shumik2001","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/1171724_540777792737076_1127935866_a.jpg","id":"1234331960","full_name":"Кокс🙌"},"id":"1060984420576045201"},{"created_time":"1440699268","text":"Тимур похудел и загорел. Совсем на себя не похож 😕","from":{"username":"umida_davletova","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849803_1633454330241285_88066101_a.jpg","id":"1284941452","full_name":"Farhad◆Umida◆Rayana♡♡♡"},"id":"1060984821979326640"},{"created_time":"1440699345","text":"1/1","from":{"username":"roza_m_09","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11939550_399247020268902_846109420_a.jpg","id":"1691711066","full_name":"Роза👑"},"id":"1060985465108736240"},{"created_time":"1440699362","text":"Доброго времени суток. Кто желает бесплатных бургеров? Думаю, многие не должны остаться равнодушными. В общем, я работаю админом в Бургер Кинг, тема такая: качайте приложение Бургер Кинг, вводите промокод 910398 и получайте халявные купоны на бургеры и прочее в Бургер Кинг. Можете не благодарить)","from":{"username":"yulkin_leshka","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10683868_525181410959039_1443520588_a.jpg","id":"1166290264","full_name":"Алексей"},"id":"1060985605995407614"}]},"filter":"Normal","created_time":"1440696138","link":"https://instagram.com/p/65SDG6qKsc/","likes":{"count":13292,"data":[{"username":"ilnur.sh","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11934863_795892783856251_1550113566_a.jpg","id":"2148009714","full_name":"Ilnur"},{"username":"katyashkolnik","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849005_113789228975063_1158509833_a.jpg","id":"2147624331","full_name":""},{"username":"qwerty1990948","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910240_448881258631716_689071680_a.jpg","id":"2147663220","full_name":""},{"username":"arslanova.svetlana","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11350721_883713765045974_587705061_a.jpg","id":"2148123069","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11934833_902583763160955_411165628_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11934833_902583763160955_411165628_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11934833_902583763160955_411165628_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440696138","text":"Смотрите в завтрашнем Камеди из Казани наше очередное самоироничное откровение #камеди #ХБ","from":{"username":"timurbatrutdinov","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11085205_342945332497484_1309481306_a.jpg","id":"145182601","full_name":"Timur Batrutdinov"},"id":"1060958567397894163"},"user_has_liked":false,"id":"1060958565644675868_145182601","user":{"username":"timurbatrutdinov","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11085205_342945332497484_1309481306_a.jpg","id":"145182601","full_name":"Timur Batrutdinov"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":72,"data":[{"created_time":"1440695576","text":"Looks very \"you\" haha! 🌼🌻🌿 @tipsygyps_","from":{"username":"kmunegatto","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11383319_1592087247721493_1179631131_a.jpg","id":"22778046","full_name":""},"id":"1060953849101350349"},{"created_time":"1440695665","text":"@iwantmyjuicebox_ summer love all year round ✨","from":{"username":"denissedurann","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11821166_484739005037115_564681610_a.jpg","id":"15015002","full_name":"Denisse Kumery Duran"},"id":"1060954593732916745"},{"created_time":"1440695726","text":"@kristinaiswhite","from":{"username":"mrsgabrielleee","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/11084840_1547785078815932_743793546_a.jpg","id":"475266916","full_name":"Gabrielle Kristine"},"id":"1060955109556811318"},{"created_time":"1440696454","text":"😍","from":{"username":"jav987654","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11850226_891057560965991_382024334_a.jpg","id":"9571037","full_name":""},"id":"1060961218191488133"},{"created_time":"1440697555","text":"@leilanianii let's move here","from":{"username":"andie081","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11821793_956803494376727_1302406357_a.jpg","id":"188396868","full_name":"Andie Purdey"},"id":"1060970453151315874"},{"created_time":"1440697571","text":"👌","from":{"username":"t_smallss","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10729443_710824345637876_703230035_a.jpg","id":"521607461","full_name":"Tyler Small"},"id":"1060970584474974120"},{"created_time":"1440698631","text":"@jennybum1213","from":{"username":"leahlivesontop","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10990619_432772316899579_400160504_a.jpg","id":"1644219908","full_name":""},"id":"1060979480820250197"},{"created_time":"1440699012","text":"@caitkawaguchi","from":{"username":"nicoleharbeezy","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/1740350_1610918409197874_412862408_a.jpg","id":"2158155","full_name":""},"id":"1060982674380093308"}]},"filter":"Ludwig","created_time":"1440690529","link":"https://instagram.com/p/65HWdFRPTs/","likes":{"count":14842,"data":[{"username":"mohammadnajjari1999","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821227_1883401878552292_2011074704_a.jpg","id":"2148729729","full_name":"mohammadalone"},{"username":"road_of_style","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11950577_159711621033645_689612559_a.jpg","id":"2148473923","full_name":""},{"username":"artmeth","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11856625_1024379237592524_1084135688_a.jpg","id":"2148686987","full_name":""},{"username":"virginialafont","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11374095_990384057679204_166407779_a.jpg","id":"2148252390","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11875415_1056101737773400_442807512_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11875415_1056101737773400_442807512_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11875415_1056101737773400_442807512_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440690529","text":"It's still summer here","from":{"username":"gypsyone","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10748052_615544251900968_1292952464_a.jpg","id":"418359412","full_name":"Jenah Yamamoto"},"id":"1060911519128417307"},"user_has_liked":false,"id":"1060911516603446508_418359412","user":{"username":"gypsyone","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10748052_615544251900968_1292952464_a.jpg","id":"418359412","full_name":"Jenah Yamamoto"}},{"attribution":null,"tags":["danielwellington"],"type":"image","location":null,"comments":{"count":58,"data":[{"created_time":"1440697583","text":"Cute composition","from":{"username":"andyzaturno","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11909319_1648964518718572_770726084_a.jpg","id":"298832560","full_name":"AndyZaturno"},"id":"1060970690427148691"},{"created_time":"1440697919","text":"@somawisam ❤️❤️ coffee 😘😘","from":{"username":"zahraalameen","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11848898_1022211447797522_2092304269_a.jpg","id":"264960125","full_name":"🎀zahraa Alrubaiyee🎀"},"id":"1060973509251095201"},{"created_time":"1440697943","text":"coffee and #danielwellington two of my favorite thigns","from":{"username":"clarawgtse","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11918049_1653658578224338_1175819157_a.jpg","id":"242082849","full_name":"Clara Tse"},"id":"1060973703195712182"},{"created_time":"1440698356","text":"🌟👠🌟VISITAR MI FASHION BLOG: 'Mi Obsesión Por La Moda'. El enlace esta en mi bio🌟👠🌟","from":{"username":"_alba_mf","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11428190_1640362446180824_2117788298_a.jpg","id":"554012362","full_name":"· ∆lba Moro Fraile ·"},"id":"1060977172279385071"},{"created_time":"1440698360","text":"😍😍💪","from":{"username":"artemmoroz","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11373965_484403785075984_855942200_a.jpg","id":"145401124","full_name":"ARTEM MOROZ"},"id":"1060977202771975155"},{"created_time":"1440698890","text":"☺️☺️☺️","from":{"username":"serrano_joyeros_desde_1943","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11375902_852643564772136_1032559504_a.jpg","id":"2076082207","full_name":"Serrano Joyeros desde 1943"},"id":"1060981653809322405"},{"created_time":"1440699076","text":"cool","from":{"username":"bryantsyams","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11909358_1489892224659763_33419542_a.jpg","id":"1752972257","full_name":"bryant_syams"},"id":"1060983211917761044"},{"created_time":"1440699369","text":"@lauracegledi 😍😍","from":{"username":"zithaidekker","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/l/t51.2885-19/11326278_497734330393627_1170887680_a.jpg","id":"1010329638","full_name":"Zita Haidekker"},"id":"1060985667431095064"}]},"filter":"Normal","created_time":"1440692741","link":"https://instagram.com/p/65LkdBAtjk/","likes":{"count":14271,"data":[{"username":"hana_gin_nguyen","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11910065_1024973157521727_665175561_a.jpg","id":"2147999216","full_name":"Ruby Hanie"},{"username":"__des_follx___","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374333_1461942440800737_1891183321_a.jpg","id":"2148656195","full_name":"🌸Pauline.T Pauline.C🌸"},{"username":"hadjar_bague","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11849330_757244711053561_201248839_a.jpg","id":"2148102326","full_name":""},{"username":"555helene555","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11429700_961130573954520_1351094563_a.jpg","id":"2148420351","full_name":"Hélène Gabriel"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11934589_1627246994200138_1256902915_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11934589_1627246994200138_1256902915_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11934589_1627246994200138_1256902915_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440692741","text":"XO, DW. (Photo via @walids) #danielwellington","from":{"username":"danielwellingtonwatches","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xtf1/t51.2885-19/10727433_571580032973592_414100919_a.jpg","id":"47340181","full_name":"Daniel Wellington"},"id":"1060930072845932692"},"user_has_liked":false,"id":"1060930070790723812_47340181","user":{"username":"danielwellingtonwatches","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xtf1/t51.2885-19/10727433_571580032973592_414100919_a.jpg","id":"47340181","full_name":"Daniel Wellington"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":92,"data":[{"created_time":"1440698809","text":"bella","from":{"username":"andryut19x","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10948652_1069588049725130_524680778_a.jpg","id":"1604755118","full_name":"THE MR.? 🎮⚽️💶🇮🇹"},"id":"1060980974569672715"},{"created_time":"1440698965","text":"Такая сияющая🌟","from":{"username":"acainyashka","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11350701_998567813521099_1062479226_a.jpg","id":"1938533070","full_name":"Tania Lonskaia"},"id":"1060982276380971115"},{"created_time":"1440699069","text":"Такие глаза","from":{"username":"gelans_","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11821068_1620175101574207_737300205_a.jpg","id":"1622286739","full_name":"Екатерина ✨"},"id":"1060983153955197105"},{"created_time":"1440699108","text":"Саша, ты уникальная, береги себя и свои чувства!","from":{"username":"julia_korobeinikova","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10787824_1524599194463753_1151641200_a.jpg","id":"1189441296","full_name":""},"id":"1060983476027412676"},{"created_time":"1440699122","text":"😍","from":{"username":"lin_4ik","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11348358_594785387328243_1906773880_a.jpg","id":"1461825613","full_name":"💑=👪"},"id":"1060983593551810760"},{"created_time":"1440699245","text":"Таких замечательных девушек как ты не видела еще😻","from":{"username":"olya_kisa97","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-19/10731689_881847368551112_300665538_a.jpg","id":"1403735293","full_name":"Olya🙈"},"id":"1060984632078258462"},{"created_time":"1440699289","text":"Wonderful smile ... I write some poetry with the color of your eyes where I can drawn because of their beauty... Now I can say it ... I believe in angels ...","from":{"username":"ericdv07","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849871_102143606805630_1935648347_a.jpg","id":"2118141034","full_name":"Eric de Vetter"},"id":"1060984996957540661"},{"created_time":"1440699355","text":"Какая стильная и красивая!!!!","from":{"username":"anastasia_susekova","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11426440_107707109569993_41412313_a.jpg","id":"684297814","full_name":"ⓐⓝⓐⓢⓣⓐⓢⓘⓐ"},"id":"1060985549590647128"}]},"filter":"Normal","created_time":"1440694037","link":"https://instagram.com/p/65OCpxLFMt/","likes":{"count":14709,"data":[{"username":"daystarvika","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11363865_1200759123283042_349508467_a.jpg","id":"2149022849","full_name":""},{"username":"giwwn","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2148997252","full_name":""},{"username":"ramnarayansaini","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/s150x150/10838705_1481526058810261_444921931_a.jpg","id":"2149009441","full_name":""},{"username":"hiro9305","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/l/t51.2885-19/s150x150/11899631_475511529301988_1288320502_a.jpg","id":"2148956625","full_name":"Hiro Michi"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11821146_913780491992853_1958672698_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11821146_913780491992853_1958672698_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11821146_913780491992853_1958672698_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440694037","text":"С правильного ракурса Москва превращается порой в нескончаемый источник вдохновения🙏🏻","from":{"username":"burimova","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11208385_1597617143856816_1779535157_a.jpg","id":"19357835","full_name":"Alexandra Burimova"},"id":"1060941247967679061"},"user_has_liked":false,"id":"1060940942160974637_19357835","user":{"username":"burimova","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11208385_1597617143856816_1779535157_a.jpg","id":"19357835","full_name":"Alexandra Burimova"}},{"attribution":null,"tags":["joyfolie","ad"],"type":"image","location":null,"comments":{"count":213,"data":[{"created_time":"1440699090","text":"👍я тоже  хочу сапоги такие","from":{"username":"jenifer_or_jeny","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849259_437620496429883_18012828_a.jpg","id":"2033166563","full_name":""},"id":"1060983331307217454"},{"created_time":"1440699101","text":"@kirstenjanssens_ onze dochters later 👌","from":{"username":"vdbelien","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11324379_907865655949093_1879908949_a.jpg","id":"245617908","full_name":"vdbelien"},"id":"1060983422290059838"},{"created_time":"1440699162","text":"Yup! @madara_small","from":{"username":"donirajah","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850055_1454016684907892_1771146747_a.jpg","id":"279806727","full_name":"Hypochlorous Acid"},"id":"1060983930396435048"},{"created_time":"1440699205","text":"@selianasusu lol our girls!","from":{"username":"justglenys","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11410479_1059391400780202_1643187761_a.jpg","id":"30219790","full_name":"Glenys Diaz 👑"},"id":"1060984292742357646"},{"created_time":"1440699241","text":"Las niñas que se visten como nosotras quisiéramos pero vivimos en Venezuela :( @yuriandreina","from":{"username":"marthacolmenarez","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10864806_419701748178906_1696866300_a.jpg","id":"298313419","full_name":"Martha"},"id":"1060984594950349477"},{"created_time":"1440699397","text":"Your","from":{"username":"hnos_arias","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10546771_1458233884427946_1877445925_a.jpg","id":"1430446062","full_name":"Jota"},"id":"1060985901241164569"},{"created_time":"1440699422","text":"Ioamnbczpñyowyqagalm@upy ypu","from":{"username":"hnos_arias","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10546771_1458233884427946_1877445925_a.jpg","id":"1430446062","full_name":"Jota"},"id":"1060986115536544554"},{"created_time":"1440699429","text":"@eer326 @courtneymoffett cutest kids ever?","from":{"username":"jlaks","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10919618_484125338418459_2018915290_a.jpg","id":"12400311","full_name":"jlaks"},"id":"1060986169794061103"}]},"filter":"Normal","created_time":"1440694907","link":"https://instagram.com/p/65Ps1IrWPa/","likes":{"count":12245,"data":[{"username":"soadvice01","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11311462_1186836524675209_193185525_a.jpg","id":"2148862684","full_name":""},{"username":"swag_outfit_hair_2_","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/928864_508023689354102_1085242042_a.jpg","id":"2148876386","full_name":"♥ support this page please ♥"},{"username":"amazingmamis","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11875371_1627072514245014_1370800356_a.jpg","id":"2148954460","full_name":"AmazingMamis"},{"username":"gulsun27","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11939700_1662988060591071_1983460157_a.jpg","id":"2148916102","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11856836_1722265254669037_2102555413_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11856836_1722265254669037_2102555413_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s480x480/e35/11856836_1722265254669037_2102555413_n.jpg","width":480,"height":480}},"users_in_photo":[{"position":{"y":0.940625,"x":0.134375},"user":{"username":"joyfolie","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-19/10894953_1561190617461868_1736364684_a.jpg","id":"193504759","full_name":"JOYFOLIE"}}],"caption":{"created_time":"1440694907","text":"shop @joyfolie \nwww.joyfolie.com\n#ad #joyfolie","from":{"username":"fashionkids","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11379345_826950780736564_956707935_a.jpg","id":"22637903","full_name":"Fashion Kids"},"id":"1060948239914459260"},"user_has_liked":false,"id":"1060948238631003098_22637903","user":{"username":"fashionkids","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11379345_826950780736564_956707935_a.jpg","id":"22637903","full_name":"Fashion Kids"}}]};}
+
+/***/ },
+/* 169 */
 /*!****************************!*\
   !*** ./app/PhotosFrame.js ***!
   \****************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20931,6 +20942,10 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _Photo = __webpack_require__(/*! ./Photo.js */ 170);
+	
+	var _Photo2 = _interopRequireDefault(_Photo);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -20950,20 +20965,16 @@
 	  }
 	
 	  _createClass(PhotosFrame, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      var photos = this.props.photos;
 	      var renderedPhotos = photos.map(function (photo) {
-	        return _react2.default.createElement(
-	          "div",
-	          { className: "well photo", key: photo.id },
-	          _react2.default.createElement("img", { src: photo.images.low_resolution.url, className: "img-responsive" })
-	        );
+	        return _react2.default.createElement(_Photo2.default, { photo: photo, key: photo.id });
 	      });
 	
 	      return _react2.default.createElement(
-	        "div",
-	        { id: "photos-frame" },
+	        'div',
+	        { id: 'photos-frame' },
 	        renderedPhotos
 	      );
 	    }
@@ -20975,15 +20986,10400 @@
 	exports.default = PhotosFrame;
 
 /***/ },
-/* 169 */
-/*!***********************!*\
-  !*** ./app/photos.js ***!
-  \***********************/
-/***/ function(module, exports) {
+/* 170 */
+/*!**********************!*\
+  !*** ./app/Photo.js ***!
+  \**********************/
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.instagramResponse=instagramResponse;// this is a giant JSON object you have received back from the Instagram API
-	// Use it for good, solely on the front end, to create a photo gallery widget!
-	function instagramResponse(){return{"meta":{"code":200},"data":[{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":62,"data":[{"created_time":"1440698882","text":"@kashrafiq82 i dnt know what im not ready means.","from":{"username":"el_capit4n","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11056014_930580873660876_1764685772_a.jpg","id":"1813181663","full_name":"Aidan Shah"},"id":"1060981586725475242"},{"created_time":"1440699089","text":"@chelphill someday this boat will be called lopster","from":{"username":"a_grillz10","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10864973_677675199015449_1525007523_a.jpg","id":"55897168","full_name":"Adam Grillo"},"id":"1060983319694446650"},{"created_time":"1440699117","text":"Omg you're so creative I luh dat name. @a_grillz10","from":{"username":"chelphill","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10249235_681947635271742_1429097030_a.jpg","id":"176724813","full_name":"Chelsea Phillips"},"id":"1060983558862049358"},{"created_time":"1440699161","text":"@milademadzadeh","from":{"username":"mahsa_shabani64","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11084925_460968970727762_1341672594_a.jpg","id":"1779523061","full_name":"Mahsa"},"id":"1060983926434074734"},{"created_time":"1440699219","text":"@el_capit4n You don't know what you're ready means","from":{"username":"kashrafiq82","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10549667_1438012593153662_318172580_a.jpg","id":"1226513641","full_name":"Kash"},"id":"1060984408904863890"},{"created_time":"1440699334","text":"@ilaydadalyan","from":{"username":"cinar_eylul","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11821727_824606154321928_942058662_a.jpg","id":"1576801832","full_name":"Ayşegül Çetinn"},"id":"1060985377025724643"},{"created_time":"1440699386","text":"@babyfaceace183","from":{"username":"matt_devorak_","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11246298_922399471153605_795389302_a.jpg","id":"444869841","full_name":""},"id":"1060985813577273605"},{"created_time":"1440699436","text":"@bernadogann","from":{"username":"yagmuratav","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11252367_450327991803984_594320170_a.jpg","id":"277822033","full_name":"Yağmur Atav"},"id":"1060986234274353451"}]},"filter":"Normal","created_time":"1440696547","link":"https://instagram.com/p/65S1D8AJKt/","likes":{"count":7677,"data":[{"username":"odemiskardesler","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2144844568","full_name":""},{"username":"saffetcangundogan","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/1389461_1484569361843849_317684180_a.jpg","id":"2144600875","full_name":"Saffet Can GÜNDOĞAN"},{"username":"kabiri_shahir","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11351749_506970872802901_243107600_a.jpg","id":"2144606381","full_name":"Shahir Kabiri"},{"username":"dali_ala","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11950668_1080544918624669_968459361_a.jpg","id":"2147856286","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11934634_844560522259226_320398962_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11934634_844560522259226_320398962_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11934634_844560522259226_320398962_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.972,"x":0.934640519},"user":{"username":"ialbeshari","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11249787_1635104710107137_1129673237_a.jpg","id":"193652315","full_name":"Ibrahim Albeshari"}}],"caption":{"created_time":"1440696547","text":"Picture: @ialbeshari","from":{"username":"thisisamans.world","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11809655_1657096704507515_1715105450_a.jpg","id":"290825035","full_name":""},"id":"1060962000122713031"},"user_has_liked":false,"id":"1060961998419825325_290825035","user":{"username":"thisisamans.world","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11809655_1657096704507515_1715105450_a.jpg","id":"290825035","full_name":""}},{"attribution":null,"tags":["ilovegettingagiftforabsolutelynoreason","squad","family","spoiled","blessed","givenchy"],"type":"image","location":null,"comments":{"count":571,"data":[{"created_time":"1440699177","text":"Hi","from":{"username":"ps_fashionista","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11899734_559027044245565_1036410027_a.jpg","id":"34732340","full_name":"👑Fashionista👑"},"id":"1060984056610284325"},{"created_time":"1440699218","text":"@elligkou","from":{"username":"boriko18","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11379142_1616085855333888_617453217_a.jpg","id":"286042006","full_name":"Georgia"},"id":"1060984401726006086"},{"created_time":"1440699259","text":"@arnaudpadovani  trop beau 😍","from":{"username":"holy_laura","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11939688_687602341339656_784309305_a.jpg","id":"337914110","full_name":"Holy_Laura"},"id":"1060984745843483492"},{"created_time":"1440699320","text":"@eevvaa_tz","from":{"username":"foreverstill","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11232480_1387311368265829_624517907_a.jpg","id":"2556758","full_name":""},"id":"1060985259603780492"},{"created_time":"1440699348","text":"Grave BB @holy_laura","from":{"username":"arnaudpadovani","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11311260_1613738268887258_381057663_a.jpg","id":"233558775","full_name":""},"id":"1060985495415940006"},{"created_time":"1440699359","text":"I like this @kswiss377","from":{"username":"camillamalagon","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11313671_117433221934224_1824995132_a.jpg","id":"24172914","full_name":"camilamalagon"},"id":"1060985585375372209"},{"created_time":"1440699380","text":"@lisouu_s thank u","from":{"username":"anayce","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10919115_1409314416037554_227245193_a.jpg","id":"24896869","full_name":"anayce"},"id":"1060985761594860479"},{"created_time":"1440699401","text":"@nadarad she gets one for free!","from":{"username":"alexandrarose04","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_21930700_75sq_1382775377.jpg","id":"21930700","full_name":""},"id":"1060985937805960137"}]},"filter":"Lark","created_time":"1440692472","link":"https://instagram.com/p/65LDpGm-MU/","likes":{"count":79234,"data":[{"username":"karina_evdokimova","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910232_1649212515317728_302707568_a.jpg","id":"2149049586","full_name":""},{"username":"flyboy122102","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149065349","full_name":"jazhyer allah"},{"username":"thiphanie3007","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11809882_837241649727025_2073921795_a.jpg","id":"2149051790","full_name":"thiphanie"},{"username":"kenyimatos","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11363706_1492420707736729_1320655462_a.jpg","id":"2149056967","full_name":"Kenyi Matos"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11931191_1638017563150835_247280115_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11931191_1638017563150835_247280115_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11931191_1638017563150835_247280115_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440692472","text":"Thank you @riccardotisci17 !!!!! I love love love my beautiful new Givenchy bag ❤️ you are the best!!! Thanks Ricky love you, and you too @lamarquisette ... #ilovegettingagiftforabsolutelynoreason #family #squad #givenchy #spoiled #blessed","from":{"username":"krisjenner","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/10723790_1558166717804655_760366473_a.jpg","id":"144646783","full_name":""},"id":"1060927818082017960"},"user_has_liked":false,"id":"1060927816026809108_144646783","user":{"username":"krisjenner","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/10723790_1558166717804655_760366473_a.jpg","id":"144646783","full_name":""}},{"attribution":null,"tags":["49ers"],"type":"image","location":{"latitude":39.57901523,"name":"Broncos Training Facility","longitude":-104.831924412,"id":441851658},"comments":{"count":46,"data":[{"created_time":"1440696538","text":"@acecruz408","from":{"username":"raulduran7","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11084852_737580199694916_166862007_a.jpg","id":"144433991","full_name":"raulduran7"},"id":"1060961924533578359"},{"created_time":"1440696893","text":"@broncolorenzo","from":{"username":"niner1919","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374441_808729205912846_228973248_a.jpg","id":"483630626","full_name":"niner1919"},"id":"1060964895258438450"},{"created_time":"1440696901","text":"Nobody believes in us, lets shock the world.","from":{"username":"throw_to_ten","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850426_999125133473151_2133178337_a.jpg","id":"1542914620","full_name":"Jared Schablein"},"id":"1060964965110377269"},{"created_time":"1440696930","text":"\"You! Yeah, I'm talkinA you!!!\"","from":{"username":"scotland7jimw","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10881802_764674903608866_1214909083_a.jpg","id":"1577373557","full_name":"Jim Walker"},"id":"1060965208832994113"},{"created_time":"1440697099","text":"@marty_357 I know. Tension at home lol","from":{"username":"4reazons2luv","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11848939_150884521915281_659060936_a.jpg","id":"30758616","full_name":"♥♥Mz. Leelee♥♥"},"id":"1060966627078171571"},{"created_time":"1440697462","text":"< - - - - DOPE THROWBACK PICS 🔥 🔥 🔥","from":{"username":"rare_sports_images","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/11142791_1575390722720655_1718343516_a.jpg","id":"1760273485","full_name":"Rare Sports Images"},"id":"1060969672511973539"},{"created_time":"1440698301","text":"@_summerlove03 me either","from":{"username":"millimill1","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11335160_852636978153739_1644181834_a.jpg","id":"28634799","full_name":"Milli Mill"},"id":"1060976713624316614"},{"created_time":"1440698819","text":"This dude is a fckn beast","from":{"username":"m_ort3ga","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11352311_863154653770826_2146176195_a.jpg","id":"42723727","full_name":"M_OrTeGa!!!!!"},"id":"1060981056624781355"}]},"filter":"Normal","created_time":"1440693592","link":"https://instagram.com/p/65NMVrieqv/","likes":{"count":10252,"data":[{"username":"alessandro_pizzorno_balotelli","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11856786_899300113457845_354988069_a.jpg","id":"2147883705","full_name":"Alessandro pizzorno balotelli"},{"username":"ericsalas12","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11856701_389424627919564_429113003_a.jpg","id":"2147463282","full_name":"Eric Salas"},{"username":"55_guy","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11925880_834220076685647_28111524_a.jpg","id":"2147410653","full_name":"Dimitri vanderpool"},{"username":"trevorbvrber","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11875456_1467587216880401_148384007_a.jpg","id":"2147765094","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11918031_950707525024218_1019529226_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11918031_950707525024218_1019529226_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s480x480/e35/11918031_950707525024218_1019529226_n.jpg","width":480,"height":480}},"users_in_photo":[{"position":{"y":0.442666667,"x":0.458666667},"user":{"username":"mpurcell50","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11374382_1638581709692703_193703922_a.jpg","id":"210335780","full_name":"Mike Purcell"}}],"caption":{"created_time":"1440693592","text":"No you the man 👉🏽 @mpurcell50. \n#49ers","from":{"username":"49ers","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10784805_820116174718705_328397595_a.jpg","id":"23435633","full_name":"San Francisco 49ers"},"id":"1060937213271468509"},"user_has_liked":false,"id":"1060937209739864751_23435633","user":{"username":"49ers","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10784805_820116174718705_328397595_a.jpg","id":"23435633","full_name":"San Francisco 49ers"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":186,"data":[{"created_time":"1440699236","text":"@iamdfh yo quiero :(","from":{"username":"kevinpiedrahitam","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11349376_1653247014951297_882925072_a.jpg","id":"1622755859","full_name":"Kevin piedrahita marulanda."},"id":"1060984552312274227"},{"created_time":"1440699249","text":"@fannyrgarcia","from":{"username":"scltellechea","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11875488_442964662558570_957792836_a.jpg","id":"961629453","full_name":"🌸Sasha C. López Tellechea🌸"},"id":"1060984663033511226"},{"created_time":"1440699261","text":"@o_r3za where and when hahaha","from":{"username":"aprilsm_","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821861_1622651041335129_1698988051_a.jpg","id":"2085493566","full_name":"April"},"id":"1060984762891500864"},{"created_time":"1440699264","text":"@belindapop gracias por compartir. Nunca cambies, reina hermosa.","from":{"username":"lpleyvag","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11330817_113384485676825_1934302759_a.jpg","id":"29973855","full_name":"LPLeyv"},"id":"1060984791639260484"},{"created_time":"1440699320","text":"I want!!! @saraidominguez","from":{"username":"_paige_leilani_","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11376358_1627475950868566_436574961_a.jpg","id":"13020634","full_name":"Paige Leilani ®"},"id":"1060985255562837346"},{"created_time":"1440699352","text":"Que pobreza @eugeniamelendeza","from":{"username":"valerieazuaje","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11358040_1598350497104450_1918527017_a.jpg","id":"181463495","full_name":"Valerie Azuaje 🐘🌸"},"id":"1060985530415578492"},{"created_time":"1440699426","text":"@_ixsael_ @carlos_amt @gabymag29 @jaggedvacance @_oscaromarortiz @giovanilandaverde you think this bitch needs Atlanta's coins??? No gracias.  #Cartier","from":{"username":"moedano","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11260890_1437641066557414_1112859163_a.jpg","id":"21663523","full_name":""},"id":"1060986147691298217"},{"created_time":"1440699447","text":"🙀🙀🙀😍Morí!!!! Yo quiero @rauspian @andres.a12  sí ves por q tienen q trabajar tanto 😍para q me den esos gusticos","from":{"username":"adrimejia13","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10747902_823152297707959_409042804_a.jpg","id":"295672947","full_name":"DISEÑO INTERIOR"},"id":"1060986327039737265"}]},"filter":"Normal","created_time":"1440696186","link":"https://instagram.com/p/65SI9Mv_6q/","likes":{"count":10778,"data":[{"username":"_chynadoll3hunna","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11246073_796460053808693_1482866894_a.jpg","id":"2148947970","full_name":""},{"username":"guada_paz_9","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11906347_683982005071764_913101615_a.jpg","id":"2147501381","full_name":""},{"username":"rafaelladuarte22","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11375798_891002014282323_2114912388_a.jpg","id":"2145355134","full_name":""},{"username":"mayooficial","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11925556_673353712766452_917440831_a.jpg","id":"2147464407","full_name":"Mayo"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11371029_774513175991219_48279618_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11371029_774513175991219_48279618_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11371029_774513175991219_48279618_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.484,"x":0.548},"user":{"username":"cartier","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_479089799_75sq_1378213167.jpg","id":"479089799","full_name":"Cartier Official"}}],"caption":{"created_time":"1440696186","text":"@cartier 💎","from":{"username":"belindapop","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-19/924647_855514301158164_215057745_a.jpg","id":"17399094","full_name":"Beli"},"id":"1060973633381334468"},"user_has_liked":false,"id":"1060958967527636650_17399094","user":{"username":"belindapop","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-19/924647_855514301158164_215057745_a.jpg","id":"17399094","full_name":"Beli"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":51,"data":[{"created_time":"1440699017","text":"@ryan_bougenoy it's like MC... Looks dialed ✊☝🏻️","from":{"username":"cmireau134","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/928335_1483135971930011_1789271109_a.jpg","id":"187843936","full_name":"Caleb Mireau CMDESiGNS"},"id":"1060982712570646877"},{"created_time":"1440699037","text":"He's riding blue but wearing red gear.... Hmmmmm","from":{"username":"doug.leonard.1656","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11373715_1651383711745604_72282980_a.jpg","id":"1654443956","full_name":"Doug Leonard"},"id":"1060982883488534890"},{"created_time":"1440699086","text":"@francois.monot  wouaaa magique ! Faudrait voir son kit déco !","from":{"username":"maximep123","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324453_1631022167183451_75613868_a.jpg","id":"1541484383","full_name":"maxime prudhomme"},"id":"1060983291661422989"},{"created_time":"1440699256","text":"@evo412","from":{"username":"drpochucha","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_27942274_75sq_1394841766.jpg","id":"27942274","full_name":""},"id":"1060984719134069225"},{"created_time":"1440699267","text":"▇███▇██▇███▇█🖖🖖🏿🖖🏼🖖🏽🖖🏾 C͟L͟I͟C͟K͟ T͟H͟E͟ L͟I͟N͟K͟ I͟N͟ M͟Y͟ B͟I͟O͟ T͟O͟ G͟E͟T͟ T͟H͟E͟ N͟E͟W͟ S͟E͟C͟R͟E͟T͟ E͟M͟O͟J͟I͟S͟ T͟H͟A͟T͟ D͟I͟D͟N͟T͟ C͟O͟M͟E͟ W͟I͟T͟H͟ I͟O͟S͟ 8.3! 😱😱😱🖖🏿🖖🏼🖖🏽🖖🏾","from":{"username":"crazycoolcomedy","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11356933_1119915574703414_1473580913_a.jpg","id":"1586159004","full_name":"Get SECRET Emojis! Click Link"},"id":"1060984810200797679"},{"created_time":"1440699277","text":"@andrewr417 YZ! Good to see @crtwotwo back on it!","from":{"username":"p_dohm","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326431_864090093687070_2117242567_a.jpg","id":"24604924","full_name":"Paul Dohm"},"id":"1060984897064833534"},{"created_time":"1440699297","text":"#hero","from":{"username":"gnride","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11374048_1623403974598994_606926653_a.jpg","id":"14401412","full_name":"gary norman"},"id":"1060985068074996235"},{"created_time":"1440699339","text":"@drowe56 yami","from":{"username":"j.r_o_c_k_intheusa","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11850119_488890014626041_1783548986_a.jpg","id":"975497729","full_name":"Jared Austfjord"},"id":"1060985420446863913"}]},"filter":"Normal","created_time":"1440697327","link":"https://instagram.com/p/65UUTFGpMZ/","likes":{"count":4833,"data":[{"username":"mbituu","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11380935_326740654163063_777019930_a.jpg","id":"2132194457","full_name":"Leonardo"},{"username":"thomasbu02","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11379269_476872269144397_1655062252_a.jpg","id":"2135371138","full_name":""},{"username":"josht____","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/10932527_506977026145142_489504055_a.jpg","id":"2137033349","full_name":""},{"username":"marc.defelice","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11930968_498218187003200_74367174_a.jpg","id":"2134836615","full_name":"Marc DeFelice"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11881743_1484550645174360_1894197779_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11881743_1484550645174360_1894197779_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11881743_1484550645174360_1894197779_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440697327","text":"Beat the rain☁️⚡️","from":{"username":"crtwotwo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11230503_571796462960846_2117053725_a.jpg","id":"15441699","full_name":"Chad Reed"},"id":"1060968545134481652"},"user_has_liked":false,"id":"1060968543028941593_15441699","user":{"username":"crtwotwo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11230503_571796462960846_2117053725_a.jpg","id":"15441699","full_name":"Chad Reed"}},{"attribution":null,"tags":["ขอบค","ร","nnyellowbd","ใครม","เพ","แมทหน"],"type":"image","location":null,"comments":{"count":93,"data":[{"created_time":"1440698206","text":"👗👗👗150.-💰#พร้อมส่ง-ส่งเอง #สต็อกเองทุกตัว ‼️‼️ #22K 🎉🎉🎉","from":{"username":"vaninya_wholesalez","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11326961_494226650753653_404761391_a.jpg","id":"1277306501","full_name":"เสื้อผ้าแฟชัน 150.-💰Wholesale"},"id":"1060975914895878521"},{"created_time":"1440698270","text":"👍🏻😍😍😍","from":{"username":"misstar_byhappy","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11925849_877622005668213_144046049_a.jpg","id":"1989950089","full_name":"Misstarfresh By Happy"},"id":"1060976446725237160"},{"created_time":"1440698386","text":"รบกวนฝาก#คิตตี้ค่ะ","from":{"username":"kittylovelyy.shop","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11348307_114858885521310_1831985945_a.jpg","id":"1951036920","full_name":"Kittylovelyy.shop"},"id":"1060977424753043963"},{"created_time":"1440698459","text":"👙 #ยานมโต #ยานมใหญ่ 💊 กราวเครือขาวอัดเม็ด เห็นผลจริง ปลอดภัย100% ✔ #ระวังของปลอมลอกเลียนแบบ ⚠ รับสมัครตัวแทนจำหน่ายจ้า 💓","from":{"username":"milkbig_shop","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10707146_295912780614672_206026576_a.jpg","id":"1505186234","full_name":""},"id":"1060978034772617774"},{"created_time":"1440698537","text":"รับวาดมาสคอต สนใจติดต่อline: pimryp","from":{"username":"pimryp","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11334569_911562995566037_682527712_a.jpg","id":"383076701","full_name":"รับวาดมาสคอต สติ๊กเกอร์ บลาๆ"},"id":"1060978688094186080"},{"created_time":"1440698655","text":"#เสื้อเรย่อนราคาถูกจ้า#กางเกงยีนส์เอวสูงขาสั้นขายาว#เสื้อครอปแขนสั้นแขนยาว#เสื้อยืด#เสื้อสีพื้น#นาฬิกาแฟชั่นน่ารักๆราคาไม่แพง","from":{"username":"shopp_nook","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/10914366_863170747109167_847071672_a.jpg","id":"1793267820","full_name":"กางเกงยีนส์-เสื้อผ้าแฟชั่น"},"id":"1060979683352193720"},{"created_time":"1440698926","text":"ZARA ราคาถูกกว่าช็อป!!","from":{"username":"sqweez.b","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10507782_695992230435930_912295612_a.jpg","id":"1420391126","full_name":"ZARA , MANGO ,ASOS..❣"},"id":"1060981949006162821"},{"created_time":"1440699024","text":"#👗👗👗 #สำหรับสาวๆ #ราคาถูก","from":{"username":"hshop210","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/s150x150/10004376_111186732561124_683019151_a.jpg","id":"1373207877","full_name":""},"id":"1060982775737035712"}]},"filter":"Normal","created_time":"1440693711","link":"https://instagram.com/p/65NazbnSpT/","likes":{"count":11375,"data":[{"username":"jjmongsad1974","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11809544_172831916381382_1688614747_a.jpg","id":"2149029544","full_name":""},{"username":"adrian_vasconcelos","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11909247_1456866671287042_856239071_a.jpg","id":"2149003081","full_name":"Adrián"},{"username":"lovelivs1394","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326270_792392640873753_146853956_a.jpg","id":"2149031242","full_name":""},{"username":"elgentel_gentel2000","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/1208158_415623875295071_2142314707_a.jpg","id":"2149061435","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11881684_1167550063271743_1623982216_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11881684_1167550063271743_1623982216_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11881684_1167550063271743_1623982216_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.889333333,"x":0.705333333},"user":{"username":"antapsd","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10553976_1580292552208979_1582959875_a.jpg","id":"1397106647","full_name":""}}],"caption":{"created_time":"1440693711","text":"Thx for everything na ka my bff ❤️ @antapsd #ขอบคุณจริงๆ#เพื่อนที่น่ารัก#ขอบคุณที่คอยช่วยเหลือทุกอย่าง#รักมากนะ#แมทหน้าชาบู#nnyellowbd#ใครมีเพื่อนดีรักษาไว้นะ","from":{"username":"baifernbah","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10349712_426225390882710_1613663242_a.jpg","id":"14191865","full_name":"baifernbah"},"id":"1060938979754191411"},"user_has_liked":false,"id":"1060938203757619795_14191865","user":{"username":"baifernbah","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10349712_426225390882710_1613663242_a.jpg","id":"14191865","full_name":"baifernbah"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":2153,"data":[{"created_time":"1440699323","text":"Belice 💪💪","from":{"username":"norman.the.junior","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11282664_511716352319621_410109502_a.jpg","id":"1559638901","full_name":"Norman Santoya"},"id":"1060985282578954002"},{"created_time":"1440699349","text":"Paraguay💙❤️💙❤️💙❤️💙❤️","from":{"username":"patty14.06","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11055400_847231608648981_253641590_a.jpg","id":"1754717926","full_name":"Patty Acosta"},"id":"1060985503979484973"},{"created_time":"1440699353","text":"Síganme bebes mucho","from":{"username":"diaancamp","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11250164_477519142414888_1980233925_a.jpg","id":"252814259","full_name":"Dianyz⚓️❤️💁"},"id":"1060985537080932148"},{"created_time":"1440699356","text":"🙏🙏🙏🙏","from":{"username":"diaancamp","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11250164_477519142414888_1980233925_a.jpg","id":"252814259","full_name":"Dianyz⚓️❤️💁"},"id":"1060985563832203063"},{"created_time":"1440699363","text":"#somosuno chile","from":{"username":"nicol_fabijanovic","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10724168_1380051318988699_640959751_a.jpg","id":"1590741650","full_name":"nicol"},"id":"1060985621906536253"},{"created_time":"1440699375","text":"#Guatemala 💃✌","from":{"username":"candy_1920","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11249878_724299671035793_921654631_a.jpg","id":"1483930392","full_name":"Candy"},"id":"1060985715716339534"},{"created_time":"1440699398","text":"Honduras 😊👐","from":{"username":"rich_sexx","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11856762_414989948687585_1709389294_a.jpg","id":"478289685","full_name":"Rocio Gonzales Paz"},"id":"1060985912160761698"},{"created_time":"1440699423","text":"Colombia me gusta por me gusta😘","from":{"username":"gabitoo_rojas","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/1516050_652028108276232_806135205_a.jpg","id":"1753886728","full_name":"Gabriel Rojas"},"id":"1060986125256570749"}]},"filter":"Normal","created_time":"1440691457","link":"https://instagram.com/p/65JHtjCTef/","likes":{"count":49010,"data":[{"username":"javier_aguero01","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11419047_1029685020396659_1414005481_a.jpg","id":"2148972568","full_name":""},{"username":"tiffasanchez.12","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11809812_482976255209145_1203693502_a.jpg","id":"2148967889","full_name":"Tiffany Sanchez"},{"username":"edras.vasquez","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11324440_925201910906608_372566560_a.jpg","id":"2148987379","full_name":""},{"username":"ileana_quintero24","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2148983768","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11931050_1070760386270350_55268173_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11931050_1070760386270350_55268173_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11931050_1070760386270350_55268173_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440691457","text":"💪💪💪💪","from":{"username":"nickyjampr","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11333359_992950590745022_254018987_a.jpg","id":"55795588","full_name":"NICKY JAM"},"id":"1060919302779647334"},"user_has_liked":false,"id":"1060919299583588255_55795588","user":{"username":"nickyjampr","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11333359_992950590745022_254018987_a.jpg","id":"55795588","full_name":"NICKY JAM"}},{"attribution":null,"tags":["f21xalec"],"type":"image","location":null,"comments":{"count":360,"data":[{"created_time":"1440698888","text":"@kelsdelo","from":{"username":"kim_deraney","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11881655_525747980907049_690504965_a.jpg","id":"52270193","full_name":"Kim Deraney"},"id":"1060981635239400388"},{"created_time":"1440698930","text":"Dope.","from":{"username":"alexandra_darlene","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11809843_1471687386480931_1833319230_a.jpg","id":"176210034","full_name":"•Alexandra Reyes•"},"id":"1060981983702176736"},{"created_time":"1440699124","text":"▇███▇██▇███▇█🖖🖖🏿🖖🏼🖖🏽🖖🏾 C͟L͟I͟C͟K͟ T͟H͟E͟ L͟I͟N͟K͟ I͟N͟ M͟Y͟ B͟I͟O͟ T͟O͟ G͟E͟T͟ T͟H͟E͟ N͟E͟W͟ S͟E͟C͟R͟E͟T͟ E͟M͟O͟J͟I͟S͟ T͟H͟A͟T͟ D͟I͟D͟N͟T͟ C͟O͟M͟E͟ W͟I͟T͟H͟ I͟O͟S͟ 8.3! 😱🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾 🖖🖖🏿🖖🏼🖖🏽","from":{"username":"lock.apps","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11374133_854091477972138_1805599187_a.jpg","id":"2125881098","full_name":"Get The Newest Emojis!"},"id":"1060983611528335472"},{"created_time":"1440699127","text":"😝","from":{"username":"valentinagurina","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11809607_816427578472323_235675920_a.jpg","id":"938768067","full_name":""},"id":"1060983637390413938"},{"created_time":"1440699155","text":"Metieron en la licuadora un cholo; un mafioso; un grafitero; un motociclista; un padrote y los pantalones de un teenager y esto fue lo que resultó.","from":{"username":"frencinidiudaneth","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/1515471_641166195984117_77671191_a.jpg","id":"2061349883","full_name":"Frencini Diudaneth"},"id":"1060983870920872069"},{"created_time":"1440699284","text":"@jkobe18","from":{"username":"lynseybelle310_","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/1921891_1600973390168530_1290639611_a.jpg","id":"1382711684","full_name":"lynsssss"},"id":"1060984954963906756"},{"created_time":"1440699300","text":"Круто Он похож на герой Subway surface","from":{"username":"jenifer_or_jeny","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849259_437620496429883_18012828_a.jpg","id":"2033166563","full_name":""},"id":"1060985092771958993"},{"created_time":"1440699309","text":"@jploayzam","from":{"username":"cataborja","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11252280_1587751748180325_681559037_a.jpg","id":"53191532","full_name":"Catalina Borja Aguirre"},"id":"1060985168672084180"}]},"filter":"Normal","created_time":"1440690568","link":"https://instagram.com/p/65HbOjKFBR/","likes":{"count":47185,"data":[{"username":"olyazaxarova007","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11371003_1483176701995192_444926913_a.jpg","id":"2149038273","full_name":""},{"username":"julianaflorena","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11336112_443361959181297_315656542_a.jpg","id":"2148979842","full_name":""},{"username":"niklas_brogamer","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324438_836001213181174_1150107583_a.jpg","id":"2148984270","full_name":""},{"username":"an_de_r_so_n","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149053263","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11925842_1490200057962711_519716219_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11925842_1490200057962711_519716219_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11925842_1490200057962711_519716219_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.389333333,"x":0.776},"user":{"username":"forever21men","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11249252_1656772584567696_675232121_a.jpg","id":"1680557315","full_name":"Forever 21 Men"}},{"position":{"y":0.618666667,"x":0.342666667},"user":{"username":"alecmonopoly","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11881777_906469786069446_1428659606_a.jpg","id":"274891071","full_name":"Alec Monopoly"}},{"position":{"y":0.597333333,"x":0.826666667},"user":{"username":"forever21","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/1391132_770482496346869_1929750985_a.jpg","id":"11707579","full_name":"forever21"}}],"caption":{"created_time":"1440690568","text":"His signature move may be to hide his face, but artist @alecmonopoly is baring all with the launch of his @dreamworksanimation #F21xAlec Collection! Get it in-stores and online. -------------------------------------------------\nUpload a photo of you rocking the F21 x Alec Monopoly Collection to Instagram with #F21xAlec for a chance to win one of six limited edition tees tagged by @alecmonopoly himself!","from":{"username":"forever21","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/1391132_770482496346869_1929750985_a.jpg","id":"11707579","full_name":"forever21"},"id":"1060911847389548556"},"user_has_liked":false,"id":"1060911844596142161_11707579","user":{"username":"forever21","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/1391132_770482496346869_1929750985_a.jpg","id":"11707579","full_name":"forever21"}},{"attribution":null,"tags":["hindukush","afghanistan","bamiyan"],"type":"image","location":null,"comments":{"count":457,"data":[{"created_time":"1440699401","text":"Beautiful 😍","from":{"username":"batikwarisanarcadia","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xft1/t51.2885-19/11192831_818229471595523_18062574_a.jpg","id":"1743635749","full_name":"Batik Warisan Arcadia"},"id":"1060985936430585832"},{"created_time":"1440699402","text":"@salymohsin","from":{"username":"ash_ehmed","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_656165707_75sq_1384060940.jpg","id":"656165707","full_name":"Ahmed Ashfaque"},"id":"1060985946429806570"},{"created_time":"1440699402","text":"Beautiful picture @stevemccurryofficial","from":{"username":"sgresp1","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/11191070_741684959283155_1125825339_a.jpg","id":"1505879319","full_name":"Shaun G. Reichard"},"id":"1060985947713263595"},{"created_time":"1440699407","text":"I MADE $7,OOO IN LESS THAN A HOUR. THANKS @SOURCE._OF___ASSISTANCE","from":{"username":"financial__freedom__6","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11378312_1417799201878745_195583007_a.jpg","id":"1725679022","full_name":""},"id":"1060985989236873197"},{"created_time":"1440699416","text":"Paraíso!!","from":{"username":"sofiborsotti","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11372116_1011114078908375_1450242745_a.jpg","id":"1527320553","full_name":"Sofía Borsotti"},"id":"1060986064272971761"},{"created_time":"1440699424","text":"FREE FOLLOWERS!!!! LINK IN MY BIO!! LIMITED TIME OFFER SO HURRY!!! 😍😂😇😇☺️😏😊😎😍😓😜😝😜😝😍😍FREE FOLLOWERS!!!! LINK IN MY BIO!! LIMITED TIME OFFER SO HURRY!!! 😍😂😇😇☺️😏😊😎😍😓😜😝😜😝","from":{"username":"brandonzingale","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11055408_748484795266641_1957785954_a.jpg","id":"35574464","full_name":"Brandon Zingale"},"id":"1060986131121788920"},{"created_time":"1440699426","text":"😍😍😍😍😍","from":{"username":"0o_marina_0o","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11410665_1637359206475719_1149912376_a.jpg","id":"558874524","full_name":""},"id":"1060986148712699898"},{"created_time":"1440699443","text":"@eve_ansary WOW","from":{"username":"hoolitabuelita","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10948951_1481439865503863_1413027564_a.jpg","id":"176361965","full_name":"Julia Reeder"},"id":"1060986291302257674"}]},"filter":"Normal","created_time":"1440698012","link":"https://instagram.com/p/65Vn39IVbn/","likes":{"count":86502,"data":[{"username":"dawulka2303wka","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11848969_1483967548570722_1265709954_a.jpg","id":"2149185561","full_name":""},{"username":"belka357","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149184132","full_name":""},{"username":"nua_venus","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11371082_813229145458439_1264795714_a.jpg","id":"2149184414","full_name":"Nua_Venus"},{"username":"yojhanna_acosta","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11917835_122172171465040_429271187_a.jpg","id":"2149185383","full_name":"Yojhanna Acosta"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11887267_883806931687447_761893927_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11887267_883806931687447_761893927_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11887267_883806931687447_761893927_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440698012","text":"Photo by @stevemccurryofficial // A farmer walks through his fields in Bamiyan, Afghanistan, which is in the Central Highlands region between the high mountains of the Hindu Kush and the Koh-i-Baba mountain ranges. Bamiyan was on the Silk Route which caravans traveled to take goods from China to points west.\n\n#Afghanistan #Bamiyan #HinduKush","from":{"username":"natgeo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11349315_1620970341492406_1971976479_a.jpg","id":"787132","full_name":"National Geographic"},"id":"1060974290106668341"},"user_has_liked":false,"id":"1060974286340183783_787132","user":{"username":"natgeo","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11349315_1620970341492406_1971976479_a.jpg","id":"787132","full_name":"National Geographic"}},{"attribution":null,"tags":["turkey","istanbul","quattro","black","yenikoymotors","2015","new","rs6","izmir","audi"],"type":"image","location":{"latitude":41.1207199,"name":"Yeniköy Motors","longitude":29.0694904,"id":27091386},"comments":{"count":31,"data":[{"created_time":"1440697076","text":"Bllllaaaaaaa @japhetolle petit cc en mm temps a Jaja !","from":{"username":"sii2them","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11375831_885662731487257_1526839594_a.jpg","id":"1785650693","full_name":"Simon HUEZz😴"},"id":"1060966434299561057"},{"created_time":"1440697333","text":"@yenikoymotors muhte$em 👌","from":{"username":"soner__asci","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10899192_329343693936121_1712331271_a.jpg","id":"1492509397","full_name":"Soner Asci"},"id":"1060968590868071735"},{"created_time":"1440697806","text":"@ccnordmann","from":{"username":"rajdkapoor","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11373833_109583426059330_1645488491_a.jpg","id":"204567299","full_name":""},"id":"1060972560533538460"},{"created_time":"1440697840","text":"Bi allroadu bunun yakisir abi artik ikimize @oguzhanrenda","from":{"username":"iamcevdetkeresteci","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10809007_742077912554907_2068341366_a.jpg","id":"178455439","full_name":"Cevdet Keresteci"},"id":"1060972843607115440"},{"created_time":"1440698521","text":"@metinboztoprak","from":{"username":"denizzs2","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xft1/t51.2885-19/10952570_775016909242796_888688844_a.jpg","id":"1140919209","full_name":"Deniz"},"id":"1060978558514087068"},{"created_time":"1440698934","text":"@naief040","from":{"username":"peddddi","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xft1/t51.2885-19/10666067_280624845464773_1393979529_a.jpg","id":"523241903","full_name":"P"},"id":"1060982016910673385"},{"created_time":"1440698966","text":"@jonlitton1","from":{"username":"ashapster","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11350896_892796717435103_1080073675_a.jpg","id":"246710720","full_name":"Ashap"},"id":"1060982290429625857"},{"created_time":"1440699419","text":"Tren 😂 @kandemir_kerem","from":{"username":"esercinar","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10809816_572237222910648_1363035415_a.jpg","id":"272548718","full_name":"ESER CINAR"},"id":"1060986087088441185"}]},"filter":"Normal","created_time":"1440692636","link":"https://instagram.com/p/65LXosicdG/","likes":{"count":10944,"data":[{"username":"ahmed_fof","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/s150x150/10890918_1660166464195059_841243290_a.jpg","id":"2149047131","full_name":"Ryan Fofana"},{"username":"troublebae","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149054173","full_name":"Sara"},{"username":"mashynya_ignatova","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11370992_1157360827691415_1042585273_a.jpg","id":"2149053102","full_name":""},{"username":"beaverjake47","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149034903","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11856769_1535457013376392_289632007_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11856769_1535457013376392_289632007_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11856769_1535457013376392_289632007_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440692636","text":"New 2015 Audi RS6 Avant Quattro Exclusive #yenikoymotors #2015 #new #audi #rs6 #black #quattro #istanbul #izmir #turkey","from":{"username":"yenikoymotors","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11351636_1458075654485798_648102951_a.jpg","id":"261460624","full_name":"Yenikoy Motors"},"id":"1060929193426666778"},"user_has_liked":false,"id":"1060929189978949446_261460624","user":{"username":"yenikoymotors","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11351636_1458075654485798_648102951_a.jpg","id":"261460624","full_name":"Yenikoy Motors"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":681,"data":[{"created_time":"1440699384","text":"@cerentemizz yyjluffu","from":{"username":"ndilaysen","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11419150_567143800090137_113693553_a.jpg","id":"280091678","full_name":"Dilay Şen"},"id":"1060985791616454032"},{"created_time":"1440699386","text":"@fth__ylmz @ikan_topal","from":{"username":"omer.ozkarakaya","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"1915013271","full_name":"Ömer Özkarakaya"},"id":"1060985810323049875"},{"created_time":"1440699399","text":"@caansenn  aynen seviyem budur","from":{"username":"senaekmekci","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11330755_136734853337111_194453656_a.jpg","id":"284608066","full_name":"SENA🍀"},"id":"1060985918812917159"},{"created_time":"1440699414","text":"@elif_arbc1","from":{"username":"tugcedikmenn","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11821832_1694592310764703_1234401178_a.jpg","id":"706145746","full_name":""},"id":"1060986047829708209"},{"created_time":"1440699419","text":"@demettani :)","from":{"username":"hzr_dogru84","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11313588_1617045875217752_85810928_a.jpg","id":"1989658899","full_name":"HIZ."},"id":"1060986085502946741"},{"created_time":"1440699426","text":"Bundan sonra böle olcam @makbule_akagunduz","from":{"username":"zeynu_eb","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850105_834494076642042_1815720319_a.jpg","id":"1158423058","full_name":""},"id":"1060986149768072635"},{"created_time":"1440699441","text":"Tam bir Gamze @gamzeeonder @ecemmkayhan @ipeekcan","from":{"username":"cmileyildizz","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11352264_1165666496783170_824298835_a.jpg","id":"317414164","full_name":"Cemile Yıldız"},"id":"1060986270832463306"},{"created_time":"1440699448","text":"@senaekmekci bu olayi izledinmi","from":{"username":"caansenn","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xta1/t51.2885-19/10358248_1413940255554574_1766411459_a.jpg","id":"820533607","full_name":""},"id":"1060986332044135888"}]},"filter":"Normal","created_time":"1440695048","link":"https://instagram.com/p/65P-A8CQ0D/","likes":{"count":16962,"data":[{"username":"sezginakturk","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11849846_738357089644419_450894404_a.jpg","id":"2149045322","full_name":"Sezgin Aktürk"},{"username":"deminin_lovatici55","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11248286_883995371686150_109296511_a.jpg","id":"2149072323","full_name":""},{"username":"aysenur_balkaya","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149082938","full_name":""},{"username":"lenormens","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11363871_1618861651701557_246628980_a.jpg","id":"2149053734","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11909922_918180431578254_62598068_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11909922_918180431578254_62598068_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11909922_918180431578254_62598068_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":null,"user_has_liked":false,"id":"1060949419534912771_297635578","user":{"username":"karikaturhane","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10985974_431413690361385_360940966_a.jpg","id":"297635578","full_name":"Karikatür"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":1125,"data":[{"created_time":"1440699394","text":"YOU LOOK SO PRECIOUS","from":{"username":"laa.dispute","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/11203430_1620887914791771_803504102_a.jpg","id":"1947247300","full_name":"blurry face"},"id":"1060985876056703238"},{"created_time":"1440699396","text":"@screamo.bands","from":{"username":"piercingtheblacksireninreverse","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849821_849411165156007_974484274_a.jpg","id":"856203500","full_name":"Bringing The Horizon"},"id":"1060985893127520521"},{"created_time":"1440699402","text":"EVEN IF YOU DID CUT YOUR HAIR","from":{"username":"laa.dispute","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/11203430_1620887914791771_803504102_a.jpg","id":"1947247300","full_name":"blurry face"},"id":"1060985946789445903"},{"created_time":"1440699408","text":"@steph_giraldy why do u care again?","from":{"username":"jessiemarquezz","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11939699_883475465032933_359819926_a.jpg","id":"592521299","full_name":"smhs"},"id":"1060985998295499028"},{"created_time":"1440699424","text":"You look different?? @piercethevic","from":{"username":"autumn_hates_you_","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11376246_980705911981767_1270496503_a.jpg","id":"646543764","full_name":"αυτυми👻"},"id":"1060986128805462313"},{"created_time":"1440699429","text":"amore mio","from":{"username":"giuls.xx","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910414_108998502786803_2086024784_a.jpg","id":"462322846","full_name":"giuls💦💭"},"id":"1060986170161299760"},{"created_time":"1440699437","text":"@steph_giraldy  how bout you stfu they're taking their time so what","from":{"username":"aliens.wasteland","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/11138001_462162013939470_1913456106_a.jpg","id":"1679934224","full_name":"✖️britney✖️"},"id":"1060986241942618423"},{"created_time":"1440699439","text":"See you soon😩😩 @piercethevic","from":{"username":"lunadavey","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/l/t51.2885-19/s150x150/11356659_470665656447131_507318514_a.jpg","id":"202035568","full_name":"Luna Davey"},"id":"1060986258870829368"}]},"filter":"Reyes","created_time":"1440696367","link":"https://instagram.com/p/65SfF5EQDN/","likes":{"count":25208,"data":[{"username":"punk_owl","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849860_1633644830254092_1169861150_a.jpg","id":"2148726367","full_name":"Anika Jelli Weber"},{"username":"murat_pt","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821749_965585713504732_1972265453_a.jpg","id":"2148710140","full_name":"Murat Guleryuz 😄"},{"username":"amyf.b","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11371281_424512094417725_179930798_a.jpg","id":"2148879389","full_name":"Amy F B"},{"username":"lydiamagoo","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11881701_981539821896825_636520185_a.jpg","id":"2148775663","full_name":"Lydia"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11849064_830971917010695_901273990_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11849064_830971917010695_901273990_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11849064_830971917010695_901273990_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440696367","text":"San Diego ✈️ London. Jet lag is real but I'm happy to be back in the UK!  I missed ya! ❤️","from":{"username":"piercethevic","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849040_770071126437656_779284544_a.jpg","id":"581087","full_name":"Vic Fuentes"},"id":"1060960491290034850"},"user_has_liked":false,"id":"1060960488689565901_581087","user":{"username":"piercethevic","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849040_770071126437656_779284544_a.jpg","id":"581087","full_name":"Vic Fuentes"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":261,"data":[{"created_time":"1440699002","text":"The poor you will always have with you because face it thus land us your land thus land us my land and we can sell out are new frontiers on the horizon","from":{"username":"crjhnsn3","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11254046_1442470619390037_1158729023_a.jpg","id":"1735087845","full_name":"Corafran"},"id":"1060982592805861424"},{"created_time":"1440699031","text":"We must not sell freedom out","from":{"username":"crjhnsn3","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11254046_1442470619390037_1158729023_a.jpg","id":"1735087845","full_name":"Corafran"},"id":"1060982834137724990"},{"created_time":"1440699137","text":"So stupid.","from":{"username":"af_edc","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11032776_409439225895750_663994424_a.jpg","id":"1732553993","full_name":"AF"},"id":"1060983726912108682"},{"created_time":"1440699256","text":"ily hillary! thank you for fighting for us!! ❤️❤️❤️","from":{"username":"atessasavitt1","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11856633_898076673585625_1667265011_a.jpg","id":"1512483995","full_name":""},"id":"1060984720282679507"},{"created_time":"1440699291","text":"@abascumbe","from":{"username":"harlemglobetrttr","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11850259_730804383732838_2085462418_a.jpg","id":"26411692","full_name":"Ty McKeiver"},"id":"1060985014664100079"},{"created_time":"1440699392","text":"Stop guns from being sold over the internet would be some help!!!!!!!!!!","from":{"username":"lorie_murchison","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/927650_308703252621980_346527796_a.jpg","id":"1361655423","full_name":"Lorie RoyalOne Murchison"},"id":"1060985860160289081"},{"created_time":"1440699428","text":"I wish politicians protected our right to vote as vigorously as they protect our right to bear arms!!","from":{"username":"pvgoff","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10369339_780412502040147_332031482_a.jpg","id":"871664940","full_name":"Sara and Ed Williams"},"id":"1060986161596528974"},{"created_time":"1440699431","text":"It's sad to say that this is happening in the United States of America. A country that we should feel safe from terrorism and violence. How about we start by educating people about gun violence and actually do something about gun control...","from":{"username":"snightlinger","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11263462_853923567976391_798148602_a.jpg","id":"40922796","full_name":"Sara Nightlinger"},"id":"1060986190319122767"}]},"filter":"Normal","created_time":"1440694133","link":"https://instagram.com/p/65OOY-kPvr/","likes":{"count":5866,"data":[{"username":"romani.gabr","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2146596770","full_name":"Gabriella Romani"},{"username":"mariamzahraa4","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2142666229","full_name":""},{"username":"kvrlx_","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11934903_1038825299469592_1058832366_a.jpg","id":"2143318861","full_name":"karla"},{"username":"hillaryclinton_germany","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2147629351","full_name":"Help our future -Help Hillary"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11326558_880130825368609_1369631963_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11326558_880130825368609_1369631963_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11326558_880130825368609_1369631963_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":null,"user_has_liked":false,"id":"1060941748765785067_1834271085","user":{"username":"hillaryclinton","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11820691_1451677718473497_1023799471_a.jpg","id":"1834271085","full_name":"Hillary Clinton"}},{"attribution":null,"tags":["aus","naturalbeauty","bondi"],"type":"image","location":null,"comments":{"count":110,"data":[{"created_time":"1440699239","text":"I was there  in 2007... Beautiful beach !! But the best for me ...the city of Sidney !! #inlove","from":{"username":"_emilysweets","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11007881_521781941295804_736864416_a.jpg","id":"1486074278","full_name":"Emi Carrillo"},"id":"1060984576786698333"},{"created_time":"1440699262","text":"@deiaozzy 😁😁😁😁","from":{"username":"falalara","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11374056_937867299585637_1802819090_a.jpg","id":"470205360","full_name":"Lara Silva"},"id":"1060984773860266091"},{"created_time":"1440699316","text":"The pool which we saw from far @imransid96 @danishkhann","from":{"username":"shayansiddiqui","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11820571_490346117799213_2003482571_a.jpg","id":"452572171","full_name":"Shayan Siddiqui"},"id":"1060985222491410569"},{"created_time":"1440699348","text":"منور ضلع","from":{"username":"sha3r_sha3bi_3iraqi","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11850008_427488227451236_903842065_a.jpg","id":"1646828854","full_name":"متذوق الشعر الشعبي العراقي"},"id":"1060985492671697058"},{"created_time":"1440699351","text":"Yes BC😍😍😍😍 @shayansiddiqui","from":{"username":"imransid96","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11372399_792744517490219_2070424039_a.jpg","id":"389817125","full_name":"IMRAN SIDDIQUI"},"id":"1060985521285238949"},{"created_time":"1440699374","text":"X Man For ever","from":{"username":"sha3r_sha3bi_3iraqi","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11850008_427488227451236_903842065_a.jpg","id":"1646828854","full_name":"متذوق الشعر الشعبي العراقي"},"id":"1060985707025797294"},{"created_time":"1440699390","text":"Told ya before... It's your fav hangout, Right!! ?","from":{"username":"beenapatre","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11325858_595663333909821_1470110808_a.jpg","id":"1483160852","full_name":"Beenapatre"},"id":"1060985842677977274"},{"created_time":"1440699396","text":"I'm so jealous!!!","from":{"username":"elin.k72","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2085949456","full_name":"Elin.K."},"id":"1060985897774354623"}]},"filter":"Normal","created_time":"1440697894","link":"https://instagram.com/p/65VZftihLv/","likes":{"count":17124,"data":[{"username":"mbanohina","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11931037_470473623114459_1898654160_a.jpg","id":"2148755055","full_name":"Марина Анохина"},{"username":"lorelei.30","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11887087_159162511086590_913214415_a.jpg","id":"2148682947","full_name":"Anja Schütz-Thara"},{"username":"lovetoplaywithgirls","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11374232_1069182443106799_775732520_a.jpg","id":"2148938708","full_name":"nkromeo"},{"username":"vikyxman","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850060_1625809521007066_1484307596_a.jpg","id":"2148933191","full_name":"viknesh"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11809737_1643371035911563_1479489724_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11809737_1643371035911563_1479489724_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11809737_1643371035911563_1479489724_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440697894","text":"If you ever get a chance to visit Bondi Beach - I promise it's one of the most extraordinarily beautiful sights you will ever see. I could stand there and watch the surf all day ... and never get bored. #Bondi #AUS #naturalbeauty","from":{"username":"thehughjackman","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11371023_973787049331051_1947183287_a.jpg","id":"489110643","full_name":"Hugh Jackman"},"id":"1060976285746598318"},"user_has_liked":false,"id":"1060973298236134127_489110643","user":{"username":"thehughjackman","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11371023_973787049331051_1947183287_a.jpg","id":"489110643","full_name":"Hugh Jackman"}},{"attribution":null,"videos":{"low_bandwidth":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11912853_1616355338651932_2004061384_s.mp4","width":480,"height":480},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11883684_109402386080648_1782647713_n.mp4","width":640,"height":640},"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t50.2886-16/11912853_1616355338651932_2004061384_s.mp4","width":480,"height":480}},"tags":["fashionarttut"],"type":"video","location":null,"comments":{"count":62,"data":[{"created_time":"1440698431","text":"@linneamaria, detta var rätt snyggt till den 31 oktober 😉 hehe","from":{"username":"futter96","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/l/t51.2885-19/10860057_406661049490369_805368661_a.jpg","id":"915784874","full_name":""},"id":"1060977798762048293"},{"created_time":"1440698562","text":"Jaa det var superfint! Vi kör på något liknande då?👌😃 @futter96","from":{"username":"linneamaria","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11950479_110401542647766_1927286575_a.jpg","id":"8583688","full_name":"Linnea Karlsson"},"id":"1060978898642774924"},{"created_time":"1440698657","text":"😷😷","from":{"username":"julie.pistone","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374213_610440582431989_1974412646_a.jpg","id":"1678936050","full_name":"Julianna Pistone :)"},"id":"1060979696684608451"},{"created_time":"1440698705","text":"@amanda_zolanski","from":{"username":"miss.l.or","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11324964_1626839530927301_851000494_a.jpg","id":"371998147","full_name":"L'or !!! 😜"},"id":"1060980096166898660"},{"created_time":"1440698870","text":"@sweetandcheezy  ma ei kujuta ette kui ma prooviks endal nii meiki teha😹","from":{"username":"nunnuannu","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11910008_448198502033960_959139552_a.jpg","id":"1076082299","full_name":""},"id":"1060981479876175968"},{"created_time":"1440698901","text":"Elle était mieux avant","from":{"username":"oceanevb.36","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11881605_885855011508775_1885052209_a.jpg","id":"1062613194","full_name":"♥ Océane ♥"},"id":"1060981742255057022"},{"created_time":"1440699207","text":"Mdr sur nous ça rend pas pareil mdrrrrrr @ambre.romane","from":{"username":"alexandra30740","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11351558_1455858211385588_793264446_a.jpg","id":"1545059245","full_name":"A°R°A ma base🔐💘💍"},"id":"1060984311366920537"},{"created_time":"1440699375","text":"This one looks a little too caked","from":{"username":"foreverangela___","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xta1/t51.2885-19/10731706_350100748517135_1102621432_a.jpg","id":"1417288048","full_name":"Angela 🐢"},"id":"1060985718077761996"}]},"filter":"Normal","created_time":"1440695355","link":"https://instagram.com/p/65QjfTSagz/","likes":{"count":10329,"data":[{"username":"fatimakhateri64","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11931106_865825526819831_104769725_a.jpg","id":"2148930249","full_name":"fatima"},{"username":"mahmood5066","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11371070_519870388170852_436082724_a.jpg","id":"2149050722","full_name":"محمود"},{"username":"zelenyperez1235","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11325022_1484058945243669_453058645_a.jpg","id":"2148877870","full_name":"Zeleny Perez"},{"username":"_nail.tips_","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11848831_488768291291331_2106711317_a.jpg","id":"2149004967","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e15/11809665_523387214482524_2093629807_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11809665_523387214482524_2093629807_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11809665_523387214482524_2093629807_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440695355","text":"Beauty contouring & highlight by @j_make_up 🎀 #fashionarttut 💥","from":{"username":"fashionarttut","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/10891047_1587069661516655_1408885287_a.jpg","id":"1651034713","full_name":"Fashion Tutorial"},"id":"1060952026139699710"},"user_has_liked":false,"id":"1060951994757916723_1651034713","user":{"username":"fashionarttut","profile_picture":"https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-19/10891047_1587069661516655_1408885287_a.jpg","id":"1651034713","full_name":"Fashion Tutorial"}},{"attribution":null,"tags":[],"type":"image","location":{"latitude":34.049105278,"name":"Link in profile to shop","longitude":-118.254478932,"id":433128873},"comments":{"count":28,"data":[{"created_time":"1440698236","text":"@valeriega foto goals","from":{"username":"sandymarquezg","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11856635_910333462392877_1593420740_a.jpg","id":"24171573","full_name":"sandy"},"id":"1060976166019943392"},{"created_time":"1440698294","text":"@sandymarquezg goals goals porfavor 📷 antes de gastarme mas 💸","from":{"username":"valeriega","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11909412_542368859249783_1326619933_a.jpg","id":"53370029","full_name":""},"id":"1060976650478831628"},{"created_time":"1440698302","text":"@lila_scherer outfit","from":{"username":"caitbishop","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11352046_1658243217743298_1515227573_a.jpg","id":"185730706","full_name":"Caitlin Bishop"},"id":"1060976722411145238"},{"created_time":"1440698340","text":"Is that Melodie Monrose? Slay girl slay!","from":{"username":"manhattangyrl","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11909153_933793766686118_371288459_a.jpg","id":"14019611","full_name":""},"id":"1060977034970679354"},{"created_time":"1440698401","text":"@jes_estrada ???","from":{"username":"missrenata","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10838900_756219171092425_819748643_a.jpg","id":"4876309","full_name":"Renata Bresciani"},"id":"1060977546667378786"},{"created_time":"1440698585","text":"Cool😍","from":{"username":"libra_air","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11371116_1059152914102838_2011656211_a.jpg","id":"220344196","full_name":"✨natalie♎️ Tang✨Vn/Us"},"id":"1060979093744797953"},{"created_time":"1440698867","text":":-)","from":{"username":"leanasm1th","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11373930_449386861899819_1842952244_a.jpg","id":"311500470","full_name":"leana smith"},"id":"1060981455809038914"},{"created_time":"1440698935","text":"@melodiemonrose","from":{"username":"jeneilwilliams","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11352372_863405313754100_975398773_a.jpg","id":"217720988","full_name":"Jeneil"},"id":"1060982028121819778"}]},"filter":"Normal","created_time":"1440697619","link":"https://instagram.com/p/65U34bxkt6/","likes":{"count":4155,"data":[{"username":"meredithlawe","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11251186_1488626324769794_414769933_a.jpg","id":"2142561649","full_name":"Meredith Lawe"},{"username":"atelier_store_paris","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11350852_450715878463507_503057514_a.jpg","id":"2141398083","full_name":""},{"username":"stylebyartgeek","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11243678_437082939811135_945348087_a.jpg","id":"2141507947","full_name":"Minna"},{"username":"2lenguazz","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11881594_1461433107518005_1163239699_a.jpg","id":"2140531653","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11917800_992767424101999_462846115_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11917800_992767424101999_462846115_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11917800_992767424101999_462846115_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440697619","text":"This fall, it's not about following rules, it's about breaking them.","from":{"username":"nastygal","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_5459497_75sq_1352228548.jpg","id":"5459497","full_name":"Nasty Gal"},"id":"1060970990592739643"},"user_has_liked":false,"id":"1060970988319427450_5459497","user":{"username":"nastygal","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/profile_5459497_75sq_1352228548.jpg","id":"5459497","full_name":"Nasty Gal"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":147,"data":[{"created_time":"1440699259","text":"@leinalaine like this 😍😍😍","from":{"username":"alina_are","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11015661_754286704678750_2025950624_a.jpg","id":"16284350","full_name":"Alina Blanco"},"id":"1060984749476100440"},{"created_time":"1440699260","text":"@bdx_69","from":{"username":"dinz_ms","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11374126_955648631154790_1620992180_a.jpg","id":"1419473567","full_name":"Didiin"},"id":"1060984758435133786"},{"created_time":"1440699264","text":"@jonsindicic croatia","from":{"username":"fuck_teamufasa","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11374268_1619904428263417_163306467_a.jpg","id":"187696615","full_name":"Ryan McDonough"},"id":"1060984787082230108"},{"created_time":"1440699271","text":"@vidur been there ✔️","from":{"username":"riidawg","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850039_1646149882336102_239559509_a.jpg","id":"46540908","full_name":"Riya"},"id":"1060984851104086372"},{"created_time":"1440699281","text":"@anilakasakasa mos me thuaj qe nuk u ngive akoma me Kroaci? 😂","from":{"username":"armanda_sellaj","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910420_117151521967620_201851314_a.jpg","id":"310160645","full_name":"Armanda Sellaj"},"id":"1060984932700076396"},{"created_time":"1440699398","text":"Take me here @murtz","from":{"username":"deepikaoswal","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11910395_482254781955133_2004164903_a.jpg","id":"1097703164","full_name":"Deepika Oswal"},"id":"1060985915417115067"},{"created_time":"1440699425","text":"@prettylilmissfit 😎😍","from":{"username":"crawltoys","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10995064_1538879279709231_2119121573_a.jpg","id":"1419754999","full_name":"Charlie C"},"id":"1060986142723226056"},{"created_time":"1440699429","text":"Wonderful 💚💚👍🏻","from":{"username":"aysesivil","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-19/10831739_1571613323073868_171723784_a.jpg","id":"195883670","full_name":"İstanbul/ Turkey"},"id":"1060986175480740299"}]},"filter":"Valencia","created_time":"1440696050","link":"https://instagram.com/p/65R4YeoTr8/","likes":{"count":9551,"data":[{"username":"guzeldere33","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2148789666","full_name":"Emera Güzeldere"},{"username":"susanna.toivanen00","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/s150x150/11201540_1477040489257839_378144165_a.jpg","id":"2148859187","full_name":""},{"username":"redstrobe53","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11410516_1485678315078571_328440603_a.jpg","id":"2148831925","full_name":"Staceyann"},{"username":"plugsnapbacks","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11363774_729834483789905_885725249_a.jpg","id":"2148842963","full_name":"Plug"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11910019_868350999907695_789953391_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11910019_868350999907695_789953391_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e35/11910019_868350999907695_789953391_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.949333333,"x":0.065359481},"user":{"username":"michaelmatti","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/s150x150/11199437_485353061624257_1622510478_a.jpg","id":"367480491","full_name":"Michael Matti"}}],"caption":{"created_time":"1440696050","text":"Plitvice, Croatia 😍 Stunning photo by ✨@michaelmatti✨ check out his gallery for more amazing photos 🙌 @michaelmatti👈","from":{"username":"warrenjc","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/1169871_672864692809815_1987264049_a.jpg","id":"1077125","full_name":"Beautiful Places"},"id":"1060957831892646038"},"user_has_liked":false,"id":"1060957828587535100_1077125","user":{"username":"warrenjc","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/1169871_672864692809815_1987264049_a.jpg","id":"1077125","full_name":"Beautiful Places"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":182,"data":[{"created_time":"1440699011","text":"@arianagrande","from":{"username":"laurenjacob_","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11372286_451209011725786_1922571999_a.jpg","id":"18045886","full_name":"Lauren"},"id":"1060982667871073845"},{"created_time":"1440699015","text":"😍😍😍😍","from":{"username":"mrsmollyjones","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374137_404687823061474_48353075_a.jpg","id":"292235322","full_name":"Amy Laird💃"},"id":"1060982703463937594"},{"created_time":"1440699191","text":"@tashasalomonsgreen  @teefarnee @audreylange this drawing is sooooo cute and pretty 😍😍😍💕💕💕","from":{"username":"ninipiggles","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11420839_866527240105934_1231486415_a.jpg","id":"146131074","full_name":"nicole green"},"id":"1060984175614310033"},{"created_time":"1440699278","text":"THIS OS GOALS","from":{"username":"coloursforlovers","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850252_1041119985899300_387525593_a.jpg","id":"1549241117","full_name":"A R T"},"id":"1060984901463783104"},{"created_time":"1440699340","text":"Parfümüm 💁🏻💁🏻 @begumkaramustafaoglu @cerenakarsu @sinemozcelikk @begumusmangil","from":{"username":"edanursenkardes","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11324470_732144560247905_1747646222_a.jpg","id":"28136795","full_name":""},"id":"1060985430734616293"},{"created_time":"1440699347","text":"@arianagrande 😍","from":{"username":"cerenverim","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324432_1686736314879791_2095853373_a.jpg","id":"522550213","full_name":"Ceren🐱"},"id":"1060985486837626603"},{"created_time":"1440699364","text":"@melis_kudat woa","from":{"username":"cerenverim","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11324432_1686736314879791_2095853373_a.jpg","id":"522550213","full_name":"Ceren🐱"},"id":"1060985624998000377"},{"created_time":"1440699409","text":"I know, I liked it too! @ninipiggles","from":{"username":"tashasalomonsgreen","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11856612_882956648441711_1772350462_a.jpg","id":"46094705","full_name":"Tasha Green"},"id":"1060986006788716309"}]},"filter":"Normal","created_time":"1440694688","link":"https://instagram.com/p/65PSDdzTfG/","likes":{"count":12735,"data":[{"username":"leilanadimkar","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849047_883272638416316_740694894_a.jpg","id":"2149054314","full_name":""},{"username":"tieuvannt1990","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11934613_941421345904484_992113907_a.jpg","id":"2149012843","full_name":"Tiểu Vân"},{"username":"malih5051","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2149008853","full_name":"malih"},{"username":"dobywilliams","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821075_897524947006856_1884927769_a.jpg","id":"2148865511","full_name":"Doby Lee Williams"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11849107_1605714063049356_1055606968_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11849107_1605714063049356_1055606968_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11849107_1605714063049356_1055606968_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.55,"x":0.46875},"user":{"username":"arianagrande","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326372_412386375614564_557953691_a.jpg","id":"7719696","full_name":"Ariana Grande"}}],"caption":{"created_time":"1440694688","text":"Ari 💜","from":{"username":"hayden_williams","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326372_1604012133156886_1032422936_a.jpg","id":"37504940","full_name":"Hayden Williams"},"id":"1060946403272767385"},"user_has_liked":false,"id":"1060946398591924166_37504940","user":{"username":"hayden_williams","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11326372_1604012133156886_1032422936_a.jpg","id":"37504940","full_name":"Hayden Williams"}},{"attribution":null,"tags":["ie","audiopush"],"type":"image","location":null,"comments":{"count":30,"data":[{"created_time":"1440697263","text":"Ye","from":{"username":"raffaellocrespi","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/923798_866471910069075_1438729726_a.jpg","id":"1424938477","full_name":"Raffaello Crespi"},"id":"1060968003299271360"},{"created_time":"1440697520","text":"You're so cute","from":{"username":"jlynneruss","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11313781_1479366362379915_403097081_a.jpg","id":"24944382","full_name":"Jenna russ"},"id":"1060970157326033781"},{"created_time":"1440697707","text":"Yr shoes are cool","from":{"username":"cacti35th","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11355256_832231383536269_682022130_a.jpg","id":"1618074686","full_name":"Pamela Smothers"},"id":"1060971727186912239"},{"created_time":"1440698022","text":"RIALTO 909","from":{"username":"fuctheworldx2","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11280350_836249633122163_1833534577_a.jpg","id":"13822066","full_name":"BowManagement"},"id":"1060974373666906322"},{"created_time":"1440698144","text":"OMG I JUST GOT SOME NEW EMOJIS!✌🏿✌🏻✌🏾 JUST GO TO THE LINK IN MY BIO!!!👀 FOLLoW THE DIREcTIONS TO gET YOuRS!🖖🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾🖖🖖🏿🖖🏼🖖🏽🖖🏾","from":{"username":"hillarioushappenings","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11348105_485281938298895_286957191_a.jpg","id":"232394937","full_name":"Secret Emojis"},"id":"1060975390928232739"},{"created_time":"1440698460","text":"@travisbarker yes brother used to see you in Corona","from":{"username":"conscience_spirit23","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11351831_1106111069418313_1259994937_a.jpg","id":"187091162","full_name":"Brandon D"},"id":"1060978039463436780"},{"created_time":"1440698786","text":"▇███▇██▇███▇█🖖🖖🏿🖖🏼🖖🏽🖖🏾 C͟L͟I͟C͟K͟ T͟H͟E͟ L͟I͟N͟K͟ I͟N͟ M͟Y͟ B͟I͟O͟ T͟O͟ G͟E͟T͟ T͟H͟E͟ N͟E͟W͟ S͟E͟C͟R͟E͟T͟ E͟M͟O͟J͟I͟S͟ T͟H͟A͟T͟ D͟I͟D͟N͟T͟ C͟O͟M͟E͟ W͟I͟T͟H͟ I͟O͟S͟ 8.3! 😱😱😱🖖🏿🖖🏼🖖🏽🖖🏾","from":{"username":"crazycoolcomedy","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11356933_1119915574703414_1473580913_a.jpg","id":"1586159004","full_name":"Get SECRET Emojis! Click Link"},"id":"1060980777815466679"},{"created_time":"1440699144","text":"🙊😖😔","from":{"username":"talony_1","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10514117_277127525805192_44684269_a.jpg","id":"1421303016","full_name":""},"id":"1060983779645285296"}]},"filter":"Inkwell","created_time":"1440695706","link":"https://instagram.com/p/65ROUWNWAe/","likes":{"count":7267,"data":[{"username":"alex.chervachuk","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11925777_425762137608717_1632298163_a.jpg","id":"2142720049","full_name":"Spoodermen"},{"username":"jeeh_carlos.f","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374042_933499406709267_1388316112_a.jpg","id":"2142920338","full_name":""},{"username":"florz777","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2142949806","full_name":""},{"username":"my_chemical_green_day6","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11248405_1515763382047540_23898809_a.jpg","id":"2142429279","full_name":"I just got so emo I fell apart"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11887294_1478439649145562_1751119788_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11887294_1478439649145562_1751119788_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11887294_1478439649145562_1751119788_n.jpg","width":640,"height":640}},"users_in_photo":[{"position":{"y":0.32,"x":0.472},"user":{"username":"audiopush","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/11094471_396150120591895_1865072535_a.jpg","id":"1475306472","full_name":"Audio Push"}}],"caption":{"created_time":"1440695706","text":"Leaving @realsway yesterday I ran into @audiopush We're both from the #IE and I'm proud to see these guys making noise doin big things #AudioPush","from":{"username":"travisbarker","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10616838_677440055666689_985002380_a.jpg","id":"14198415","full_name":"travisbarker"},"id":"1060956935889969906"},"user_has_liked":false,"id":"1060954937933258782_14198415","user":{"username":"travisbarker","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10616838_677440055666689_985002380_a.jpg","id":"14198415","full_name":"travisbarker"}},{"attribution":null,"tags":["хб","камеди"],"type":"image","location":null,"comments":{"count":96,"data":[{"created_time":"1440699085","text":"🌟 Милые девушки🌟 хотите расширить свою аудиторию и стать популярнее? Присылайте свои фото😉🙌","from":{"username":"instagirls._","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11410485_101292330223415_436174749_a.jpg","id":"1705033537","full_name":"Insta_girls"},"id":"1060983287317047336"},{"created_time":"1440699088","text":"Обожаю тебя Тимка💋","from":{"username":"kusochek_ray","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xta1/t51.2885-19/11116858_920638357987364_673412216_a.jpg","id":"1705035051","full_name":""},"id":"1060983309806905386"},{"created_time":"1440699088","text":"Всем🚨Всем🚨 Я набираю команду из 3 человек😍2-3 часа работы и 400-4600Р У ВАС НА КАРТЕ😱НЕ ЛОХОТРОН ,НЕ КОСМЕТИКА❗ВСЕ ЛЕГАЛЬНО❗ ЛЕНТЯЕВ ПРОЗЬБА НЕ БЕСПОКОИТЬ❗❗❗Интересно❓Пиши❗","from":{"username":"nastya.89000","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11849093_508132322680445_207137512_a.jpg","id":"2099398838","full_name":""},"id":"1060983315460827180"},{"created_time":"1440699089","text":"Гарику идет шапочка)))","from":{"username":"_borodina_fan","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11265047_117981848551793_1270274128_a.jpg","id":"1329859898","full_name":"Ксения&Курбан"},"id":"1060983321752283181"},{"created_time":"1440699220","text":"Взаимные лайки на первые три фотки","from":{"username":"shumik2001","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/1171724_540777792737076_1127935866_a.jpg","id":"1234331960","full_name":"Кокс🙌"},"id":"1060984420576045201"},{"created_time":"1440699268","text":"Тимур похудел и загорел. Совсем на себя не похож 😕","from":{"username":"umida_davletova","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849803_1633454330241285_88066101_a.jpg","id":"1284941452","full_name":"Farhad◆Umida◆Rayana♡♡♡"},"id":"1060984821979326640"},{"created_time":"1440699345","text":"1/1","from":{"username":"roza_m_09","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11939550_399247020268902_846109420_a.jpg","id":"1691711066","full_name":"Роза👑"},"id":"1060985465108736240"},{"created_time":"1440699362","text":"Доброго времени суток. Кто желает бесплатных бургеров? Думаю, многие не должны остаться равнодушными. В общем, я работаю админом в Бургер Кинг, тема такая: качайте приложение Бургер Кинг, вводите промокод 910398 и получайте халявные купоны на бургеры и прочее в Бургер Кинг. Можете не благодарить)","from":{"username":"yulkin_leshka","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10683868_525181410959039_1443520588_a.jpg","id":"1166290264","full_name":"Алексей"},"id":"1060985605995407614"}]},"filter":"Normal","created_time":"1440696138","link":"https://instagram.com/p/65SDG6qKsc/","likes":{"count":13292,"data":[{"username":"ilnur.sh","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11934863_795892783856251_1550113566_a.jpg","id":"2148009714","full_name":"Ilnur"},{"username":"katyashkolnik","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849005_113789228975063_1158509833_a.jpg","id":"2147624331","full_name":""},{"username":"qwerty1990948","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11910240_448881258631716_689071680_a.jpg","id":"2147663220","full_name":""},{"username":"arslanova.svetlana","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11350721_883713765045974_587705061_a.jpg","id":"2148123069","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11934833_902583763160955_411165628_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11934833_902583763160955_411165628_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11934833_902583763160955_411165628_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440696138","text":"Смотрите в завтрашнем Камеди из Казани наше очередное самоироничное откровение #камеди #ХБ","from":{"username":"timurbatrutdinov","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11085205_342945332497484_1309481306_a.jpg","id":"145182601","full_name":"Timur Batrutdinov"},"id":"1060958567397894163"},"user_has_liked":false,"id":"1060958565644675868_145182601","user":{"username":"timurbatrutdinov","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/11085205_342945332497484_1309481306_a.jpg","id":"145182601","full_name":"Timur Batrutdinov"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":72,"data":[{"created_time":"1440695576","text":"Looks very \"you\" haha! 🌼🌻🌿 @tipsygyps_","from":{"username":"kmunegatto","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/11383319_1592087247721493_1179631131_a.jpg","id":"22778046","full_name":""},"id":"1060953849101350349"},{"created_time":"1440695665","text":"@iwantmyjuicebox_ summer love all year round ✨","from":{"username":"denissedurann","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11821166_484739005037115_564681610_a.jpg","id":"15015002","full_name":"Denisse Kumery Duran"},"id":"1060954593732916745"},{"created_time":"1440695726","text":"@kristinaiswhite","from":{"username":"mrsgabrielleee","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/11084840_1547785078815932_743793546_a.jpg","id":"475266916","full_name":"Gabrielle Kristine"},"id":"1060955109556811318"},{"created_time":"1440696454","text":"😍","from":{"username":"jav987654","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11850226_891057560965991_382024334_a.jpg","id":"9571037","full_name":""},"id":"1060961218191488133"},{"created_time":"1440697555","text":"@leilanianii let's move here","from":{"username":"andie081","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11821793_956803494376727_1302406357_a.jpg","id":"188396868","full_name":"Andie Purdey"},"id":"1060970453151315874"},{"created_time":"1440697571","text":"👌","from":{"username":"t_smallss","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10729443_710824345637876_703230035_a.jpg","id":"521607461","full_name":"Tyler Small"},"id":"1060970584474974120"},{"created_time":"1440698631","text":"@jennybum1213","from":{"username":"leahlivesontop","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-19/10990619_432772316899579_400160504_a.jpg","id":"1644219908","full_name":""},"id":"1060979480820250197"},{"created_time":"1440699012","text":"@caitkawaguchi","from":{"username":"nicoleharbeezy","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/1740350_1610918409197874_412862408_a.jpg","id":"2158155","full_name":""},"id":"1060982674380093308"}]},"filter":"Ludwig","created_time":"1440690529","link":"https://instagram.com/p/65HWdFRPTs/","likes":{"count":14842,"data":[{"username":"mohammadnajjari1999","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11821227_1883401878552292_2011074704_a.jpg","id":"2148729729","full_name":"mohammadalone"},{"username":"road_of_style","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11950577_159711621033645_689612559_a.jpg","id":"2148473923","full_name":""},{"username":"artmeth","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11856625_1024379237592524_1084135688_a.jpg","id":"2148686987","full_name":""},{"username":"virginialafont","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11374095_990384057679204_166407779_a.jpg","id":"2148252390","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11875415_1056101737773400_442807512_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11875415_1056101737773400_442807512_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s640x640/sh0.08/e35/11875415_1056101737773400_442807512_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440690529","text":"It's still summer here","from":{"username":"gypsyone","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10748052_615544251900968_1292952464_a.jpg","id":"418359412","full_name":"Jenah Yamamoto"},"id":"1060911519128417307"},"user_has_liked":false,"id":"1060911516603446508_418359412","user":{"username":"gypsyone","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/10748052_615544251900968_1292952464_a.jpg","id":"418359412","full_name":"Jenah Yamamoto"}},{"attribution":null,"tags":["danielwellington"],"type":"image","location":null,"comments":{"count":58,"data":[{"created_time":"1440697583","text":"Cute composition","from":{"username":"andyzaturno","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11909319_1648964518718572_770726084_a.jpg","id":"298832560","full_name":"AndyZaturno"},"id":"1060970690427148691"},{"created_time":"1440697919","text":"@somawisam ❤️❤️ coffee 😘😘","from":{"username":"zahraalameen","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-19/s150x150/11848898_1022211447797522_2092304269_a.jpg","id":"264960125","full_name":"🎀zahraa Alrubaiyee🎀"},"id":"1060973509251095201"},{"created_time":"1440697943","text":"coffee and #danielwellington two of my favorite thigns","from":{"username":"clarawgtse","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11918049_1653658578224338_1175819157_a.jpg","id":"242082849","full_name":"Clara Tse"},"id":"1060973703195712182"},{"created_time":"1440698356","text":"🌟👠🌟VISITAR MI FASHION BLOG: 'Mi Obsesión Por La Moda'. El enlace esta en mi bio🌟👠🌟","from":{"username":"_alba_mf","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11428190_1640362446180824_2117788298_a.jpg","id":"554012362","full_name":"· ∆lba Moro Fraile ·"},"id":"1060977172279385071"},{"created_time":"1440698360","text":"😍😍💪","from":{"username":"artemmoroz","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11373965_484403785075984_855942200_a.jpg","id":"145401124","full_name":"ARTEM MOROZ"},"id":"1060977202771975155"},{"created_time":"1440698890","text":"☺️☺️☺️","from":{"username":"serrano_joyeros_desde_1943","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/11375902_852643564772136_1032559504_a.jpg","id":"2076082207","full_name":"Serrano Joyeros desde 1943"},"id":"1060981653809322405"},{"created_time":"1440699076","text":"cool","from":{"username":"bryantsyams","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11909358_1489892224659763_33419542_a.jpg","id":"1752972257","full_name":"bryant_syams"},"id":"1060983211917761044"},{"created_time":"1440699369","text":"@lauracegledi 😍😍","from":{"username":"zithaidekker","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/l/t51.2885-19/11326278_497734330393627_1170887680_a.jpg","id":"1010329638","full_name":"Zita Haidekker"},"id":"1060985667431095064"}]},"filter":"Normal","created_time":"1440692741","link":"https://instagram.com/p/65LkdBAtjk/","likes":{"count":14271,"data":[{"username":"hana_gin_nguyen","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11910065_1024973157521727_665175561_a.jpg","id":"2147999216","full_name":"Ruby Hanie"},{"username":"__des_follx___","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11374333_1461942440800737_1891183321_a.jpg","id":"2148656195","full_name":"🌸Pauline.T Pauline.C🌸"},{"username":"hadjar_bague","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/s150x150/11849330_757244711053561_201248839_a.jpg","id":"2148102326","full_name":""},{"username":"555helene555","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11429700_961130573954520_1351094563_a.jpg","id":"2148420351","full_name":"Hélène Gabriel"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11934589_1627246994200138_1256902915_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11934589_1627246994200138_1256902915_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11934589_1627246994200138_1256902915_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440692741","text":"XO, DW. (Photo via @walids) #danielwellington","from":{"username":"danielwellingtonwatches","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xtf1/t51.2885-19/10727433_571580032973592_414100919_a.jpg","id":"47340181","full_name":"Daniel Wellington"},"id":"1060930072845932692"},"user_has_liked":false,"id":"1060930070790723812_47340181","user":{"username":"danielwellingtonwatches","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xtf1/t51.2885-19/10727433_571580032973592_414100919_a.jpg","id":"47340181","full_name":"Daniel Wellington"}},{"attribution":null,"tags":[],"type":"image","location":null,"comments":{"count":92,"data":[{"created_time":"1440698809","text":"bella","from":{"username":"andryut19x","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10948652_1069588049725130_524680778_a.jpg","id":"1604755118","full_name":"THE MR.? 🎮⚽️💶🇮🇹"},"id":"1060980974569672715"},{"created_time":"1440698965","text":"Такая сияющая🌟","from":{"username":"acainyashka","profile_picture":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-19/s150x150/11350701_998567813521099_1062479226_a.jpg","id":"1938533070","full_name":"Tania Lonskaia"},"id":"1060982276380971115"},{"created_time":"1440699069","text":"Такие глаза","from":{"username":"gelans_","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11821068_1620175101574207_737300205_a.jpg","id":"1622286739","full_name":"Екатерина ✨"},"id":"1060983153955197105"},{"created_time":"1440699108","text":"Саша, ты уникальная, береги себя и свои чувства!","from":{"username":"julia_korobeinikova","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/10787824_1524599194463753_1151641200_a.jpg","id":"1189441296","full_name":""},"id":"1060983476027412676"},{"created_time":"1440699122","text":"😍","from":{"username":"lin_4ik","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11348358_594785387328243_1906773880_a.jpg","id":"1461825613","full_name":"💑=👪"},"id":"1060983593551810760"},{"created_time":"1440699245","text":"Таких замечательных девушек как ты не видела еще😻","from":{"username":"olya_kisa97","profile_picture":"https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-19/10731689_881847368551112_300665538_a.jpg","id":"1403735293","full_name":"Olya🙈"},"id":"1060984632078258462"},{"created_time":"1440699289","text":"Wonderful smile ... I write some poetry with the color of your eyes where I can drawn because of their beauty... Now I can say it ... I believe in angels ...","from":{"username":"ericdv07","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849871_102143606805630_1935648347_a.jpg","id":"2118141034","full_name":"Eric de Vetter"},"id":"1060984996957540661"},{"created_time":"1440699355","text":"Какая стильная и красивая!!!!","from":{"username":"anastasia_susekova","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11426440_107707109569993_41412313_a.jpg","id":"684297814","full_name":"ⓐⓝⓐⓢⓣⓐⓢⓘⓐ"},"id":"1060985549590647128"}]},"filter":"Normal","created_time":"1440694037","link":"https://instagram.com/p/65OCpxLFMt/","likes":{"count":14709,"data":[{"username":"daystarvika","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11363865_1200759123283042_349508467_a.jpg","id":"2149022849","full_name":""},{"username":"giwwn","profile_picture":"https://instagramimages-a.akamaihd.net/profiles/anonymousUser.jpg","id":"2148997252","full_name":""},{"username":"ramnarayansaini","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/s150x150/10838705_1481526058810261_444921931_a.jpg","id":"2149009441","full_name":""},{"username":"hiro9305","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfa1/l/t51.2885-19/s150x150/11899631_475511529301988_1288320502_a.jpg","id":"2148956625","full_name":"Hiro Michi"}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s320x320/e35/11821146_913780491992853_1958672698_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e35/11821146_913780491992853_1958672698_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s640x640/sh0.08/e35/11821146_913780491992853_1958672698_n.jpg","width":640,"height":640}},"users_in_photo":[],"caption":{"created_time":"1440694037","text":"С правильного ракурса Москва превращается порой в нескончаемый источник вдохновения🙏🏻","from":{"username":"burimova","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11208385_1597617143856816_1779535157_a.jpg","id":"19357835","full_name":"Alexandra Burimova"},"id":"1060941247967679061"},"user_has_liked":false,"id":"1060940942160974637_19357835","user":{"username":"burimova","profile_picture":"https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/11208385_1597617143856816_1779535157_a.jpg","id":"19357835","full_name":"Alexandra Burimova"}},{"attribution":null,"tags":["joyfolie","ad"],"type":"image","location":null,"comments":{"count":213,"data":[{"created_time":"1440699090","text":"👍я тоже  хочу сапоги такие","from":{"username":"jenifer_or_jeny","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11849259_437620496429883_18012828_a.jpg","id":"2033166563","full_name":""},"id":"1060983331307217454"},{"created_time":"1440699101","text":"@kirstenjanssens_ onze dochters later 👌","from":{"username":"vdbelien","profile_picture":"https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11324379_907865655949093_1879908949_a.jpg","id":"245617908","full_name":"vdbelien"},"id":"1060983422290059838"},{"created_time":"1440699162","text":"Yup! @madara_small","from":{"username":"donirajah","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11850055_1454016684907892_1771146747_a.jpg","id":"279806727","full_name":"Hypochlorous Acid"},"id":"1060983930396435048"},{"created_time":"1440699205","text":"@selianasusu lol our girls!","from":{"username":"justglenys","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11410479_1059391400780202_1643187761_a.jpg","id":"30219790","full_name":"Glenys Diaz 👑"},"id":"1060984292742357646"},{"created_time":"1440699241","text":"Las niñas que se visten como nosotras quisiéramos pero vivimos en Venezuela :( @yuriandreina","from":{"username":"marthacolmenarez","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xap1/t51.2885-19/10864806_419701748178906_1696866300_a.jpg","id":"298313419","full_name":"Martha"},"id":"1060984594950349477"},{"created_time":"1440699397","text":"Your","from":{"username":"hnos_arias","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10546771_1458233884427946_1877445925_a.jpg","id":"1430446062","full_name":"Jota"},"id":"1060985901241164569"},{"created_time":"1440699422","text":"Ioamnbczpñyowyqagalm@upy ypu","from":{"username":"hnos_arias","profile_picture":"https://igcdn-photos-c-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-19/10546771_1458233884427946_1877445925_a.jpg","id":"1430446062","full_name":"Jota"},"id":"1060986115536544554"},{"created_time":"1440699429","text":"@eer326 @courtneymoffett cutest kids ever?","from":{"username":"jlaks","profile_picture":"https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-19/10919618_484125338418459_2018915290_a.jpg","id":"12400311","full_name":"jlaks"},"id":"1060986169794061103"}]},"filter":"Normal","created_time":"1440694907","link":"https://instagram.com/p/65Ps1IrWPa/","likes":{"count":12245,"data":[{"username":"soadvice01","profile_picture":"https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11311462_1186836524675209_193185525_a.jpg","id":"2148862684","full_name":""},{"username":"swag_outfit_hair_2_","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-19/928864_508023689354102_1085242042_a.jpg","id":"2148876386","full_name":"♥ support this page please ♥"},{"username":"amazingmamis","profile_picture":"https://igcdn-photos-g-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11875371_1627072514245014_1370800356_a.jpg","id":"2148954460","full_name":"AmazingMamis"},{"username":"gulsun27","profile_picture":"https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/s150x150/11939700_1662988060591071_1983460157_a.jpg","id":"2148916102","full_name":""}]},"images":{"low_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s320x320/e35/11856836_1722265254669037_2102555413_n.jpg","width":320,"height":320},"thumbnail":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s150x150/e35/11856836_1722265254669037_2102555413_n.jpg","width":150,"height":150},"standard_resolution":{"url":"https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/s480x480/e35/11856836_1722265254669037_2102555413_n.jpg","width":480,"height":480}},"users_in_photo":[{"position":{"y":0.940625,"x":0.134375},"user":{"username":"joyfolie","profile_picture":"https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-19/10894953_1561190617461868_1736364684_a.jpg","id":"193504759","full_name":"JOYFOLIE"}}],"caption":{"created_time":"1440694907","text":"shop @joyfolie \nwww.joyfolie.com\n#ad #joyfolie","from":{"username":"fashionkids","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11379345_826950780736564_956707935_a.jpg","id":"22637903","full_name":"Fashion Kids"},"id":"1060948239914459260"},"user_has_liked":false,"id":"1060948238631003098_22637903","user":{"username":"fashionkids","profile_picture":"https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-19/11379345_826950780736564_956707935_a.jpg","id":"22637903","full_name":"Fashion Kids"}}]};}
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(/*! jquery */ 171);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	__webpack_require__(/*! ./vendor/time_ago.js */ 172);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Photo = function (_React$Component) {
+	  _inherits(Photo, _React$Component);
+	
+	  function Photo() {
+	    _classCallCheck(this, Photo);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Photo).apply(this, arguments));
+	  }
+	
+	  _createClass(Photo, [{
+	    key: "render",
+	    value: function render() {
+	      var photo = this.props.photo;
+	      var createdTimeAgo = _jquery2.default.timeago(parseInt(photo.created_time * 1000));
+	
+	      var tags = "",
+	          caption;
+	
+	      if (photo.tags.length > 0) {
+	        tags = "#" + photo.tags.join(' #');
+	      }
+	
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "well photo" },
+	        _react2.default.createElement(
+	          "header",
+	          null,
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://www.instagram.com/" + photo.user.username },
+	            _react2.default.createElement(
+	              "strong",
+	              null,
+	              photo.user.username
+	            )
+	          ),
+	          _react2.default.createElement("br", null),
+	          tags
+	        ),
+	        _react2.default.createElement(
+	          "a",
+	          { href: photo.link },
+	          _react2.default.createElement("img", { src: photo.images.low_resolution.url, className: "img-responsive" })
+	        ),
+	        _react2.default.createElement(
+	          "footer",
+	          null,
+	          _react2.default.createElement(
+	            "section",
+	            null,
+	            createdTimeAgo,
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "span",
+	              { className: "text-muted" },
+	              "Filter: ",
+	              photo.filter
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "section",
+	            null,
+	            _react2.default.createElement("i", { className: "fa fa-heart", "aria-hidden": "true" }),
+	            " ",
+	            photo.likes.count
+	          ),
+	          _react2.default.createElement(
+	            "section",
+	            null,
+	            _react2.default.createElement("i", { className: "fa fa-comment", "aria-hidden": "true" }),
+	            " ",
+	            photo.comments.count
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Photo;
+	}(_react2.default.Component);
+	
+	exports.default = Photo;
+
+/***/ },
+/* 171 */
+/*!*********************************!*\
+  !*** ./~/jquery/dist/jquery.js ***!
+  \*********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	 * jQuery JavaScript Library v3.0.0
+	 * https://jquery.com/
+	 *
+	 * Includes Sizzle.js
+	 * https://sizzlejs.com/
+	 *
+	 * Copyright jQuery Foundation and other contributors
+	 * Released under the MIT license
+	 * https://jquery.org/license
+	 *
+	 * Date: 2016-06-09T18:02Z
+	 */
+	( function( global, factory ) {
+	
+		"use strict";
+	
+		if ( typeof module === "object" && typeof module.exports === "object" ) {
+	
+			// For CommonJS and CommonJS-like environments where a proper `window`
+			// is present, execute the factory and get jQuery.
+			// For environments that do not have a `window` with a `document`
+			// (such as Node.js), expose a factory as module.exports.
+			// This accentuates the need for the creation of a real `window`.
+			// e.g. var jQuery = require("jquery")(window);
+			// See ticket #14549 for more info.
+			module.exports = global.document ?
+				factory( global, true ) :
+				function( w ) {
+					if ( !w.document ) {
+						throw new Error( "jQuery requires a window with a document" );
+					}
+					return factory( w );
+				};
+		} else {
+			factory( global );
+		}
+	
+	// Pass this if window is not defined yet
+	}( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
+	
+	// Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1
+	// throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode
+	// arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common
+	// enough that all such attempts are guarded in a try block.
+	"use strict";
+	
+	var arr = [];
+	
+	var document = window.document;
+	
+	var getProto = Object.getPrototypeOf;
+	
+	var slice = arr.slice;
+	
+	var concat = arr.concat;
+	
+	var push = arr.push;
+	
+	var indexOf = arr.indexOf;
+	
+	var class2type = {};
+	
+	var toString = class2type.toString;
+	
+	var hasOwn = class2type.hasOwnProperty;
+	
+	var fnToString = hasOwn.toString;
+	
+	var ObjectFunctionString = fnToString.call( Object );
+	
+	var support = {};
+	
+	
+	
+		function DOMEval( code, doc ) {
+			doc = doc || document;
+	
+			var script = doc.createElement( "script" );
+	
+			script.text = code;
+			doc.head.appendChild( script ).parentNode.removeChild( script );
+		}
+	
+	
+	var
+		version = "3.0.0",
+	
+		// Define a local copy of jQuery
+		jQuery = function( selector, context ) {
+	
+			// The jQuery object is actually just the init constructor 'enhanced'
+			// Need init if jQuery is called (just allow error to be thrown if not included)
+			return new jQuery.fn.init( selector, context );
+		},
+	
+		// Support: Android <=4.0 only
+		// Make sure we trim BOM and NBSP
+		rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,
+	
+		// Matches dashed string for camelizing
+		rmsPrefix = /^-ms-/,
+		rdashAlpha = /-([a-z])/g,
+	
+		// Used by jQuery.camelCase as callback to replace()
+		fcamelCase = function( all, letter ) {
+			return letter.toUpperCase();
+		};
+	
+	jQuery.fn = jQuery.prototype = {
+	
+		// The current version of jQuery being used
+		jquery: version,
+	
+		constructor: jQuery,
+	
+		// The default length of a jQuery object is 0
+		length: 0,
+	
+		toArray: function() {
+			return slice.call( this );
+		},
+	
+		// Get the Nth element in the matched element set OR
+		// Get the whole matched element set as a clean array
+		get: function( num ) {
+			return num != null ?
+	
+				// Return just the one element from the set
+				( num < 0 ? this[ num + this.length ] : this[ num ] ) :
+	
+				// Return all the elements in a clean array
+				slice.call( this );
+		},
+	
+		// Take an array of elements and push it onto the stack
+		// (returning the new matched element set)
+		pushStack: function( elems ) {
+	
+			// Build a new jQuery matched element set
+			var ret = jQuery.merge( this.constructor(), elems );
+	
+			// Add the old object onto the stack (as a reference)
+			ret.prevObject = this;
+	
+			// Return the newly-formed element set
+			return ret;
+		},
+	
+		// Execute a callback for every element in the matched set.
+		each: function( callback ) {
+			return jQuery.each( this, callback );
+		},
+	
+		map: function( callback ) {
+			return this.pushStack( jQuery.map( this, function( elem, i ) {
+				return callback.call( elem, i, elem );
+			} ) );
+		},
+	
+		slice: function() {
+			return this.pushStack( slice.apply( this, arguments ) );
+		},
+	
+		first: function() {
+			return this.eq( 0 );
+		},
+	
+		last: function() {
+			return this.eq( -1 );
+		},
+	
+		eq: function( i ) {
+			var len = this.length,
+				j = +i + ( i < 0 ? len : 0 );
+			return this.pushStack( j >= 0 && j < len ? [ this[ j ] ] : [] );
+		},
+	
+		end: function() {
+			return this.prevObject || this.constructor();
+		},
+	
+		// For internal use only.
+		// Behaves like an Array's method, not like a jQuery method.
+		push: push,
+		sort: arr.sort,
+		splice: arr.splice
+	};
+	
+	jQuery.extend = jQuery.fn.extend = function() {
+		var options, name, src, copy, copyIsArray, clone,
+			target = arguments[ 0 ] || {},
+			i = 1,
+			length = arguments.length,
+			deep = false;
+	
+		// Handle a deep copy situation
+		if ( typeof target === "boolean" ) {
+			deep = target;
+	
+			// Skip the boolean and the target
+			target = arguments[ i ] || {};
+			i++;
+		}
+	
+		// Handle case when target is a string or something (possible in deep copy)
+		if ( typeof target !== "object" && !jQuery.isFunction( target ) ) {
+			target = {};
+		}
+	
+		// Extend jQuery itself if only one argument is passed
+		if ( i === length ) {
+			target = this;
+			i--;
+		}
+	
+		for ( ; i < length; i++ ) {
+	
+			// Only deal with non-null/undefined values
+			if ( ( options = arguments[ i ] ) != null ) {
+	
+				// Extend the base object
+				for ( name in options ) {
+					src = target[ name ];
+					copy = options[ name ];
+	
+					// Prevent never-ending loop
+					if ( target === copy ) {
+						continue;
+					}
+	
+					// Recurse if we're merging plain objects or arrays
+					if ( deep && copy && ( jQuery.isPlainObject( copy ) ||
+						( copyIsArray = jQuery.isArray( copy ) ) ) ) {
+	
+						if ( copyIsArray ) {
+							copyIsArray = false;
+							clone = src && jQuery.isArray( src ) ? src : [];
+	
+						} else {
+							clone = src && jQuery.isPlainObject( src ) ? src : {};
+						}
+	
+						// Never move original objects, clone them
+						target[ name ] = jQuery.extend( deep, clone, copy );
+	
+					// Don't bring in undefined values
+					} else if ( copy !== undefined ) {
+						target[ name ] = copy;
+					}
+				}
+			}
+		}
+	
+		// Return the modified object
+		return target;
+	};
+	
+	jQuery.extend( {
+	
+		// Unique for each copy of jQuery on the page
+		expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
+	
+		// Assume jQuery is ready without the ready module
+		isReady: true,
+	
+		error: function( msg ) {
+			throw new Error( msg );
+		},
+	
+		noop: function() {},
+	
+		isFunction: function( obj ) {
+			return jQuery.type( obj ) === "function";
+		},
+	
+		isArray: Array.isArray,
+	
+		isWindow: function( obj ) {
+			return obj != null && obj === obj.window;
+		},
+	
+		isNumeric: function( obj ) {
+	
+			// As of jQuery 3.0, isNumeric is limited to
+			// strings and numbers (primitives or objects)
+			// that can be coerced to finite numbers (gh-2662)
+			var type = jQuery.type( obj );
+			return ( type === "number" || type === "string" ) &&
+	
+				// parseFloat NaNs numeric-cast false positives ("")
+				// ...but misinterprets leading-number strings, particularly hex literals ("0x...")
+				// subtraction forces infinities to NaN
+				!isNaN( obj - parseFloat( obj ) );
+		},
+	
+		isPlainObject: function( obj ) {
+			var proto, Ctor;
+	
+			// Detect obvious negatives
+			// Use toString instead of jQuery.type to catch host objects
+			if ( !obj || toString.call( obj ) !== "[object Object]" ) {
+				return false;
+			}
+	
+			proto = getProto( obj );
+	
+			// Objects with no prototype (e.g., `Object.create( null )`) are plain
+			if ( !proto ) {
+				return true;
+			}
+	
+			// Objects with prototype are plain iff they were constructed by a global Object function
+			Ctor = hasOwn.call( proto, "constructor" ) && proto.constructor;
+			return typeof Ctor === "function" && fnToString.call( Ctor ) === ObjectFunctionString;
+		},
+	
+		isEmptyObject: function( obj ) {
+			var name;
+			for ( name in obj ) {
+				return false;
+			}
+			return true;
+		},
+	
+		type: function( obj ) {
+			if ( obj == null ) {
+				return obj + "";
+			}
+	
+			// Support: Android <=2.3 only (functionish RegExp)
+			return typeof obj === "object" || typeof obj === "function" ?
+				class2type[ toString.call( obj ) ] || "object" :
+				typeof obj;
+		},
+	
+		// Evaluates a script in a global context
+		globalEval: function( code ) {
+			DOMEval( code );
+		},
+	
+		// Convert dashed to camelCase; used by the css and data modules
+		// Support: IE <=9 - 11, Edge 12 - 13
+		// Microsoft forgot to hump their vendor prefix (#9572)
+		camelCase: function( string ) {
+			return string.replace( rmsPrefix, "ms-" ).replace( rdashAlpha, fcamelCase );
+		},
+	
+		nodeName: function( elem, name ) {
+			return elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase();
+		},
+	
+		each: function( obj, callback ) {
+			var length, i = 0;
+	
+			if ( isArrayLike( obj ) ) {
+				length = obj.length;
+				for ( ; i < length; i++ ) {
+					if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+						break;
+					}
+				}
+			} else {
+				for ( i in obj ) {
+					if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+						break;
+					}
+				}
+			}
+	
+			return obj;
+		},
+	
+		// Support: Android <=4.0 only
+		trim: function( text ) {
+			return text == null ?
+				"" :
+				( text + "" ).replace( rtrim, "" );
+		},
+	
+		// results is for internal usage only
+		makeArray: function( arr, results ) {
+			var ret = results || [];
+	
+			if ( arr != null ) {
+				if ( isArrayLike( Object( arr ) ) ) {
+					jQuery.merge( ret,
+						typeof arr === "string" ?
+						[ arr ] : arr
+					);
+				} else {
+					push.call( ret, arr );
+				}
+			}
+	
+			return ret;
+		},
+	
+		inArray: function( elem, arr, i ) {
+			return arr == null ? -1 : indexOf.call( arr, elem, i );
+		},
+	
+		// Support: Android <=4.0 only, PhantomJS 1 only
+		// push.apply(_, arraylike) throws on ancient WebKit
+		merge: function( first, second ) {
+			var len = +second.length,
+				j = 0,
+				i = first.length;
+	
+			for ( ; j < len; j++ ) {
+				first[ i++ ] = second[ j ];
+			}
+	
+			first.length = i;
+	
+			return first;
+		},
+	
+		grep: function( elems, callback, invert ) {
+			var callbackInverse,
+				matches = [],
+				i = 0,
+				length = elems.length,
+				callbackExpect = !invert;
+	
+			// Go through the array, only saving the items
+			// that pass the validator function
+			for ( ; i < length; i++ ) {
+				callbackInverse = !callback( elems[ i ], i );
+				if ( callbackInverse !== callbackExpect ) {
+					matches.push( elems[ i ] );
+				}
+			}
+	
+			return matches;
+		},
+	
+		// arg is for internal usage only
+		map: function( elems, callback, arg ) {
+			var length, value,
+				i = 0,
+				ret = [];
+	
+			// Go through the array, translating each of the items to their new values
+			if ( isArrayLike( elems ) ) {
+				length = elems.length;
+				for ( ; i < length; i++ ) {
+					value = callback( elems[ i ], i, arg );
+	
+					if ( value != null ) {
+						ret.push( value );
+					}
+				}
+	
+			// Go through every key on the object,
+			} else {
+				for ( i in elems ) {
+					value = callback( elems[ i ], i, arg );
+	
+					if ( value != null ) {
+						ret.push( value );
+					}
+				}
+			}
+	
+			// Flatten any nested arrays
+			return concat.apply( [], ret );
+		},
+	
+		// A global GUID counter for objects
+		guid: 1,
+	
+		// Bind a function to a context, optionally partially applying any
+		// arguments.
+		proxy: function( fn, context ) {
+			var tmp, args, proxy;
+	
+			if ( typeof context === "string" ) {
+				tmp = fn[ context ];
+				context = fn;
+				fn = tmp;
+			}
+	
+			// Quick check to determine if target is callable, in the spec
+			// this throws a TypeError, but we will just return undefined.
+			if ( !jQuery.isFunction( fn ) ) {
+				return undefined;
+			}
+	
+			// Simulated bind
+			args = slice.call( arguments, 2 );
+			proxy = function() {
+				return fn.apply( context || this, args.concat( slice.call( arguments ) ) );
+			};
+	
+			// Set the guid of unique handler to the same of original handler, so it can be removed
+			proxy.guid = fn.guid = fn.guid || jQuery.guid++;
+	
+			return proxy;
+		},
+	
+		now: Date.now,
+	
+		// jQuery.support is not used in Core but other projects attach their
+		// properties to it so it needs to exist.
+		support: support
+	} );
+	
+	// JSHint would error on this code due to the Symbol not being defined in ES5.
+	// Defining this global in .jshintrc would create a danger of using the global
+	// unguarded in another place, it seems safer to just disable JSHint for these
+	// three lines.
+	/* jshint ignore: start */
+	if ( typeof Symbol === "function" ) {
+		jQuery.fn[ Symbol.iterator ] = arr[ Symbol.iterator ];
+	}
+	/* jshint ignore: end */
+	
+	// Populate the class2type map
+	jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
+	function( i, name ) {
+		class2type[ "[object " + name + "]" ] = name.toLowerCase();
+	} );
+	
+	function isArrayLike( obj ) {
+	
+		// Support: real iOS 8.2 only (not reproducible in simulator)
+		// `in` check used to prevent JIT error (gh-2145)
+		// hasOwn isn't used here due to false negatives
+		// regarding Nodelist length in IE
+		var length = !!obj && "length" in obj && obj.length,
+			type = jQuery.type( obj );
+	
+		if ( type === "function" || jQuery.isWindow( obj ) ) {
+			return false;
+		}
+	
+		return type === "array" || length === 0 ||
+			typeof length === "number" && length > 0 && ( length - 1 ) in obj;
+	}
+	var Sizzle =
+	/*!
+	 * Sizzle CSS Selector Engine v2.3.0
+	 * https://sizzlejs.com/
+	 *
+	 * Copyright jQuery Foundation and other contributors
+	 * Released under the MIT license
+	 * http://jquery.org/license
+	 *
+	 * Date: 2016-01-04
+	 */
+	(function( window ) {
+	
+	var i,
+		support,
+		Expr,
+		getText,
+		isXML,
+		tokenize,
+		compile,
+		select,
+		outermostContext,
+		sortInput,
+		hasDuplicate,
+	
+		// Local document vars
+		setDocument,
+		document,
+		docElem,
+		documentIsHTML,
+		rbuggyQSA,
+		rbuggyMatches,
+		matches,
+		contains,
+	
+		// Instance-specific data
+		expando = "sizzle" + 1 * new Date(),
+		preferredDoc = window.document,
+		dirruns = 0,
+		done = 0,
+		classCache = createCache(),
+		tokenCache = createCache(),
+		compilerCache = createCache(),
+		sortOrder = function( a, b ) {
+			if ( a === b ) {
+				hasDuplicate = true;
+			}
+			return 0;
+		},
+	
+		// Instance methods
+		hasOwn = ({}).hasOwnProperty,
+		arr = [],
+		pop = arr.pop,
+		push_native = arr.push,
+		push = arr.push,
+		slice = arr.slice,
+		// Use a stripped-down indexOf as it's faster than native
+		// https://jsperf.com/thor-indexof-vs-for/5
+		indexOf = function( list, elem ) {
+			var i = 0,
+				len = list.length;
+			for ( ; i < len; i++ ) {
+				if ( list[i] === elem ) {
+					return i;
+				}
+			}
+			return -1;
+		},
+	
+		booleans = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",
+	
+		// Regular expressions
+	
+		// http://www.w3.org/TR/css3-selectors/#whitespace
+		whitespace = "[\\x20\\t\\r\\n\\f]",
+	
+		// http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
+		identifier = "(?:\\\\.|[\\w-]|[^\0-\\xa0])+",
+	
+		// Attribute selectors: http://www.w3.org/TR/selectors/#attribute-selectors
+		attributes = "\\[" + whitespace + "*(" + identifier + ")(?:" + whitespace +
+			// Operator (capture 2)
+			"*([*^$|!~]?=)" + whitespace +
+			// "Attribute values must be CSS identifiers [capture 5] or strings [capture 3 or capture 4]"
+			"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|(" + identifier + "))|)" + whitespace +
+			"*\\]",
+	
+		pseudos = ":(" + identifier + ")(?:\\((" +
+			// To reduce the number of selectors needing tokenize in the preFilter, prefer arguments:
+			// 1. quoted (capture 3; capture 4 or capture 5)
+			"('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|" +
+			// 2. simple (capture 6)
+			"((?:\\\\.|[^\\\\()[\\]]|" + attributes + ")*)|" +
+			// 3. anything else (capture 2)
+			".*" +
+			")\\)|)",
+	
+		// Leading and non-escaped trailing whitespace, capturing some non-whitespace characters preceding the latter
+		rwhitespace = new RegExp( whitespace + "+", "g" ),
+		rtrim = new RegExp( "^" + whitespace + "+|((?:^|[^\\\\])(?:\\\\.)*)" + whitespace + "+$", "g" ),
+	
+		rcomma = new RegExp( "^" + whitespace + "*," + whitespace + "*" ),
+		rcombinators = new RegExp( "^" + whitespace + "*([>+~]|" + whitespace + ")" + whitespace + "*" ),
+	
+		rattributeQuotes = new RegExp( "=" + whitespace + "*([^\\]'\"]*?)" + whitespace + "*\\]", "g" ),
+	
+		rpseudo = new RegExp( pseudos ),
+		ridentifier = new RegExp( "^" + identifier + "$" ),
+	
+		matchExpr = {
+			"ID": new RegExp( "^#(" + identifier + ")" ),
+			"CLASS": new RegExp( "^\\.(" + identifier + ")" ),
+			"TAG": new RegExp( "^(" + identifier + "|[*])" ),
+			"ATTR": new RegExp( "^" + attributes ),
+			"PSEUDO": new RegExp( "^" + pseudos ),
+			"CHILD": new RegExp( "^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(" + whitespace +
+				"*(even|odd|(([+-]|)(\\d*)n|)" + whitespace + "*(?:([+-]|)" + whitespace +
+				"*(\\d+)|))" + whitespace + "*\\)|)", "i" ),
+			"bool": new RegExp( "^(?:" + booleans + ")$", "i" ),
+			// For use in libraries implementing .is()
+			// We use this for POS matching in `select`
+			"needsContext": new RegExp( "^" + whitespace + "*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(" +
+				whitespace + "*((?:-\\d)?\\d*)" + whitespace + "*\\)|)(?=[^-]|$)", "i" )
+		},
+	
+		rinputs = /^(?:input|select|textarea|button)$/i,
+		rheader = /^h\d$/i,
+	
+		rnative = /^[^{]+\{\s*\[native \w/,
+	
+		// Easily-parseable/retrievable ID or TAG or CLASS selectors
+		rquickExpr = /^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,
+	
+		rsibling = /[+~]/,
+	
+		// CSS escapes
+		// http://www.w3.org/TR/CSS21/syndata.html#escaped-characters
+		runescape = new RegExp( "\\\\([\\da-f]{1,6}" + whitespace + "?|(" + whitespace + ")|.)", "ig" ),
+		funescape = function( _, escaped, escapedWhitespace ) {
+			var high = "0x" + escaped - 0x10000;
+			// NaN means non-codepoint
+			// Support: Firefox<24
+			// Workaround erroneous numeric interpretation of +"0x"
+			return high !== high || escapedWhitespace ?
+				escaped :
+				high < 0 ?
+					// BMP codepoint
+					String.fromCharCode( high + 0x10000 ) :
+					// Supplemental Plane codepoint (surrogate pair)
+					String.fromCharCode( high >> 10 | 0xD800, high & 0x3FF | 0xDC00 );
+		},
+	
+		// CSS string/identifier serialization
+		// https://drafts.csswg.org/cssom/#common-serializing-idioms
+		rcssescape = /([\0-\x1f\x7f]|^-?\d)|^-$|[^\x80-\uFFFF\w-]/g,
+		fcssescape = function( ch, asCodePoint ) {
+			if ( asCodePoint ) {
+	
+				// U+0000 NULL becomes U+FFFD REPLACEMENT CHARACTER
+				if ( ch === "\0" ) {
+					return "\uFFFD";
+				}
+	
+				// Control characters and (dependent upon position) numbers get escaped as code points
+				return ch.slice( 0, -1 ) + "\\" + ch.charCodeAt( ch.length - 1 ).toString( 16 ) + " ";
+			}
+	
+			// Other potentially-special ASCII characters get backslash-escaped
+			return "\\" + ch;
+		},
+	
+		// Used for iframes
+		// See setDocument()
+		// Removing the function wrapper causes a "Permission Denied"
+		// error in IE
+		unloadHandler = function() {
+			setDocument();
+		},
+	
+		disabledAncestor = addCombinator(
+			function( elem ) {
+				return elem.disabled === true;
+			},
+			{ dir: "parentNode", next: "legend" }
+		);
+	
+	// Optimize for push.apply( _, NodeList )
+	try {
+		push.apply(
+			(arr = slice.call( preferredDoc.childNodes )),
+			preferredDoc.childNodes
+		);
+		// Support: Android<4.0
+		// Detect silently failing push.apply
+		arr[ preferredDoc.childNodes.length ].nodeType;
+	} catch ( e ) {
+		push = { apply: arr.length ?
+	
+			// Leverage slice if possible
+			function( target, els ) {
+				push_native.apply( target, slice.call(els) );
+			} :
+	
+			// Support: IE<9
+			// Otherwise append directly
+			function( target, els ) {
+				var j = target.length,
+					i = 0;
+				// Can't trust NodeList.length
+				while ( (target[j++] = els[i++]) ) {}
+				target.length = j - 1;
+			}
+		};
+	}
+	
+	function Sizzle( selector, context, results, seed ) {
+		var m, i, elem, nid, match, groups, newSelector,
+			newContext = context && context.ownerDocument,
+	
+			// nodeType defaults to 9, since context defaults to document
+			nodeType = context ? context.nodeType : 9;
+	
+		results = results || [];
+	
+		// Return early from calls with invalid selector or context
+		if ( typeof selector !== "string" || !selector ||
+			nodeType !== 1 && nodeType !== 9 && nodeType !== 11 ) {
+	
+			return results;
+		}
+	
+		// Try to shortcut find operations (as opposed to filters) in HTML documents
+		if ( !seed ) {
+	
+			if ( ( context ? context.ownerDocument || context : preferredDoc ) !== document ) {
+				setDocument( context );
+			}
+			context = context || document;
+	
+			if ( documentIsHTML ) {
+	
+				// If the selector is sufficiently simple, try using a "get*By*" DOM method
+				// (excepting DocumentFragment context, where the methods don't exist)
+				if ( nodeType !== 11 && (match = rquickExpr.exec( selector )) ) {
+	
+					// ID selector
+					if ( (m = match[1]) ) {
+	
+						// Document context
+						if ( nodeType === 9 ) {
+							if ( (elem = context.getElementById( m )) ) {
+	
+								// Support: IE, Opera, Webkit
+								// TODO: identify versions
+								// getElementById can match elements by name instead of ID
+								if ( elem.id === m ) {
+									results.push( elem );
+									return results;
+								}
+							} else {
+								return results;
+							}
+	
+						// Element context
+						} else {
+	
+							// Support: IE, Opera, Webkit
+							// TODO: identify versions
+							// getElementById can match elements by name instead of ID
+							if ( newContext && (elem = newContext.getElementById( m )) &&
+								contains( context, elem ) &&
+								elem.id === m ) {
+	
+								results.push( elem );
+								return results;
+							}
+						}
+	
+					// Type selector
+					} else if ( match[2] ) {
+						push.apply( results, context.getElementsByTagName( selector ) );
+						return results;
+	
+					// Class selector
+					} else if ( (m = match[3]) && support.getElementsByClassName &&
+						context.getElementsByClassName ) {
+	
+						push.apply( results, context.getElementsByClassName( m ) );
+						return results;
+					}
+				}
+	
+				// Take advantage of querySelectorAll
+				if ( support.qsa &&
+					!compilerCache[ selector + " " ] &&
+					(!rbuggyQSA || !rbuggyQSA.test( selector )) ) {
+	
+					if ( nodeType !== 1 ) {
+						newContext = context;
+						newSelector = selector;
+	
+					// qSA looks outside Element context, which is not what we want
+					// Thanks to Andrew Dupont for this workaround technique
+					// Support: IE <=8
+					// Exclude object elements
+					} else if ( context.nodeName.toLowerCase() !== "object" ) {
+	
+						// Capture the context ID, setting it first if necessary
+						if ( (nid = context.getAttribute( "id" )) ) {
+							nid = nid.replace( rcssescape, fcssescape );
+						} else {
+							context.setAttribute( "id", (nid = expando) );
+						}
+	
+						// Prefix every selector in the list
+						groups = tokenize( selector );
+						i = groups.length;
+						while ( i-- ) {
+							groups[i] = "#" + nid + " " + toSelector( groups[i] );
+						}
+						newSelector = groups.join( "," );
+	
+						// Expand context for sibling selectors
+						newContext = rsibling.test( selector ) && testContext( context.parentNode ) ||
+							context;
+					}
+	
+					if ( newSelector ) {
+						try {
+							push.apply( results,
+								newContext.querySelectorAll( newSelector )
+							);
+							return results;
+						} catch ( qsaError ) {
+						} finally {
+							if ( nid === expando ) {
+								context.removeAttribute( "id" );
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		// All others
+		return select( selector.replace( rtrim, "$1" ), context, results, seed );
+	}
+	
+	/**
+	 * Create key-value caches of limited size
+	 * @returns {function(string, object)} Returns the Object data after storing it on itself with
+	 *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
+	 *	deleting the oldest entry
+	 */
+	function createCache() {
+		var keys = [];
+	
+		function cache( key, value ) {
+			// Use (key + " ") to avoid collision with native prototype properties (see Issue #157)
+			if ( keys.push( key + " " ) > Expr.cacheLength ) {
+				// Only keep the most recent entries
+				delete cache[ keys.shift() ];
+			}
+			return (cache[ key + " " ] = value);
+		}
+		return cache;
+	}
+	
+	/**
+	 * Mark a function for special use by Sizzle
+	 * @param {Function} fn The function to mark
+	 */
+	function markFunction( fn ) {
+		fn[ expando ] = true;
+		return fn;
+	}
+	
+	/**
+	 * Support testing using an element
+	 * @param {Function} fn Passed the created element and returns a boolean result
+	 */
+	function assert( fn ) {
+		var el = document.createElement("fieldset");
+	
+		try {
+			return !!fn( el );
+		} catch (e) {
+			return false;
+		} finally {
+			// Remove from its parent by default
+			if ( el.parentNode ) {
+				el.parentNode.removeChild( el );
+			}
+			// release memory in IE
+			el = null;
+		}
+	}
+	
+	/**
+	 * Adds the same handler for all of the specified attrs
+	 * @param {String} attrs Pipe-separated list of attributes
+	 * @param {Function} handler The method that will be applied
+	 */
+	function addHandle( attrs, handler ) {
+		var arr = attrs.split("|"),
+			i = arr.length;
+	
+		while ( i-- ) {
+			Expr.attrHandle[ arr[i] ] = handler;
+		}
+	}
+	
+	/**
+	 * Checks document order of two siblings
+	 * @param {Element} a
+	 * @param {Element} b
+	 * @returns {Number} Returns less than 0 if a precedes b, greater than 0 if a follows b
+	 */
+	function siblingCheck( a, b ) {
+		var cur = b && a,
+			diff = cur && a.nodeType === 1 && b.nodeType === 1 &&
+				a.sourceIndex - b.sourceIndex;
+	
+		// Use IE sourceIndex if available on both nodes
+		if ( diff ) {
+			return diff;
+		}
+	
+		// Check if b follows a
+		if ( cur ) {
+			while ( (cur = cur.nextSibling) ) {
+				if ( cur === b ) {
+					return -1;
+				}
+			}
+		}
+	
+		return a ? 1 : -1;
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for input types
+	 * @param {String} type
+	 */
+	function createInputPseudo( type ) {
+		return function( elem ) {
+			var name = elem.nodeName.toLowerCase();
+			return name === "input" && elem.type === type;
+		};
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for buttons
+	 * @param {String} type
+	 */
+	function createButtonPseudo( type ) {
+		return function( elem ) {
+			var name = elem.nodeName.toLowerCase();
+			return (name === "input" || name === "button") && elem.type === type;
+		};
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for :enabled/:disabled
+	 * @param {Boolean} disabled true for :disabled; false for :enabled
+	 */
+	function createDisabledPseudo( disabled ) {
+		// Known :disabled false positives:
+		// IE: *[disabled]:not(button, input, select, textarea, optgroup, option, menuitem, fieldset)
+		// not IE: fieldset[disabled] > legend:nth-of-type(n+2) :can-disable
+		return function( elem ) {
+	
+			// Check form elements and option elements for explicit disabling
+			return "label" in elem && elem.disabled === disabled ||
+				"form" in elem && elem.disabled === disabled ||
+	
+				// Check non-disabled form elements for fieldset[disabled] ancestors
+				"form" in elem && elem.disabled === false && (
+					// Support: IE6-11+
+					// Ancestry is covered for us
+					elem.isDisabled === disabled ||
+	
+					// Otherwise, assume any non-<option> under fieldset[disabled] is disabled
+					/* jshint -W018 */
+					elem.isDisabled !== !disabled &&
+						("label" in elem || !disabledAncestor( elem )) !== disabled
+				);
+		};
+	}
+	
+	/**
+	 * Returns a function to use in pseudos for positionals
+	 * @param {Function} fn
+	 */
+	function createPositionalPseudo( fn ) {
+		return markFunction(function( argument ) {
+			argument = +argument;
+			return markFunction(function( seed, matches ) {
+				var j,
+					matchIndexes = fn( [], seed.length, argument ),
+					i = matchIndexes.length;
+	
+				// Match elements found at the specified indexes
+				while ( i-- ) {
+					if ( seed[ (j = matchIndexes[i]) ] ) {
+						seed[j] = !(matches[j] = seed[j]);
+					}
+				}
+			});
+		});
+	}
+	
+	/**
+	 * Checks a node for validity as a Sizzle context
+	 * @param {Element|Object=} context
+	 * @returns {Element|Object|Boolean} The input node if acceptable, otherwise a falsy value
+	 */
+	function testContext( context ) {
+		return context && typeof context.getElementsByTagName !== "undefined" && context;
+	}
+	
+	// Expose support vars for convenience
+	support = Sizzle.support = {};
+	
+	/**
+	 * Detects XML nodes
+	 * @param {Element|Object} elem An element or a document
+	 * @returns {Boolean} True iff elem is a non-HTML XML node
+	 */
+	isXML = Sizzle.isXML = function( elem ) {
+		// documentElement is verified for cases where it doesn't yet exist
+		// (such as loading iframes in IE - #4833)
+		var documentElement = elem && (elem.ownerDocument || elem).documentElement;
+		return documentElement ? documentElement.nodeName !== "HTML" : false;
+	};
+	
+	/**
+	 * Sets document-related variables once based on the current document
+	 * @param {Element|Object} [doc] An element or document object to use to set the document
+	 * @returns {Object} Returns the current document
+	 */
+	setDocument = Sizzle.setDocument = function( node ) {
+		var hasCompare, subWindow,
+			doc = node ? node.ownerDocument || node : preferredDoc;
+	
+		// Return early if doc is invalid or already selected
+		if ( doc === document || doc.nodeType !== 9 || !doc.documentElement ) {
+			return document;
+		}
+	
+		// Update global variables
+		document = doc;
+		docElem = document.documentElement;
+		documentIsHTML = !isXML( document );
+	
+		// Support: IE 9-11, Edge
+		// Accessing iframe documents after unload throws "permission denied" errors (jQuery #13936)
+		if ( preferredDoc !== document &&
+			(subWindow = document.defaultView) && subWindow.top !== subWindow ) {
+	
+			// Support: IE 11, Edge
+			if ( subWindow.addEventListener ) {
+				subWindow.addEventListener( "unload", unloadHandler, false );
+	
+			// Support: IE 9 - 10 only
+			} else if ( subWindow.attachEvent ) {
+				subWindow.attachEvent( "onunload", unloadHandler );
+			}
+		}
+	
+		/* Attributes
+		---------------------------------------------------------------------- */
+	
+		// Support: IE<8
+		// Verify that getAttribute really returns attributes and not properties
+		// (excepting IE8 booleans)
+		support.attributes = assert(function( el ) {
+			el.className = "i";
+			return !el.getAttribute("className");
+		});
+	
+		/* getElement(s)By*
+		---------------------------------------------------------------------- */
+	
+		// Check if getElementsByTagName("*") returns only elements
+		support.getElementsByTagName = assert(function( el ) {
+			el.appendChild( document.createComment("") );
+			return !el.getElementsByTagName("*").length;
+		});
+	
+		// Support: IE<9
+		support.getElementsByClassName = rnative.test( document.getElementsByClassName );
+	
+		// Support: IE<10
+		// Check if getElementById returns elements by name
+		// The broken getElementById methods don't pick up programmatically-set names,
+		// so use a roundabout getElementsByName test
+		support.getById = assert(function( el ) {
+			docElem.appendChild( el ).id = expando;
+			return !document.getElementsByName || !document.getElementsByName( expando ).length;
+		});
+	
+		// ID find and filter
+		if ( support.getById ) {
+			Expr.find["ID"] = function( id, context ) {
+				if ( typeof context.getElementById !== "undefined" && documentIsHTML ) {
+					var m = context.getElementById( id );
+					return m ? [ m ] : [];
+				}
+			};
+			Expr.filter["ID"] = function( id ) {
+				var attrId = id.replace( runescape, funescape );
+				return function( elem ) {
+					return elem.getAttribute("id") === attrId;
+				};
+			};
+		} else {
+			// Support: IE6/7
+			// getElementById is not reliable as a find shortcut
+			delete Expr.find["ID"];
+	
+			Expr.filter["ID"] =  function( id ) {
+				var attrId = id.replace( runescape, funescape );
+				return function( elem ) {
+					var node = typeof elem.getAttributeNode !== "undefined" &&
+						elem.getAttributeNode("id");
+					return node && node.value === attrId;
+				};
+			};
+		}
+	
+		// Tag
+		Expr.find["TAG"] = support.getElementsByTagName ?
+			function( tag, context ) {
+				if ( typeof context.getElementsByTagName !== "undefined" ) {
+					return context.getElementsByTagName( tag );
+	
+				// DocumentFragment nodes don't have gEBTN
+				} else if ( support.qsa ) {
+					return context.querySelectorAll( tag );
+				}
+			} :
+	
+			function( tag, context ) {
+				var elem,
+					tmp = [],
+					i = 0,
+					// By happy coincidence, a (broken) gEBTN appears on DocumentFragment nodes too
+					results = context.getElementsByTagName( tag );
+	
+				// Filter out possible comments
+				if ( tag === "*" ) {
+					while ( (elem = results[i++]) ) {
+						if ( elem.nodeType === 1 ) {
+							tmp.push( elem );
+						}
+					}
+	
+					return tmp;
+				}
+				return results;
+			};
+	
+		// Class
+		Expr.find["CLASS"] = support.getElementsByClassName && function( className, context ) {
+			if ( typeof context.getElementsByClassName !== "undefined" && documentIsHTML ) {
+				return context.getElementsByClassName( className );
+			}
+		};
+	
+		/* QSA/matchesSelector
+		---------------------------------------------------------------------- */
+	
+		// QSA and matchesSelector support
+	
+		// matchesSelector(:active) reports false when true (IE9/Opera 11.5)
+		rbuggyMatches = [];
+	
+		// qSa(:focus) reports false when true (Chrome 21)
+		// We allow this because of a bug in IE8/9 that throws an error
+		// whenever `document.activeElement` is accessed on an iframe
+		// So, we allow :focus to pass through QSA all the time to avoid the IE error
+		// See https://bugs.jquery.com/ticket/13378
+		rbuggyQSA = [];
+	
+		if ( (support.qsa = rnative.test( document.querySelectorAll )) ) {
+			// Build QSA regex
+			// Regex strategy adopted from Diego Perini
+			assert(function( el ) {
+				// Select is set to empty string on purpose
+				// This is to test IE's treatment of not explicitly
+				// setting a boolean content attribute,
+				// since its presence should be enough
+				// https://bugs.jquery.com/ticket/12359
+				docElem.appendChild( el ).innerHTML = "<a id='" + expando + "'></a>" +
+					"<select id='" + expando + "-\r\\' msallowcapture=''>" +
+					"<option selected=''></option></select>";
+	
+				// Support: IE8, Opera 11-12.16
+				// Nothing should be selected when empty strings follow ^= or $= or *=
+				// The test attribute must be unknown in Opera but "safe" for WinRT
+				// https://msdn.microsoft.com/en-us/library/ie/hh465388.aspx#attribute_section
+				if ( el.querySelectorAll("[msallowcapture^='']").length ) {
+					rbuggyQSA.push( "[*^$]=" + whitespace + "*(?:''|\"\")" );
+				}
+	
+				// Support: IE8
+				// Boolean attributes and "value" are not treated correctly
+				if ( !el.querySelectorAll("[selected]").length ) {
+					rbuggyQSA.push( "\\[" + whitespace + "*(?:value|" + booleans + ")" );
+				}
+	
+				// Support: Chrome<29, Android<4.4, Safari<7.0+, iOS<7.0+, PhantomJS<1.9.8+
+				if ( !el.querySelectorAll( "[id~=" + expando + "-]" ).length ) {
+					rbuggyQSA.push("~=");
+				}
+	
+				// Webkit/Opera - :checked should return selected option elements
+				// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+				// IE8 throws error here and will not see later tests
+				if ( !el.querySelectorAll(":checked").length ) {
+					rbuggyQSA.push(":checked");
+				}
+	
+				// Support: Safari 8+, iOS 8+
+				// https://bugs.webkit.org/show_bug.cgi?id=136851
+				// In-page `selector#id sibling-combinator selector` fails
+				if ( !el.querySelectorAll( "a#" + expando + "+*" ).length ) {
+					rbuggyQSA.push(".#.+[+~]");
+				}
+			});
+	
+			assert(function( el ) {
+				el.innerHTML = "<a href='' disabled='disabled'></a>" +
+					"<select disabled='disabled'><option/></select>";
+	
+				// Support: Windows 8 Native Apps
+				// The type and name attributes are restricted during .innerHTML assignment
+				var input = document.createElement("input");
+				input.setAttribute( "type", "hidden" );
+				el.appendChild( input ).setAttribute( "name", "D" );
+	
+				// Support: IE8
+				// Enforce case-sensitivity of name attribute
+				if ( el.querySelectorAll("[name=d]").length ) {
+					rbuggyQSA.push( "name" + whitespace + "*[*^$|!~]?=" );
+				}
+	
+				// FF 3.5 - :enabled/:disabled and hidden elements (hidden elements are still enabled)
+				// IE8 throws error here and will not see later tests
+				if ( el.querySelectorAll(":enabled").length !== 2 ) {
+					rbuggyQSA.push( ":enabled", ":disabled" );
+				}
+	
+				// Support: IE9-11+
+				// IE's :disabled selector does not pick up the children of disabled fieldsets
+				docElem.appendChild( el ).disabled = true;
+				if ( el.querySelectorAll(":disabled").length !== 2 ) {
+					rbuggyQSA.push( ":enabled", ":disabled" );
+				}
+	
+				// Opera 10-11 does not throw on post-comma invalid pseudos
+				el.querySelectorAll("*,:x");
+				rbuggyQSA.push(",.*:");
+			});
+		}
+	
+		if ( (support.matchesSelector = rnative.test( (matches = docElem.matches ||
+			docElem.webkitMatchesSelector ||
+			docElem.mozMatchesSelector ||
+			docElem.oMatchesSelector ||
+			docElem.msMatchesSelector) )) ) {
+	
+			assert(function( el ) {
+				// Check to see if it's possible to do matchesSelector
+				// on a disconnected node (IE 9)
+				support.disconnectedMatch = matches.call( el, "*" );
+	
+				// This should fail with an exception
+				// Gecko does not error, returns false instead
+				matches.call( el, "[s!='']:x" );
+				rbuggyMatches.push( "!=", pseudos );
+			});
+		}
+	
+		rbuggyQSA = rbuggyQSA.length && new RegExp( rbuggyQSA.join("|") );
+		rbuggyMatches = rbuggyMatches.length && new RegExp( rbuggyMatches.join("|") );
+	
+		/* Contains
+		---------------------------------------------------------------------- */
+		hasCompare = rnative.test( docElem.compareDocumentPosition );
+	
+		// Element contains another
+		// Purposefully self-exclusive
+		// As in, an element does not contain itself
+		contains = hasCompare || rnative.test( docElem.contains ) ?
+			function( a, b ) {
+				var adown = a.nodeType === 9 ? a.documentElement : a,
+					bup = b && b.parentNode;
+				return a === bup || !!( bup && bup.nodeType === 1 && (
+					adown.contains ?
+						adown.contains( bup ) :
+						a.compareDocumentPosition && a.compareDocumentPosition( bup ) & 16
+				));
+			} :
+			function( a, b ) {
+				if ( b ) {
+					while ( (b = b.parentNode) ) {
+						if ( b === a ) {
+							return true;
+						}
+					}
+				}
+				return false;
+			};
+	
+		/* Sorting
+		---------------------------------------------------------------------- */
+	
+		// Document order sorting
+		sortOrder = hasCompare ?
+		function( a, b ) {
+	
+			// Flag for duplicate removal
+			if ( a === b ) {
+				hasDuplicate = true;
+				return 0;
+			}
+	
+			// Sort on method existence if only one input has compareDocumentPosition
+			var compare = !a.compareDocumentPosition - !b.compareDocumentPosition;
+			if ( compare ) {
+				return compare;
+			}
+	
+			// Calculate position if both inputs belong to the same document
+			compare = ( a.ownerDocument || a ) === ( b.ownerDocument || b ) ?
+				a.compareDocumentPosition( b ) :
+	
+				// Otherwise we know they are disconnected
+				1;
+	
+			// Disconnected nodes
+			if ( compare & 1 ||
+				(!support.sortDetached && b.compareDocumentPosition( a ) === compare) ) {
+	
+				// Choose the first element that is related to our preferred document
+				if ( a === document || a.ownerDocument === preferredDoc && contains(preferredDoc, a) ) {
+					return -1;
+				}
+				if ( b === document || b.ownerDocument === preferredDoc && contains(preferredDoc, b) ) {
+					return 1;
+				}
+	
+				// Maintain original order
+				return sortInput ?
+					( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
+					0;
+			}
+	
+			return compare & 4 ? -1 : 1;
+		} :
+		function( a, b ) {
+			// Exit early if the nodes are identical
+			if ( a === b ) {
+				hasDuplicate = true;
+				return 0;
+			}
+	
+			var cur,
+				i = 0,
+				aup = a.parentNode,
+				bup = b.parentNode,
+				ap = [ a ],
+				bp = [ b ];
+	
+			// Parentless nodes are either documents or disconnected
+			if ( !aup || !bup ) {
+				return a === document ? -1 :
+					b === document ? 1 :
+					aup ? -1 :
+					bup ? 1 :
+					sortInput ?
+					( indexOf( sortInput, a ) - indexOf( sortInput, b ) ) :
+					0;
+	
+			// If the nodes are siblings, we can do a quick check
+			} else if ( aup === bup ) {
+				return siblingCheck( a, b );
+			}
+	
+			// Otherwise we need full lists of their ancestors for comparison
+			cur = a;
+			while ( (cur = cur.parentNode) ) {
+				ap.unshift( cur );
+			}
+			cur = b;
+			while ( (cur = cur.parentNode) ) {
+				bp.unshift( cur );
+			}
+	
+			// Walk down the tree looking for a discrepancy
+			while ( ap[i] === bp[i] ) {
+				i++;
+			}
+	
+			return i ?
+				// Do a sibling check if the nodes have a common ancestor
+				siblingCheck( ap[i], bp[i] ) :
+	
+				// Otherwise nodes in our document sort first
+				ap[i] === preferredDoc ? -1 :
+				bp[i] === preferredDoc ? 1 :
+				0;
+		};
+	
+		return document;
+	};
+	
+	Sizzle.matches = function( expr, elements ) {
+		return Sizzle( expr, null, null, elements );
+	};
+	
+	Sizzle.matchesSelector = function( elem, expr ) {
+		// Set document vars if needed
+		if ( ( elem.ownerDocument || elem ) !== document ) {
+			setDocument( elem );
+		}
+	
+		// Make sure that attribute selectors are quoted
+		expr = expr.replace( rattributeQuotes, "='$1']" );
+	
+		if ( support.matchesSelector && documentIsHTML &&
+			!compilerCache[ expr + " " ] &&
+			( !rbuggyMatches || !rbuggyMatches.test( expr ) ) &&
+			( !rbuggyQSA     || !rbuggyQSA.test( expr ) ) ) {
+	
+			try {
+				var ret = matches.call( elem, expr );
+	
+				// IE 9's matchesSelector returns false on disconnected nodes
+				if ( ret || support.disconnectedMatch ||
+						// As well, disconnected nodes are said to be in a document
+						// fragment in IE 9
+						elem.document && elem.document.nodeType !== 11 ) {
+					return ret;
+				}
+			} catch (e) {}
+		}
+	
+		return Sizzle( expr, document, null, [ elem ] ).length > 0;
+	};
+	
+	Sizzle.contains = function( context, elem ) {
+		// Set document vars if needed
+		if ( ( context.ownerDocument || context ) !== document ) {
+			setDocument( context );
+		}
+		return contains( context, elem );
+	};
+	
+	Sizzle.attr = function( elem, name ) {
+		// Set document vars if needed
+		if ( ( elem.ownerDocument || elem ) !== document ) {
+			setDocument( elem );
+		}
+	
+		var fn = Expr.attrHandle[ name.toLowerCase() ],
+			// Don't get fooled by Object.prototype properties (jQuery #13807)
+			val = fn && hasOwn.call( Expr.attrHandle, name.toLowerCase() ) ?
+				fn( elem, name, !documentIsHTML ) :
+				undefined;
+	
+		return val !== undefined ?
+			val :
+			support.attributes || !documentIsHTML ?
+				elem.getAttribute( name ) :
+				(val = elem.getAttributeNode(name)) && val.specified ?
+					val.value :
+					null;
+	};
+	
+	Sizzle.escape = function( sel ) {
+		return (sel + "").replace( rcssescape, fcssescape );
+	};
+	
+	Sizzle.error = function( msg ) {
+		throw new Error( "Syntax error, unrecognized expression: " + msg );
+	};
+	
+	/**
+	 * Document sorting and removing duplicates
+	 * @param {ArrayLike} results
+	 */
+	Sizzle.uniqueSort = function( results ) {
+		var elem,
+			duplicates = [],
+			j = 0,
+			i = 0;
+	
+		// Unless we *know* we can detect duplicates, assume their presence
+		hasDuplicate = !support.detectDuplicates;
+		sortInput = !support.sortStable && results.slice( 0 );
+		results.sort( sortOrder );
+	
+		if ( hasDuplicate ) {
+			while ( (elem = results[i++]) ) {
+				if ( elem === results[ i ] ) {
+					j = duplicates.push( i );
+				}
+			}
+			while ( j-- ) {
+				results.splice( duplicates[ j ], 1 );
+			}
+		}
+	
+		// Clear input after sorting to release objects
+		// See https://github.com/jquery/sizzle/pull/225
+		sortInput = null;
+	
+		return results;
+	};
+	
+	/**
+	 * Utility function for retrieving the text value of an array of DOM nodes
+	 * @param {Array|Element} elem
+	 */
+	getText = Sizzle.getText = function( elem ) {
+		var node,
+			ret = "",
+			i = 0,
+			nodeType = elem.nodeType;
+	
+		if ( !nodeType ) {
+			// If no nodeType, this is expected to be an array
+			while ( (node = elem[i++]) ) {
+				// Do not traverse comment nodes
+				ret += getText( node );
+			}
+		} else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
+			// Use textContent for elements
+			// innerText usage removed for consistency of new lines (jQuery #11153)
+			if ( typeof elem.textContent === "string" ) {
+				return elem.textContent;
+			} else {
+				// Traverse its children
+				for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
+					ret += getText( elem );
+				}
+			}
+		} else if ( nodeType === 3 || nodeType === 4 ) {
+			return elem.nodeValue;
+		}
+		// Do not include comment or processing instruction nodes
+	
+		return ret;
+	};
+	
+	Expr = Sizzle.selectors = {
+	
+		// Can be adjusted by the user
+		cacheLength: 50,
+	
+		createPseudo: markFunction,
+	
+		match: matchExpr,
+	
+		attrHandle: {},
+	
+		find: {},
+	
+		relative: {
+			">": { dir: "parentNode", first: true },
+			" ": { dir: "parentNode" },
+			"+": { dir: "previousSibling", first: true },
+			"~": { dir: "previousSibling" }
+		},
+	
+		preFilter: {
+			"ATTR": function( match ) {
+				match[1] = match[1].replace( runescape, funescape );
+	
+				// Move the given value to match[3] whether quoted or unquoted
+				match[3] = ( match[3] || match[4] || match[5] || "" ).replace( runescape, funescape );
+	
+				if ( match[2] === "~=" ) {
+					match[3] = " " + match[3] + " ";
+				}
+	
+				return match.slice( 0, 4 );
+			},
+	
+			"CHILD": function( match ) {
+				/* matches from matchExpr["CHILD"]
+					1 type (only|nth|...)
+					2 what (child|of-type)
+					3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+					4 xn-component of xn+y argument ([+-]?\d*n|)
+					5 sign of xn-component
+					6 x of xn-component
+					7 sign of y-component
+					8 y of y-component
+				*/
+				match[1] = match[1].toLowerCase();
+	
+				if ( match[1].slice( 0, 3 ) === "nth" ) {
+					// nth-* requires argument
+					if ( !match[3] ) {
+						Sizzle.error( match[0] );
+					}
+	
+					// numeric x and y parameters for Expr.filter.CHILD
+					// remember that false/true cast respectively to 0/1
+					match[4] = +( match[4] ? match[5] + (match[6] || 1) : 2 * ( match[3] === "even" || match[3] === "odd" ) );
+					match[5] = +( ( match[7] + match[8] ) || match[3] === "odd" );
+	
+				// other types prohibit arguments
+				} else if ( match[3] ) {
+					Sizzle.error( match[0] );
+				}
+	
+				return match;
+			},
+	
+			"PSEUDO": function( match ) {
+				var excess,
+					unquoted = !match[6] && match[2];
+	
+				if ( matchExpr["CHILD"].test( match[0] ) ) {
+					return null;
+				}
+	
+				// Accept quoted arguments as-is
+				if ( match[3] ) {
+					match[2] = match[4] || match[5] || "";
+	
+				// Strip excess characters from unquoted arguments
+				} else if ( unquoted && rpseudo.test( unquoted ) &&
+					// Get excess from tokenize (recursively)
+					(excess = tokenize( unquoted, true )) &&
+					// advance to the next closing parenthesis
+					(excess = unquoted.indexOf( ")", unquoted.length - excess ) - unquoted.length) ) {
+	
+					// excess is a negative index
+					match[0] = match[0].slice( 0, excess );
+					match[2] = unquoted.slice( 0, excess );
+				}
+	
+				// Return only captures needed by the pseudo filter method (type and argument)
+				return match.slice( 0, 3 );
+			}
+		},
+	
+		filter: {
+	
+			"TAG": function( nodeNameSelector ) {
+				var nodeName = nodeNameSelector.replace( runescape, funescape ).toLowerCase();
+				return nodeNameSelector === "*" ?
+					function() { return true; } :
+					function( elem ) {
+						return elem.nodeName && elem.nodeName.toLowerCase() === nodeName;
+					};
+			},
+	
+			"CLASS": function( className ) {
+				var pattern = classCache[ className + " " ];
+	
+				return pattern ||
+					(pattern = new RegExp( "(^|" + whitespace + ")" + className + "(" + whitespace + "|$)" )) &&
+					classCache( className, function( elem ) {
+						return pattern.test( typeof elem.className === "string" && elem.className || typeof elem.getAttribute !== "undefined" && elem.getAttribute("class") || "" );
+					});
+			},
+	
+			"ATTR": function( name, operator, check ) {
+				return function( elem ) {
+					var result = Sizzle.attr( elem, name );
+	
+					if ( result == null ) {
+						return operator === "!=";
+					}
+					if ( !operator ) {
+						return true;
+					}
+	
+					result += "";
+	
+					return operator === "=" ? result === check :
+						operator === "!=" ? result !== check :
+						operator === "^=" ? check && result.indexOf( check ) === 0 :
+						operator === "*=" ? check && result.indexOf( check ) > -1 :
+						operator === "$=" ? check && result.slice( -check.length ) === check :
+						operator === "~=" ? ( " " + result.replace( rwhitespace, " " ) + " " ).indexOf( check ) > -1 :
+						operator === "|=" ? result === check || result.slice( 0, check.length + 1 ) === check + "-" :
+						false;
+				};
+			},
+	
+			"CHILD": function( type, what, argument, first, last ) {
+				var simple = type.slice( 0, 3 ) !== "nth",
+					forward = type.slice( -4 ) !== "last",
+					ofType = what === "of-type";
+	
+				return first === 1 && last === 0 ?
+	
+					// Shortcut for :nth-*(n)
+					function( elem ) {
+						return !!elem.parentNode;
+					} :
+	
+					function( elem, context, xml ) {
+						var cache, uniqueCache, outerCache, node, nodeIndex, start,
+							dir = simple !== forward ? "nextSibling" : "previousSibling",
+							parent = elem.parentNode,
+							name = ofType && elem.nodeName.toLowerCase(),
+							useCache = !xml && !ofType,
+							diff = false;
+	
+						if ( parent ) {
+	
+							// :(first|last|only)-(child|of-type)
+							if ( simple ) {
+								while ( dir ) {
+									node = elem;
+									while ( (node = node[ dir ]) ) {
+										if ( ofType ?
+											node.nodeName.toLowerCase() === name :
+											node.nodeType === 1 ) {
+	
+											return false;
+										}
+									}
+									// Reverse direction for :only-* (if we haven't yet done so)
+									start = dir = type === "only" && !start && "nextSibling";
+								}
+								return true;
+							}
+	
+							start = [ forward ? parent.firstChild : parent.lastChild ];
+	
+							// non-xml :nth-child(...) stores cache data on `parent`
+							if ( forward && useCache ) {
+	
+								// Seek `elem` from a previously-cached index
+	
+								// ...in a gzip-friendly way
+								node = parent;
+								outerCache = node[ expando ] || (node[ expando ] = {});
+	
+								// Support: IE <9 only
+								// Defend against cloned attroperties (jQuery gh-1709)
+								uniqueCache = outerCache[ node.uniqueID ] ||
+									(outerCache[ node.uniqueID ] = {});
+	
+								cache = uniqueCache[ type ] || [];
+								nodeIndex = cache[ 0 ] === dirruns && cache[ 1 ];
+								diff = nodeIndex && cache[ 2 ];
+								node = nodeIndex && parent.childNodes[ nodeIndex ];
+	
+								while ( (node = ++nodeIndex && node && node[ dir ] ||
+	
+									// Fallback to seeking `elem` from the start
+									(diff = nodeIndex = 0) || start.pop()) ) {
+	
+									// When found, cache indexes on `parent` and break
+									if ( node.nodeType === 1 && ++diff && node === elem ) {
+										uniqueCache[ type ] = [ dirruns, nodeIndex, diff ];
+										break;
+									}
+								}
+	
+							} else {
+								// Use previously-cached element index if available
+								if ( useCache ) {
+									// ...in a gzip-friendly way
+									node = elem;
+									outerCache = node[ expando ] || (node[ expando ] = {});
+	
+									// Support: IE <9 only
+									// Defend against cloned attroperties (jQuery gh-1709)
+									uniqueCache = outerCache[ node.uniqueID ] ||
+										(outerCache[ node.uniqueID ] = {});
+	
+									cache = uniqueCache[ type ] || [];
+									nodeIndex = cache[ 0 ] === dirruns && cache[ 1 ];
+									diff = nodeIndex;
+								}
+	
+								// xml :nth-child(...)
+								// or :nth-last-child(...) or :nth(-last)?-of-type(...)
+								if ( diff === false ) {
+									// Use the same loop as above to seek `elem` from the start
+									while ( (node = ++nodeIndex && node && node[ dir ] ||
+										(diff = nodeIndex = 0) || start.pop()) ) {
+	
+										if ( ( ofType ?
+											node.nodeName.toLowerCase() === name :
+											node.nodeType === 1 ) &&
+											++diff ) {
+	
+											// Cache the index of each encountered element
+											if ( useCache ) {
+												outerCache = node[ expando ] || (node[ expando ] = {});
+	
+												// Support: IE <9 only
+												// Defend against cloned attroperties (jQuery gh-1709)
+												uniqueCache = outerCache[ node.uniqueID ] ||
+													(outerCache[ node.uniqueID ] = {});
+	
+												uniqueCache[ type ] = [ dirruns, diff ];
+											}
+	
+											if ( node === elem ) {
+												break;
+											}
+										}
+									}
+								}
+							}
+	
+							// Incorporate the offset, then check against cycle size
+							diff -= last;
+							return diff === first || ( diff % first === 0 && diff / first >= 0 );
+						}
+					};
+			},
+	
+			"PSEUDO": function( pseudo, argument ) {
+				// pseudo-class names are case-insensitive
+				// http://www.w3.org/TR/selectors/#pseudo-classes
+				// Prioritize by case sensitivity in case custom pseudos are added with uppercase letters
+				// Remember that setFilters inherits from pseudos
+				var args,
+					fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
+						Sizzle.error( "unsupported pseudo: " + pseudo );
+	
+				// The user may use createPseudo to indicate that
+				// arguments are needed to create the filter function
+				// just as Sizzle does
+				if ( fn[ expando ] ) {
+					return fn( argument );
+				}
+	
+				// But maintain support for old signatures
+				if ( fn.length > 1 ) {
+					args = [ pseudo, pseudo, "", argument ];
+					return Expr.setFilters.hasOwnProperty( pseudo.toLowerCase() ) ?
+						markFunction(function( seed, matches ) {
+							var idx,
+								matched = fn( seed, argument ),
+								i = matched.length;
+							while ( i-- ) {
+								idx = indexOf( seed, matched[i] );
+								seed[ idx ] = !( matches[ idx ] = matched[i] );
+							}
+						}) :
+						function( elem ) {
+							return fn( elem, 0, args );
+						};
+				}
+	
+				return fn;
+			}
+		},
+	
+		pseudos: {
+			// Potentially complex pseudos
+			"not": markFunction(function( selector ) {
+				// Trim the selector passed to compile
+				// to avoid treating leading and trailing
+				// spaces as combinators
+				var input = [],
+					results = [],
+					matcher = compile( selector.replace( rtrim, "$1" ) );
+	
+				return matcher[ expando ] ?
+					markFunction(function( seed, matches, context, xml ) {
+						var elem,
+							unmatched = matcher( seed, null, xml, [] ),
+							i = seed.length;
+	
+						// Match elements unmatched by `matcher`
+						while ( i-- ) {
+							if ( (elem = unmatched[i]) ) {
+								seed[i] = !(matches[i] = elem);
+							}
+						}
+					}) :
+					function( elem, context, xml ) {
+						input[0] = elem;
+						matcher( input, null, xml, results );
+						// Don't keep the element (issue #299)
+						input[0] = null;
+						return !results.pop();
+					};
+			}),
+	
+			"has": markFunction(function( selector ) {
+				return function( elem ) {
+					return Sizzle( selector, elem ).length > 0;
+				};
+			}),
+	
+			"contains": markFunction(function( text ) {
+				text = text.replace( runescape, funescape );
+				return function( elem ) {
+					return ( elem.textContent || elem.innerText || getText( elem ) ).indexOf( text ) > -1;
+				};
+			}),
+	
+			// "Whether an element is represented by a :lang() selector
+			// is based solely on the element's language value
+			// being equal to the identifier C,
+			// or beginning with the identifier C immediately followed by "-".
+			// The matching of C against the element's language value is performed case-insensitively.
+			// The identifier C does not have to be a valid language name."
+			// http://www.w3.org/TR/selectors/#lang-pseudo
+			"lang": markFunction( function( lang ) {
+				// lang value must be a valid identifier
+				if ( !ridentifier.test(lang || "") ) {
+					Sizzle.error( "unsupported lang: " + lang );
+				}
+				lang = lang.replace( runescape, funescape ).toLowerCase();
+				return function( elem ) {
+					var elemLang;
+					do {
+						if ( (elemLang = documentIsHTML ?
+							elem.lang :
+							elem.getAttribute("xml:lang") || elem.getAttribute("lang")) ) {
+	
+							elemLang = elemLang.toLowerCase();
+							return elemLang === lang || elemLang.indexOf( lang + "-" ) === 0;
+						}
+					} while ( (elem = elem.parentNode) && elem.nodeType === 1 );
+					return false;
+				};
+			}),
+	
+			// Miscellaneous
+			"target": function( elem ) {
+				var hash = window.location && window.location.hash;
+				return hash && hash.slice( 1 ) === elem.id;
+			},
+	
+			"root": function( elem ) {
+				return elem === docElem;
+			},
+	
+			"focus": function( elem ) {
+				return elem === document.activeElement && (!document.hasFocus || document.hasFocus()) && !!(elem.type || elem.href || ~elem.tabIndex);
+			},
+	
+			// Boolean properties
+			"enabled": createDisabledPseudo( false ),
+			"disabled": createDisabledPseudo( true ),
+	
+			"checked": function( elem ) {
+				// In CSS3, :checked should return both checked and selected elements
+				// http://www.w3.org/TR/2011/REC-css3-selectors-20110929/#checked
+				var nodeName = elem.nodeName.toLowerCase();
+				return (nodeName === "input" && !!elem.checked) || (nodeName === "option" && !!elem.selected);
+			},
+	
+			"selected": function( elem ) {
+				// Accessing this property makes selected-by-default
+				// options in Safari work properly
+				if ( elem.parentNode ) {
+					elem.parentNode.selectedIndex;
+				}
+	
+				return elem.selected === true;
+			},
+	
+			// Contents
+			"empty": function( elem ) {
+				// http://www.w3.org/TR/selectors/#empty-pseudo
+				// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
+				//   but not by others (comment: 8; processing instruction: 7; etc.)
+				// nodeType < 6 works because attributes (2) do not appear as children
+				for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
+					if ( elem.nodeType < 6 ) {
+						return false;
+					}
+				}
+				return true;
+			},
+	
+			"parent": function( elem ) {
+				return !Expr.pseudos["empty"]( elem );
+			},
+	
+			// Element/input types
+			"header": function( elem ) {
+				return rheader.test( elem.nodeName );
+			},
+	
+			"input": function( elem ) {
+				return rinputs.test( elem.nodeName );
+			},
+	
+			"button": function( elem ) {
+				var name = elem.nodeName.toLowerCase();
+				return name === "input" && elem.type === "button" || name === "button";
+			},
+	
+			"text": function( elem ) {
+				var attr;
+				return elem.nodeName.toLowerCase() === "input" &&
+					elem.type === "text" &&
+	
+					// Support: IE<8
+					// New HTML5 attribute values (e.g., "search") appear with elem.type === "text"
+					( (attr = elem.getAttribute("type")) == null || attr.toLowerCase() === "text" );
+			},
+	
+			// Position-in-collection
+			"first": createPositionalPseudo(function() {
+				return [ 0 ];
+			}),
+	
+			"last": createPositionalPseudo(function( matchIndexes, length ) {
+				return [ length - 1 ];
+			}),
+	
+			"eq": createPositionalPseudo(function( matchIndexes, length, argument ) {
+				return [ argument < 0 ? argument + length : argument ];
+			}),
+	
+			"even": createPositionalPseudo(function( matchIndexes, length ) {
+				var i = 0;
+				for ( ; i < length; i += 2 ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			}),
+	
+			"odd": createPositionalPseudo(function( matchIndexes, length ) {
+				var i = 1;
+				for ( ; i < length; i += 2 ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			}),
+	
+			"lt": createPositionalPseudo(function( matchIndexes, length, argument ) {
+				var i = argument < 0 ? argument + length : argument;
+				for ( ; --i >= 0; ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			}),
+	
+			"gt": createPositionalPseudo(function( matchIndexes, length, argument ) {
+				var i = argument < 0 ? argument + length : argument;
+				for ( ; ++i < length; ) {
+					matchIndexes.push( i );
+				}
+				return matchIndexes;
+			})
+		}
+	};
+	
+	Expr.pseudos["nth"] = Expr.pseudos["eq"];
+	
+	// Add button/input type pseudos
+	for ( i in { radio: true, checkbox: true, file: true, password: true, image: true } ) {
+		Expr.pseudos[ i ] = createInputPseudo( i );
+	}
+	for ( i in { submit: true, reset: true } ) {
+		Expr.pseudos[ i ] = createButtonPseudo( i );
+	}
+	
+	// Easy API for creating new setFilters
+	function setFilters() {}
+	setFilters.prototype = Expr.filters = Expr.pseudos;
+	Expr.setFilters = new setFilters();
+	
+	tokenize = Sizzle.tokenize = function( selector, parseOnly ) {
+		var matched, match, tokens, type,
+			soFar, groups, preFilters,
+			cached = tokenCache[ selector + " " ];
+	
+		if ( cached ) {
+			return parseOnly ? 0 : cached.slice( 0 );
+		}
+	
+		soFar = selector;
+		groups = [];
+		preFilters = Expr.preFilter;
+	
+		while ( soFar ) {
+	
+			// Comma and first run
+			if ( !matched || (match = rcomma.exec( soFar )) ) {
+				if ( match ) {
+					// Don't consume trailing commas as valid
+					soFar = soFar.slice( match[0].length ) || soFar;
+				}
+				groups.push( (tokens = []) );
+			}
+	
+			matched = false;
+	
+			// Combinators
+			if ( (match = rcombinators.exec( soFar )) ) {
+				matched = match.shift();
+				tokens.push({
+					value: matched,
+					// Cast descendant combinators to space
+					type: match[0].replace( rtrim, " " )
+				});
+				soFar = soFar.slice( matched.length );
+			}
+	
+			// Filters
+			for ( type in Expr.filter ) {
+				if ( (match = matchExpr[ type ].exec( soFar )) && (!preFilters[ type ] ||
+					(match = preFilters[ type ]( match ))) ) {
+					matched = match.shift();
+					tokens.push({
+						value: matched,
+						type: type,
+						matches: match
+					});
+					soFar = soFar.slice( matched.length );
+				}
+			}
+	
+			if ( !matched ) {
+				break;
+			}
+		}
+	
+		// Return the length of the invalid excess
+		// if we're just parsing
+		// Otherwise, throw an error or return tokens
+		return parseOnly ?
+			soFar.length :
+			soFar ?
+				Sizzle.error( selector ) :
+				// Cache the tokens
+				tokenCache( selector, groups ).slice( 0 );
+	};
+	
+	function toSelector( tokens ) {
+		var i = 0,
+			len = tokens.length,
+			selector = "";
+		for ( ; i < len; i++ ) {
+			selector += tokens[i].value;
+		}
+		return selector;
+	}
+	
+	function addCombinator( matcher, combinator, base ) {
+		var dir = combinator.dir,
+			skip = combinator.next,
+			key = skip || dir,
+			checkNonElements = base && key === "parentNode",
+			doneName = done++;
+	
+		return combinator.first ?
+			// Check against closest ancestor/preceding element
+			function( elem, context, xml ) {
+				while ( (elem = elem[ dir ]) ) {
+					if ( elem.nodeType === 1 || checkNonElements ) {
+						return matcher( elem, context, xml );
+					}
+				}
+			} :
+	
+			// Check against all ancestor/preceding elements
+			function( elem, context, xml ) {
+				var oldCache, uniqueCache, outerCache,
+					newCache = [ dirruns, doneName ];
+	
+				// We can't set arbitrary data on XML nodes, so they don't benefit from combinator caching
+				if ( xml ) {
+					while ( (elem = elem[ dir ]) ) {
+						if ( elem.nodeType === 1 || checkNonElements ) {
+							if ( matcher( elem, context, xml ) ) {
+								return true;
+							}
+						}
+					}
+				} else {
+					while ( (elem = elem[ dir ]) ) {
+						if ( elem.nodeType === 1 || checkNonElements ) {
+							outerCache = elem[ expando ] || (elem[ expando ] = {});
+	
+							// Support: IE <9 only
+							// Defend against cloned attroperties (jQuery gh-1709)
+							uniqueCache = outerCache[ elem.uniqueID ] || (outerCache[ elem.uniqueID ] = {});
+	
+							if ( skip && skip === elem.nodeName.toLowerCase() ) {
+								elem = elem[ dir ] || elem;
+							} else if ( (oldCache = uniqueCache[ key ]) &&
+								oldCache[ 0 ] === dirruns && oldCache[ 1 ] === doneName ) {
+	
+								// Assign to newCache so results back-propagate to previous elements
+								return (newCache[ 2 ] = oldCache[ 2 ]);
+							} else {
+								// Reuse newcache so results back-propagate to previous elements
+								uniqueCache[ key ] = newCache;
+	
+								// A match means we're done; a fail means we have to keep checking
+								if ( (newCache[ 2 ] = matcher( elem, context, xml )) ) {
+									return true;
+								}
+							}
+						}
+					}
+				}
+			};
+	}
+	
+	function elementMatcher( matchers ) {
+		return matchers.length > 1 ?
+			function( elem, context, xml ) {
+				var i = matchers.length;
+				while ( i-- ) {
+					if ( !matchers[i]( elem, context, xml ) ) {
+						return false;
+					}
+				}
+				return true;
+			} :
+			matchers[0];
+	}
+	
+	function multipleContexts( selector, contexts, results ) {
+		var i = 0,
+			len = contexts.length;
+		for ( ; i < len; i++ ) {
+			Sizzle( selector, contexts[i], results );
+		}
+		return results;
+	}
+	
+	function condense( unmatched, map, filter, context, xml ) {
+		var elem,
+			newUnmatched = [],
+			i = 0,
+			len = unmatched.length,
+			mapped = map != null;
+	
+		for ( ; i < len; i++ ) {
+			if ( (elem = unmatched[i]) ) {
+				if ( !filter || filter( elem, context, xml ) ) {
+					newUnmatched.push( elem );
+					if ( mapped ) {
+						map.push( i );
+					}
+				}
+			}
+		}
+	
+		return newUnmatched;
+	}
+	
+	function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {
+		if ( postFilter && !postFilter[ expando ] ) {
+			postFilter = setMatcher( postFilter );
+		}
+		if ( postFinder && !postFinder[ expando ] ) {
+			postFinder = setMatcher( postFinder, postSelector );
+		}
+		return markFunction(function( seed, results, context, xml ) {
+			var temp, i, elem,
+				preMap = [],
+				postMap = [],
+				preexisting = results.length,
+	
+				// Get initial elements from seed or context
+				elems = seed || multipleContexts( selector || "*", context.nodeType ? [ context ] : context, [] ),
+	
+				// Prefilter to get matcher input, preserving a map for seed-results synchronization
+				matcherIn = preFilter && ( seed || !selector ) ?
+					condense( elems, preMap, preFilter, context, xml ) :
+					elems,
+	
+				matcherOut = matcher ?
+					// If we have a postFinder, or filtered seed, or non-seed postFilter or preexisting results,
+					postFinder || ( seed ? preFilter : preexisting || postFilter ) ?
+	
+						// ...intermediate processing is necessary
+						[] :
+	
+						// ...otherwise use results directly
+						results :
+					matcherIn;
+	
+			// Find primary matches
+			if ( matcher ) {
+				matcher( matcherIn, matcherOut, context, xml );
+			}
+	
+			// Apply postFilter
+			if ( postFilter ) {
+				temp = condense( matcherOut, postMap );
+				postFilter( temp, [], context, xml );
+	
+				// Un-match failing elements by moving them back to matcherIn
+				i = temp.length;
+				while ( i-- ) {
+					if ( (elem = temp[i]) ) {
+						matcherOut[ postMap[i] ] = !(matcherIn[ postMap[i] ] = elem);
+					}
+				}
+			}
+	
+			if ( seed ) {
+				if ( postFinder || preFilter ) {
+					if ( postFinder ) {
+						// Get the final matcherOut by condensing this intermediate into postFinder contexts
+						temp = [];
+						i = matcherOut.length;
+						while ( i-- ) {
+							if ( (elem = matcherOut[i]) ) {
+								// Restore matcherIn since elem is not yet a final match
+								temp.push( (matcherIn[i] = elem) );
+							}
+						}
+						postFinder( null, (matcherOut = []), temp, xml );
+					}
+	
+					// Move matched elements from seed to results to keep them synchronized
+					i = matcherOut.length;
+					while ( i-- ) {
+						if ( (elem = matcherOut[i]) &&
+							(temp = postFinder ? indexOf( seed, elem ) : preMap[i]) > -1 ) {
+	
+							seed[temp] = !(results[temp] = elem);
+						}
+					}
+				}
+	
+			// Add elements to results, through postFinder if defined
+			} else {
+				matcherOut = condense(
+					matcherOut === results ?
+						matcherOut.splice( preexisting, matcherOut.length ) :
+						matcherOut
+				);
+				if ( postFinder ) {
+					postFinder( null, results, matcherOut, xml );
+				} else {
+					push.apply( results, matcherOut );
+				}
+			}
+		});
+	}
+	
+	function matcherFromTokens( tokens ) {
+		var checkContext, matcher, j,
+			len = tokens.length,
+			leadingRelative = Expr.relative[ tokens[0].type ],
+			implicitRelative = leadingRelative || Expr.relative[" "],
+			i = leadingRelative ? 1 : 0,
+	
+			// The foundational matcher ensures that elements are reachable from top-level context(s)
+			matchContext = addCombinator( function( elem ) {
+				return elem === checkContext;
+			}, implicitRelative, true ),
+			matchAnyContext = addCombinator( function( elem ) {
+				return indexOf( checkContext, elem ) > -1;
+			}, implicitRelative, true ),
+			matchers = [ function( elem, context, xml ) {
+				var ret = ( !leadingRelative && ( xml || context !== outermostContext ) ) || (
+					(checkContext = context).nodeType ?
+						matchContext( elem, context, xml ) :
+						matchAnyContext( elem, context, xml ) );
+				// Avoid hanging onto element (issue #299)
+				checkContext = null;
+				return ret;
+			} ];
+	
+		for ( ; i < len; i++ ) {
+			if ( (matcher = Expr.relative[ tokens[i].type ]) ) {
+				matchers = [ addCombinator(elementMatcher( matchers ), matcher) ];
+			} else {
+				matcher = Expr.filter[ tokens[i].type ].apply( null, tokens[i].matches );
+	
+				// Return special upon seeing a positional matcher
+				if ( matcher[ expando ] ) {
+					// Find the next relative operator (if any) for proper handling
+					j = ++i;
+					for ( ; j < len; j++ ) {
+						if ( Expr.relative[ tokens[j].type ] ) {
+							break;
+						}
+					}
+					return setMatcher(
+						i > 1 && elementMatcher( matchers ),
+						i > 1 && toSelector(
+							// If the preceding token was a descendant combinator, insert an implicit any-element `*`
+							tokens.slice( 0, i - 1 ).concat({ value: tokens[ i - 2 ].type === " " ? "*" : "" })
+						).replace( rtrim, "$1" ),
+						matcher,
+						i < j && matcherFromTokens( tokens.slice( i, j ) ),
+						j < len && matcherFromTokens( (tokens = tokens.slice( j )) ),
+						j < len && toSelector( tokens )
+					);
+				}
+				matchers.push( matcher );
+			}
+		}
+	
+		return elementMatcher( matchers );
+	}
+	
+	function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
+		var bySet = setMatchers.length > 0,
+			byElement = elementMatchers.length > 0,
+			superMatcher = function( seed, context, xml, results, outermost ) {
+				var elem, j, matcher,
+					matchedCount = 0,
+					i = "0",
+					unmatched = seed && [],
+					setMatched = [],
+					contextBackup = outermostContext,
+					// We must always have either seed elements or outermost context
+					elems = seed || byElement && Expr.find["TAG"]( "*", outermost ),
+					// Use integer dirruns iff this is the outermost matcher
+					dirrunsUnique = (dirruns += contextBackup == null ? 1 : Math.random() || 0.1),
+					len = elems.length;
+	
+				if ( outermost ) {
+					outermostContext = context === document || context || outermost;
+				}
+	
+				// Add elements passing elementMatchers directly to results
+				// Support: IE<9, Safari
+				// Tolerate NodeList properties (IE: "length"; Safari: <number>) matching elements by id
+				for ( ; i !== len && (elem = elems[i]) != null; i++ ) {
+					if ( byElement && elem ) {
+						j = 0;
+						if ( !context && elem.ownerDocument !== document ) {
+							setDocument( elem );
+							xml = !documentIsHTML;
+						}
+						while ( (matcher = elementMatchers[j++]) ) {
+							if ( matcher( elem, context || document, xml) ) {
+								results.push( elem );
+								break;
+							}
+						}
+						if ( outermost ) {
+							dirruns = dirrunsUnique;
+						}
+					}
+	
+					// Track unmatched elements for set filters
+					if ( bySet ) {
+						// They will have gone through all possible matchers
+						if ( (elem = !matcher && elem) ) {
+							matchedCount--;
+						}
+	
+						// Lengthen the array for every element, matched or not
+						if ( seed ) {
+							unmatched.push( elem );
+						}
+					}
+				}
+	
+				// `i` is now the count of elements visited above, and adding it to `matchedCount`
+				// makes the latter nonnegative.
+				matchedCount += i;
+	
+				// Apply set filters to unmatched elements
+				// NOTE: This can be skipped if there are no unmatched elements (i.e., `matchedCount`
+				// equals `i`), unless we didn't visit _any_ elements in the above loop because we have
+				// no element matchers and no seed.
+				// Incrementing an initially-string "0" `i` allows `i` to remain a string only in that
+				// case, which will result in a "00" `matchedCount` that differs from `i` but is also
+				// numerically zero.
+				if ( bySet && i !== matchedCount ) {
+					j = 0;
+					while ( (matcher = setMatchers[j++]) ) {
+						matcher( unmatched, setMatched, context, xml );
+					}
+	
+					if ( seed ) {
+						// Reintegrate element matches to eliminate the need for sorting
+						if ( matchedCount > 0 ) {
+							while ( i-- ) {
+								if ( !(unmatched[i] || setMatched[i]) ) {
+									setMatched[i] = pop.call( results );
+								}
+							}
+						}
+	
+						// Discard index placeholder values to get only actual matches
+						setMatched = condense( setMatched );
+					}
+	
+					// Add matches to results
+					push.apply( results, setMatched );
+	
+					// Seedless set matches succeeding multiple successful matchers stipulate sorting
+					if ( outermost && !seed && setMatched.length > 0 &&
+						( matchedCount + setMatchers.length ) > 1 ) {
+	
+						Sizzle.uniqueSort( results );
+					}
+				}
+	
+				// Override manipulation of globals by nested matchers
+				if ( outermost ) {
+					dirruns = dirrunsUnique;
+					outermostContext = contextBackup;
+				}
+	
+				return unmatched;
+			};
+	
+		return bySet ?
+			markFunction( superMatcher ) :
+			superMatcher;
+	}
+	
+	compile = Sizzle.compile = function( selector, match /* Internal Use Only */ ) {
+		var i,
+			setMatchers = [],
+			elementMatchers = [],
+			cached = compilerCache[ selector + " " ];
+	
+		if ( !cached ) {
+			// Generate a function of recursive functions that can be used to check each element
+			if ( !match ) {
+				match = tokenize( selector );
+			}
+			i = match.length;
+			while ( i-- ) {
+				cached = matcherFromTokens( match[i] );
+				if ( cached[ expando ] ) {
+					setMatchers.push( cached );
+				} else {
+					elementMatchers.push( cached );
+				}
+			}
+	
+			// Cache the compiled function
+			cached = compilerCache( selector, matcherFromGroupMatchers( elementMatchers, setMatchers ) );
+	
+			// Save selector and tokenization
+			cached.selector = selector;
+		}
+		return cached;
+	};
+	
+	/**
+	 * A low-level selection function that works with Sizzle's compiled
+	 *  selector functions
+	 * @param {String|Function} selector A selector or a pre-compiled
+	 *  selector function built with Sizzle.compile
+	 * @param {Element} context
+	 * @param {Array} [results]
+	 * @param {Array} [seed] A set of elements to match against
+	 */
+	select = Sizzle.select = function( selector, context, results, seed ) {
+		var i, tokens, token, type, find,
+			compiled = typeof selector === "function" && selector,
+			match = !seed && tokenize( (selector = compiled.selector || selector) );
+	
+		results = results || [];
+	
+		// Try to minimize operations if there is only one selector in the list and no seed
+		// (the latter of which guarantees us context)
+		if ( match.length === 1 ) {
+	
+			// Reduce context if the leading compound selector is an ID
+			tokens = match[0] = match[0].slice( 0 );
+			if ( tokens.length > 2 && (token = tokens[0]).type === "ID" &&
+					support.getById && context.nodeType === 9 && documentIsHTML &&
+					Expr.relative[ tokens[1].type ] ) {
+	
+				context = ( Expr.find["ID"]( token.matches[0].replace(runescape, funescape), context ) || [] )[0];
+				if ( !context ) {
+					return results;
+	
+				// Precompiled matchers will still verify ancestry, so step up a level
+				} else if ( compiled ) {
+					context = context.parentNode;
+				}
+	
+				selector = selector.slice( tokens.shift().value.length );
+			}
+	
+			// Fetch a seed set for right-to-left matching
+			i = matchExpr["needsContext"].test( selector ) ? 0 : tokens.length;
+			while ( i-- ) {
+				token = tokens[i];
+	
+				// Abort if we hit a combinator
+				if ( Expr.relative[ (type = token.type) ] ) {
+					break;
+				}
+				if ( (find = Expr.find[ type ]) ) {
+					// Search, expanding context for leading sibling combinators
+					if ( (seed = find(
+						token.matches[0].replace( runescape, funescape ),
+						rsibling.test( tokens[0].type ) && testContext( context.parentNode ) || context
+					)) ) {
+	
+						// If seed is empty or no tokens remain, we can return early
+						tokens.splice( i, 1 );
+						selector = seed.length && toSelector( tokens );
+						if ( !selector ) {
+							push.apply( results, seed );
+							return results;
+						}
+	
+						break;
+					}
+				}
+			}
+		}
+	
+		// Compile and execute a filtering function if one is not provided
+		// Provide `match` to avoid retokenization if we modified the selector above
+		( compiled || compile( selector, match ) )(
+			seed,
+			context,
+			!documentIsHTML,
+			results,
+			!context || rsibling.test( selector ) && testContext( context.parentNode ) || context
+		);
+		return results;
+	};
+	
+	// One-time assignments
+	
+	// Sort stability
+	support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
+	
+	// Support: Chrome 14-35+
+	// Always assume duplicates if they aren't passed to the comparison function
+	support.detectDuplicates = !!hasDuplicate;
+	
+	// Initialize against the default document
+	setDocument();
+	
+	// Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)
+	// Detached nodes confoundingly follow *each other*
+	support.sortDetached = assert(function( el ) {
+		// Should return 1, but returns 4 (following)
+		return el.compareDocumentPosition( document.createElement("fieldset") ) & 1;
+	});
+	
+	// Support: IE<8
+	// Prevent attribute/property "interpolation"
+	// https://msdn.microsoft.com/en-us/library/ms536429%28VS.85%29.aspx
+	if ( !assert(function( el ) {
+		el.innerHTML = "<a href='#'></a>";
+		return el.firstChild.getAttribute("href") === "#" ;
+	}) ) {
+		addHandle( "type|href|height|width", function( elem, name, isXML ) {
+			if ( !isXML ) {
+				return elem.getAttribute( name, name.toLowerCase() === "type" ? 1 : 2 );
+			}
+		});
+	}
+	
+	// Support: IE<9
+	// Use defaultValue in place of getAttribute("value")
+	if ( !support.attributes || !assert(function( el ) {
+		el.innerHTML = "<input/>";
+		el.firstChild.setAttribute( "value", "" );
+		return el.firstChild.getAttribute( "value" ) === "";
+	}) ) {
+		addHandle( "value", function( elem, name, isXML ) {
+			if ( !isXML && elem.nodeName.toLowerCase() === "input" ) {
+				return elem.defaultValue;
+			}
+		});
+	}
+	
+	// Support: IE<9
+	// Use getAttributeNode to fetch booleans when getAttribute lies
+	if ( !assert(function( el ) {
+		return el.getAttribute("disabled") == null;
+	}) ) {
+		addHandle( booleans, function( elem, name, isXML ) {
+			var val;
+			if ( !isXML ) {
+				return elem[ name ] === true ? name.toLowerCase() :
+						(val = elem.getAttributeNode( name )) && val.specified ?
+						val.value :
+					null;
+			}
+		});
+	}
+	
+	return Sizzle;
+	
+	})( window );
+	
+	
+	
+	jQuery.find = Sizzle;
+	jQuery.expr = Sizzle.selectors;
+	
+	// Deprecated
+	jQuery.expr[ ":" ] = jQuery.expr.pseudos;
+	jQuery.uniqueSort = jQuery.unique = Sizzle.uniqueSort;
+	jQuery.text = Sizzle.getText;
+	jQuery.isXMLDoc = Sizzle.isXML;
+	jQuery.contains = Sizzle.contains;
+	jQuery.escapeSelector = Sizzle.escape;
+	
+	
+	
+	var dir = function( elem, dir, until ) {
+		var matched = [],
+			truncate = until !== undefined;
+	
+		while ( ( elem = elem[ dir ] ) && elem.nodeType !== 9 ) {
+			if ( elem.nodeType === 1 ) {
+				if ( truncate && jQuery( elem ).is( until ) ) {
+					break;
+				}
+				matched.push( elem );
+			}
+		}
+		return matched;
+	};
+	
+	
+	var siblings = function( n, elem ) {
+		var matched = [];
+	
+		for ( ; n; n = n.nextSibling ) {
+			if ( n.nodeType === 1 && n !== elem ) {
+				matched.push( n );
+			}
+		}
+	
+		return matched;
+	};
+	
+	
+	var rneedsContext = jQuery.expr.match.needsContext;
+	
+	var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
+	
+	
+	
+	var risSimple = /^.[^:#\[\.,]*$/;
+	
+	// Implement the identical functionality for filter and not
+	function winnow( elements, qualifier, not ) {
+		if ( jQuery.isFunction( qualifier ) ) {
+			return jQuery.grep( elements, function( elem, i ) {
+				/* jshint -W018 */
+				return !!qualifier.call( elem, i, elem ) !== not;
+			} );
+	
+		}
+	
+		if ( qualifier.nodeType ) {
+			return jQuery.grep( elements, function( elem ) {
+				return ( elem === qualifier ) !== not;
+			} );
+	
+		}
+	
+		if ( typeof qualifier === "string" ) {
+			if ( risSimple.test( qualifier ) ) {
+				return jQuery.filter( qualifier, elements, not );
+			}
+	
+			qualifier = jQuery.filter( qualifier, elements );
+		}
+	
+		return jQuery.grep( elements, function( elem ) {
+			return ( indexOf.call( qualifier, elem ) > -1 ) !== not && elem.nodeType === 1;
+		} );
+	}
+	
+	jQuery.filter = function( expr, elems, not ) {
+		var elem = elems[ 0 ];
+	
+		if ( not ) {
+			expr = ":not(" + expr + ")";
+		}
+	
+		return elems.length === 1 && elem.nodeType === 1 ?
+			jQuery.find.matchesSelector( elem, expr ) ? [ elem ] : [] :
+			jQuery.find.matches( expr, jQuery.grep( elems, function( elem ) {
+				return elem.nodeType === 1;
+			} ) );
+	};
+	
+	jQuery.fn.extend( {
+		find: function( selector ) {
+			var i, ret,
+				len = this.length,
+				self = this;
+	
+			if ( typeof selector !== "string" ) {
+				return this.pushStack( jQuery( selector ).filter( function() {
+					for ( i = 0; i < len; i++ ) {
+						if ( jQuery.contains( self[ i ], this ) ) {
+							return true;
+						}
+					}
+				} ) );
+			}
+	
+			ret = this.pushStack( [] );
+	
+			for ( i = 0; i < len; i++ ) {
+				jQuery.find( selector, self[ i ], ret );
+			}
+	
+			return len > 1 ? jQuery.uniqueSort( ret ) : ret;
+		},
+		filter: function( selector ) {
+			return this.pushStack( winnow( this, selector || [], false ) );
+		},
+		not: function( selector ) {
+			return this.pushStack( winnow( this, selector || [], true ) );
+		},
+		is: function( selector ) {
+			return !!winnow(
+				this,
+	
+				// If this is a positional/relative selector, check membership in the returned set
+				// so $("p:first").is("p:last") won't return true for a doc with two "p".
+				typeof selector === "string" && rneedsContext.test( selector ) ?
+					jQuery( selector ) :
+					selector || [],
+				false
+			).length;
+		}
+	} );
+	
+	
+	// Initialize a jQuery object
+	
+	
+	// A central reference to the root jQuery(document)
+	var rootjQuery,
+	
+		// A simple way to check for HTML strings
+		// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
+		// Strict HTML recognition (#11290: must start with <)
+		// Shortcut simple #id case for speed
+		rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,
+	
+		init = jQuery.fn.init = function( selector, context, root ) {
+			var match, elem;
+	
+			// HANDLE: $(""), $(null), $(undefined), $(false)
+			if ( !selector ) {
+				return this;
+			}
+	
+			// Method init() accepts an alternate rootjQuery
+			// so migrate can support jQuery.sub (gh-2101)
+			root = root || rootjQuery;
+	
+			// Handle HTML strings
+			if ( typeof selector === "string" ) {
+				if ( selector[ 0 ] === "<" &&
+					selector[ selector.length - 1 ] === ">" &&
+					selector.length >= 3 ) {
+	
+					// Assume that strings that start and end with <> are HTML and skip the regex check
+					match = [ null, selector, null ];
+	
+				} else {
+					match = rquickExpr.exec( selector );
+				}
+	
+				// Match html or make sure no context is specified for #id
+				if ( match && ( match[ 1 ] || !context ) ) {
+	
+					// HANDLE: $(html) -> $(array)
+					if ( match[ 1 ] ) {
+						context = context instanceof jQuery ? context[ 0 ] : context;
+	
+						// Option to run scripts is true for back-compat
+						// Intentionally let the error be thrown if parseHTML is not present
+						jQuery.merge( this, jQuery.parseHTML(
+							match[ 1 ],
+							context && context.nodeType ? context.ownerDocument || context : document,
+							true
+						) );
+	
+						// HANDLE: $(html, props)
+						if ( rsingleTag.test( match[ 1 ] ) && jQuery.isPlainObject( context ) ) {
+							for ( match in context ) {
+	
+								// Properties of context are called as methods if possible
+								if ( jQuery.isFunction( this[ match ] ) ) {
+									this[ match ]( context[ match ] );
+	
+								// ...and otherwise set as attributes
+								} else {
+									this.attr( match, context[ match ] );
+								}
+							}
+						}
+	
+						return this;
+	
+					// HANDLE: $(#id)
+					} else {
+						elem = document.getElementById( match[ 2 ] );
+	
+						if ( elem ) {
+	
+							// Inject the element directly into the jQuery object
+							this[ 0 ] = elem;
+							this.length = 1;
+						}
+						return this;
+					}
+	
+				// HANDLE: $(expr, $(...))
+				} else if ( !context || context.jquery ) {
+					return ( context || root ).find( selector );
+	
+				// HANDLE: $(expr, context)
+				// (which is just equivalent to: $(context).find(expr)
+				} else {
+					return this.constructor( context ).find( selector );
+				}
+	
+			// HANDLE: $(DOMElement)
+			} else if ( selector.nodeType ) {
+				this[ 0 ] = selector;
+				this.length = 1;
+				return this;
+	
+			// HANDLE: $(function)
+			// Shortcut for document ready
+			} else if ( jQuery.isFunction( selector ) ) {
+				return root.ready !== undefined ?
+					root.ready( selector ) :
+	
+					// Execute immediately if ready is not present
+					selector( jQuery );
+			}
+	
+			return jQuery.makeArray( selector, this );
+		};
+	
+	// Give the init function the jQuery prototype for later instantiation
+	init.prototype = jQuery.fn;
+	
+	// Initialize central reference
+	rootjQuery = jQuery( document );
+	
+	
+	var rparentsprev = /^(?:parents|prev(?:Until|All))/,
+	
+		// Methods guaranteed to produce a unique set when starting from a unique set
+		guaranteedUnique = {
+			children: true,
+			contents: true,
+			next: true,
+			prev: true
+		};
+	
+	jQuery.fn.extend( {
+		has: function( target ) {
+			var targets = jQuery( target, this ),
+				l = targets.length;
+	
+			return this.filter( function() {
+				var i = 0;
+				for ( ; i < l; i++ ) {
+					if ( jQuery.contains( this, targets[ i ] ) ) {
+						return true;
+					}
+				}
+			} );
+		},
+	
+		closest: function( selectors, context ) {
+			var cur,
+				i = 0,
+				l = this.length,
+				matched = [],
+				targets = typeof selectors !== "string" && jQuery( selectors );
+	
+			// Positional selectors never match, since there's no _selection_ context
+			if ( !rneedsContext.test( selectors ) ) {
+				for ( ; i < l; i++ ) {
+					for ( cur = this[ i ]; cur && cur !== context; cur = cur.parentNode ) {
+	
+						// Always skip document fragments
+						if ( cur.nodeType < 11 && ( targets ?
+							targets.index( cur ) > -1 :
+	
+							// Don't pass non-elements to Sizzle
+							cur.nodeType === 1 &&
+								jQuery.find.matchesSelector( cur, selectors ) ) ) {
+	
+							matched.push( cur );
+							break;
+						}
+					}
+				}
+			}
+	
+			return this.pushStack( matched.length > 1 ? jQuery.uniqueSort( matched ) : matched );
+		},
+	
+		// Determine the position of an element within the set
+		index: function( elem ) {
+	
+			// No argument, return index in parent
+			if ( !elem ) {
+				return ( this[ 0 ] && this[ 0 ].parentNode ) ? this.first().prevAll().length : -1;
+			}
+	
+			// Index in selector
+			if ( typeof elem === "string" ) {
+				return indexOf.call( jQuery( elem ), this[ 0 ] );
+			}
+	
+			// Locate the position of the desired element
+			return indexOf.call( this,
+	
+				// If it receives a jQuery object, the first element is used
+				elem.jquery ? elem[ 0 ] : elem
+			);
+		},
+	
+		add: function( selector, context ) {
+			return this.pushStack(
+				jQuery.uniqueSort(
+					jQuery.merge( this.get(), jQuery( selector, context ) )
+				)
+			);
+		},
+	
+		addBack: function( selector ) {
+			return this.add( selector == null ?
+				this.prevObject : this.prevObject.filter( selector )
+			);
+		}
+	} );
+	
+	function sibling( cur, dir ) {
+		while ( ( cur = cur[ dir ] ) && cur.nodeType !== 1 ) {}
+		return cur;
+	}
+	
+	jQuery.each( {
+		parent: function( elem ) {
+			var parent = elem.parentNode;
+			return parent && parent.nodeType !== 11 ? parent : null;
+		},
+		parents: function( elem ) {
+			return dir( elem, "parentNode" );
+		},
+		parentsUntil: function( elem, i, until ) {
+			return dir( elem, "parentNode", until );
+		},
+		next: function( elem ) {
+			return sibling( elem, "nextSibling" );
+		},
+		prev: function( elem ) {
+			return sibling( elem, "previousSibling" );
+		},
+		nextAll: function( elem ) {
+			return dir( elem, "nextSibling" );
+		},
+		prevAll: function( elem ) {
+			return dir( elem, "previousSibling" );
+		},
+		nextUntil: function( elem, i, until ) {
+			return dir( elem, "nextSibling", until );
+		},
+		prevUntil: function( elem, i, until ) {
+			return dir( elem, "previousSibling", until );
+		},
+		siblings: function( elem ) {
+			return siblings( ( elem.parentNode || {} ).firstChild, elem );
+		},
+		children: function( elem ) {
+			return siblings( elem.firstChild );
+		},
+		contents: function( elem ) {
+			return elem.contentDocument || jQuery.merge( [], elem.childNodes );
+		}
+	}, function( name, fn ) {
+		jQuery.fn[ name ] = function( until, selector ) {
+			var matched = jQuery.map( this, fn, until );
+	
+			if ( name.slice( -5 ) !== "Until" ) {
+				selector = until;
+			}
+	
+			if ( selector && typeof selector === "string" ) {
+				matched = jQuery.filter( selector, matched );
+			}
+	
+			if ( this.length > 1 ) {
+	
+				// Remove duplicates
+				if ( !guaranteedUnique[ name ] ) {
+					jQuery.uniqueSort( matched );
+				}
+	
+				// Reverse order for parents* and prev-derivatives
+				if ( rparentsprev.test( name ) ) {
+					matched.reverse();
+				}
+			}
+	
+			return this.pushStack( matched );
+		};
+	} );
+	var rnotwhite = ( /\S+/g );
+	
+	
+	
+	// Convert String-formatted options into Object-formatted ones
+	function createOptions( options ) {
+		var object = {};
+		jQuery.each( options.match( rnotwhite ) || [], function( _, flag ) {
+			object[ flag ] = true;
+		} );
+		return object;
+	}
+	
+	/*
+	 * Create a callback list using the following parameters:
+	 *
+	 *	options: an optional list of space-separated options that will change how
+	 *			the callback list behaves or a more traditional option object
+	 *
+	 * By default a callback list will act like an event callback list and can be
+	 * "fired" multiple times.
+	 *
+	 * Possible options:
+	 *
+	 *	once:			will ensure the callback list can only be fired once (like a Deferred)
+	 *
+	 *	memory:			will keep track of previous values and will call any callback added
+	 *					after the list has been fired right away with the latest "memorized"
+	 *					values (like a Deferred)
+	 *
+	 *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+	 *
+	 *	stopOnFalse:	interrupt callings when a callback returns false
+	 *
+	 */
+	jQuery.Callbacks = function( options ) {
+	
+		// Convert options from String-formatted to Object-formatted if needed
+		// (we check in cache first)
+		options = typeof options === "string" ?
+			createOptions( options ) :
+			jQuery.extend( {}, options );
+	
+		var // Flag to know if list is currently firing
+			firing,
+	
+			// Last fire value for non-forgettable lists
+			memory,
+	
+			// Flag to know if list was already fired
+			fired,
+	
+			// Flag to prevent firing
+			locked,
+	
+			// Actual callback list
+			list = [],
+	
+			// Queue of execution data for repeatable lists
+			queue = [],
+	
+			// Index of currently firing callback (modified by add/remove as needed)
+			firingIndex = -1,
+	
+			// Fire callbacks
+			fire = function() {
+	
+				// Enforce single-firing
+				locked = options.once;
+	
+				// Execute callbacks for all pending executions,
+				// respecting firingIndex overrides and runtime changes
+				fired = firing = true;
+				for ( ; queue.length; firingIndex = -1 ) {
+					memory = queue.shift();
+					while ( ++firingIndex < list.length ) {
+	
+						// Run callback and check for early termination
+						if ( list[ firingIndex ].apply( memory[ 0 ], memory[ 1 ] ) === false &&
+							options.stopOnFalse ) {
+	
+							// Jump to end and forget the data so .add doesn't re-fire
+							firingIndex = list.length;
+							memory = false;
+						}
+					}
+				}
+	
+				// Forget the data if we're done with it
+				if ( !options.memory ) {
+					memory = false;
+				}
+	
+				firing = false;
+	
+				// Clean up if we're done firing for good
+				if ( locked ) {
+	
+					// Keep an empty list if we have data for future add calls
+					if ( memory ) {
+						list = [];
+	
+					// Otherwise, this object is spent
+					} else {
+						list = "";
+					}
+				}
+			},
+	
+			// Actual Callbacks object
+			self = {
+	
+				// Add a callback or a collection of callbacks to the list
+				add: function() {
+					if ( list ) {
+	
+						// If we have memory from a past run, we should fire after adding
+						if ( memory && !firing ) {
+							firingIndex = list.length - 1;
+							queue.push( memory );
+						}
+	
+						( function add( args ) {
+							jQuery.each( args, function( _, arg ) {
+								if ( jQuery.isFunction( arg ) ) {
+									if ( !options.unique || !self.has( arg ) ) {
+										list.push( arg );
+									}
+								} else if ( arg && arg.length && jQuery.type( arg ) !== "string" ) {
+	
+									// Inspect recursively
+									add( arg );
+								}
+							} );
+						} )( arguments );
+	
+						if ( memory && !firing ) {
+							fire();
+						}
+					}
+					return this;
+				},
+	
+				// Remove a callback from the list
+				remove: function() {
+					jQuery.each( arguments, function( _, arg ) {
+						var index;
+						while ( ( index = jQuery.inArray( arg, list, index ) ) > -1 ) {
+							list.splice( index, 1 );
+	
+							// Handle firing indexes
+							if ( index <= firingIndex ) {
+								firingIndex--;
+							}
+						}
+					} );
+					return this;
+				},
+	
+				// Check if a given callback is in the list.
+				// If no argument is given, return whether or not list has callbacks attached.
+				has: function( fn ) {
+					return fn ?
+						jQuery.inArray( fn, list ) > -1 :
+						list.length > 0;
+				},
+	
+				// Remove all callbacks from the list
+				empty: function() {
+					if ( list ) {
+						list = [];
+					}
+					return this;
+				},
+	
+				// Disable .fire and .add
+				// Abort any current/pending executions
+				// Clear all callbacks and values
+				disable: function() {
+					locked = queue = [];
+					list = memory = "";
+					return this;
+				},
+				disabled: function() {
+					return !list;
+				},
+	
+				// Disable .fire
+				// Also disable .add unless we have memory (since it would have no effect)
+				// Abort any pending executions
+				lock: function() {
+					locked = queue = [];
+					if ( !memory && !firing ) {
+						list = memory = "";
+					}
+					return this;
+				},
+				locked: function() {
+					return !!locked;
+				},
+	
+				// Call all callbacks with the given context and arguments
+				fireWith: function( context, args ) {
+					if ( !locked ) {
+						args = args || [];
+						args = [ context, args.slice ? args.slice() : args ];
+						queue.push( args );
+						if ( !firing ) {
+							fire();
+						}
+					}
+					return this;
+				},
+	
+				// Call all the callbacks with the given arguments
+				fire: function() {
+					self.fireWith( this, arguments );
+					return this;
+				},
+	
+				// To know if the callbacks have already been called at least once
+				fired: function() {
+					return !!fired;
+				}
+			};
+	
+		return self;
+	};
+	
+	
+	function Identity( v ) {
+		return v;
+	}
+	function Thrower( ex ) {
+		throw ex;
+	}
+	
+	function adoptValue( value, resolve, reject ) {
+		var method;
+	
+		try {
+	
+			// Check for promise aspect first to privilege synchronous behavior
+			if ( value && jQuery.isFunction( ( method = value.promise ) ) ) {
+				method.call( value ).done( resolve ).fail( reject );
+	
+			// Other thenables
+			} else if ( value && jQuery.isFunction( ( method = value.then ) ) ) {
+				method.call( value, resolve, reject );
+	
+			// Other non-thenables
+			} else {
+	
+				// Support: Android 4.0 only
+				// Strict mode functions invoked without .call/.apply get global-object context
+				resolve.call( undefined, value );
+			}
+	
+		// For Promises/A+, convert exceptions into rejections
+		// Since jQuery.when doesn't unwrap thenables, we can skip the extra checks appearing in
+		// Deferred#then to conditionally suppress rejection.
+		} catch ( /*jshint -W002 */ value ) {
+	
+			// Support: Android 4.0 only
+			// Strict mode functions invoked without .call/.apply get global-object context
+			reject.call( undefined, value );
+		}
+	}
+	
+	jQuery.extend( {
+	
+		Deferred: function( func ) {
+			var tuples = [
+	
+					// action, add listener, callbacks,
+					// ... .then handlers, argument index, [final state]
+					[ "notify", "progress", jQuery.Callbacks( "memory" ),
+						jQuery.Callbacks( "memory" ), 2 ],
+					[ "resolve", "done", jQuery.Callbacks( "once memory" ),
+						jQuery.Callbacks( "once memory" ), 0, "resolved" ],
+					[ "reject", "fail", jQuery.Callbacks( "once memory" ),
+						jQuery.Callbacks( "once memory" ), 1, "rejected" ]
+				],
+				state = "pending",
+				promise = {
+					state: function() {
+						return state;
+					},
+					always: function() {
+						deferred.done( arguments ).fail( arguments );
+						return this;
+					},
+					"catch": function( fn ) {
+						return promise.then( null, fn );
+					},
+	
+					// Keep pipe for back-compat
+					pipe: function( /* fnDone, fnFail, fnProgress */ ) {
+						var fns = arguments;
+	
+						return jQuery.Deferred( function( newDefer ) {
+							jQuery.each( tuples, function( i, tuple ) {
+	
+								// Map tuples (progress, done, fail) to arguments (done, fail, progress)
+								var fn = jQuery.isFunction( fns[ tuple[ 4 ] ] ) && fns[ tuple[ 4 ] ];
+	
+								// deferred.progress(function() { bind to newDefer or newDefer.notify })
+								// deferred.done(function() { bind to newDefer or newDefer.resolve })
+								// deferred.fail(function() { bind to newDefer or newDefer.reject })
+								deferred[ tuple[ 1 ] ]( function() {
+									var returned = fn && fn.apply( this, arguments );
+									if ( returned && jQuery.isFunction( returned.promise ) ) {
+										returned.promise()
+											.progress( newDefer.notify )
+											.done( newDefer.resolve )
+											.fail( newDefer.reject );
+									} else {
+										newDefer[ tuple[ 0 ] + "With" ](
+											this,
+											fn ? [ returned ] : arguments
+										);
+									}
+								} );
+							} );
+							fns = null;
+						} ).promise();
+					},
+					then: function( onFulfilled, onRejected, onProgress ) {
+						var maxDepth = 0;
+						function resolve( depth, deferred, handler, special ) {
+							return function() {
+								var that = this,
+									args = arguments,
+									mightThrow = function() {
+										var returned, then;
+	
+										// Support: Promises/A+ section 2.3.3.3.3
+										// https://promisesaplus.com/#point-59
+										// Ignore double-resolution attempts
+										if ( depth < maxDepth ) {
+											return;
+										}
+	
+										returned = handler.apply( that, args );
+	
+										// Support: Promises/A+ section 2.3.1
+										// https://promisesaplus.com/#point-48
+										if ( returned === deferred.promise() ) {
+											throw new TypeError( "Thenable self-resolution" );
+										}
+	
+										// Support: Promises/A+ sections 2.3.3.1, 3.5
+										// https://promisesaplus.com/#point-54
+										// https://promisesaplus.com/#point-75
+										// Retrieve `then` only once
+										then = returned &&
+	
+											// Support: Promises/A+ section 2.3.4
+											// https://promisesaplus.com/#point-64
+											// Only check objects and functions for thenability
+											( typeof returned === "object" ||
+												typeof returned === "function" ) &&
+											returned.then;
+	
+										// Handle a returned thenable
+										if ( jQuery.isFunction( then ) ) {
+	
+											// Special processors (notify) just wait for resolution
+											if ( special ) {
+												then.call(
+													returned,
+													resolve( maxDepth, deferred, Identity, special ),
+													resolve( maxDepth, deferred, Thrower, special )
+												);
+	
+											// Normal processors (resolve) also hook into progress
+											} else {
+	
+												// ...and disregard older resolution values
+												maxDepth++;
+	
+												then.call(
+													returned,
+													resolve( maxDepth, deferred, Identity, special ),
+													resolve( maxDepth, deferred, Thrower, special ),
+													resolve( maxDepth, deferred, Identity,
+														deferred.notifyWith )
+												);
+											}
+	
+										// Handle all other returned values
+										} else {
+	
+											// Only substitute handlers pass on context
+											// and multiple values (non-spec behavior)
+											if ( handler !== Identity ) {
+												that = undefined;
+												args = [ returned ];
+											}
+	
+											// Process the value(s)
+											// Default process is resolve
+											( special || deferred.resolveWith )( that, args );
+										}
+									},
+	
+									// Only normal processors (resolve) catch and reject exceptions
+									process = special ?
+										mightThrow :
+										function() {
+											try {
+												mightThrow();
+											} catch ( e ) {
+	
+												if ( jQuery.Deferred.exceptionHook ) {
+													jQuery.Deferred.exceptionHook( e,
+														process.stackTrace );
+												}
+	
+												// Support: Promises/A+ section 2.3.3.3.4.1
+												// https://promisesaplus.com/#point-61
+												// Ignore post-resolution exceptions
+												if ( depth + 1 >= maxDepth ) {
+	
+													// Only substitute handlers pass on context
+													// and multiple values (non-spec behavior)
+													if ( handler !== Thrower ) {
+														that = undefined;
+														args = [ e ];
+													}
+	
+													deferred.rejectWith( that, args );
+												}
+											}
+										};
+	
+								// Support: Promises/A+ section 2.3.3.3.1
+								// https://promisesaplus.com/#point-57
+								// Re-resolve promises immediately to dodge false rejection from
+								// subsequent errors
+								if ( depth ) {
+									process();
+								} else {
+	
+									// Call an optional hook to record the stack, in case of exception
+									// since it's otherwise lost when execution goes async
+									if ( jQuery.Deferred.getStackHook ) {
+										process.stackTrace = jQuery.Deferred.getStackHook();
+									}
+									window.setTimeout( process );
+								}
+							};
+						}
+	
+						return jQuery.Deferred( function( newDefer ) {
+	
+							// progress_handlers.add( ... )
+							tuples[ 0 ][ 3 ].add(
+								resolve(
+									0,
+									newDefer,
+									jQuery.isFunction( onProgress ) ?
+										onProgress :
+										Identity,
+									newDefer.notifyWith
+								)
+							);
+	
+							// fulfilled_handlers.add( ... )
+							tuples[ 1 ][ 3 ].add(
+								resolve(
+									0,
+									newDefer,
+									jQuery.isFunction( onFulfilled ) ?
+										onFulfilled :
+										Identity
+								)
+							);
+	
+							// rejected_handlers.add( ... )
+							tuples[ 2 ][ 3 ].add(
+								resolve(
+									0,
+									newDefer,
+									jQuery.isFunction( onRejected ) ?
+										onRejected :
+										Thrower
+								)
+							);
+						} ).promise();
+					},
+	
+					// Get a promise for this deferred
+					// If obj is provided, the promise aspect is added to the object
+					promise: function( obj ) {
+						return obj != null ? jQuery.extend( obj, promise ) : promise;
+					}
+				},
+				deferred = {};
+	
+			// Add list-specific methods
+			jQuery.each( tuples, function( i, tuple ) {
+				var list = tuple[ 2 ],
+					stateString = tuple[ 5 ];
+	
+				// promise.progress = list.add
+				// promise.done = list.add
+				// promise.fail = list.add
+				promise[ tuple[ 1 ] ] = list.add;
+	
+				// Handle state
+				if ( stateString ) {
+					list.add(
+						function() {
+	
+							// state = "resolved" (i.e., fulfilled)
+							// state = "rejected"
+							state = stateString;
+						},
+	
+						// rejected_callbacks.disable
+						// fulfilled_callbacks.disable
+						tuples[ 3 - i ][ 2 ].disable,
+	
+						// progress_callbacks.lock
+						tuples[ 0 ][ 2 ].lock
+					);
+				}
+	
+				// progress_handlers.fire
+				// fulfilled_handlers.fire
+				// rejected_handlers.fire
+				list.add( tuple[ 3 ].fire );
+	
+				// deferred.notify = function() { deferred.notifyWith(...) }
+				// deferred.resolve = function() { deferred.resolveWith(...) }
+				// deferred.reject = function() { deferred.rejectWith(...) }
+				deferred[ tuple[ 0 ] ] = function() {
+					deferred[ tuple[ 0 ] + "With" ]( this === deferred ? undefined : this, arguments );
+					return this;
+				};
+	
+				// deferred.notifyWith = list.fireWith
+				// deferred.resolveWith = list.fireWith
+				// deferred.rejectWith = list.fireWith
+				deferred[ tuple[ 0 ] + "With" ] = list.fireWith;
+			} );
+	
+			// Make the deferred a promise
+			promise.promise( deferred );
+	
+			// Call given func if any
+			if ( func ) {
+				func.call( deferred, deferred );
+			}
+	
+			// All done!
+			return deferred;
+		},
+	
+		// Deferred helper
+		when: function( singleValue ) {
+			var
+	
+				// count of uncompleted subordinates
+				remaining = arguments.length,
+	
+				// count of unprocessed arguments
+				i = remaining,
+	
+				// subordinate fulfillment data
+				resolveContexts = Array( i ),
+				resolveValues = slice.call( arguments ),
+	
+				// the master Deferred
+				master = jQuery.Deferred(),
+	
+				// subordinate callback factory
+				updateFunc = function( i ) {
+					return function( value ) {
+						resolveContexts[ i ] = this;
+						resolveValues[ i ] = arguments.length > 1 ? slice.call( arguments ) : value;
+						if ( !( --remaining ) ) {
+							master.resolveWith( resolveContexts, resolveValues );
+						}
+					};
+				};
+	
+			// Single- and empty arguments are adopted like Promise.resolve
+			if ( remaining <= 1 ) {
+				adoptValue( singleValue, master.done( updateFunc( i ) ).resolve, master.reject );
+	
+				// Use .then() to unwrap secondary thenables (cf. gh-3000)
+				if ( master.state() === "pending" ||
+					jQuery.isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
+	
+					return master.then();
+				}
+			}
+	
+			// Multiple arguments are aggregated like Promise.all array elements
+			while ( i-- ) {
+				adoptValue( resolveValues[ i ], updateFunc( i ), master.reject );
+			}
+	
+			return master.promise();
+		}
+	} );
+	
+	
+	// These usually indicate a programmer mistake during development,
+	// warn about them ASAP rather than swallowing them by default.
+	var rerrorNames = /^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;
+	
+	jQuery.Deferred.exceptionHook = function( error, stack ) {
+	
+		// Support: IE 8 - 9 only
+		// Console exists when dev tools are open, which can happen at any time
+		if ( window.console && window.console.warn && error && rerrorNames.test( error.name ) ) {
+			window.console.warn( "jQuery.Deferred exception: " + error.message, error.stack, stack );
+		}
+	};
+	
+	
+	
+	
+	// The deferred used on DOM ready
+	var readyList = jQuery.Deferred();
+	
+	jQuery.fn.ready = function( fn ) {
+	
+		readyList.then( fn );
+	
+		return this;
+	};
+	
+	jQuery.extend( {
+	
+		// Is the DOM ready to be used? Set to true once it occurs.
+		isReady: false,
+	
+		// A counter to track how many items to wait for before
+		// the ready event fires. See #6781
+		readyWait: 1,
+	
+		// Hold (or release) the ready event
+		holdReady: function( hold ) {
+			if ( hold ) {
+				jQuery.readyWait++;
+			} else {
+				jQuery.ready( true );
+			}
+		},
+	
+		// Handle when the DOM is ready
+		ready: function( wait ) {
+	
+			// Abort if there are pending holds or we're already ready
+			if ( wait === true ? --jQuery.readyWait : jQuery.isReady ) {
+				return;
+			}
+	
+			// Remember that the DOM is ready
+			jQuery.isReady = true;
+	
+			// If a normal DOM Ready event fired, decrement, and wait if need be
+			if ( wait !== true && --jQuery.readyWait > 0 ) {
+				return;
+			}
+	
+			// If there are functions bound, to execute
+			readyList.resolveWith( document, [ jQuery ] );
+		}
+	} );
+	
+	jQuery.ready.then = readyList.then;
+	
+	// The ready event handler and self cleanup method
+	function completed() {
+		document.removeEventListener( "DOMContentLoaded", completed );
+		window.removeEventListener( "load", completed );
+		jQuery.ready();
+	}
+	
+	// Catch cases where $(document).ready() is called
+	// after the browser event has already occurred.
+	// Support: IE <=9 - 10 only
+	// Older IE sometimes signals "interactive" too soon
+	if ( document.readyState === "complete" ||
+		( document.readyState !== "loading" && !document.documentElement.doScroll ) ) {
+	
+		// Handle it asynchronously to allow scripts the opportunity to delay ready
+		window.setTimeout( jQuery.ready );
+	
+	} else {
+	
+		// Use the handy event callback
+		document.addEventListener( "DOMContentLoaded", completed );
+	
+		// A fallback to window.onload, that will always work
+		window.addEventListener( "load", completed );
+	}
+	
+	
+	
+	
+	// Multifunctional method to get and set values of a collection
+	// The value/s can optionally be executed if it's a function
+	var access = function( elems, fn, key, value, chainable, emptyGet, raw ) {
+		var i = 0,
+			len = elems.length,
+			bulk = key == null;
+	
+		// Sets many values
+		if ( jQuery.type( key ) === "object" ) {
+			chainable = true;
+			for ( i in key ) {
+				access( elems, fn, i, key[ i ], true, emptyGet, raw );
+			}
+	
+		// Sets one value
+		} else if ( value !== undefined ) {
+			chainable = true;
+	
+			if ( !jQuery.isFunction( value ) ) {
+				raw = true;
+			}
+	
+			if ( bulk ) {
+	
+				// Bulk operations run against the entire set
+				if ( raw ) {
+					fn.call( elems, value );
+					fn = null;
+	
+				// ...except when executing function values
+				} else {
+					bulk = fn;
+					fn = function( elem, key, value ) {
+						return bulk.call( jQuery( elem ), value );
+					};
+				}
+			}
+	
+			if ( fn ) {
+				for ( ; i < len; i++ ) {
+					fn(
+						elems[ i ], key, raw ?
+						value :
+						value.call( elems[ i ], i, fn( elems[ i ], key ) )
+					);
+				}
+			}
+		}
+	
+		return chainable ?
+			elems :
+	
+			// Gets
+			bulk ?
+				fn.call( elems ) :
+				len ? fn( elems[ 0 ], key ) : emptyGet;
+	};
+	var acceptData = function( owner ) {
+	
+		// Accepts only:
+		//  - Node
+		//    - Node.ELEMENT_NODE
+		//    - Node.DOCUMENT_NODE
+		//  - Object
+		//    - Any
+		/* jshint -W018 */
+		return owner.nodeType === 1 || owner.nodeType === 9 || !( +owner.nodeType );
+	};
+	
+	
+	
+	
+	function Data() {
+		this.expando = jQuery.expando + Data.uid++;
+	}
+	
+	Data.uid = 1;
+	
+	Data.prototype = {
+	
+		cache: function( owner ) {
+	
+			// Check if the owner object already has a cache
+			var value = owner[ this.expando ];
+	
+			// If not, create one
+			if ( !value ) {
+				value = {};
+	
+				// We can accept data for non-element nodes in modern browsers,
+				// but we should not, see #8335.
+				// Always return an empty object.
+				if ( acceptData( owner ) ) {
+	
+					// If it is a node unlikely to be stringify-ed or looped over
+					// use plain assignment
+					if ( owner.nodeType ) {
+						owner[ this.expando ] = value;
+	
+					// Otherwise secure it in a non-enumerable property
+					// configurable must be true to allow the property to be
+					// deleted when data is removed
+					} else {
+						Object.defineProperty( owner, this.expando, {
+							value: value,
+							configurable: true
+						} );
+					}
+				}
+			}
+	
+			return value;
+		},
+		set: function( owner, data, value ) {
+			var prop,
+				cache = this.cache( owner );
+	
+			// Handle: [ owner, key, value ] args
+			// Always use camelCase key (gh-2257)
+			if ( typeof data === "string" ) {
+				cache[ jQuery.camelCase( data ) ] = value;
+	
+			// Handle: [ owner, { properties } ] args
+			} else {
+	
+				// Copy the properties one-by-one to the cache object
+				for ( prop in data ) {
+					cache[ jQuery.camelCase( prop ) ] = data[ prop ];
+				}
+			}
+			return cache;
+		},
+		get: function( owner, key ) {
+			return key === undefined ?
+				this.cache( owner ) :
+	
+				// Always use camelCase key (gh-2257)
+				owner[ this.expando ] && owner[ this.expando ][ jQuery.camelCase( key ) ];
+		},
+		access: function( owner, key, value ) {
+	
+			// In cases where either:
+			//
+			//   1. No key was specified
+			//   2. A string key was specified, but no value provided
+			//
+			// Take the "read" path and allow the get method to determine
+			// which value to return, respectively either:
+			//
+			//   1. The entire cache object
+			//   2. The data stored at the key
+			//
+			if ( key === undefined ||
+					( ( key && typeof key === "string" ) && value === undefined ) ) {
+	
+				return this.get( owner, key );
+			}
+	
+			// When the key is not a string, or both a key and value
+			// are specified, set or extend (existing objects) with either:
+			//
+			//   1. An object of properties
+			//   2. A key and value
+			//
+			this.set( owner, key, value );
+	
+			// Since the "set" path can have two possible entry points
+			// return the expected data based on which path was taken[*]
+			return value !== undefined ? value : key;
+		},
+		remove: function( owner, key ) {
+			var i,
+				cache = owner[ this.expando ];
+	
+			if ( cache === undefined ) {
+				return;
+			}
+	
+			if ( key !== undefined ) {
+	
+				// Support array or space separated string of keys
+				if ( jQuery.isArray( key ) ) {
+	
+					// If key is an array of keys...
+					// We always set camelCase keys, so remove that.
+					key = key.map( jQuery.camelCase );
+				} else {
+					key = jQuery.camelCase( key );
+	
+					// If a key with the spaces exists, use it.
+					// Otherwise, create an array by matching non-whitespace
+					key = key in cache ?
+						[ key ] :
+						( key.match( rnotwhite ) || [] );
+				}
+	
+				i = key.length;
+	
+				while ( i-- ) {
+					delete cache[ key[ i ] ];
+				}
+			}
+	
+			// Remove the expando if there's no more data
+			if ( key === undefined || jQuery.isEmptyObject( cache ) ) {
+	
+				// Support: Chrome <=35 - 45
+				// Webkit & Blink performance suffers when deleting properties
+				// from DOM nodes, so set to undefined instead
+				// https://bugs.chromium.org/p/chromium/issues/detail?id=378607 (bug restricted)
+				if ( owner.nodeType ) {
+					owner[ this.expando ] = undefined;
+				} else {
+					delete owner[ this.expando ];
+				}
+			}
+		},
+		hasData: function( owner ) {
+			var cache = owner[ this.expando ];
+			return cache !== undefined && !jQuery.isEmptyObject( cache );
+		}
+	};
+	var dataPriv = new Data();
+	
+	var dataUser = new Data();
+	
+	
+	
+	//	Implementation Summary
+	//
+	//	1. Enforce API surface and semantic compatibility with 1.9.x branch
+	//	2. Improve the module's maintainability by reducing the storage
+	//		paths to a single mechanism.
+	//	3. Use the same single mechanism to support "private" and "user" data.
+	//	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
+	//	5. Avoid exposing implementation details on user objects (eg. expando properties)
+	//	6. Provide a clear path for implementation upgrade to WeakMap in 2014
+	
+	var rbrace = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
+		rmultiDash = /[A-Z]/g;
+	
+	function dataAttr( elem, key, data ) {
+		var name;
+	
+		// If nothing was found internally, try to fetch any
+		// data from the HTML5 data-* attribute
+		if ( data === undefined && elem.nodeType === 1 ) {
+			name = "data-" + key.replace( rmultiDash, "-$&" ).toLowerCase();
+			data = elem.getAttribute( name );
+	
+			if ( typeof data === "string" ) {
+				try {
+					data = data === "true" ? true :
+						data === "false" ? false :
+						data === "null" ? null :
+	
+						// Only convert to a number if it doesn't change the string
+						+data + "" === data ? +data :
+						rbrace.test( data ) ? JSON.parse( data ) :
+						data;
+				} catch ( e ) {}
+	
+				// Make sure we set the data so it isn't changed later
+				dataUser.set( elem, key, data );
+			} else {
+				data = undefined;
+			}
+		}
+		return data;
+	}
+	
+	jQuery.extend( {
+		hasData: function( elem ) {
+			return dataUser.hasData( elem ) || dataPriv.hasData( elem );
+		},
+	
+		data: function( elem, name, data ) {
+			return dataUser.access( elem, name, data );
+		},
+	
+		removeData: function( elem, name ) {
+			dataUser.remove( elem, name );
+		},
+	
+		// TODO: Now that all calls to _data and _removeData have been replaced
+		// with direct calls to dataPriv methods, these can be deprecated.
+		_data: function( elem, name, data ) {
+			return dataPriv.access( elem, name, data );
+		},
+	
+		_removeData: function( elem, name ) {
+			dataPriv.remove( elem, name );
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		data: function( key, value ) {
+			var i, name, data,
+				elem = this[ 0 ],
+				attrs = elem && elem.attributes;
+	
+			// Gets all values
+			if ( key === undefined ) {
+				if ( this.length ) {
+					data = dataUser.get( elem );
+	
+					if ( elem.nodeType === 1 && !dataPriv.get( elem, "hasDataAttrs" ) ) {
+						i = attrs.length;
+						while ( i-- ) {
+	
+							// Support: IE 11 only
+							// The attrs elements can be null (#14894)
+							if ( attrs[ i ] ) {
+								name = attrs[ i ].name;
+								if ( name.indexOf( "data-" ) === 0 ) {
+									name = jQuery.camelCase( name.slice( 5 ) );
+									dataAttr( elem, name, data[ name ] );
+								}
+							}
+						}
+						dataPriv.set( elem, "hasDataAttrs", true );
+					}
+				}
+	
+				return data;
+			}
+	
+			// Sets multiple values
+			if ( typeof key === "object" ) {
+				return this.each( function() {
+					dataUser.set( this, key );
+				} );
+			}
+	
+			return access( this, function( value ) {
+				var data;
+	
+				// The calling jQuery object (element matches) is not empty
+				// (and therefore has an element appears at this[ 0 ]) and the
+				// `value` parameter was not undefined. An empty jQuery object
+				// will result in `undefined` for elem = this[ 0 ] which will
+				// throw an exception if an attempt to read a data cache is made.
+				if ( elem && value === undefined ) {
+	
+					// Attempt to get data from the cache
+					// The key will always be camelCased in Data
+					data = dataUser.get( elem, key );
+					if ( data !== undefined ) {
+						return data;
+					}
+	
+					// Attempt to "discover" the data in
+					// HTML5 custom data-* attrs
+					data = dataAttr( elem, key );
+					if ( data !== undefined ) {
+						return data;
+					}
+	
+					// We tried really hard, but the data doesn't exist.
+					return;
+				}
+	
+				// Set the data...
+				this.each( function() {
+	
+					// We always store the camelCased key
+					dataUser.set( this, key, value );
+				} );
+			}, null, value, arguments.length > 1, null, true );
+		},
+	
+		removeData: function( key ) {
+			return this.each( function() {
+				dataUser.remove( this, key );
+			} );
+		}
+	} );
+	
+	
+	jQuery.extend( {
+		queue: function( elem, type, data ) {
+			var queue;
+	
+			if ( elem ) {
+				type = ( type || "fx" ) + "queue";
+				queue = dataPriv.get( elem, type );
+	
+				// Speed up dequeue by getting out quickly if this is just a lookup
+				if ( data ) {
+					if ( !queue || jQuery.isArray( data ) ) {
+						queue = dataPriv.access( elem, type, jQuery.makeArray( data ) );
+					} else {
+						queue.push( data );
+					}
+				}
+				return queue || [];
+			}
+		},
+	
+		dequeue: function( elem, type ) {
+			type = type || "fx";
+	
+			var queue = jQuery.queue( elem, type ),
+				startLength = queue.length,
+				fn = queue.shift(),
+				hooks = jQuery._queueHooks( elem, type ),
+				next = function() {
+					jQuery.dequeue( elem, type );
+				};
+	
+			// If the fx queue is dequeued, always remove the progress sentinel
+			if ( fn === "inprogress" ) {
+				fn = queue.shift();
+				startLength--;
+			}
+	
+			if ( fn ) {
+	
+				// Add a progress sentinel to prevent the fx queue from being
+				// automatically dequeued
+				if ( type === "fx" ) {
+					queue.unshift( "inprogress" );
+				}
+	
+				// Clear up the last queue stop function
+				delete hooks.stop;
+				fn.call( elem, next, hooks );
+			}
+	
+			if ( !startLength && hooks ) {
+				hooks.empty.fire();
+			}
+		},
+	
+		// Not public - generate a queueHooks object, or return the current one
+		_queueHooks: function( elem, type ) {
+			var key = type + "queueHooks";
+			return dataPriv.get( elem, key ) || dataPriv.access( elem, key, {
+				empty: jQuery.Callbacks( "once memory" ).add( function() {
+					dataPriv.remove( elem, [ type + "queue", key ] );
+				} )
+			} );
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		queue: function( type, data ) {
+			var setter = 2;
+	
+			if ( typeof type !== "string" ) {
+				data = type;
+				type = "fx";
+				setter--;
+			}
+	
+			if ( arguments.length < setter ) {
+				return jQuery.queue( this[ 0 ], type );
+			}
+	
+			return data === undefined ?
+				this :
+				this.each( function() {
+					var queue = jQuery.queue( this, type, data );
+	
+					// Ensure a hooks for this queue
+					jQuery._queueHooks( this, type );
+	
+					if ( type === "fx" && queue[ 0 ] !== "inprogress" ) {
+						jQuery.dequeue( this, type );
+					}
+				} );
+		},
+		dequeue: function( type ) {
+			return this.each( function() {
+				jQuery.dequeue( this, type );
+			} );
+		},
+		clearQueue: function( type ) {
+			return this.queue( type || "fx", [] );
+		},
+	
+		// Get a promise resolved when queues of a certain type
+		// are emptied (fx is the type by default)
+		promise: function( type, obj ) {
+			var tmp,
+				count = 1,
+				defer = jQuery.Deferred(),
+				elements = this,
+				i = this.length,
+				resolve = function() {
+					if ( !( --count ) ) {
+						defer.resolveWith( elements, [ elements ] );
+					}
+				};
+	
+			if ( typeof type !== "string" ) {
+				obj = type;
+				type = undefined;
+			}
+			type = type || "fx";
+	
+			while ( i-- ) {
+				tmp = dataPriv.get( elements[ i ], type + "queueHooks" );
+				if ( tmp && tmp.empty ) {
+					count++;
+					tmp.empty.add( resolve );
+				}
+			}
+			resolve();
+			return defer.promise( obj );
+		}
+	} );
+	var pnum = ( /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/ ).source;
+	
+	var rcssNum = new RegExp( "^(?:([+-])=|)(" + pnum + ")([a-z%]*)$", "i" );
+	
+	
+	var cssExpand = [ "Top", "Right", "Bottom", "Left" ];
+	
+	var isHiddenWithinTree = function( elem, el ) {
+	
+			// isHiddenWithinTree might be called from jQuery#filter function;
+			// in that case, element will be second argument
+			elem = el || elem;
+	
+			// Inline style trumps all
+			return elem.style.display === "none" ||
+				elem.style.display === "" &&
+	
+				// Otherwise, check computed style
+				// Support: Firefox <=43 - 45
+				// Disconnected elements can have computed display: none, so first confirm that elem is
+				// in the document.
+				jQuery.contains( elem.ownerDocument, elem ) &&
+	
+				jQuery.css( elem, "display" ) === "none";
+		};
+	
+	var swap = function( elem, options, callback, args ) {
+		var ret, name,
+			old = {};
+	
+		// Remember the old values, and insert the new ones
+		for ( name in options ) {
+			old[ name ] = elem.style[ name ];
+			elem.style[ name ] = options[ name ];
+		}
+	
+		ret = callback.apply( elem, args || [] );
+	
+		// Revert the old values
+		for ( name in options ) {
+			elem.style[ name ] = old[ name ];
+		}
+	
+		return ret;
+	};
+	
+	
+	
+	
+	function adjustCSS( elem, prop, valueParts, tween ) {
+		var adjusted,
+			scale = 1,
+			maxIterations = 20,
+			currentValue = tween ?
+				function() { return tween.cur(); } :
+				function() { return jQuery.css( elem, prop, "" ); },
+			initial = currentValue(),
+			unit = valueParts && valueParts[ 3 ] || ( jQuery.cssNumber[ prop ] ? "" : "px" ),
+	
+			// Starting value computation is required for potential unit mismatches
+			initialInUnit = ( jQuery.cssNumber[ prop ] || unit !== "px" && +initial ) &&
+				rcssNum.exec( jQuery.css( elem, prop ) );
+	
+		if ( initialInUnit && initialInUnit[ 3 ] !== unit ) {
+	
+			// Trust units reported by jQuery.css
+			unit = unit || initialInUnit[ 3 ];
+	
+			// Make sure we update the tween properties later on
+			valueParts = valueParts || [];
+	
+			// Iteratively approximate from a nonzero starting point
+			initialInUnit = +initial || 1;
+	
+			do {
+	
+				// If previous iteration zeroed out, double until we get *something*.
+				// Use string for doubling so we don't accidentally see scale as unchanged below
+				scale = scale || ".5";
+	
+				// Adjust and apply
+				initialInUnit = initialInUnit / scale;
+				jQuery.style( elem, prop, initialInUnit + unit );
+	
+			// Update scale, tolerating zero or NaN from tween.cur()
+			// Break the loop if scale is unchanged or perfect, or if we've just had enough.
+			} while (
+				scale !== ( scale = currentValue() / initial ) && scale !== 1 && --maxIterations
+			);
+		}
+	
+		if ( valueParts ) {
+			initialInUnit = +initialInUnit || +initial || 0;
+	
+			// Apply relative offset (+=/-=) if specified
+			adjusted = valueParts[ 1 ] ?
+				initialInUnit + ( valueParts[ 1 ] + 1 ) * valueParts[ 2 ] :
+				+valueParts[ 2 ];
+			if ( tween ) {
+				tween.unit = unit;
+				tween.start = initialInUnit;
+				tween.end = adjusted;
+			}
+		}
+		return adjusted;
+	}
+	
+	
+	var defaultDisplayMap = {};
+	
+	function getDefaultDisplay( elem ) {
+		var temp,
+			doc = elem.ownerDocument,
+			nodeName = elem.nodeName,
+			display = defaultDisplayMap[ nodeName ];
+	
+		if ( display ) {
+			return display;
+		}
+	
+		temp = doc.body.appendChild( doc.createElement( nodeName ) ),
+		display = jQuery.css( temp, "display" );
+	
+		temp.parentNode.removeChild( temp );
+	
+		if ( display === "none" ) {
+			display = "block";
+		}
+		defaultDisplayMap[ nodeName ] = display;
+	
+		return display;
+	}
+	
+	function showHide( elements, show ) {
+		var display, elem,
+			values = [],
+			index = 0,
+			length = elements.length;
+	
+		// Determine new display value for elements that need to change
+		for ( ; index < length; index++ ) {
+			elem = elements[ index ];
+			if ( !elem.style ) {
+				continue;
+			}
+	
+			display = elem.style.display;
+			if ( show ) {
+	
+				// Since we force visibility upon cascade-hidden elements, an immediate (and slow)
+				// check is required in this first loop unless we have a nonempty display value (either
+				// inline or about-to-be-restored)
+				if ( display === "none" ) {
+					values[ index ] = dataPriv.get( elem, "display" ) || null;
+					if ( !values[ index ] ) {
+						elem.style.display = "";
+					}
+				}
+				if ( elem.style.display === "" && isHiddenWithinTree( elem ) ) {
+					values[ index ] = getDefaultDisplay( elem );
+				}
+			} else {
+				if ( display !== "none" ) {
+					values[ index ] = "none";
+	
+					// Remember what we're overwriting
+					dataPriv.set( elem, "display", display );
+				}
+			}
+		}
+	
+		// Set the display of the elements in a second loop to avoid constant reflow
+		for ( index = 0; index < length; index++ ) {
+			if ( values[ index ] != null ) {
+				elements[ index ].style.display = values[ index ];
+			}
+		}
+	
+		return elements;
+	}
+	
+	jQuery.fn.extend( {
+		show: function() {
+			return showHide( this, true );
+		},
+		hide: function() {
+			return showHide( this );
+		},
+		toggle: function( state ) {
+			if ( typeof state === "boolean" ) {
+				return state ? this.show() : this.hide();
+			}
+	
+			return this.each( function() {
+				if ( isHiddenWithinTree( this ) ) {
+					jQuery( this ).show();
+				} else {
+					jQuery( this ).hide();
+				}
+			} );
+		}
+	} );
+	var rcheckableType = ( /^(?:checkbox|radio)$/i );
+	
+	var rtagName = ( /<([a-z][^\/\0>\x20\t\r\n\f]+)/i );
+	
+	var rscriptType = ( /^$|\/(?:java|ecma)script/i );
+	
+	
+	
+	// We have to close these tags to support XHTML (#13200)
+	var wrapMap = {
+	
+		// Support: IE <=9 only
+		option: [ 1, "<select multiple='multiple'>", "</select>" ],
+	
+		// XHTML parsers do not magically insert elements in the
+		// same way that tag soup parsers do. So we cannot shorten
+		// this by omitting <tbody> or other required elements.
+		thead: [ 1, "<table>", "</table>" ],
+		col: [ 2, "<table><colgroup>", "</colgroup></table>" ],
+		tr: [ 2, "<table><tbody>", "</tbody></table>" ],
+		td: [ 3, "<table><tbody><tr>", "</tr></tbody></table>" ],
+	
+		_default: [ 0, "", "" ]
+	};
+	
+	// Support: IE <=9 only
+	wrapMap.optgroup = wrapMap.option;
+	
+	wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption = wrapMap.thead;
+	wrapMap.th = wrapMap.td;
+	
+	
+	function getAll( context, tag ) {
+	
+		// Support: IE <=9 - 11 only
+		// Use typeof to avoid zero-argument method invocation on host objects (#15151)
+		var ret = typeof context.getElementsByTagName !== "undefined" ?
+				context.getElementsByTagName( tag || "*" ) :
+				typeof context.querySelectorAll !== "undefined" ?
+					context.querySelectorAll( tag || "*" ) :
+				[];
+	
+		return tag === undefined || tag && jQuery.nodeName( context, tag ) ?
+			jQuery.merge( [ context ], ret ) :
+			ret;
+	}
+	
+	
+	// Mark scripts as having already been evaluated
+	function setGlobalEval( elems, refElements ) {
+		var i = 0,
+			l = elems.length;
+	
+		for ( ; i < l; i++ ) {
+			dataPriv.set(
+				elems[ i ],
+				"globalEval",
+				!refElements || dataPriv.get( refElements[ i ], "globalEval" )
+			);
+		}
+	}
+	
+	
+	var rhtml = /<|&#?\w+;/;
+	
+	function buildFragment( elems, context, scripts, selection, ignored ) {
+		var elem, tmp, tag, wrap, contains, j,
+			fragment = context.createDocumentFragment(),
+			nodes = [],
+			i = 0,
+			l = elems.length;
+	
+		for ( ; i < l; i++ ) {
+			elem = elems[ i ];
+	
+			if ( elem || elem === 0 ) {
+	
+				// Add nodes directly
+				if ( jQuery.type( elem ) === "object" ) {
+	
+					// Support: Android <=4.0 only, PhantomJS 1 only
+					// push.apply(_, arraylike) throws on ancient WebKit
+					jQuery.merge( nodes, elem.nodeType ? [ elem ] : elem );
+	
+				// Convert non-html into a text node
+				} else if ( !rhtml.test( elem ) ) {
+					nodes.push( context.createTextNode( elem ) );
+	
+				// Convert html into DOM nodes
+				} else {
+					tmp = tmp || fragment.appendChild( context.createElement( "div" ) );
+	
+					// Deserialize a standard representation
+					tag = ( rtagName.exec( elem ) || [ "", "" ] )[ 1 ].toLowerCase();
+					wrap = wrapMap[ tag ] || wrapMap._default;
+					tmp.innerHTML = wrap[ 1 ] + jQuery.htmlPrefilter( elem ) + wrap[ 2 ];
+	
+					// Descend through wrappers to the right content
+					j = wrap[ 0 ];
+					while ( j-- ) {
+						tmp = tmp.lastChild;
+					}
+	
+					// Support: Android <=4.0 only, PhantomJS 1 only
+					// push.apply(_, arraylike) throws on ancient WebKit
+					jQuery.merge( nodes, tmp.childNodes );
+	
+					// Remember the top-level container
+					tmp = fragment.firstChild;
+	
+					// Ensure the created nodes are orphaned (#12392)
+					tmp.textContent = "";
+				}
+			}
+		}
+	
+		// Remove wrapper from fragment
+		fragment.textContent = "";
+	
+		i = 0;
+		while ( ( elem = nodes[ i++ ] ) ) {
+	
+			// Skip elements already in the context collection (trac-4087)
+			if ( selection && jQuery.inArray( elem, selection ) > -1 ) {
+				if ( ignored ) {
+					ignored.push( elem );
+				}
+				continue;
+			}
+	
+			contains = jQuery.contains( elem.ownerDocument, elem );
+	
+			// Append to fragment
+			tmp = getAll( fragment.appendChild( elem ), "script" );
+	
+			// Preserve script evaluation history
+			if ( contains ) {
+				setGlobalEval( tmp );
+			}
+	
+			// Capture executables
+			if ( scripts ) {
+				j = 0;
+				while ( ( elem = tmp[ j++ ] ) ) {
+					if ( rscriptType.test( elem.type || "" ) ) {
+						scripts.push( elem );
+					}
+				}
+			}
+		}
+	
+		return fragment;
+	}
+	
+	
+	( function() {
+		var fragment = document.createDocumentFragment(),
+			div = fragment.appendChild( document.createElement( "div" ) ),
+			input = document.createElement( "input" );
+	
+		// Support: Android 4.0 - 4.3 only
+		// Check state lost if the name is set (#11217)
+		// Support: Windows Web Apps (WWA)
+		// `name` and `type` must use .setAttribute for WWA (#14901)
+		input.setAttribute( "type", "radio" );
+		input.setAttribute( "checked", "checked" );
+		input.setAttribute( "name", "t" );
+	
+		div.appendChild( input );
+	
+		// Support: Android <=4.1 only
+		// Older WebKit doesn't clone checked state correctly in fragments
+		support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
+	
+		// Support: IE <=11 only
+		// Make sure textarea (and checkbox) defaultValue is properly cloned
+		div.innerHTML = "<textarea>x</textarea>";
+		support.noCloneChecked = !!div.cloneNode( true ).lastChild.defaultValue;
+	} )();
+	var documentElement = document.documentElement;
+	
+	
+	
+	var
+		rkeyEvent = /^key/,
+		rmouseEvent = /^(?:mouse|pointer|contextmenu|drag|drop)|click/,
+		rtypenamespace = /^([^.]*)(?:\.(.+)|)/;
+	
+	function returnTrue() {
+		return true;
+	}
+	
+	function returnFalse() {
+		return false;
+	}
+	
+	// Support: IE <=9 only
+	// See #13393 for more info
+	function safeActiveElement() {
+		try {
+			return document.activeElement;
+		} catch ( err ) { }
+	}
+	
+	function on( elem, types, selector, data, fn, one ) {
+		var origFn, type;
+	
+		// Types can be a map of types/handlers
+		if ( typeof types === "object" ) {
+	
+			// ( types-Object, selector, data )
+			if ( typeof selector !== "string" ) {
+	
+				// ( types-Object, data )
+				data = data || selector;
+				selector = undefined;
+			}
+			for ( type in types ) {
+				on( elem, type, selector, data, types[ type ], one );
+			}
+			return elem;
+		}
+	
+		if ( data == null && fn == null ) {
+	
+			// ( types, fn )
+			fn = selector;
+			data = selector = undefined;
+		} else if ( fn == null ) {
+			if ( typeof selector === "string" ) {
+	
+				// ( types, selector, fn )
+				fn = data;
+				data = undefined;
+			} else {
+	
+				// ( types, data, fn )
+				fn = data;
+				data = selector;
+				selector = undefined;
+			}
+		}
+		if ( fn === false ) {
+			fn = returnFalse;
+		} else if ( !fn ) {
+			return elem;
+		}
+	
+		if ( one === 1 ) {
+			origFn = fn;
+			fn = function( event ) {
+	
+				// Can use an empty set, since event contains the info
+				jQuery().off( event );
+				return origFn.apply( this, arguments );
+			};
+	
+			// Use same guid so caller can remove using origFn
+			fn.guid = origFn.guid || ( origFn.guid = jQuery.guid++ );
+		}
+		return elem.each( function() {
+			jQuery.event.add( this, types, fn, data, selector );
+		} );
+	}
+	
+	/*
+	 * Helper functions for managing events -- not part of the public interface.
+	 * Props to Dean Edwards' addEvent library for many of the ideas.
+	 */
+	jQuery.event = {
+	
+		global: {},
+	
+		add: function( elem, types, handler, data, selector ) {
+	
+			var handleObjIn, eventHandle, tmp,
+				events, t, handleObj,
+				special, handlers, type, namespaces, origType,
+				elemData = dataPriv.get( elem );
+	
+			// Don't attach events to noData or text/comment nodes (but allow plain objects)
+			if ( !elemData ) {
+				return;
+			}
+	
+			// Caller can pass in an object of custom data in lieu of the handler
+			if ( handler.handler ) {
+				handleObjIn = handler;
+				handler = handleObjIn.handler;
+				selector = handleObjIn.selector;
+			}
+	
+			// Ensure that invalid selectors throw exceptions at attach time
+			// Evaluate against documentElement in case elem is a non-element node (e.g., document)
+			if ( selector ) {
+				jQuery.find.matchesSelector( documentElement, selector );
+			}
+	
+			// Make sure that the handler has a unique ID, used to find/remove it later
+			if ( !handler.guid ) {
+				handler.guid = jQuery.guid++;
+			}
+	
+			// Init the element's event structure and main handler, if this is the first
+			if ( !( events = elemData.events ) ) {
+				events = elemData.events = {};
+			}
+			if ( !( eventHandle = elemData.handle ) ) {
+				eventHandle = elemData.handle = function( e ) {
+	
+					// Discard the second event of a jQuery.event.trigger() and
+					// when an event is called after a page has unloaded
+					return typeof jQuery !== "undefined" && jQuery.event.triggered !== e.type ?
+						jQuery.event.dispatch.apply( elem, arguments ) : undefined;
+				};
+			}
+	
+			// Handle multiple events separated by a space
+			types = ( types || "" ).match( rnotwhite ) || [ "" ];
+			t = types.length;
+			while ( t-- ) {
+				tmp = rtypenamespace.exec( types[ t ] ) || [];
+				type = origType = tmp[ 1 ];
+				namespaces = ( tmp[ 2 ] || "" ).split( "." ).sort();
+	
+				// There *must* be a type, no attaching namespace-only handlers
+				if ( !type ) {
+					continue;
+				}
+	
+				// If event changes its type, use the special event handlers for the changed type
+				special = jQuery.event.special[ type ] || {};
+	
+				// If selector defined, determine special event api type, otherwise given type
+				type = ( selector ? special.delegateType : special.bindType ) || type;
+	
+				// Update special based on newly reset type
+				special = jQuery.event.special[ type ] || {};
+	
+				// handleObj is passed to all event handlers
+				handleObj = jQuery.extend( {
+					type: type,
+					origType: origType,
+					data: data,
+					handler: handler,
+					guid: handler.guid,
+					selector: selector,
+					needsContext: selector && jQuery.expr.match.needsContext.test( selector ),
+					namespace: namespaces.join( "." )
+				}, handleObjIn );
+	
+				// Init the event handler queue if we're the first
+				if ( !( handlers = events[ type ] ) ) {
+					handlers = events[ type ] = [];
+					handlers.delegateCount = 0;
+	
+					// Only use addEventListener if the special events handler returns false
+					if ( !special.setup ||
+						special.setup.call( elem, data, namespaces, eventHandle ) === false ) {
+	
+						if ( elem.addEventListener ) {
+							elem.addEventListener( type, eventHandle );
+						}
+					}
+				}
+	
+				if ( special.add ) {
+					special.add.call( elem, handleObj );
+	
+					if ( !handleObj.handler.guid ) {
+						handleObj.handler.guid = handler.guid;
+					}
+				}
+	
+				// Add to the element's handler list, delegates in front
+				if ( selector ) {
+					handlers.splice( handlers.delegateCount++, 0, handleObj );
+				} else {
+					handlers.push( handleObj );
+				}
+	
+				// Keep track of which events have ever been used, for event optimization
+				jQuery.event.global[ type ] = true;
+			}
+	
+		},
+	
+		// Detach an event or set of events from an element
+		remove: function( elem, types, handler, selector, mappedTypes ) {
+	
+			var j, origCount, tmp,
+				events, t, handleObj,
+				special, handlers, type, namespaces, origType,
+				elemData = dataPriv.hasData( elem ) && dataPriv.get( elem );
+	
+			if ( !elemData || !( events = elemData.events ) ) {
+				return;
+			}
+	
+			// Once for each type.namespace in types; type may be omitted
+			types = ( types || "" ).match( rnotwhite ) || [ "" ];
+			t = types.length;
+			while ( t-- ) {
+				tmp = rtypenamespace.exec( types[ t ] ) || [];
+				type = origType = tmp[ 1 ];
+				namespaces = ( tmp[ 2 ] || "" ).split( "." ).sort();
+	
+				// Unbind all events (on this namespace, if provided) for the element
+				if ( !type ) {
+					for ( type in events ) {
+						jQuery.event.remove( elem, type + types[ t ], handler, selector, true );
+					}
+					continue;
+				}
+	
+				special = jQuery.event.special[ type ] || {};
+				type = ( selector ? special.delegateType : special.bindType ) || type;
+				handlers = events[ type ] || [];
+				tmp = tmp[ 2 ] &&
+					new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" );
+	
+				// Remove matching events
+				origCount = j = handlers.length;
+				while ( j-- ) {
+					handleObj = handlers[ j ];
+	
+					if ( ( mappedTypes || origType === handleObj.origType ) &&
+						( !handler || handler.guid === handleObj.guid ) &&
+						( !tmp || tmp.test( handleObj.namespace ) ) &&
+						( !selector || selector === handleObj.selector ||
+							selector === "**" && handleObj.selector ) ) {
+						handlers.splice( j, 1 );
+	
+						if ( handleObj.selector ) {
+							handlers.delegateCount--;
+						}
+						if ( special.remove ) {
+							special.remove.call( elem, handleObj );
+						}
+					}
+				}
+	
+				// Remove generic event handler if we removed something and no more handlers exist
+				// (avoids potential for endless recursion during removal of special event handlers)
+				if ( origCount && !handlers.length ) {
+					if ( !special.teardown ||
+						special.teardown.call( elem, namespaces, elemData.handle ) === false ) {
+	
+						jQuery.removeEvent( elem, type, elemData.handle );
+					}
+	
+					delete events[ type ];
+				}
+			}
+	
+			// Remove data and the expando if it's no longer used
+			if ( jQuery.isEmptyObject( events ) ) {
+				dataPriv.remove( elem, "handle events" );
+			}
+		},
+	
+		dispatch: function( nativeEvent ) {
+	
+			// Make a writable jQuery.Event from the native event object
+			var event = jQuery.event.fix( nativeEvent );
+	
+			var i, j, ret, matched, handleObj, handlerQueue,
+				args = new Array( arguments.length ),
+				handlers = ( dataPriv.get( this, "events" ) || {} )[ event.type ] || [],
+				special = jQuery.event.special[ event.type ] || {};
+	
+			// Use the fix-ed jQuery.Event rather than the (read-only) native event
+			args[ 0 ] = event;
+	
+			for ( i = 1; i < arguments.length; i++ ) {
+				args[ i ] = arguments[ i ];
+			}
+	
+			event.delegateTarget = this;
+	
+			// Call the preDispatch hook for the mapped type, and let it bail if desired
+			if ( special.preDispatch && special.preDispatch.call( this, event ) === false ) {
+				return;
+			}
+	
+			// Determine handlers
+			handlerQueue = jQuery.event.handlers.call( this, event, handlers );
+	
+			// Run delegates first; they may want to stop propagation beneath us
+			i = 0;
+			while ( ( matched = handlerQueue[ i++ ] ) && !event.isPropagationStopped() ) {
+				event.currentTarget = matched.elem;
+	
+				j = 0;
+				while ( ( handleObj = matched.handlers[ j++ ] ) &&
+					!event.isImmediatePropagationStopped() ) {
+	
+					// Triggered event must either 1) have no namespace, or 2) have namespace(s)
+					// a subset or equal to those in the bound event (both can have no namespace).
+					if ( !event.rnamespace || event.rnamespace.test( handleObj.namespace ) ) {
+	
+						event.handleObj = handleObj;
+						event.data = handleObj.data;
+	
+						ret = ( ( jQuery.event.special[ handleObj.origType ] || {} ).handle ||
+							handleObj.handler ).apply( matched.elem, args );
+	
+						if ( ret !== undefined ) {
+							if ( ( event.result = ret ) === false ) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+						}
+					}
+				}
+			}
+	
+			// Call the postDispatch hook for the mapped type
+			if ( special.postDispatch ) {
+				special.postDispatch.call( this, event );
+			}
+	
+			return event.result;
+		},
+	
+		handlers: function( event, handlers ) {
+			var i, matches, sel, handleObj,
+				handlerQueue = [],
+				delegateCount = handlers.delegateCount,
+				cur = event.target;
+	
+			// Support: IE <=9
+			// Find delegate handlers
+			// Black-hole SVG <use> instance trees (#13180)
+			//
+			// Support: Firefox <=42
+			// Avoid non-left-click in FF but don't block IE radio events (#3861, gh-2343)
+			if ( delegateCount && cur.nodeType &&
+				( event.type !== "click" || isNaN( event.button ) || event.button < 1 ) ) {
+	
+				for ( ; cur !== this; cur = cur.parentNode || this ) {
+	
+					// Don't check non-elements (#13208)
+					// Don't process clicks on disabled elements (#6911, #8165, #11382, #11764)
+					if ( cur.nodeType === 1 && ( cur.disabled !== true || event.type !== "click" ) ) {
+						matches = [];
+						for ( i = 0; i < delegateCount; i++ ) {
+							handleObj = handlers[ i ];
+	
+							// Don't conflict with Object.prototype properties (#13203)
+							sel = handleObj.selector + " ";
+	
+							if ( matches[ sel ] === undefined ) {
+								matches[ sel ] = handleObj.needsContext ?
+									jQuery( sel, this ).index( cur ) > -1 :
+									jQuery.find( sel, this, null, [ cur ] ).length;
+							}
+							if ( matches[ sel ] ) {
+								matches.push( handleObj );
+							}
+						}
+						if ( matches.length ) {
+							handlerQueue.push( { elem: cur, handlers: matches } );
+						}
+					}
+				}
+			}
+	
+			// Add the remaining (directly-bound) handlers
+			if ( delegateCount < handlers.length ) {
+				handlerQueue.push( { elem: this, handlers: handlers.slice( delegateCount ) } );
+			}
+	
+			return handlerQueue;
+		},
+	
+		addProp: function( name, hook ) {
+			Object.defineProperty( jQuery.Event.prototype, name, {
+				enumerable: true,
+				configurable: true,
+	
+				get: jQuery.isFunction( hook ) ?
+					function() {
+						if ( this.originalEvent ) {
+								return hook( this.originalEvent );
+						}
+					} :
+					function() {
+						if ( this.originalEvent ) {
+								return this.originalEvent[ name ];
+						}
+					},
+	
+				set: function( value ) {
+					Object.defineProperty( this, name, {
+						enumerable: true,
+						configurable: true,
+						writable: true,
+						value: value
+					} );
+				}
+			} );
+		},
+	
+		fix: function( originalEvent ) {
+			return originalEvent[ jQuery.expando ] ?
+				originalEvent :
+				new jQuery.Event( originalEvent );
+		},
+	
+		special: {
+			load: {
+	
+				// Prevent triggered image.load events from bubbling to window.load
+				noBubble: true
+			},
+			focus: {
+	
+				// Fire native event if possible so blur/focus sequence is correct
+				trigger: function() {
+					if ( this !== safeActiveElement() && this.focus ) {
+						this.focus();
+						return false;
+					}
+				},
+				delegateType: "focusin"
+			},
+			blur: {
+				trigger: function() {
+					if ( this === safeActiveElement() && this.blur ) {
+						this.blur();
+						return false;
+					}
+				},
+				delegateType: "focusout"
+			},
+			click: {
+	
+				// For checkbox, fire native event so checked state will be right
+				trigger: function() {
+					if ( this.type === "checkbox" && this.click && jQuery.nodeName( this, "input" ) ) {
+						this.click();
+						return false;
+					}
+				},
+	
+				// For cross-browser consistency, don't fire native .click() on links
+				_default: function( event ) {
+					return jQuery.nodeName( event.target, "a" );
+				}
+			},
+	
+			beforeunload: {
+				postDispatch: function( event ) {
+	
+					// Support: Firefox 20+
+					// Firefox doesn't alert if the returnValue field is not set.
+					if ( event.result !== undefined && event.originalEvent ) {
+						event.originalEvent.returnValue = event.result;
+					}
+				}
+			}
+		}
+	};
+	
+	jQuery.removeEvent = function( elem, type, handle ) {
+	
+		// This "if" is needed for plain objects
+		if ( elem.removeEventListener ) {
+			elem.removeEventListener( type, handle );
+		}
+	};
+	
+	jQuery.Event = function( src, props ) {
+	
+		// Allow instantiation without the 'new' keyword
+		if ( !( this instanceof jQuery.Event ) ) {
+			return new jQuery.Event( src, props );
+		}
+	
+		// Event object
+		if ( src && src.type ) {
+			this.originalEvent = src;
+			this.type = src.type;
+	
+			// Events bubbling up the document may have been marked as prevented
+			// by a handler lower down the tree; reflect the correct value.
+			this.isDefaultPrevented = src.defaultPrevented ||
+					src.defaultPrevented === undefined &&
+	
+					// Support: Android <=2.3 only
+					src.returnValue === false ?
+				returnTrue :
+				returnFalse;
+	
+			// Create target properties
+			// Support: Safari <=6 - 7 only
+			// Target should not be a text node (#504, #13143)
+			this.target = ( src.target && src.target.nodeType === 3 ) ?
+				src.target.parentNode :
+				src.target;
+	
+			this.currentTarget = src.currentTarget;
+			this.relatedTarget = src.relatedTarget;
+	
+		// Event type
+		} else {
+			this.type = src;
+		}
+	
+		// Put explicitly provided properties onto the event object
+		if ( props ) {
+			jQuery.extend( this, props );
+		}
+	
+		// Create a timestamp if incoming event doesn't have one
+		this.timeStamp = src && src.timeStamp || jQuery.now();
+	
+		// Mark it as fixed
+		this[ jQuery.expando ] = true;
+	};
+	
+	// jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding
+	// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+	jQuery.Event.prototype = {
+		constructor: jQuery.Event,
+		isDefaultPrevented: returnFalse,
+		isPropagationStopped: returnFalse,
+		isImmediatePropagationStopped: returnFalse,
+		isSimulated: false,
+	
+		preventDefault: function() {
+			var e = this.originalEvent;
+	
+			this.isDefaultPrevented = returnTrue;
+	
+			if ( e && !this.isSimulated ) {
+				e.preventDefault();
+			}
+		},
+		stopPropagation: function() {
+			var e = this.originalEvent;
+	
+			this.isPropagationStopped = returnTrue;
+	
+			if ( e && !this.isSimulated ) {
+				e.stopPropagation();
+			}
+		},
+		stopImmediatePropagation: function() {
+			var e = this.originalEvent;
+	
+			this.isImmediatePropagationStopped = returnTrue;
+	
+			if ( e && !this.isSimulated ) {
+				e.stopImmediatePropagation();
+			}
+	
+			this.stopPropagation();
+		}
+	};
+	
+	// Includes all common event props including KeyEvent and MouseEvent specific props
+	jQuery.each( {
+		altKey: true,
+		bubbles: true,
+		cancelable: true,
+		changedTouches: true,
+		ctrlKey: true,
+		detail: true,
+		eventPhase: true,
+		metaKey: true,
+		pageX: true,
+		pageY: true,
+		shiftKey: true,
+		view: true,
+		"char": true,
+		charCode: true,
+		key: true,
+		keyCode: true,
+		button: true,
+		buttons: true,
+		clientX: true,
+		clientY: true,
+		offsetX: true,
+		offsetY: true,
+		pointerId: true,
+		pointerType: true,
+		screenX: true,
+		screenY: true,
+		targetTouches: true,
+		toElement: true,
+		touches: true,
+	
+		which: function( event ) {
+			var button = event.button;
+	
+			// Add which for key events
+			if ( event.which == null && rkeyEvent.test( event.type ) ) {
+				return event.charCode != null ? event.charCode : event.keyCode;
+			}
+	
+			// Add which for click: 1 === left; 2 === middle; 3 === right
+			if ( !event.which && button !== undefined && rmouseEvent.test( event.type ) ) {
+				return ( button & 1 ? 1 : ( button & 2 ? 3 : ( button & 4 ? 2 : 0 ) ) );
+			}
+	
+			return event.which;
+		}
+	}, jQuery.event.addProp );
+	
+	// Create mouseenter/leave events using mouseover/out and event-time checks
+	// so that event delegation works in jQuery.
+	// Do the same for pointerenter/pointerleave and pointerover/pointerout
+	//
+	// Support: Safari 7 only
+	// Safari sends mouseenter too often; see:
+	// https://bugs.chromium.org/p/chromium/issues/detail?id=470258
+	// for the description of the bug (it existed in older Chrome versions as well).
+	jQuery.each( {
+		mouseenter: "mouseover",
+		mouseleave: "mouseout",
+		pointerenter: "pointerover",
+		pointerleave: "pointerout"
+	}, function( orig, fix ) {
+		jQuery.event.special[ orig ] = {
+			delegateType: fix,
+			bindType: fix,
+	
+			handle: function( event ) {
+				var ret,
+					target = this,
+					related = event.relatedTarget,
+					handleObj = event.handleObj;
+	
+				// For mouseenter/leave call the handler if related is outside the target.
+				// NB: No relatedTarget if the mouse left/entered the browser window
+				if ( !related || ( related !== target && !jQuery.contains( target, related ) ) ) {
+					event.type = handleObj.origType;
+					ret = handleObj.handler.apply( this, arguments );
+					event.type = fix;
+				}
+				return ret;
+			}
+		};
+	} );
+	
+	jQuery.fn.extend( {
+	
+		on: function( types, selector, data, fn ) {
+			return on( this, types, selector, data, fn );
+		},
+		one: function( types, selector, data, fn ) {
+			return on( this, types, selector, data, fn, 1 );
+		},
+		off: function( types, selector, fn ) {
+			var handleObj, type;
+			if ( types && types.preventDefault && types.handleObj ) {
+	
+				// ( event )  dispatched jQuery.Event
+				handleObj = types.handleObj;
+				jQuery( types.delegateTarget ).off(
+					handleObj.namespace ?
+						handleObj.origType + "." + handleObj.namespace :
+						handleObj.origType,
+					handleObj.selector,
+					handleObj.handler
+				);
+				return this;
+			}
+			if ( typeof types === "object" ) {
+	
+				// ( types-object [, selector] )
+				for ( type in types ) {
+					this.off( type, selector, types[ type ] );
+				}
+				return this;
+			}
+			if ( selector === false || typeof selector === "function" ) {
+	
+				// ( types [, fn] )
+				fn = selector;
+				selector = undefined;
+			}
+			if ( fn === false ) {
+				fn = returnFalse;
+			}
+			return this.each( function() {
+				jQuery.event.remove( this, types, fn, selector );
+			} );
+		}
+	} );
+	
+	
+	var
+		rxhtmlTag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,
+	
+		// Support: IE <=10 - 11, Edge 12 - 13
+		// In IE/Edge using regex groups here causes severe slowdowns.
+		// See https://connect.microsoft.com/IE/feedback/details/1736512/
+		rnoInnerhtml = /<script|<style|<link/i,
+	
+		// checked="checked" or checked
+		rchecked = /checked\s*(?:[^=]|=\s*.checked.)/i,
+		rscriptTypeMasked = /^true\/(.*)/,
+		rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;
+	
+	function manipulationTarget( elem, content ) {
+		if ( jQuery.nodeName( elem, "table" ) &&
+			jQuery.nodeName( content.nodeType !== 11 ? content : content.firstChild, "tr" ) ) {
+	
+			return elem.getElementsByTagName( "tbody" )[ 0 ] || elem;
+		}
+	
+		return elem;
+	}
+	
+	// Replace/restore the type attribute of script elements for safe DOM manipulation
+	function disableScript( elem ) {
+		elem.type = ( elem.getAttribute( "type" ) !== null ) + "/" + elem.type;
+		return elem;
+	}
+	function restoreScript( elem ) {
+		var match = rscriptTypeMasked.exec( elem.type );
+	
+		if ( match ) {
+			elem.type = match[ 1 ];
+		} else {
+			elem.removeAttribute( "type" );
+		}
+	
+		return elem;
+	}
+	
+	function cloneCopyEvent( src, dest ) {
+		var i, l, type, pdataOld, pdataCur, udataOld, udataCur, events;
+	
+		if ( dest.nodeType !== 1 ) {
+			return;
+		}
+	
+		// 1. Copy private data: events, handlers, etc.
+		if ( dataPriv.hasData( src ) ) {
+			pdataOld = dataPriv.access( src );
+			pdataCur = dataPriv.set( dest, pdataOld );
+			events = pdataOld.events;
+	
+			if ( events ) {
+				delete pdataCur.handle;
+				pdataCur.events = {};
+	
+				for ( type in events ) {
+					for ( i = 0, l = events[ type ].length; i < l; i++ ) {
+						jQuery.event.add( dest, type, events[ type ][ i ] );
+					}
+				}
+			}
+		}
+	
+		// 2. Copy user data
+		if ( dataUser.hasData( src ) ) {
+			udataOld = dataUser.access( src );
+			udataCur = jQuery.extend( {}, udataOld );
+	
+			dataUser.set( dest, udataCur );
+		}
+	}
+	
+	// Fix IE bugs, see support tests
+	function fixInput( src, dest ) {
+		var nodeName = dest.nodeName.toLowerCase();
+	
+		// Fails to persist the checked state of a cloned checkbox or radio button.
+		if ( nodeName === "input" && rcheckableType.test( src.type ) ) {
+			dest.checked = src.checked;
+	
+		// Fails to return the selected option to the default selected state when cloning options
+		} else if ( nodeName === "input" || nodeName === "textarea" ) {
+			dest.defaultValue = src.defaultValue;
+		}
+	}
+	
+	function domManip( collection, args, callback, ignored ) {
+	
+		// Flatten any nested arrays
+		args = concat.apply( [], args );
+	
+		var fragment, first, scripts, hasScripts, node, doc,
+			i = 0,
+			l = collection.length,
+			iNoClone = l - 1,
+			value = args[ 0 ],
+			isFunction = jQuery.isFunction( value );
+	
+		// We can't cloneNode fragments that contain checked, in WebKit
+		if ( isFunction ||
+				( l > 1 && typeof value === "string" &&
+					!support.checkClone && rchecked.test( value ) ) ) {
+			return collection.each( function( index ) {
+				var self = collection.eq( index );
+				if ( isFunction ) {
+					args[ 0 ] = value.call( this, index, self.html() );
+				}
+				domManip( self, args, callback, ignored );
+			} );
+		}
+	
+		if ( l ) {
+			fragment = buildFragment( args, collection[ 0 ].ownerDocument, false, collection, ignored );
+			first = fragment.firstChild;
+	
+			if ( fragment.childNodes.length === 1 ) {
+				fragment = first;
+			}
+	
+			// Require either new content or an interest in ignored elements to invoke the callback
+			if ( first || ignored ) {
+				scripts = jQuery.map( getAll( fragment, "script" ), disableScript );
+				hasScripts = scripts.length;
+	
+				// Use the original fragment for the last item
+				// instead of the first because it can end up
+				// being emptied incorrectly in certain situations (#8070).
+				for ( ; i < l; i++ ) {
+					node = fragment;
+	
+					if ( i !== iNoClone ) {
+						node = jQuery.clone( node, true, true );
+	
+						// Keep references to cloned scripts for later restoration
+						if ( hasScripts ) {
+	
+							// Support: Android <=4.0 only, PhantomJS 1 only
+							// push.apply(_, arraylike) throws on ancient WebKit
+							jQuery.merge( scripts, getAll( node, "script" ) );
+						}
+					}
+	
+					callback.call( collection[ i ], node, i );
+				}
+	
+				if ( hasScripts ) {
+					doc = scripts[ scripts.length - 1 ].ownerDocument;
+	
+					// Reenable scripts
+					jQuery.map( scripts, restoreScript );
+	
+					// Evaluate executable scripts on first document insertion
+					for ( i = 0; i < hasScripts; i++ ) {
+						node = scripts[ i ];
+						if ( rscriptType.test( node.type || "" ) &&
+							!dataPriv.access( node, "globalEval" ) &&
+							jQuery.contains( doc, node ) ) {
+	
+							if ( node.src ) {
+	
+								// Optional AJAX dependency, but won't run scripts if not present
+								if ( jQuery._evalUrl ) {
+									jQuery._evalUrl( node.src );
+								}
+							} else {
+								DOMEval( node.textContent.replace( rcleanScript, "" ), doc );
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		return collection;
+	}
+	
+	function remove( elem, selector, keepData ) {
+		var node,
+			nodes = selector ? jQuery.filter( selector, elem ) : elem,
+			i = 0;
+	
+		for ( ; ( node = nodes[ i ] ) != null; i++ ) {
+			if ( !keepData && node.nodeType === 1 ) {
+				jQuery.cleanData( getAll( node ) );
+			}
+	
+			if ( node.parentNode ) {
+				if ( keepData && jQuery.contains( node.ownerDocument, node ) ) {
+					setGlobalEval( getAll( node, "script" ) );
+				}
+				node.parentNode.removeChild( node );
+			}
+		}
+	
+		return elem;
+	}
+	
+	jQuery.extend( {
+		htmlPrefilter: function( html ) {
+			return html.replace( rxhtmlTag, "<$1></$2>" );
+		},
+	
+		clone: function( elem, dataAndEvents, deepDataAndEvents ) {
+			var i, l, srcElements, destElements,
+				clone = elem.cloneNode( true ),
+				inPage = jQuery.contains( elem.ownerDocument, elem );
+	
+			// Fix IE cloning issues
+			if ( !support.noCloneChecked && ( elem.nodeType === 1 || elem.nodeType === 11 ) &&
+					!jQuery.isXMLDoc( elem ) ) {
+	
+				// We eschew Sizzle here for performance reasons: https://jsperf.com/getall-vs-sizzle/2
+				destElements = getAll( clone );
+				srcElements = getAll( elem );
+	
+				for ( i = 0, l = srcElements.length; i < l; i++ ) {
+					fixInput( srcElements[ i ], destElements[ i ] );
+				}
+			}
+	
+			// Copy the events from the original to the clone
+			if ( dataAndEvents ) {
+				if ( deepDataAndEvents ) {
+					srcElements = srcElements || getAll( elem );
+					destElements = destElements || getAll( clone );
+	
+					for ( i = 0, l = srcElements.length; i < l; i++ ) {
+						cloneCopyEvent( srcElements[ i ], destElements[ i ] );
+					}
+				} else {
+					cloneCopyEvent( elem, clone );
+				}
+			}
+	
+			// Preserve script evaluation history
+			destElements = getAll( clone, "script" );
+			if ( destElements.length > 0 ) {
+				setGlobalEval( destElements, !inPage && getAll( elem, "script" ) );
+			}
+	
+			// Return the cloned set
+			return clone;
+		},
+	
+		cleanData: function( elems ) {
+			var data, elem, type,
+				special = jQuery.event.special,
+				i = 0;
+	
+			for ( ; ( elem = elems[ i ] ) !== undefined; i++ ) {
+				if ( acceptData( elem ) ) {
+					if ( ( data = elem[ dataPriv.expando ] ) ) {
+						if ( data.events ) {
+							for ( type in data.events ) {
+								if ( special[ type ] ) {
+									jQuery.event.remove( elem, type );
+	
+								// This is a shortcut to avoid jQuery.event.remove's overhead
+								} else {
+									jQuery.removeEvent( elem, type, data.handle );
+								}
+							}
+						}
+	
+						// Support: Chrome <=35 - 45+
+						// Assign undefined instead of using delete, see Data#remove
+						elem[ dataPriv.expando ] = undefined;
+					}
+					if ( elem[ dataUser.expando ] ) {
+	
+						// Support: Chrome <=35 - 45+
+						// Assign undefined instead of using delete, see Data#remove
+						elem[ dataUser.expando ] = undefined;
+					}
+				}
+			}
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		detach: function( selector ) {
+			return remove( this, selector, true );
+		},
+	
+		remove: function( selector ) {
+			return remove( this, selector );
+		},
+	
+		text: function( value ) {
+			return access( this, function( value ) {
+				return value === undefined ?
+					jQuery.text( this ) :
+					this.empty().each( function() {
+						if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+							this.textContent = value;
+						}
+					} );
+			}, null, value, arguments.length );
+		},
+	
+		append: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+					var target = manipulationTarget( this, elem );
+					target.appendChild( elem );
+				}
+			} );
+		},
+	
+		prepend: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.nodeType === 1 || this.nodeType === 11 || this.nodeType === 9 ) {
+					var target = manipulationTarget( this, elem );
+					target.insertBefore( elem, target.firstChild );
+				}
+			} );
+		},
+	
+		before: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.parentNode ) {
+					this.parentNode.insertBefore( elem, this );
+				}
+			} );
+		},
+	
+		after: function() {
+			return domManip( this, arguments, function( elem ) {
+				if ( this.parentNode ) {
+					this.parentNode.insertBefore( elem, this.nextSibling );
+				}
+			} );
+		},
+	
+		empty: function() {
+			var elem,
+				i = 0;
+	
+			for ( ; ( elem = this[ i ] ) != null; i++ ) {
+				if ( elem.nodeType === 1 ) {
+	
+					// Prevent memory leaks
+					jQuery.cleanData( getAll( elem, false ) );
+	
+					// Remove any remaining nodes
+					elem.textContent = "";
+				}
+			}
+	
+			return this;
+		},
+	
+		clone: function( dataAndEvents, deepDataAndEvents ) {
+			dataAndEvents = dataAndEvents == null ? false : dataAndEvents;
+			deepDataAndEvents = deepDataAndEvents == null ? dataAndEvents : deepDataAndEvents;
+	
+			return this.map( function() {
+				return jQuery.clone( this, dataAndEvents, deepDataAndEvents );
+			} );
+		},
+	
+		html: function( value ) {
+			return access( this, function( value ) {
+				var elem = this[ 0 ] || {},
+					i = 0,
+					l = this.length;
+	
+				if ( value === undefined && elem.nodeType === 1 ) {
+					return elem.innerHTML;
+				}
+	
+				// See if we can take a shortcut and just use innerHTML
+				if ( typeof value === "string" && !rnoInnerhtml.test( value ) &&
+					!wrapMap[ ( rtagName.exec( value ) || [ "", "" ] )[ 1 ].toLowerCase() ] ) {
+	
+					value = jQuery.htmlPrefilter( value );
+	
+					try {
+						for ( ; i < l; i++ ) {
+							elem = this[ i ] || {};
+	
+							// Remove element nodes and prevent memory leaks
+							if ( elem.nodeType === 1 ) {
+								jQuery.cleanData( getAll( elem, false ) );
+								elem.innerHTML = value;
+							}
+						}
+	
+						elem = 0;
+	
+					// If using innerHTML throws an exception, use the fallback method
+					} catch ( e ) {}
+				}
+	
+				if ( elem ) {
+					this.empty().append( value );
+				}
+			}, null, value, arguments.length );
+		},
+	
+		replaceWith: function() {
+			var ignored = [];
+	
+			// Make the changes, replacing each non-ignored context element with the new content
+			return domManip( this, arguments, function( elem ) {
+				var parent = this.parentNode;
+	
+				if ( jQuery.inArray( this, ignored ) < 0 ) {
+					jQuery.cleanData( getAll( this ) );
+					if ( parent ) {
+						parent.replaceChild( elem, this );
+					}
+				}
+	
+			// Force callback invocation
+			}, ignored );
+		}
+	} );
+	
+	jQuery.each( {
+		appendTo: "append",
+		prependTo: "prepend",
+		insertBefore: "before",
+		insertAfter: "after",
+		replaceAll: "replaceWith"
+	}, function( name, original ) {
+		jQuery.fn[ name ] = function( selector ) {
+			var elems,
+				ret = [],
+				insert = jQuery( selector ),
+				last = insert.length - 1,
+				i = 0;
+	
+			for ( ; i <= last; i++ ) {
+				elems = i === last ? this : this.clone( true );
+				jQuery( insert[ i ] )[ original ]( elems );
+	
+				// Support: Android <=4.0 only, PhantomJS 1 only
+				// .get() because push.apply(_, arraylike) throws on ancient WebKit
+				push.apply( ret, elems.get() );
+			}
+	
+			return this.pushStack( ret );
+		};
+	} );
+	var rmargin = ( /^margin/ );
+	
+	var rnumnonpx = new RegExp( "^(" + pnum + ")(?!px)[a-z%]+$", "i" );
+	
+	var getStyles = function( elem ) {
+	
+			// Support: IE <=11 only, Firefox <=30 (#15098, #14150)
+			// IE throws on elements created in popups
+			// FF meanwhile throws on frame elements through "defaultView.getComputedStyle"
+			var view = elem.ownerDocument.defaultView;
+	
+			if ( !view || !view.opener ) {
+				view = window;
+			}
+	
+			return view.getComputedStyle( elem );
+		};
+	
+	
+	
+	( function() {
+	
+		// Executing both pixelPosition & boxSizingReliable tests require only one layout
+		// so they're executed at the same time to save the second computation.
+		function computeStyleTests() {
+	
+			// This is a singleton, we need to execute it only once
+			if ( !div ) {
+				return;
+			}
+	
+			div.style.cssText =
+				"box-sizing:border-box;" +
+				"position:relative;display:block;" +
+				"margin:auto;border:1px;padding:1px;" +
+				"top:1%;width:50%";
+			div.innerHTML = "";
+			documentElement.appendChild( container );
+	
+			var divStyle = window.getComputedStyle( div );
+			pixelPositionVal = divStyle.top !== "1%";
+	
+			// Support: Android 4.0 - 4.3 only, Firefox <=3 - 44
+			reliableMarginLeftVal = divStyle.marginLeft === "2px";
+			boxSizingReliableVal = divStyle.width === "4px";
+	
+			// Support: Android 4.0 - 4.3 only
+			// Some styles come back with percentage values, even though they shouldn't
+			div.style.marginRight = "50%";
+			pixelMarginRightVal = divStyle.marginRight === "4px";
+	
+			documentElement.removeChild( container );
+	
+			// Nullify the div so it wouldn't be stored in the memory and
+			// it will also be a sign that checks already performed
+			div = null;
+		}
+	
+		var pixelPositionVal, boxSizingReliableVal, pixelMarginRightVal, reliableMarginLeftVal,
+			container = document.createElement( "div" ),
+			div = document.createElement( "div" );
+	
+		// Finish early in limited (non-browser) environments
+		if ( !div.style ) {
+			return;
+		}
+	
+		// Support: IE <=9 - 11 only
+		// Style of cloned element affects source element cloned (#8908)
+		div.style.backgroundClip = "content-box";
+		div.cloneNode( true ).style.backgroundClip = "";
+		support.clearCloneStyle = div.style.backgroundClip === "content-box";
+	
+		container.style.cssText = "border:0;width:8px;height:0;top:0;left:-9999px;" +
+			"padding:0;margin-top:1px;position:absolute";
+		container.appendChild( div );
+	
+		jQuery.extend( support, {
+			pixelPosition: function() {
+				computeStyleTests();
+				return pixelPositionVal;
+			},
+			boxSizingReliable: function() {
+				computeStyleTests();
+				return boxSizingReliableVal;
+			},
+			pixelMarginRight: function() {
+				computeStyleTests();
+				return pixelMarginRightVal;
+			},
+			reliableMarginLeft: function() {
+				computeStyleTests();
+				return reliableMarginLeftVal;
+			}
+		} );
+	} )();
+	
+	
+	function curCSS( elem, name, computed ) {
+		var width, minWidth, maxWidth, ret,
+			style = elem.style;
+	
+		computed = computed || getStyles( elem );
+	
+		// Support: IE <=9 only
+		// getPropertyValue is only needed for .css('filter') (#12537)
+		if ( computed ) {
+			ret = computed.getPropertyValue( name ) || computed[ name ];
+	
+			if ( ret === "" && !jQuery.contains( elem.ownerDocument, elem ) ) {
+				ret = jQuery.style( elem, name );
+			}
+	
+			// A tribute to the "awesome hack by Dean Edwards"
+			// Android Browser returns percentage for some values,
+			// but width seems to be reliably pixels.
+			// This is against the CSSOM draft spec:
+			// https://drafts.csswg.org/cssom/#resolved-values
+			if ( !support.pixelMarginRight() && rnumnonpx.test( ret ) && rmargin.test( name ) ) {
+	
+				// Remember the original values
+				width = style.width;
+				minWidth = style.minWidth;
+				maxWidth = style.maxWidth;
+	
+				// Put in the new values to get a computed value out
+				style.minWidth = style.maxWidth = style.width = ret;
+				ret = computed.width;
+	
+				// Revert the changed values
+				style.width = width;
+				style.minWidth = minWidth;
+				style.maxWidth = maxWidth;
+			}
+		}
+	
+		return ret !== undefined ?
+	
+			// Support: IE <=9 - 11 only
+			// IE returns zIndex value as an integer.
+			ret + "" :
+			ret;
+	}
+	
+	
+	function addGetHookIf( conditionFn, hookFn ) {
+	
+		// Define the hook, we'll check on the first run if it's really needed.
+		return {
+			get: function() {
+				if ( conditionFn() ) {
+	
+					// Hook not needed (or it's not possible to use it due
+					// to missing dependency), remove it.
+					delete this.get;
+					return;
+				}
+	
+				// Hook needed; redefine it so that the support test is not executed again.
+				return ( this.get = hookFn ).apply( this, arguments );
+			}
+		};
+	}
+	
+	
+	var
+	
+		// Swappable if display is none or starts with table
+		// except "table", "table-cell", or "table-caption"
+		// See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display
+		rdisplayswap = /^(none|table(?!-c[ea]).+)/,
+		cssShow = { position: "absolute", visibility: "hidden", display: "block" },
+		cssNormalTransform = {
+			letterSpacing: "0",
+			fontWeight: "400"
+		},
+	
+		cssPrefixes = [ "Webkit", "Moz", "ms" ],
+		emptyStyle = document.createElement( "div" ).style;
+	
+	// Return a css property mapped to a potentially vendor prefixed property
+	function vendorPropName( name ) {
+	
+		// Shortcut for names that are not vendor prefixed
+		if ( name in emptyStyle ) {
+			return name;
+		}
+	
+		// Check for vendor prefixed names
+		var capName = name[ 0 ].toUpperCase() + name.slice( 1 ),
+			i = cssPrefixes.length;
+	
+		while ( i-- ) {
+			name = cssPrefixes[ i ] + capName;
+			if ( name in emptyStyle ) {
+				return name;
+			}
+		}
+	}
+	
+	function setPositiveNumber( elem, value, subtract ) {
+	
+		// Any relative (+/-) values have already been
+		// normalized at this point
+		var matches = rcssNum.exec( value );
+		return matches ?
+	
+			// Guard against undefined "subtract", e.g., when used as in cssHooks
+			Math.max( 0, matches[ 2 ] - ( subtract || 0 ) ) + ( matches[ 3 ] || "px" ) :
+			value;
+	}
+	
+	function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {
+		var i = extra === ( isBorderBox ? "border" : "content" ) ?
+	
+			// If we already have the right measurement, avoid augmentation
+			4 :
+	
+			// Otherwise initialize for horizontal or vertical properties
+			name === "width" ? 1 : 0,
+	
+			val = 0;
+	
+		for ( ; i < 4; i += 2 ) {
+	
+			// Both box models exclude margin, so add it if we want it
+			if ( extra === "margin" ) {
+				val += jQuery.css( elem, extra + cssExpand[ i ], true, styles );
+			}
+	
+			if ( isBorderBox ) {
+	
+				// border-box includes padding, so remove it if we want content
+				if ( extra === "content" ) {
+					val -= jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
+				}
+	
+				// At this point, extra isn't border nor margin, so remove border
+				if ( extra !== "margin" ) {
+					val -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				}
+			} else {
+	
+				// At this point, extra isn't content, so add padding
+				val += jQuery.css( elem, "padding" + cssExpand[ i ], true, styles );
+	
+				// At this point, extra isn't content nor padding, so add border
+				if ( extra !== "padding" ) {
+					val += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				}
+			}
+		}
+	
+		return val;
+	}
+	
+	function getWidthOrHeight( elem, name, extra ) {
+	
+		// Start with offset property, which is equivalent to the border-box value
+		var val,
+			valueIsBorderBox = true,
+			styles = getStyles( elem ),
+			isBorderBox = jQuery.css( elem, "boxSizing", false, styles ) === "border-box";
+	
+		// Support: IE <=11 only
+		// Running getBoundingClientRect on a disconnected node
+		// in IE throws an error.
+		if ( elem.getClientRects().length ) {
+			val = elem.getBoundingClientRect()[ name ];
+		}
+	
+		// Some non-html elements return undefined for offsetWidth, so check for null/undefined
+		// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
+		// MathML - https://bugzilla.mozilla.org/show_bug.cgi?id=491668
+		if ( val <= 0 || val == null ) {
+	
+			// Fall back to computed then uncomputed css if necessary
+			val = curCSS( elem, name, styles );
+			if ( val < 0 || val == null ) {
+				val = elem.style[ name ];
+			}
+	
+			// Computed unit is not pixels. Stop here and return.
+			if ( rnumnonpx.test( val ) ) {
+				return val;
+			}
+	
+			// Check for style in case a browser which returns unreliable values
+			// for getComputedStyle silently falls back to the reliable elem.style
+			valueIsBorderBox = isBorderBox &&
+				( support.boxSizingReliable() || val === elem.style[ name ] );
+	
+			// Normalize "", auto, and prepare for extra
+			val = parseFloat( val ) || 0;
+		}
+	
+		// Use the active box-sizing model to add/subtract irrelevant styles
+		return ( val +
+			augmentWidthOrHeight(
+				elem,
+				name,
+				extra || ( isBorderBox ? "border" : "content" ),
+				valueIsBorderBox,
+				styles
+			)
+		) + "px";
+	}
+	
+	jQuery.extend( {
+	
+		// Add in style property hooks for overriding the default
+		// behavior of getting and setting a style property
+		cssHooks: {
+			opacity: {
+				get: function( elem, computed ) {
+					if ( computed ) {
+	
+						// We should always get a number back from opacity
+						var ret = curCSS( elem, "opacity" );
+						return ret === "" ? "1" : ret;
+					}
+				}
+			}
+		},
+	
+		// Don't automatically add "px" to these possibly-unitless properties
+		cssNumber: {
+			"animationIterationCount": true,
+			"columnCount": true,
+			"fillOpacity": true,
+			"flexGrow": true,
+			"flexShrink": true,
+			"fontWeight": true,
+			"lineHeight": true,
+			"opacity": true,
+			"order": true,
+			"orphans": true,
+			"widows": true,
+			"zIndex": true,
+			"zoom": true
+		},
+	
+		// Add in properties whose names you wish to fix before
+		// setting or getting the value
+		cssProps: {
+			"float": "cssFloat"
+		},
+	
+		// Get and set the style property on a DOM Node
+		style: function( elem, name, value, extra ) {
+	
+			// Don't set styles on text and comment nodes
+			if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
+				return;
+			}
+	
+			// Make sure that we're working with the right name
+			var ret, type, hooks,
+				origName = jQuery.camelCase( name ),
+				style = elem.style;
+	
+			name = jQuery.cssProps[ origName ] ||
+				( jQuery.cssProps[ origName ] = vendorPropName( origName ) || origName );
+	
+			// Gets hook for the prefixed version, then unprefixed version
+			hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+	
+			// Check if we're setting a value
+			if ( value !== undefined ) {
+				type = typeof value;
+	
+				// Convert "+=" or "-=" to relative numbers (#7345)
+				if ( type === "string" && ( ret = rcssNum.exec( value ) ) && ret[ 1 ] ) {
+					value = adjustCSS( elem, name, ret );
+	
+					// Fixes bug #9237
+					type = "number";
+				}
+	
+				// Make sure that null and NaN values aren't set (#7116)
+				if ( value == null || value !== value ) {
+					return;
+				}
+	
+				// If a number was passed in, add the unit (except for certain CSS properties)
+				if ( type === "number" ) {
+					value += ret && ret[ 3 ] || ( jQuery.cssNumber[ origName ] ? "" : "px" );
+				}
+	
+				// background-* props affect original clone's values
+				if ( !support.clearCloneStyle && value === "" && name.indexOf( "background" ) === 0 ) {
+					style[ name ] = "inherit";
+				}
+	
+				// If a hook was provided, use that value, otherwise just set the specified value
+				if ( !hooks || !( "set" in hooks ) ||
+					( value = hooks.set( elem, value, extra ) ) !== undefined ) {
+	
+					style[ name ] = value;
+				}
+	
+			} else {
+	
+				// If a hook was provided get the non-computed value from there
+				if ( hooks && "get" in hooks &&
+					( ret = hooks.get( elem, false, extra ) ) !== undefined ) {
+	
+					return ret;
+				}
+	
+				// Otherwise just get the value from the style object
+				return style[ name ];
+			}
+		},
+	
+		css: function( elem, name, extra, styles ) {
+			var val, num, hooks,
+				origName = jQuery.camelCase( name );
+	
+			// Make sure that we're working with the right name
+			name = jQuery.cssProps[ origName ] ||
+				( jQuery.cssProps[ origName ] = vendorPropName( origName ) || origName );
+	
+			// Try prefixed name followed by the unprefixed name
+			hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+	
+			// If a hook was provided get the computed value from there
+			if ( hooks && "get" in hooks ) {
+				val = hooks.get( elem, true, extra );
+			}
+	
+			// Otherwise, if a way to get the computed value exists, use that
+			if ( val === undefined ) {
+				val = curCSS( elem, name, styles );
+			}
+	
+			// Convert "normal" to computed value
+			if ( val === "normal" && name in cssNormalTransform ) {
+				val = cssNormalTransform[ name ];
+			}
+	
+			// Make numeric if forced or a qualifier was provided and val looks numeric
+			if ( extra === "" || extra ) {
+				num = parseFloat( val );
+				return extra === true || isFinite( num ) ? num || 0 : val;
+			}
+			return val;
+		}
+	} );
+	
+	jQuery.each( [ "height", "width" ], function( i, name ) {
+		jQuery.cssHooks[ name ] = {
+			get: function( elem, computed, extra ) {
+				if ( computed ) {
+	
+					// Certain elements can have dimension info if we invisibly show them
+					// but it must have a current display style that would benefit
+					return rdisplayswap.test( jQuery.css( elem, "display" ) ) &&
+	
+						// Support: Safari 8+
+						// Table columns in Safari have non-zero offsetWidth & zero
+						// getBoundingClientRect().width unless display is changed.
+						// Support: IE <=11 only
+						// Running getBoundingClientRect on a disconnected node
+						// in IE throws an error.
+						( !elem.getClientRects().length || !elem.getBoundingClientRect().width ) ?
+							swap( elem, cssShow, function() {
+								return getWidthOrHeight( elem, name, extra );
+							} ) :
+							getWidthOrHeight( elem, name, extra );
+				}
+			},
+	
+			set: function( elem, value, extra ) {
+				var matches,
+					styles = extra && getStyles( elem ),
+					subtract = extra && augmentWidthOrHeight(
+						elem,
+						name,
+						extra,
+						jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
+						styles
+					);
+	
+				// Convert to pixels if value adjustment is needed
+				if ( subtract && ( matches = rcssNum.exec( value ) ) &&
+					( matches[ 3 ] || "px" ) !== "px" ) {
+	
+					elem.style[ name ] = value;
+					value = jQuery.css( elem, name );
+				}
+	
+				return setPositiveNumber( elem, value, subtract );
+			}
+		};
+	} );
+	
+	jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
+		function( elem, computed ) {
+			if ( computed ) {
+				return ( parseFloat( curCSS( elem, "marginLeft" ) ) ||
+					elem.getBoundingClientRect().left -
+						swap( elem, { marginLeft: 0 }, function() {
+							return elem.getBoundingClientRect().left;
+						} )
+					) + "px";
+			}
+		}
+	);
+	
+	// These hooks are used by animate to expand properties
+	jQuery.each( {
+		margin: "",
+		padding: "",
+		border: "Width"
+	}, function( prefix, suffix ) {
+		jQuery.cssHooks[ prefix + suffix ] = {
+			expand: function( value ) {
+				var i = 0,
+					expanded = {},
+	
+					// Assumes a single number if not a string
+					parts = typeof value === "string" ? value.split( " " ) : [ value ];
+	
+				for ( ; i < 4; i++ ) {
+					expanded[ prefix + cssExpand[ i ] + suffix ] =
+						parts[ i ] || parts[ i - 2 ] || parts[ 0 ];
+				}
+	
+				return expanded;
+			}
+		};
+	
+		if ( !rmargin.test( prefix ) ) {
+			jQuery.cssHooks[ prefix + suffix ].set = setPositiveNumber;
+		}
+	} );
+	
+	jQuery.fn.extend( {
+		css: function( name, value ) {
+			return access( this, function( elem, name, value ) {
+				var styles, len,
+					map = {},
+					i = 0;
+	
+				if ( jQuery.isArray( name ) ) {
+					styles = getStyles( elem );
+					len = name.length;
+	
+					for ( ; i < len; i++ ) {
+						map[ name[ i ] ] = jQuery.css( elem, name[ i ], false, styles );
+					}
+	
+					return map;
+				}
+	
+				return value !== undefined ?
+					jQuery.style( elem, name, value ) :
+					jQuery.css( elem, name );
+			}, name, value, arguments.length > 1 );
+		}
+	} );
+	
+	
+	function Tween( elem, options, prop, end, easing ) {
+		return new Tween.prototype.init( elem, options, prop, end, easing );
+	}
+	jQuery.Tween = Tween;
+	
+	Tween.prototype = {
+		constructor: Tween,
+		init: function( elem, options, prop, end, easing, unit ) {
+			this.elem = elem;
+			this.prop = prop;
+			this.easing = easing || jQuery.easing._default;
+			this.options = options;
+			this.start = this.now = this.cur();
+			this.end = end;
+			this.unit = unit || ( jQuery.cssNumber[ prop ] ? "" : "px" );
+		},
+		cur: function() {
+			var hooks = Tween.propHooks[ this.prop ];
+	
+			return hooks && hooks.get ?
+				hooks.get( this ) :
+				Tween.propHooks._default.get( this );
+		},
+		run: function( percent ) {
+			var eased,
+				hooks = Tween.propHooks[ this.prop ];
+	
+			if ( this.options.duration ) {
+				this.pos = eased = jQuery.easing[ this.easing ](
+					percent, this.options.duration * percent, 0, 1, this.options.duration
+				);
+			} else {
+				this.pos = eased = percent;
+			}
+			this.now = ( this.end - this.start ) * eased + this.start;
+	
+			if ( this.options.step ) {
+				this.options.step.call( this.elem, this.now, this );
+			}
+	
+			if ( hooks && hooks.set ) {
+				hooks.set( this );
+			} else {
+				Tween.propHooks._default.set( this );
+			}
+			return this;
+		}
+	};
+	
+	Tween.prototype.init.prototype = Tween.prototype;
+	
+	Tween.propHooks = {
+		_default: {
+			get: function( tween ) {
+				var result;
+	
+				// Use a property on the element directly when it is not a DOM element,
+				// or when there is no matching style property that exists.
+				if ( tween.elem.nodeType !== 1 ||
+					tween.elem[ tween.prop ] != null && tween.elem.style[ tween.prop ] == null ) {
+					return tween.elem[ tween.prop ];
+				}
+	
+				// Passing an empty string as a 3rd parameter to .css will automatically
+				// attempt a parseFloat and fallback to a string if the parse fails.
+				// Simple values such as "10px" are parsed to Float;
+				// complex values such as "rotate(1rad)" are returned as-is.
+				result = jQuery.css( tween.elem, tween.prop, "" );
+	
+				// Empty strings, null, undefined and "auto" are converted to 0.
+				return !result || result === "auto" ? 0 : result;
+			},
+			set: function( tween ) {
+	
+				// Use step hook for back compat.
+				// Use cssHook if its there.
+				// Use .style if available and use plain properties where available.
+				if ( jQuery.fx.step[ tween.prop ] ) {
+					jQuery.fx.step[ tween.prop ]( tween );
+				} else if ( tween.elem.nodeType === 1 &&
+					( tween.elem.style[ jQuery.cssProps[ tween.prop ] ] != null ||
+						jQuery.cssHooks[ tween.prop ] ) ) {
+					jQuery.style( tween.elem, tween.prop, tween.now + tween.unit );
+				} else {
+					tween.elem[ tween.prop ] = tween.now;
+				}
+			}
+		}
+	};
+	
+	// Support: IE <=9 only
+	// Panic based approach to setting things on disconnected nodes
+	Tween.propHooks.scrollTop = Tween.propHooks.scrollLeft = {
+		set: function( tween ) {
+			if ( tween.elem.nodeType && tween.elem.parentNode ) {
+				tween.elem[ tween.prop ] = tween.now;
+			}
+		}
+	};
+	
+	jQuery.easing = {
+		linear: function( p ) {
+			return p;
+		},
+		swing: function( p ) {
+			return 0.5 - Math.cos( p * Math.PI ) / 2;
+		},
+		_default: "swing"
+	};
+	
+	jQuery.fx = Tween.prototype.init;
+	
+	// Back compat <1.8 extension point
+	jQuery.fx.step = {};
+	
+	
+	
+	
+	var
+		fxNow, timerId,
+		rfxtypes = /^(?:toggle|show|hide)$/,
+		rrun = /queueHooks$/;
+	
+	function raf() {
+		if ( timerId ) {
+			window.requestAnimationFrame( raf );
+			jQuery.fx.tick();
+		}
+	}
+	
+	// Animations created synchronously will run synchronously
+	function createFxNow() {
+		window.setTimeout( function() {
+			fxNow = undefined;
+		} );
+		return ( fxNow = jQuery.now() );
+	}
+	
+	// Generate parameters to create a standard animation
+	function genFx( type, includeWidth ) {
+		var which,
+			i = 0,
+			attrs = { height: type };
+	
+		// If we include width, step value is 1 to do all cssExpand values,
+		// otherwise step value is 2 to skip over Left and Right
+		includeWidth = includeWidth ? 1 : 0;
+		for ( ; i < 4 ; i += 2 - includeWidth ) {
+			which = cssExpand[ i ];
+			attrs[ "margin" + which ] = attrs[ "padding" + which ] = type;
+		}
+	
+		if ( includeWidth ) {
+			attrs.opacity = attrs.width = type;
+		}
+	
+		return attrs;
+	}
+	
+	function createTween( value, prop, animation ) {
+		var tween,
+			collection = ( Animation.tweeners[ prop ] || [] ).concat( Animation.tweeners[ "*" ] ),
+			index = 0,
+			length = collection.length;
+		for ( ; index < length; index++ ) {
+			if ( ( tween = collection[ index ].call( animation, prop, value ) ) ) {
+	
+				// We're done with this property
+				return tween;
+			}
+		}
+	}
+	
+	function defaultPrefilter( elem, props, opts ) {
+		/* jshint validthis: true */
+		var prop, value, toggle, hooks, oldfire, propTween, restoreDisplay, display,
+			isBox = "width" in props || "height" in props,
+			anim = this,
+			orig = {},
+			style = elem.style,
+			hidden = elem.nodeType && isHiddenWithinTree( elem ),
+			dataShow = dataPriv.get( elem, "fxshow" );
+	
+		// Queue-skipping animations hijack the fx hooks
+		if ( !opts.queue ) {
+			hooks = jQuery._queueHooks( elem, "fx" );
+			if ( hooks.unqueued == null ) {
+				hooks.unqueued = 0;
+				oldfire = hooks.empty.fire;
+				hooks.empty.fire = function() {
+					if ( !hooks.unqueued ) {
+						oldfire();
+					}
+				};
+			}
+			hooks.unqueued++;
+	
+			anim.always( function() {
+	
+				// Ensure the complete handler is called before this completes
+				anim.always( function() {
+					hooks.unqueued--;
+					if ( !jQuery.queue( elem, "fx" ).length ) {
+						hooks.empty.fire();
+					}
+				} );
+			} );
+		}
+	
+		// Detect show/hide animations
+		for ( prop in props ) {
+			value = props[ prop ];
+			if ( rfxtypes.test( value ) ) {
+				delete props[ prop ];
+				toggle = toggle || value === "toggle";
+				if ( value === ( hidden ? "hide" : "show" ) ) {
+	
+					// Pretend to be hidden if this is a "show" and
+					// there is still data from a stopped show/hide
+					if ( value === "show" && dataShow && dataShow[ prop ] !== undefined ) {
+						hidden = true;
+	
+					// Ignore all other no-op show/hide data
+					} else {
+						continue;
+					}
+				}
+				orig[ prop ] = dataShow && dataShow[ prop ] || jQuery.style( elem, prop );
+			}
+		}
+	
+		// Bail out if this is a no-op like .hide().hide()
+		propTween = !jQuery.isEmptyObject( props );
+		if ( !propTween && jQuery.isEmptyObject( orig ) ) {
+			return;
+		}
+	
+		// Restrict "overflow" and "display" styles during box animations
+		if ( isBox && elem.nodeType === 1 ) {
+	
+			// Support: IE <=9 - 11, Edge 12 - 13
+			// Record all 3 overflow attributes because IE does not infer the shorthand
+			// from identically-valued overflowX and overflowY
+			opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
+	
+			// Identify a display type, preferring old show/hide data over the CSS cascade
+			restoreDisplay = dataShow && dataShow.display;
+			if ( restoreDisplay == null ) {
+				restoreDisplay = dataPriv.get( elem, "display" );
+			}
+			display = jQuery.css( elem, "display" );
+			if ( display === "none" ) {
+				if ( restoreDisplay ) {
+					display = restoreDisplay;
+				} else {
+	
+					// Get nonempty value(s) by temporarily forcing visibility
+					showHide( [ elem ], true );
+					restoreDisplay = elem.style.display || restoreDisplay;
+					display = jQuery.css( elem, "display" );
+					showHide( [ elem ] );
+				}
+			}
+	
+			// Animate inline elements as inline-block
+			if ( display === "inline" || display === "inline-block" && restoreDisplay != null ) {
+				if ( jQuery.css( elem, "float" ) === "none" ) {
+	
+					// Restore the original display value at the end of pure show/hide animations
+					if ( !propTween ) {
+						anim.done( function() {
+							style.display = restoreDisplay;
+						} );
+						if ( restoreDisplay == null ) {
+							display = style.display;
+							restoreDisplay = display === "none" ? "" : display;
+						}
+					}
+					style.display = "inline-block";
+				}
+			}
+		}
+	
+		if ( opts.overflow ) {
+			style.overflow = "hidden";
+			anim.always( function() {
+				style.overflow = opts.overflow[ 0 ];
+				style.overflowX = opts.overflow[ 1 ];
+				style.overflowY = opts.overflow[ 2 ];
+			} );
+		}
+	
+		// Implement show/hide animations
+		propTween = false;
+		for ( prop in orig ) {
+	
+			// General show/hide setup for this element animation
+			if ( !propTween ) {
+				if ( dataShow ) {
+					if ( "hidden" in dataShow ) {
+						hidden = dataShow.hidden;
+					}
+				} else {
+					dataShow = dataPriv.access( elem, "fxshow", { display: restoreDisplay } );
+				}
+	
+				// Store hidden/visible for toggle so `.stop().toggle()` "reverses"
+				if ( toggle ) {
+					dataShow.hidden = !hidden;
+				}
+	
+				// Show elements before animating them
+				if ( hidden ) {
+					showHide( [ elem ], true );
+				}
+	
+				/* jshint -W083 */
+				anim.done( function() {
+	
+					// The final step of a "hide" animation is actually hiding the element
+					if ( !hidden ) {
+						showHide( [ elem ] );
+					}
+					dataPriv.remove( elem, "fxshow" );
+					for ( prop in orig ) {
+						jQuery.style( elem, prop, orig[ prop ] );
+					}
+				} );
+			}
+	
+			// Per-property setup
+			propTween = createTween( hidden ? dataShow[ prop ] : 0, prop, anim );
+			if ( !( prop in dataShow ) ) {
+				dataShow[ prop ] = propTween.start;
+				if ( hidden ) {
+					propTween.end = propTween.start;
+					propTween.start = 0;
+				}
+			}
+		}
+	}
+	
+	function propFilter( props, specialEasing ) {
+		var index, name, easing, value, hooks;
+	
+		// camelCase, specialEasing and expand cssHook pass
+		for ( index in props ) {
+			name = jQuery.camelCase( index );
+			easing = specialEasing[ name ];
+			value = props[ index ];
+			if ( jQuery.isArray( value ) ) {
+				easing = value[ 1 ];
+				value = props[ index ] = value[ 0 ];
+			}
+	
+			if ( index !== name ) {
+				props[ name ] = value;
+				delete props[ index ];
+			}
+	
+			hooks = jQuery.cssHooks[ name ];
+			if ( hooks && "expand" in hooks ) {
+				value = hooks.expand( value );
+				delete props[ name ];
+	
+				// Not quite $.extend, this won't overwrite existing keys.
+				// Reusing 'index' because we have the correct "name"
+				for ( index in value ) {
+					if ( !( index in props ) ) {
+						props[ index ] = value[ index ];
+						specialEasing[ index ] = easing;
+					}
+				}
+			} else {
+				specialEasing[ name ] = easing;
+			}
+		}
+	}
+	
+	function Animation( elem, properties, options ) {
+		var result,
+			stopped,
+			index = 0,
+			length = Animation.prefilters.length,
+			deferred = jQuery.Deferred().always( function() {
+	
+				// Don't match elem in the :animated selector
+				delete tick.elem;
+			} ),
+			tick = function() {
+				if ( stopped ) {
+					return false;
+				}
+				var currentTime = fxNow || createFxNow(),
+					remaining = Math.max( 0, animation.startTime + animation.duration - currentTime ),
+	
+					// Support: Android 2.3 only
+					// Archaic crash bug won't allow us to use `1 - ( 0.5 || 0 )` (#12497)
+					temp = remaining / animation.duration || 0,
+					percent = 1 - temp,
+					index = 0,
+					length = animation.tweens.length;
+	
+				for ( ; index < length ; index++ ) {
+					animation.tweens[ index ].run( percent );
+				}
+	
+				deferred.notifyWith( elem, [ animation, percent, remaining ] );
+	
+				if ( percent < 1 && length ) {
+					return remaining;
+				} else {
+					deferred.resolveWith( elem, [ animation ] );
+					return false;
+				}
+			},
+			animation = deferred.promise( {
+				elem: elem,
+				props: jQuery.extend( {}, properties ),
+				opts: jQuery.extend( true, {
+					specialEasing: {},
+					easing: jQuery.easing._default
+				}, options ),
+				originalProperties: properties,
+				originalOptions: options,
+				startTime: fxNow || createFxNow(),
+				duration: options.duration,
+				tweens: [],
+				createTween: function( prop, end ) {
+					var tween = jQuery.Tween( elem, animation.opts, prop, end,
+							animation.opts.specialEasing[ prop ] || animation.opts.easing );
+					animation.tweens.push( tween );
+					return tween;
+				},
+				stop: function( gotoEnd ) {
+					var index = 0,
+	
+						// If we are going to the end, we want to run all the tweens
+						// otherwise we skip this part
+						length = gotoEnd ? animation.tweens.length : 0;
+					if ( stopped ) {
+						return this;
+					}
+					stopped = true;
+					for ( ; index < length ; index++ ) {
+						animation.tweens[ index ].run( 1 );
+					}
+	
+					// Resolve when we played the last frame; otherwise, reject
+					if ( gotoEnd ) {
+						deferred.notifyWith( elem, [ animation, 1, 0 ] );
+						deferred.resolveWith( elem, [ animation, gotoEnd ] );
+					} else {
+						deferred.rejectWith( elem, [ animation, gotoEnd ] );
+					}
+					return this;
+				}
+			} ),
+			props = animation.props;
+	
+		propFilter( props, animation.opts.specialEasing );
+	
+		for ( ; index < length ; index++ ) {
+			result = Animation.prefilters[ index ].call( animation, elem, props, animation.opts );
+			if ( result ) {
+				if ( jQuery.isFunction( result.stop ) ) {
+					jQuery._queueHooks( animation.elem, animation.opts.queue ).stop =
+						jQuery.proxy( result.stop, result );
+				}
+				return result;
+			}
+		}
+	
+		jQuery.map( props, createTween, animation );
+	
+		if ( jQuery.isFunction( animation.opts.start ) ) {
+			animation.opts.start.call( elem, animation );
+		}
+	
+		jQuery.fx.timer(
+			jQuery.extend( tick, {
+				elem: elem,
+				anim: animation,
+				queue: animation.opts.queue
+			} )
+		);
+	
+		// attach callbacks from options
+		return animation.progress( animation.opts.progress )
+			.done( animation.opts.done, animation.opts.complete )
+			.fail( animation.opts.fail )
+			.always( animation.opts.always );
+	}
+	
+	jQuery.Animation = jQuery.extend( Animation, {
+	
+		tweeners: {
+			"*": [ function( prop, value ) {
+				var tween = this.createTween( prop, value );
+				adjustCSS( tween.elem, prop, rcssNum.exec( value ), tween );
+				return tween;
+			} ]
+		},
+	
+		tweener: function( props, callback ) {
+			if ( jQuery.isFunction( props ) ) {
+				callback = props;
+				props = [ "*" ];
+			} else {
+				props = props.match( rnotwhite );
+			}
+	
+			var prop,
+				index = 0,
+				length = props.length;
+	
+			for ( ; index < length ; index++ ) {
+				prop = props[ index ];
+				Animation.tweeners[ prop ] = Animation.tweeners[ prop ] || [];
+				Animation.tweeners[ prop ].unshift( callback );
+			}
+		},
+	
+		prefilters: [ defaultPrefilter ],
+	
+		prefilter: function( callback, prepend ) {
+			if ( prepend ) {
+				Animation.prefilters.unshift( callback );
+			} else {
+				Animation.prefilters.push( callback );
+			}
+		}
+	} );
+	
+	jQuery.speed = function( speed, easing, fn ) {
+		var opt = speed && typeof speed === "object" ? jQuery.extend( {}, speed ) : {
+			complete: fn || !fn && easing ||
+				jQuery.isFunction( speed ) && speed,
+			duration: speed,
+			easing: fn && easing || easing && !jQuery.isFunction( easing ) && easing
+		};
+	
+		// Go to the end state if fx are off or if document is hidden
+		if ( jQuery.fx.off || document.hidden ) {
+			opt.duration = 0;
+	
+		} else {
+			opt.duration = typeof opt.duration === "number" ?
+				opt.duration : opt.duration in jQuery.fx.speeds ?
+					jQuery.fx.speeds[ opt.duration ] : jQuery.fx.speeds._default;
+		}
+	
+		// Normalize opt.queue - true/undefined/null -> "fx"
+		if ( opt.queue == null || opt.queue === true ) {
+			opt.queue = "fx";
+		}
+	
+		// Queueing
+		opt.old = opt.complete;
+	
+		opt.complete = function() {
+			if ( jQuery.isFunction( opt.old ) ) {
+				opt.old.call( this );
+			}
+	
+			if ( opt.queue ) {
+				jQuery.dequeue( this, opt.queue );
+			}
+		};
+	
+		return opt;
+	};
+	
+	jQuery.fn.extend( {
+		fadeTo: function( speed, to, easing, callback ) {
+	
+			// Show any hidden elements after setting opacity to 0
+			return this.filter( isHiddenWithinTree ).css( "opacity", 0 ).show()
+	
+				// Animate to the value specified
+				.end().animate( { opacity: to }, speed, easing, callback );
+		},
+		animate: function( prop, speed, easing, callback ) {
+			var empty = jQuery.isEmptyObject( prop ),
+				optall = jQuery.speed( speed, easing, callback ),
+				doAnimation = function() {
+	
+					// Operate on a copy of prop so per-property easing won't be lost
+					var anim = Animation( this, jQuery.extend( {}, prop ), optall );
+	
+					// Empty animations, or finishing resolves immediately
+					if ( empty || dataPriv.get( this, "finish" ) ) {
+						anim.stop( true );
+					}
+				};
+				doAnimation.finish = doAnimation;
+	
+			return empty || optall.queue === false ?
+				this.each( doAnimation ) :
+				this.queue( optall.queue, doAnimation );
+		},
+		stop: function( type, clearQueue, gotoEnd ) {
+			var stopQueue = function( hooks ) {
+				var stop = hooks.stop;
+				delete hooks.stop;
+				stop( gotoEnd );
+			};
+	
+			if ( typeof type !== "string" ) {
+				gotoEnd = clearQueue;
+				clearQueue = type;
+				type = undefined;
+			}
+			if ( clearQueue && type !== false ) {
+				this.queue( type || "fx", [] );
+			}
+	
+			return this.each( function() {
+				var dequeue = true,
+					index = type != null && type + "queueHooks",
+					timers = jQuery.timers,
+					data = dataPriv.get( this );
+	
+				if ( index ) {
+					if ( data[ index ] && data[ index ].stop ) {
+						stopQueue( data[ index ] );
+					}
+				} else {
+					for ( index in data ) {
+						if ( data[ index ] && data[ index ].stop && rrun.test( index ) ) {
+							stopQueue( data[ index ] );
+						}
+					}
+				}
+	
+				for ( index = timers.length; index--; ) {
+					if ( timers[ index ].elem === this &&
+						( type == null || timers[ index ].queue === type ) ) {
+	
+						timers[ index ].anim.stop( gotoEnd );
+						dequeue = false;
+						timers.splice( index, 1 );
+					}
+				}
+	
+				// Start the next in the queue if the last step wasn't forced.
+				// Timers currently will call their complete callbacks, which
+				// will dequeue but only if they were gotoEnd.
+				if ( dequeue || !gotoEnd ) {
+					jQuery.dequeue( this, type );
+				}
+			} );
+		},
+		finish: function( type ) {
+			if ( type !== false ) {
+				type = type || "fx";
+			}
+			return this.each( function() {
+				var index,
+					data = dataPriv.get( this ),
+					queue = data[ type + "queue" ],
+					hooks = data[ type + "queueHooks" ],
+					timers = jQuery.timers,
+					length = queue ? queue.length : 0;
+	
+				// Enable finishing flag on private data
+				data.finish = true;
+	
+				// Empty the queue first
+				jQuery.queue( this, type, [] );
+	
+				if ( hooks && hooks.stop ) {
+					hooks.stop.call( this, true );
+				}
+	
+				// Look for any active animations, and finish them
+				for ( index = timers.length; index--; ) {
+					if ( timers[ index ].elem === this && timers[ index ].queue === type ) {
+						timers[ index ].anim.stop( true );
+						timers.splice( index, 1 );
+					}
+				}
+	
+				// Look for any animations in the old queue and finish them
+				for ( index = 0; index < length; index++ ) {
+					if ( queue[ index ] && queue[ index ].finish ) {
+						queue[ index ].finish.call( this );
+					}
+				}
+	
+				// Turn off finishing flag
+				delete data.finish;
+			} );
+		}
+	} );
+	
+	jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {
+		var cssFn = jQuery.fn[ name ];
+		jQuery.fn[ name ] = function( speed, easing, callback ) {
+			return speed == null || typeof speed === "boolean" ?
+				cssFn.apply( this, arguments ) :
+				this.animate( genFx( name, true ), speed, easing, callback );
+		};
+	} );
+	
+	// Generate shortcuts for custom animations
+	jQuery.each( {
+		slideDown: genFx( "show" ),
+		slideUp: genFx( "hide" ),
+		slideToggle: genFx( "toggle" ),
+		fadeIn: { opacity: "show" },
+		fadeOut: { opacity: "hide" },
+		fadeToggle: { opacity: "toggle" }
+	}, function( name, props ) {
+		jQuery.fn[ name ] = function( speed, easing, callback ) {
+			return this.animate( props, speed, easing, callback );
+		};
+	} );
+	
+	jQuery.timers = [];
+	jQuery.fx.tick = function() {
+		var timer,
+			i = 0,
+			timers = jQuery.timers;
+	
+		fxNow = jQuery.now();
+	
+		for ( ; i < timers.length; i++ ) {
+			timer = timers[ i ];
+	
+			// Checks the timer has not already been removed
+			if ( !timer() && timers[ i ] === timer ) {
+				timers.splice( i--, 1 );
+			}
+		}
+	
+		if ( !timers.length ) {
+			jQuery.fx.stop();
+		}
+		fxNow = undefined;
+	};
+	
+	jQuery.fx.timer = function( timer ) {
+		jQuery.timers.push( timer );
+		if ( timer() ) {
+			jQuery.fx.start();
+		} else {
+			jQuery.timers.pop();
+		}
+	};
+	
+	jQuery.fx.interval = 13;
+	jQuery.fx.start = function() {
+		if ( !timerId ) {
+			timerId = window.requestAnimationFrame ?
+				window.requestAnimationFrame( raf ) :
+				window.setInterval( jQuery.fx.tick, jQuery.fx.interval );
+		}
+	};
+	
+	jQuery.fx.stop = function() {
+		if ( window.cancelAnimationFrame ) {
+			window.cancelAnimationFrame( timerId );
+		} else {
+			window.clearInterval( timerId );
+		}
+	
+		timerId = null;
+	};
+	
+	jQuery.fx.speeds = {
+		slow: 600,
+		fast: 200,
+	
+		// Default speed
+		_default: 400
+	};
+	
+	
+	// Based off of the plugin by Clint Helfers, with permission.
+	// https://web.archive.org/web/20100324014747/http://blindsignals.com/index.php/2009/07/jquery-delay/
+	jQuery.fn.delay = function( time, type ) {
+		time = jQuery.fx ? jQuery.fx.speeds[ time ] || time : time;
+		type = type || "fx";
+	
+		return this.queue( type, function( next, hooks ) {
+			var timeout = window.setTimeout( next, time );
+			hooks.stop = function() {
+				window.clearTimeout( timeout );
+			};
+		} );
+	};
+	
+	
+	( function() {
+		var input = document.createElement( "input" ),
+			select = document.createElement( "select" ),
+			opt = select.appendChild( document.createElement( "option" ) );
+	
+		input.type = "checkbox";
+	
+		// Support: Android <=4.3 only
+		// Default value for a checkbox should be "on"
+		support.checkOn = input.value !== "";
+	
+		// Support: IE <=11 only
+		// Must access selectedIndex to make default options select
+		support.optSelected = opt.selected;
+	
+		// Support: IE <=11 only
+		// An input loses its value after becoming a radio
+		input = document.createElement( "input" );
+		input.value = "t";
+		input.type = "radio";
+		support.radioValue = input.value === "t";
+	} )();
+	
+	
+	var boolHook,
+		attrHandle = jQuery.expr.attrHandle;
+	
+	jQuery.fn.extend( {
+		attr: function( name, value ) {
+			return access( this, jQuery.attr, name, value, arguments.length > 1 );
+		},
+	
+		removeAttr: function( name ) {
+			return this.each( function() {
+				jQuery.removeAttr( this, name );
+			} );
+		}
+	} );
+	
+	jQuery.extend( {
+		attr: function( elem, name, value ) {
+			var ret, hooks,
+				nType = elem.nodeType;
+	
+			// Don't get/set attributes on text, comment and attribute nodes
+			if ( nType === 3 || nType === 8 || nType === 2 ) {
+				return;
+			}
+	
+			// Fallback to prop when attributes are not supported
+			if ( typeof elem.getAttribute === "undefined" ) {
+				return jQuery.prop( elem, name, value );
+			}
+	
+			// Attribute hooks are determined by the lowercase version
+			// Grab necessary hook if one is defined
+			if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
+				hooks = jQuery.attrHooks[ name.toLowerCase() ] ||
+					( jQuery.expr.match.bool.test( name ) ? boolHook : undefined );
+			}
+	
+			if ( value !== undefined ) {
+				if ( value === null ) {
+					jQuery.removeAttr( elem, name );
+					return;
+				}
+	
+				if ( hooks && "set" in hooks &&
+					( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+					return ret;
+				}
+	
+				elem.setAttribute( name, value + "" );
+				return value;
+			}
+	
+			if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
+				return ret;
+			}
+	
+			ret = jQuery.find.attr( elem, name );
+	
+			// Non-existent attributes return null, we normalize to undefined
+			return ret == null ? undefined : ret;
+		},
+	
+		attrHooks: {
+			type: {
+				set: function( elem, value ) {
+					if ( !support.radioValue && value === "radio" &&
+						jQuery.nodeName( elem, "input" ) ) {
+						var val = elem.value;
+						elem.setAttribute( "type", value );
+						if ( val ) {
+							elem.value = val;
+						}
+						return value;
+					}
+				}
+			}
+		},
+	
+		removeAttr: function( elem, value ) {
+			var name,
+				i = 0,
+				attrNames = value && value.match( rnotwhite );
+	
+			if ( attrNames && elem.nodeType === 1 ) {
+				while ( ( name = attrNames[ i++ ] ) ) {
+					elem.removeAttribute( name );
+				}
+			}
+		}
+	} );
+	
+	// Hooks for boolean attributes
+	boolHook = {
+		set: function( elem, value, name ) {
+			if ( value === false ) {
+	
+				// Remove boolean attributes when set to false
+				jQuery.removeAttr( elem, name );
+			} else {
+				elem.setAttribute( name, name );
+			}
+			return name;
+		}
+	};
+	
+	jQuery.each( jQuery.expr.match.bool.source.match( /\w+/g ), function( i, name ) {
+		var getter = attrHandle[ name ] || jQuery.find.attr;
+	
+		attrHandle[ name ] = function( elem, name, isXML ) {
+			var ret, handle,
+				lowercaseName = name.toLowerCase();
+	
+			if ( !isXML ) {
+	
+				// Avoid an infinite loop by temporarily removing this function from the getter
+				handle = attrHandle[ lowercaseName ];
+				attrHandle[ lowercaseName ] = ret;
+				ret = getter( elem, name, isXML ) != null ?
+					lowercaseName :
+					null;
+				attrHandle[ lowercaseName ] = handle;
+			}
+			return ret;
+		};
+	} );
+	
+	
+	
+	
+	var rfocusable = /^(?:input|select|textarea|button)$/i,
+		rclickable = /^(?:a|area)$/i;
+	
+	jQuery.fn.extend( {
+		prop: function( name, value ) {
+			return access( this, jQuery.prop, name, value, arguments.length > 1 );
+		},
+	
+		removeProp: function( name ) {
+			return this.each( function() {
+				delete this[ jQuery.propFix[ name ] || name ];
+			} );
+		}
+	} );
+	
+	jQuery.extend( {
+		prop: function( elem, name, value ) {
+			var ret, hooks,
+				nType = elem.nodeType;
+	
+			// Don't get/set properties on text, comment and attribute nodes
+			if ( nType === 3 || nType === 8 || nType === 2 ) {
+				return;
+			}
+	
+			if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
+	
+				// Fix name and attach hooks
+				name = jQuery.propFix[ name ] || name;
+				hooks = jQuery.propHooks[ name ];
+			}
+	
+			if ( value !== undefined ) {
+				if ( hooks && "set" in hooks &&
+					( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+					return ret;
+				}
+	
+				return ( elem[ name ] = value );
+			}
+	
+			if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
+				return ret;
+			}
+	
+			return elem[ name ];
+		},
+	
+		propHooks: {
+			tabIndex: {
+				get: function( elem ) {
+	
+					// Support: IE <=9 - 11 only
+					// elem.tabIndex doesn't always return the
+					// correct value when it hasn't been explicitly set
+					// https://web.archive.org/web/20141116233347/http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
+					// Use proper attribute retrieval(#12072)
+					var tabindex = jQuery.find.attr( elem, "tabindex" );
+	
+					return tabindex ?
+						parseInt( tabindex, 10 ) :
+						rfocusable.test( elem.nodeName ) ||
+							rclickable.test( elem.nodeName ) && elem.href ?
+								0 :
+								-1;
+				}
+			}
+		},
+	
+		propFix: {
+			"for": "htmlFor",
+			"class": "className"
+		}
+	} );
+	
+	// Support: IE <=11 only
+	// Accessing the selectedIndex property
+	// forces the browser to respect setting selected
+	// on the option
+	// The getter ensures a default option is selected
+	// when in an optgroup
+	if ( !support.optSelected ) {
+		jQuery.propHooks.selected = {
+			get: function( elem ) {
+				var parent = elem.parentNode;
+				if ( parent && parent.parentNode ) {
+					parent.parentNode.selectedIndex;
+				}
+				return null;
+			},
+			set: function( elem ) {
+				var parent = elem.parentNode;
+				if ( parent ) {
+					parent.selectedIndex;
+	
+					if ( parent.parentNode ) {
+						parent.parentNode.selectedIndex;
+					}
+				}
+			}
+		};
+	}
+	
+	jQuery.each( [
+		"tabIndex",
+		"readOnly",
+		"maxLength",
+		"cellSpacing",
+		"cellPadding",
+		"rowSpan",
+		"colSpan",
+		"useMap",
+		"frameBorder",
+		"contentEditable"
+	], function() {
+		jQuery.propFix[ this.toLowerCase() ] = this;
+	} );
+	
+	
+	
+	
+	var rclass = /[\t\r\n\f]/g;
+	
+	function getClass( elem ) {
+		return elem.getAttribute && elem.getAttribute( "class" ) || "";
+	}
+	
+	jQuery.fn.extend( {
+		addClass: function( value ) {
+			var classes, elem, cur, curValue, clazz, j, finalValue,
+				i = 0;
+	
+			if ( jQuery.isFunction( value ) ) {
+				return this.each( function( j ) {
+					jQuery( this ).addClass( value.call( this, j, getClass( this ) ) );
+				} );
+			}
+	
+			if ( typeof value === "string" && value ) {
+				classes = value.match( rnotwhite ) || [];
+	
+				while ( ( elem = this[ i++ ] ) ) {
+					curValue = getClass( elem );
+					cur = elem.nodeType === 1 &&
+						( " " + curValue + " " ).replace( rclass, " " );
+	
+					if ( cur ) {
+						j = 0;
+						while ( ( clazz = classes[ j++ ] ) ) {
+							if ( cur.indexOf( " " + clazz + " " ) < 0 ) {
+								cur += clazz + " ";
+							}
+						}
+	
+						// Only assign if different to avoid unneeded rendering.
+						finalValue = jQuery.trim( cur );
+						if ( curValue !== finalValue ) {
+							elem.setAttribute( "class", finalValue );
+						}
+					}
+				}
+			}
+	
+			return this;
+		},
+	
+		removeClass: function( value ) {
+			var classes, elem, cur, curValue, clazz, j, finalValue,
+				i = 0;
+	
+			if ( jQuery.isFunction( value ) ) {
+				return this.each( function( j ) {
+					jQuery( this ).removeClass( value.call( this, j, getClass( this ) ) );
+				} );
+			}
+	
+			if ( !arguments.length ) {
+				return this.attr( "class", "" );
+			}
+	
+			if ( typeof value === "string" && value ) {
+				classes = value.match( rnotwhite ) || [];
+	
+				while ( ( elem = this[ i++ ] ) ) {
+					curValue = getClass( elem );
+	
+					// This expression is here for better compressibility (see addClass)
+					cur = elem.nodeType === 1 &&
+						( " " + curValue + " " ).replace( rclass, " " );
+	
+					if ( cur ) {
+						j = 0;
+						while ( ( clazz = classes[ j++ ] ) ) {
+	
+							// Remove *all* instances
+							while ( cur.indexOf( " " + clazz + " " ) > -1 ) {
+								cur = cur.replace( " " + clazz + " ", " " );
+							}
+						}
+	
+						// Only assign if different to avoid unneeded rendering.
+						finalValue = jQuery.trim( cur );
+						if ( curValue !== finalValue ) {
+							elem.setAttribute( "class", finalValue );
+						}
+					}
+				}
+			}
+	
+			return this;
+		},
+	
+		toggleClass: function( value, stateVal ) {
+			var type = typeof value;
+	
+			if ( typeof stateVal === "boolean" && type === "string" ) {
+				return stateVal ? this.addClass( value ) : this.removeClass( value );
+			}
+	
+			if ( jQuery.isFunction( value ) ) {
+				return this.each( function( i ) {
+					jQuery( this ).toggleClass(
+						value.call( this, i, getClass( this ), stateVal ),
+						stateVal
+					);
+				} );
+			}
+	
+			return this.each( function() {
+				var className, i, self, classNames;
+	
+				if ( type === "string" ) {
+	
+					// Toggle individual class names
+					i = 0;
+					self = jQuery( this );
+					classNames = value.match( rnotwhite ) || [];
+	
+					while ( ( className = classNames[ i++ ] ) ) {
+	
+						// Check each className given, space separated list
+						if ( self.hasClass( className ) ) {
+							self.removeClass( className );
+						} else {
+							self.addClass( className );
+						}
+					}
+	
+				// Toggle whole class name
+				} else if ( value === undefined || type === "boolean" ) {
+					className = getClass( this );
+					if ( className ) {
+	
+						// Store className if set
+						dataPriv.set( this, "__className__", className );
+					}
+	
+					// If the element has a class name or if we're passed `false`,
+					// then remove the whole classname (if there was one, the above saved it).
+					// Otherwise bring back whatever was previously saved (if anything),
+					// falling back to the empty string if nothing was stored.
+					if ( this.setAttribute ) {
+						this.setAttribute( "class",
+							className || value === false ?
+							"" :
+							dataPriv.get( this, "__className__" ) || ""
+						);
+					}
+				}
+			} );
+		},
+	
+		hasClass: function( selector ) {
+			var className, elem,
+				i = 0;
+	
+			className = " " + selector + " ";
+			while ( ( elem = this[ i++ ] ) ) {
+				if ( elem.nodeType === 1 &&
+					( " " + getClass( elem ) + " " ).replace( rclass, " " )
+						.indexOf( className ) > -1
+				) {
+					return true;
+				}
+			}
+	
+			return false;
+		}
+	} );
+	
+	
+	
+	
+	var rreturn = /\r/g,
+		rspaces = /[\x20\t\r\n\f]+/g;
+	
+	jQuery.fn.extend( {
+		val: function( value ) {
+			var hooks, ret, isFunction,
+				elem = this[ 0 ];
+	
+			if ( !arguments.length ) {
+				if ( elem ) {
+					hooks = jQuery.valHooks[ elem.type ] ||
+						jQuery.valHooks[ elem.nodeName.toLowerCase() ];
+	
+					if ( hooks &&
+						"get" in hooks &&
+						( ret = hooks.get( elem, "value" ) ) !== undefined
+					) {
+						return ret;
+					}
+	
+					ret = elem.value;
+	
+					return typeof ret === "string" ?
+	
+						// Handle most common string cases
+						ret.replace( rreturn, "" ) :
+	
+						// Handle cases where value is null/undef or number
+						ret == null ? "" : ret;
+				}
+	
+				return;
+			}
+	
+			isFunction = jQuery.isFunction( value );
+	
+			return this.each( function( i ) {
+				var val;
+	
+				if ( this.nodeType !== 1 ) {
+					return;
+				}
+	
+				if ( isFunction ) {
+					val = value.call( this, i, jQuery( this ).val() );
+				} else {
+					val = value;
+				}
+	
+				// Treat null/undefined as ""; convert numbers to string
+				if ( val == null ) {
+					val = "";
+	
+				} else if ( typeof val === "number" ) {
+					val += "";
+	
+				} else if ( jQuery.isArray( val ) ) {
+					val = jQuery.map( val, function( value ) {
+						return value == null ? "" : value + "";
+					} );
+				}
+	
+				hooks = jQuery.valHooks[ this.type ] || jQuery.valHooks[ this.nodeName.toLowerCase() ];
+	
+				// If set returns undefined, fall back to normal setting
+				if ( !hooks || !( "set" in hooks ) || hooks.set( this, val, "value" ) === undefined ) {
+					this.value = val;
+				}
+			} );
+		}
+	} );
+	
+	jQuery.extend( {
+		valHooks: {
+			option: {
+				get: function( elem ) {
+	
+					var val = jQuery.find.attr( elem, "value" );
+					return val != null ?
+						val :
+	
+						// Support: IE <=10 - 11 only
+						// option.text throws exceptions (#14686, #14858)
+						// Strip and collapse whitespace
+						// https://html.spec.whatwg.org/#strip-and-collapse-whitespace
+						jQuery.trim( jQuery.text( elem ) ).replace( rspaces, " " );
+				}
+			},
+			select: {
+				get: function( elem ) {
+					var value, option,
+						options = elem.options,
+						index = elem.selectedIndex,
+						one = elem.type === "select-one",
+						values = one ? null : [],
+						max = one ? index + 1 : options.length,
+						i = index < 0 ?
+							max :
+							one ? index : 0;
+	
+					// Loop through all the selected options
+					for ( ; i < max; i++ ) {
+						option = options[ i ];
+	
+						// Support: IE <=9 only
+						// IE8-9 doesn't update selected after form reset (#2551)
+						if ( ( option.selected || i === index ) &&
+	
+								// Don't return options that are disabled or in a disabled optgroup
+								!option.disabled &&
+								( !option.parentNode.disabled ||
+									!jQuery.nodeName( option.parentNode, "optgroup" ) ) ) {
+	
+							// Get the specific value for the option
+							value = jQuery( option ).val();
+	
+							// We don't need an array for one selects
+							if ( one ) {
+								return value;
+							}
+	
+							// Multi-Selects return an array
+							values.push( value );
+						}
+					}
+	
+					return values;
+				},
+	
+				set: function( elem, value ) {
+					var optionSet, option,
+						options = elem.options,
+						values = jQuery.makeArray( value ),
+						i = options.length;
+	
+					while ( i-- ) {
+						option = options[ i ];
+						if ( option.selected =
+							jQuery.inArray( jQuery.valHooks.option.get( option ), values ) > -1
+						) {
+							optionSet = true;
+						}
+					}
+	
+					// Force browsers to behave consistently when non-matching value is set
+					if ( !optionSet ) {
+						elem.selectedIndex = -1;
+					}
+					return values;
+				}
+			}
+		}
+	} );
+	
+	// Radios and checkboxes getter/setter
+	jQuery.each( [ "radio", "checkbox" ], function() {
+		jQuery.valHooks[ this ] = {
+			set: function( elem, value ) {
+				if ( jQuery.isArray( value ) ) {
+					return ( elem.checked = jQuery.inArray( jQuery( elem ).val(), value ) > -1 );
+				}
+			}
+		};
+		if ( !support.checkOn ) {
+			jQuery.valHooks[ this ].get = function( elem ) {
+				return elem.getAttribute( "value" ) === null ? "on" : elem.value;
+			};
+		}
+	} );
+	
+	
+	
+	
+	// Return jQuery for attributes-only inclusion
+	
+	
+	var rfocusMorph = /^(?:focusinfocus|focusoutblur)$/;
+	
+	jQuery.extend( jQuery.event, {
+	
+		trigger: function( event, data, elem, onlyHandlers ) {
+	
+			var i, cur, tmp, bubbleType, ontype, handle, special,
+				eventPath = [ elem || document ],
+				type = hasOwn.call( event, "type" ) ? event.type : event,
+				namespaces = hasOwn.call( event, "namespace" ) ? event.namespace.split( "." ) : [];
+	
+			cur = tmp = elem = elem || document;
+	
+			// Don't do events on text and comment nodes
+			if ( elem.nodeType === 3 || elem.nodeType === 8 ) {
+				return;
+			}
+	
+			// focus/blur morphs to focusin/out; ensure we're not firing them right now
+			if ( rfocusMorph.test( type + jQuery.event.triggered ) ) {
+				return;
+			}
+	
+			if ( type.indexOf( "." ) > -1 ) {
+	
+				// Namespaced trigger; create a regexp to match event type in handle()
+				namespaces = type.split( "." );
+				type = namespaces.shift();
+				namespaces.sort();
+			}
+			ontype = type.indexOf( ":" ) < 0 && "on" + type;
+	
+			// Caller can pass in a jQuery.Event object, Object, or just an event type string
+			event = event[ jQuery.expando ] ?
+				event :
+				new jQuery.Event( type, typeof event === "object" && event );
+	
+			// Trigger bitmask: & 1 for native handlers; & 2 for jQuery (always true)
+			event.isTrigger = onlyHandlers ? 2 : 3;
+			event.namespace = namespaces.join( "." );
+			event.rnamespace = event.namespace ?
+				new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" ) :
+				null;
+	
+			// Clean up the event in case it is being reused
+			event.result = undefined;
+			if ( !event.target ) {
+				event.target = elem;
+			}
+	
+			// Clone any incoming data and prepend the event, creating the handler arg list
+			data = data == null ?
+				[ event ] :
+				jQuery.makeArray( data, [ event ] );
+	
+			// Allow special events to draw outside the lines
+			special = jQuery.event.special[ type ] || {};
+			if ( !onlyHandlers && special.trigger && special.trigger.apply( elem, data ) === false ) {
+				return;
+			}
+	
+			// Determine event propagation path in advance, per W3C events spec (#9951)
+			// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
+			if ( !onlyHandlers && !special.noBubble && !jQuery.isWindow( elem ) ) {
+	
+				bubbleType = special.delegateType || type;
+				if ( !rfocusMorph.test( bubbleType + type ) ) {
+					cur = cur.parentNode;
+				}
+				for ( ; cur; cur = cur.parentNode ) {
+					eventPath.push( cur );
+					tmp = cur;
+				}
+	
+				// Only add window if we got to document (e.g., not plain obj or detached DOM)
+				if ( tmp === ( elem.ownerDocument || document ) ) {
+					eventPath.push( tmp.defaultView || tmp.parentWindow || window );
+				}
+			}
+	
+			// Fire handlers on the event path
+			i = 0;
+			while ( ( cur = eventPath[ i++ ] ) && !event.isPropagationStopped() ) {
+	
+				event.type = i > 1 ?
+					bubbleType :
+					special.bindType || type;
+	
+				// jQuery handler
+				handle = ( dataPriv.get( cur, "events" ) || {} )[ event.type ] &&
+					dataPriv.get( cur, "handle" );
+				if ( handle ) {
+					handle.apply( cur, data );
+				}
+	
+				// Native handler
+				handle = ontype && cur[ ontype ];
+				if ( handle && handle.apply && acceptData( cur ) ) {
+					event.result = handle.apply( cur, data );
+					if ( event.result === false ) {
+						event.preventDefault();
+					}
+				}
+			}
+			event.type = type;
+	
+			// If nobody prevented the default action, do it now
+			if ( !onlyHandlers && !event.isDefaultPrevented() ) {
+	
+				if ( ( !special._default ||
+					special._default.apply( eventPath.pop(), data ) === false ) &&
+					acceptData( elem ) ) {
+	
+					// Call a native DOM method on the target with the same name as the event.
+					// Don't do default actions on window, that's where global variables be (#6170)
+					if ( ontype && jQuery.isFunction( elem[ type ] ) && !jQuery.isWindow( elem ) ) {
+	
+						// Don't re-trigger an onFOO event when we call its FOO() method
+						tmp = elem[ ontype ];
+	
+						if ( tmp ) {
+							elem[ ontype ] = null;
+						}
+	
+						// Prevent re-triggering of the same event, since we already bubbled it above
+						jQuery.event.triggered = type;
+						elem[ type ]();
+						jQuery.event.triggered = undefined;
+	
+						if ( tmp ) {
+							elem[ ontype ] = tmp;
+						}
+					}
+				}
+			}
+	
+			return event.result;
+		},
+	
+		// Piggyback on a donor event to simulate a different one
+		// Used only for `focus(in | out)` events
+		simulate: function( type, elem, event ) {
+			var e = jQuery.extend(
+				new jQuery.Event(),
+				event,
+				{
+					type: type,
+					isSimulated: true
+				}
+			);
+	
+			jQuery.event.trigger( e, null, elem );
+		}
+	
+	} );
+	
+	jQuery.fn.extend( {
+	
+		trigger: function( type, data ) {
+			return this.each( function() {
+				jQuery.event.trigger( type, data, this );
+			} );
+		},
+		triggerHandler: function( type, data ) {
+			var elem = this[ 0 ];
+			if ( elem ) {
+				return jQuery.event.trigger( type, data, elem, true );
+			}
+		}
+	} );
+	
+	
+	jQuery.each( ( "blur focus focusin focusout resize scroll click dblclick " +
+		"mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave " +
+		"change select submit keydown keypress keyup contextmenu" ).split( " " ),
+		function( i, name ) {
+	
+		// Handle event binding
+		jQuery.fn[ name ] = function( data, fn ) {
+			return arguments.length > 0 ?
+				this.on( name, null, data, fn ) :
+				this.trigger( name );
+		};
+	} );
+	
+	jQuery.fn.extend( {
+		hover: function( fnOver, fnOut ) {
+			return this.mouseenter( fnOver ).mouseleave( fnOut || fnOver );
+		}
+	} );
+	
+	
+	
+	
+	support.focusin = "onfocusin" in window;
+	
+	
+	// Support: Firefox <=44
+	// Firefox doesn't have focus(in | out) events
+	// Related ticket - https://bugzilla.mozilla.org/show_bug.cgi?id=687787
+	//
+	// Support: Chrome <=48 - 49, Safari <=9.0 - 9.1
+	// focus(in | out) events fire after focus & blur events,
+	// which is spec violation - http://www.w3.org/TR/DOM-Level-3-Events/#events-focusevent-event-order
+	// Related ticket - https://bugs.chromium.org/p/chromium/issues/detail?id=449857
+	if ( !support.focusin ) {
+		jQuery.each( { focus: "focusin", blur: "focusout" }, function( orig, fix ) {
+	
+			// Attach a single capturing handler on the document while someone wants focusin/focusout
+			var handler = function( event ) {
+				jQuery.event.simulate( fix, event.target, jQuery.event.fix( event ) );
+			};
+	
+			jQuery.event.special[ fix ] = {
+				setup: function() {
+					var doc = this.ownerDocument || this,
+						attaches = dataPriv.access( doc, fix );
+	
+					if ( !attaches ) {
+						doc.addEventListener( orig, handler, true );
+					}
+					dataPriv.access( doc, fix, ( attaches || 0 ) + 1 );
+				},
+				teardown: function() {
+					var doc = this.ownerDocument || this,
+						attaches = dataPriv.access( doc, fix ) - 1;
+	
+					if ( !attaches ) {
+						doc.removeEventListener( orig, handler, true );
+						dataPriv.remove( doc, fix );
+	
+					} else {
+						dataPriv.access( doc, fix, attaches );
+					}
+				}
+			};
+		} );
+	}
+	var location = window.location;
+	
+	var nonce = jQuery.now();
+	
+	var rquery = ( /\?/ );
+	
+	
+	
+	// Cross-browser xml parsing
+	jQuery.parseXML = function( data ) {
+		var xml;
+		if ( !data || typeof data !== "string" ) {
+			return null;
+		}
+	
+		// Support: IE 9 - 11 only
+		// IE throws on parseFromString with invalid input.
+		try {
+			xml = ( new window.DOMParser() ).parseFromString( data, "text/xml" );
+		} catch ( e ) {
+			xml = undefined;
+		}
+	
+		if ( !xml || xml.getElementsByTagName( "parsererror" ).length ) {
+			jQuery.error( "Invalid XML: " + data );
+		}
+		return xml;
+	};
+	
+	
+	var
+		rbracket = /\[\]$/,
+		rCRLF = /\r?\n/g,
+		rsubmitterTypes = /^(?:submit|button|image|reset|file)$/i,
+		rsubmittable = /^(?:input|select|textarea|keygen)/i;
+	
+	function buildParams( prefix, obj, traditional, add ) {
+		var name;
+	
+		if ( jQuery.isArray( obj ) ) {
+	
+			// Serialize array item.
+			jQuery.each( obj, function( i, v ) {
+				if ( traditional || rbracket.test( prefix ) ) {
+	
+					// Treat each array item as a scalar.
+					add( prefix, v );
+	
+				} else {
+	
+					// Item is non-scalar (array or object), encode its numeric index.
+					buildParams(
+						prefix + "[" + ( typeof v === "object" && v != null ? i : "" ) + "]",
+						v,
+						traditional,
+						add
+					);
+				}
+			} );
+	
+		} else if ( !traditional && jQuery.type( obj ) === "object" ) {
+	
+			// Serialize object item.
+			for ( name in obj ) {
+				buildParams( prefix + "[" + name + "]", obj[ name ], traditional, add );
+			}
+	
+		} else {
+	
+			// Serialize scalar item.
+			add( prefix, obj );
+		}
+	}
+	
+	// Serialize an array of form elements or a set of
+	// key/values into a query string
+	jQuery.param = function( a, traditional ) {
+		var prefix,
+			s = [],
+			add = function( key, valueOrFunction ) {
+	
+				// If value is a function, invoke it and use its return value
+				var value = jQuery.isFunction( valueOrFunction ) ?
+					valueOrFunction() :
+					valueOrFunction;
+	
+				s[ s.length ] = encodeURIComponent( key ) + "=" +
+					encodeURIComponent( value == null ? "" : value );
+			};
+	
+		// If an array was passed in, assume that it is an array of form elements.
+		if ( jQuery.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
+	
+			// Serialize the form elements
+			jQuery.each( a, function() {
+				add( this.name, this.value );
+			} );
+	
+		} else {
+	
+			// If traditional, encode the "old" way (the way 1.3.2 or older
+			// did it), otherwise encode params recursively.
+			for ( prefix in a ) {
+				buildParams( prefix, a[ prefix ], traditional, add );
+			}
+		}
+	
+		// Return the resulting serialization
+		return s.join( "&" );
+	};
+	
+	jQuery.fn.extend( {
+		serialize: function() {
+			return jQuery.param( this.serializeArray() );
+		},
+		serializeArray: function() {
+			return this.map( function() {
+	
+				// Can add propHook for "elements" to filter or add form elements
+				var elements = jQuery.prop( this, "elements" );
+				return elements ? jQuery.makeArray( elements ) : this;
+			} )
+			.filter( function() {
+				var type = this.type;
+	
+				// Use .is( ":disabled" ) so that fieldset[disabled] works
+				return this.name && !jQuery( this ).is( ":disabled" ) &&
+					rsubmittable.test( this.nodeName ) && !rsubmitterTypes.test( type ) &&
+					( this.checked || !rcheckableType.test( type ) );
+			} )
+			.map( function( i, elem ) {
+				var val = jQuery( this ).val();
+	
+				return val == null ?
+					null :
+					jQuery.isArray( val ) ?
+						jQuery.map( val, function( val ) {
+							return { name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
+						} ) :
+						{ name: elem.name, value: val.replace( rCRLF, "\r\n" ) };
+			} ).get();
+		}
+	} );
+	
+	
+	var
+		r20 = /%20/g,
+		rhash = /#.*$/,
+		rts = /([?&])_=[^&]*/,
+		rheaders = /^(.*?):[ \t]*([^\r\n]*)$/mg,
+	
+		// #7653, #8125, #8152: local protocol detection
+		rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
+		rnoContent = /^(?:GET|HEAD)$/,
+		rprotocol = /^\/\//,
+	
+		/* Prefilters
+		 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+		 * 2) These are called:
+		 *    - BEFORE asking for a transport
+		 *    - AFTER param serialization (s.data is a string if s.processData is true)
+		 * 3) key is the dataType
+		 * 4) the catchall symbol "*" can be used
+		 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+		 */
+		prefilters = {},
+	
+		/* Transports bindings
+		 * 1) key is the dataType
+		 * 2) the catchall symbol "*" can be used
+		 * 3) selection will start with transport dataType and THEN go to "*" if needed
+		 */
+		transports = {},
+	
+		// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
+		allTypes = "*/".concat( "*" ),
+	
+		// Anchor tag for parsing the document origin
+		originAnchor = document.createElement( "a" );
+		originAnchor.href = location.href;
+	
+	// Base "constructor" for jQuery.ajaxPrefilter and jQuery.ajaxTransport
+	function addToPrefiltersOrTransports( structure ) {
+	
+		// dataTypeExpression is optional and defaults to "*"
+		return function( dataTypeExpression, func ) {
+	
+			if ( typeof dataTypeExpression !== "string" ) {
+				func = dataTypeExpression;
+				dataTypeExpression = "*";
+			}
+	
+			var dataType,
+				i = 0,
+				dataTypes = dataTypeExpression.toLowerCase().match( rnotwhite ) || [];
+	
+			if ( jQuery.isFunction( func ) ) {
+	
+				// For each dataType in the dataTypeExpression
+				while ( ( dataType = dataTypes[ i++ ] ) ) {
+	
+					// Prepend if requested
+					if ( dataType[ 0 ] === "+" ) {
+						dataType = dataType.slice( 1 ) || "*";
+						( structure[ dataType ] = structure[ dataType ] || [] ).unshift( func );
+	
+					// Otherwise append
+					} else {
+						( structure[ dataType ] = structure[ dataType ] || [] ).push( func );
+					}
+				}
+			}
+		};
+	}
+	
+	// Base inspection function for prefilters and transports
+	function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
+	
+		var inspected = {},
+			seekingTransport = ( structure === transports );
+	
+		function inspect( dataType ) {
+			var selected;
+			inspected[ dataType ] = true;
+			jQuery.each( structure[ dataType ] || [], function( _, prefilterOrFactory ) {
+				var dataTypeOrTransport = prefilterOrFactory( options, originalOptions, jqXHR );
+				if ( typeof dataTypeOrTransport === "string" &&
+					!seekingTransport && !inspected[ dataTypeOrTransport ] ) {
+	
+					options.dataTypes.unshift( dataTypeOrTransport );
+					inspect( dataTypeOrTransport );
+					return false;
+				} else if ( seekingTransport ) {
+					return !( selected = dataTypeOrTransport );
+				}
+			} );
+			return selected;
+		}
+	
+		return inspect( options.dataTypes[ 0 ] ) || !inspected[ "*" ] && inspect( "*" );
+	}
+	
+	// A special extend for ajax options
+	// that takes "flat" options (not to be deep extended)
+	// Fixes #9887
+	function ajaxExtend( target, src ) {
+		var key, deep,
+			flatOptions = jQuery.ajaxSettings.flatOptions || {};
+	
+		for ( key in src ) {
+			if ( src[ key ] !== undefined ) {
+				( flatOptions[ key ] ? target : ( deep || ( deep = {} ) ) )[ key ] = src[ key ];
+			}
+		}
+		if ( deep ) {
+			jQuery.extend( true, target, deep );
+		}
+	
+		return target;
+	}
+	
+	/* Handles responses to an ajax request:
+	 * - finds the right dataType (mediates between content-type and expected dataType)
+	 * - returns the corresponding response
+	 */
+	function ajaxHandleResponses( s, jqXHR, responses ) {
+	
+		var ct, type, finalDataType, firstDataType,
+			contents = s.contents,
+			dataTypes = s.dataTypes;
+	
+		// Remove auto dataType and get content-type in the process
+		while ( dataTypes[ 0 ] === "*" ) {
+			dataTypes.shift();
+			if ( ct === undefined ) {
+				ct = s.mimeType || jqXHR.getResponseHeader( "Content-Type" );
+			}
+		}
+	
+		// Check if we're dealing with a known content-type
+		if ( ct ) {
+			for ( type in contents ) {
+				if ( contents[ type ] && contents[ type ].test( ct ) ) {
+					dataTypes.unshift( type );
+					break;
+				}
+			}
+		}
+	
+		// Check to see if we have a response for the expected dataType
+		if ( dataTypes[ 0 ] in responses ) {
+			finalDataType = dataTypes[ 0 ];
+		} else {
+	
+			// Try convertible dataTypes
+			for ( type in responses ) {
+				if ( !dataTypes[ 0 ] || s.converters[ type + " " + dataTypes[ 0 ] ] ) {
+					finalDataType = type;
+					break;
+				}
+				if ( !firstDataType ) {
+					firstDataType = type;
+				}
+			}
+	
+			// Or just use first one
+			finalDataType = finalDataType || firstDataType;
+		}
+	
+		// If we found a dataType
+		// We add the dataType to the list if needed
+		// and return the corresponding response
+		if ( finalDataType ) {
+			if ( finalDataType !== dataTypes[ 0 ] ) {
+				dataTypes.unshift( finalDataType );
+			}
+			return responses[ finalDataType ];
+		}
+	}
+	
+	/* Chain conversions given the request and the original response
+	 * Also sets the responseXXX fields on the jqXHR instance
+	 */
+	function ajaxConvert( s, response, jqXHR, isSuccess ) {
+		var conv2, current, conv, tmp, prev,
+			converters = {},
+	
+			// Work with a copy of dataTypes in case we need to modify it for conversion
+			dataTypes = s.dataTypes.slice();
+	
+		// Create converters map with lowercased keys
+		if ( dataTypes[ 1 ] ) {
+			for ( conv in s.converters ) {
+				converters[ conv.toLowerCase() ] = s.converters[ conv ];
+			}
+		}
+	
+		current = dataTypes.shift();
+	
+		// Convert to each sequential dataType
+		while ( current ) {
+	
+			if ( s.responseFields[ current ] ) {
+				jqXHR[ s.responseFields[ current ] ] = response;
+			}
+	
+			// Apply the dataFilter if provided
+			if ( !prev && isSuccess && s.dataFilter ) {
+				response = s.dataFilter( response, s.dataType );
+			}
+	
+			prev = current;
+			current = dataTypes.shift();
+	
+			if ( current ) {
+	
+				// There's only work to do if current dataType is non-auto
+				if ( current === "*" ) {
+	
+					current = prev;
+	
+				// Convert response if prev dataType is non-auto and differs from current
+				} else if ( prev !== "*" && prev !== current ) {
+	
+					// Seek a direct converter
+					conv = converters[ prev + " " + current ] || converters[ "* " + current ];
+	
+					// If none found, seek a pair
+					if ( !conv ) {
+						for ( conv2 in converters ) {
+	
+							// If conv2 outputs current
+							tmp = conv2.split( " " );
+							if ( tmp[ 1 ] === current ) {
+	
+								// If prev can be converted to accepted input
+								conv = converters[ prev + " " + tmp[ 0 ] ] ||
+									converters[ "* " + tmp[ 0 ] ];
+								if ( conv ) {
+	
+									// Condense equivalence converters
+									if ( conv === true ) {
+										conv = converters[ conv2 ];
+	
+									// Otherwise, insert the intermediate dataType
+									} else if ( converters[ conv2 ] !== true ) {
+										current = tmp[ 0 ];
+										dataTypes.unshift( tmp[ 1 ] );
+									}
+									break;
+								}
+							}
+						}
+					}
+	
+					// Apply converter (if not an equivalence)
+					if ( conv !== true ) {
+	
+						// Unless errors are allowed to bubble, catch and return them
+						if ( conv && s.throws ) {
+							response = conv( response );
+						} else {
+							try {
+								response = conv( response );
+							} catch ( e ) {
+								return {
+									state: "parsererror",
+									error: conv ? e : "No conversion from " + prev + " to " + current
+								};
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		return { state: "success", data: response };
+	}
+	
+	jQuery.extend( {
+	
+		// Counter for holding the number of active queries
+		active: 0,
+	
+		// Last-Modified header cache for next request
+		lastModified: {},
+		etag: {},
+	
+		ajaxSettings: {
+			url: location.href,
+			type: "GET",
+			isLocal: rlocalProtocol.test( location.protocol ),
+			global: true,
+			processData: true,
+			async: true,
+			contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+			/*
+			timeout: 0,
+			data: null,
+			dataType: null,
+			username: null,
+			password: null,
+			cache: null,
+			throws: false,
+			traditional: false,
+			headers: {},
+			*/
+	
+			accepts: {
+				"*": allTypes,
+				text: "text/plain",
+				html: "text/html",
+				xml: "application/xml, text/xml",
+				json: "application/json, text/javascript"
+			},
+	
+			contents: {
+				xml: /\bxml\b/,
+				html: /\bhtml/,
+				json: /\bjson\b/
+			},
+	
+			responseFields: {
+				xml: "responseXML",
+				text: "responseText",
+				json: "responseJSON"
+			},
+	
+			// Data converters
+			// Keys separate source (or catchall "*") and destination types with a single space
+			converters: {
+	
+				// Convert anything to text
+				"* text": String,
+	
+				// Text to html (true = no transformation)
+				"text html": true,
+	
+				// Evaluate text as a json expression
+				"text json": JSON.parse,
+	
+				// Parse text as xml
+				"text xml": jQuery.parseXML
+			},
+	
+			// For options that shouldn't be deep extended:
+			// you can add your own custom options here if
+			// and when you create one that shouldn't be
+			// deep extended (see ajaxExtend)
+			flatOptions: {
+				url: true,
+				context: true
+			}
+		},
+	
+		// Creates a full fledged settings object into target
+		// with both ajaxSettings and settings fields.
+		// If target is omitted, writes into ajaxSettings.
+		ajaxSetup: function( target, settings ) {
+			return settings ?
+	
+				// Building a settings object
+				ajaxExtend( ajaxExtend( target, jQuery.ajaxSettings ), settings ) :
+	
+				// Extending ajaxSettings
+				ajaxExtend( jQuery.ajaxSettings, target );
+		},
+	
+		ajaxPrefilter: addToPrefiltersOrTransports( prefilters ),
+		ajaxTransport: addToPrefiltersOrTransports( transports ),
+	
+		// Main method
+		ajax: function( url, options ) {
+	
+			// If url is an object, simulate pre-1.5 signature
+			if ( typeof url === "object" ) {
+				options = url;
+				url = undefined;
+			}
+	
+			// Force options to be an object
+			options = options || {};
+	
+			var transport,
+	
+				// URL without anti-cache param
+				cacheURL,
+	
+				// Response headers
+				responseHeadersString,
+				responseHeaders,
+	
+				// timeout handle
+				timeoutTimer,
+	
+				// Url cleanup var
+				urlAnchor,
+	
+				// Request state (becomes false upon send and true upon completion)
+				completed,
+	
+				// To know if global events are to be dispatched
+				fireGlobals,
+	
+				// Loop variable
+				i,
+	
+				// uncached part of the url
+				uncached,
+	
+				// Create the final options object
+				s = jQuery.ajaxSetup( {}, options ),
+	
+				// Callbacks context
+				callbackContext = s.context || s,
+	
+				// Context for global events is callbackContext if it is a DOM node or jQuery collection
+				globalEventContext = s.context &&
+					( callbackContext.nodeType || callbackContext.jquery ) ?
+						jQuery( callbackContext ) :
+						jQuery.event,
+	
+				// Deferreds
+				deferred = jQuery.Deferred(),
+				completeDeferred = jQuery.Callbacks( "once memory" ),
+	
+				// Status-dependent callbacks
+				statusCode = s.statusCode || {},
+	
+				// Headers (they are sent all at once)
+				requestHeaders = {},
+				requestHeadersNames = {},
+	
+				// Default abort message
+				strAbort = "canceled",
+	
+				// Fake xhr
+				jqXHR = {
+					readyState: 0,
+	
+					// Builds headers hashtable if needed
+					getResponseHeader: function( key ) {
+						var match;
+						if ( completed ) {
+							if ( !responseHeaders ) {
+								responseHeaders = {};
+								while ( ( match = rheaders.exec( responseHeadersString ) ) ) {
+									responseHeaders[ match[ 1 ].toLowerCase() ] = match[ 2 ];
+								}
+							}
+							match = responseHeaders[ key.toLowerCase() ];
+						}
+						return match == null ? null : match;
+					},
+	
+					// Raw string
+					getAllResponseHeaders: function() {
+						return completed ? responseHeadersString : null;
+					},
+	
+					// Caches the header
+					setRequestHeader: function( name, value ) {
+						if ( completed == null ) {
+							name = requestHeadersNames[ name.toLowerCase() ] =
+								requestHeadersNames[ name.toLowerCase() ] || name;
+							requestHeaders[ name ] = value;
+						}
+						return this;
+					},
+	
+					// Overrides response content-type header
+					overrideMimeType: function( type ) {
+						if ( completed == null ) {
+							s.mimeType = type;
+						}
+						return this;
+					},
+	
+					// Status-dependent callbacks
+					statusCode: function( map ) {
+						var code;
+						if ( map ) {
+							if ( completed ) {
+	
+								// Execute the appropriate callbacks
+								jqXHR.always( map[ jqXHR.status ] );
+							} else {
+	
+								// Lazy-add the new callbacks in a way that preserves old ones
+								for ( code in map ) {
+									statusCode[ code ] = [ statusCode[ code ], map[ code ] ];
+								}
+							}
+						}
+						return this;
+					},
+	
+					// Cancel the request
+					abort: function( statusText ) {
+						var finalText = statusText || strAbort;
+						if ( transport ) {
+							transport.abort( finalText );
+						}
+						done( 0, finalText );
+						return this;
+					}
+				};
+	
+			// Attach deferreds
+			deferred.promise( jqXHR );
+	
+			// Add protocol if not provided (prefilters might expect it)
+			// Handle falsy url in the settings object (#10093: consistency with old signature)
+			// We also use the url parameter if available
+			s.url = ( ( url || s.url || location.href ) + "" )
+				.replace( rprotocol, location.protocol + "//" );
+	
+			// Alias method option to type as per ticket #12004
+			s.type = options.method || options.type || s.method || s.type;
+	
+			// Extract dataTypes list
+			s.dataTypes = ( s.dataType || "*" ).toLowerCase().match( rnotwhite ) || [ "" ];
+	
+			// A cross-domain request is in order when the origin doesn't match the current origin.
+			if ( s.crossDomain == null ) {
+				urlAnchor = document.createElement( "a" );
+	
+				// Support: IE <=8 - 11, Edge 12 - 13
+				// IE throws exception on accessing the href property if url is malformed,
+				// e.g. http://example.com:80x/
+				try {
+					urlAnchor.href = s.url;
+	
+					// Support: IE <=8 - 11 only
+					// Anchor's host property isn't correctly set when s.url is relative
+					urlAnchor.href = urlAnchor.href;
+					s.crossDomain = originAnchor.protocol + "//" + originAnchor.host !==
+						urlAnchor.protocol + "//" + urlAnchor.host;
+				} catch ( e ) {
+	
+					// If there is an error parsing the URL, assume it is crossDomain,
+					// it can be rejected by the transport if it is invalid
+					s.crossDomain = true;
+				}
+			}
+	
+			// Convert data if not already a string
+			if ( s.data && s.processData && typeof s.data !== "string" ) {
+				s.data = jQuery.param( s.data, s.traditional );
+			}
+	
+			// Apply prefilters
+			inspectPrefiltersOrTransports( prefilters, s, options, jqXHR );
+	
+			// If request was aborted inside a prefilter, stop there
+			if ( completed ) {
+				return jqXHR;
+			}
+	
+			// We can fire global events as of now if asked to
+			// Don't fire events if jQuery.event is undefined in an AMD-usage scenario (#15118)
+			fireGlobals = jQuery.event && s.global;
+	
+			// Watch for a new set of requests
+			if ( fireGlobals && jQuery.active++ === 0 ) {
+				jQuery.event.trigger( "ajaxStart" );
+			}
+	
+			// Uppercase the type
+			s.type = s.type.toUpperCase();
+	
+			// Determine if request has content
+			s.hasContent = !rnoContent.test( s.type );
+	
+			// Save the URL in case we're toying with the If-Modified-Since
+			// and/or If-None-Match header later on
+			// Remove hash to simplify url manipulation
+			cacheURL = s.url.replace( rhash, "" );
+	
+			// More options handling for requests with no content
+			if ( !s.hasContent ) {
+	
+				// Remember the hash so we can put it back
+				uncached = s.url.slice( cacheURL.length );
+	
+				// If data is available, append data to url
+				if ( s.data ) {
+					cacheURL += ( rquery.test( cacheURL ) ? "&" : "?" ) + s.data;
+	
+					// #9682: remove data so that it's not used in an eventual retry
+					delete s.data;
+				}
+	
+				// Add anti-cache in uncached url if needed
+				if ( s.cache === false ) {
+					cacheURL = cacheURL.replace( rts, "" );
+					uncached = ( rquery.test( cacheURL ) ? "&" : "?" ) + "_=" + ( nonce++ ) + uncached;
+				}
+	
+				// Put hash and anti-cache on the URL that will be requested (gh-1732)
+				s.url = cacheURL + uncached;
+	
+			// Change '%20' to '+' if this is encoded form body content (gh-2658)
+			} else if ( s.data && s.processData &&
+				( s.contentType || "" ).indexOf( "application/x-www-form-urlencoded" ) === 0 ) {
+				s.data = s.data.replace( r20, "+" );
+			}
+	
+			// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
+			if ( s.ifModified ) {
+				if ( jQuery.lastModified[ cacheURL ] ) {
+					jqXHR.setRequestHeader( "If-Modified-Since", jQuery.lastModified[ cacheURL ] );
+				}
+				if ( jQuery.etag[ cacheURL ] ) {
+					jqXHR.setRequestHeader( "If-None-Match", jQuery.etag[ cacheURL ] );
+				}
+			}
+	
+			// Set the correct header, if data is being sent
+			if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
+				jqXHR.setRequestHeader( "Content-Type", s.contentType );
+			}
+	
+			// Set the Accepts header for the server, depending on the dataType
+			jqXHR.setRequestHeader(
+				"Accept",
+				s.dataTypes[ 0 ] && s.accepts[ s.dataTypes[ 0 ] ] ?
+					s.accepts[ s.dataTypes[ 0 ] ] +
+						( s.dataTypes[ 0 ] !== "*" ? ", " + allTypes + "; q=0.01" : "" ) :
+					s.accepts[ "*" ]
+			);
+	
+			// Check for headers option
+			for ( i in s.headers ) {
+				jqXHR.setRequestHeader( i, s.headers[ i ] );
+			}
+	
+			// Allow custom headers/mimetypes and early abort
+			if ( s.beforeSend &&
+				( s.beforeSend.call( callbackContext, jqXHR, s ) === false || completed ) ) {
+	
+				// Abort if not done already and return
+				return jqXHR.abort();
+			}
+	
+			// Aborting is no longer a cancellation
+			strAbort = "abort";
+	
+			// Install callbacks on deferreds
+			completeDeferred.add( s.complete );
+			jqXHR.done( s.success );
+			jqXHR.fail( s.error );
+	
+			// Get transport
+			transport = inspectPrefiltersOrTransports( transports, s, options, jqXHR );
+	
+			// If no transport, we auto-abort
+			if ( !transport ) {
+				done( -1, "No Transport" );
+			} else {
+				jqXHR.readyState = 1;
+	
+				// Send global event
+				if ( fireGlobals ) {
+					globalEventContext.trigger( "ajaxSend", [ jqXHR, s ] );
+				}
+	
+				// If request was aborted inside ajaxSend, stop there
+				if ( completed ) {
+					return jqXHR;
+				}
+	
+				// Timeout
+				if ( s.async && s.timeout > 0 ) {
+					timeoutTimer = window.setTimeout( function() {
+						jqXHR.abort( "timeout" );
+					}, s.timeout );
+				}
+	
+				try {
+					completed = false;
+					transport.send( requestHeaders, done );
+				} catch ( e ) {
+	
+					// Rethrow post-completion exceptions
+					if ( completed ) {
+						throw e;
+					}
+	
+					// Propagate others as results
+					done( -1, e );
+				}
+			}
+	
+			// Callback for when everything is done
+			function done( status, nativeStatusText, responses, headers ) {
+				var isSuccess, success, error, response, modified,
+					statusText = nativeStatusText;
+	
+				// Ignore repeat invocations
+				if ( completed ) {
+					return;
+				}
+	
+				completed = true;
+	
+				// Clear timeout if it exists
+				if ( timeoutTimer ) {
+					window.clearTimeout( timeoutTimer );
+				}
+	
+				// Dereference transport for early garbage collection
+				// (no matter how long the jqXHR object will be used)
+				transport = undefined;
+	
+				// Cache response headers
+				responseHeadersString = headers || "";
+	
+				// Set readyState
+				jqXHR.readyState = status > 0 ? 4 : 0;
+	
+				// Determine if successful
+				isSuccess = status >= 200 && status < 300 || status === 304;
+	
+				// Get response data
+				if ( responses ) {
+					response = ajaxHandleResponses( s, jqXHR, responses );
+				}
+	
+				// Convert no matter what (that way responseXXX fields are always set)
+				response = ajaxConvert( s, response, jqXHR, isSuccess );
+	
+				// If successful, handle type chaining
+				if ( isSuccess ) {
+	
+					// Set the If-Modified-Since and/or If-None-Match header, if in ifModified mode.
+					if ( s.ifModified ) {
+						modified = jqXHR.getResponseHeader( "Last-Modified" );
+						if ( modified ) {
+							jQuery.lastModified[ cacheURL ] = modified;
+						}
+						modified = jqXHR.getResponseHeader( "etag" );
+						if ( modified ) {
+							jQuery.etag[ cacheURL ] = modified;
+						}
+					}
+	
+					// if no content
+					if ( status === 204 || s.type === "HEAD" ) {
+						statusText = "nocontent";
+	
+					// if not modified
+					} else if ( status === 304 ) {
+						statusText = "notmodified";
+	
+					// If we have data, let's convert it
+					} else {
+						statusText = response.state;
+						success = response.data;
+						error = response.error;
+						isSuccess = !error;
+					}
+				} else {
+	
+					// Extract error from statusText and normalize for non-aborts
+					error = statusText;
+					if ( status || !statusText ) {
+						statusText = "error";
+						if ( status < 0 ) {
+							status = 0;
+						}
+					}
+				}
+	
+				// Set data for the fake xhr object
+				jqXHR.status = status;
+				jqXHR.statusText = ( nativeStatusText || statusText ) + "";
+	
+				// Success/Error
+				if ( isSuccess ) {
+					deferred.resolveWith( callbackContext, [ success, statusText, jqXHR ] );
+				} else {
+					deferred.rejectWith( callbackContext, [ jqXHR, statusText, error ] );
+				}
+	
+				// Status-dependent callbacks
+				jqXHR.statusCode( statusCode );
+				statusCode = undefined;
+	
+				if ( fireGlobals ) {
+					globalEventContext.trigger( isSuccess ? "ajaxSuccess" : "ajaxError",
+						[ jqXHR, s, isSuccess ? success : error ] );
+				}
+	
+				// Complete
+				completeDeferred.fireWith( callbackContext, [ jqXHR, statusText ] );
+	
+				if ( fireGlobals ) {
+					globalEventContext.trigger( "ajaxComplete", [ jqXHR, s ] );
+	
+					// Handle the global AJAX counter
+					if ( !( --jQuery.active ) ) {
+						jQuery.event.trigger( "ajaxStop" );
+					}
+				}
+			}
+	
+			return jqXHR;
+		},
+	
+		getJSON: function( url, data, callback ) {
+			return jQuery.get( url, data, callback, "json" );
+		},
+	
+		getScript: function( url, callback ) {
+			return jQuery.get( url, undefined, callback, "script" );
+		}
+	} );
+	
+	jQuery.each( [ "get", "post" ], function( i, method ) {
+		jQuery[ method ] = function( url, data, callback, type ) {
+	
+			// Shift arguments if data argument was omitted
+			if ( jQuery.isFunction( data ) ) {
+				type = type || callback;
+				callback = data;
+				data = undefined;
+			}
+	
+			// The url can be an options object (which then must have .url)
+			return jQuery.ajax( jQuery.extend( {
+				url: url,
+				type: method,
+				dataType: type,
+				data: data,
+				success: callback
+			}, jQuery.isPlainObject( url ) && url ) );
+		};
+	} );
+	
+	
+	jQuery._evalUrl = function( url ) {
+		return jQuery.ajax( {
+			url: url,
+	
+			// Make this explicit, since user can override this through ajaxSetup (#11264)
+			type: "GET",
+			dataType: "script",
+			cache: true,
+			async: false,
+			global: false,
+			"throws": true
+		} );
+	};
+	
+	
+	jQuery.fn.extend( {
+		wrapAll: function( html ) {
+			var wrap;
+	
+			if ( this[ 0 ] ) {
+				if ( jQuery.isFunction( html ) ) {
+					html = html.call( this[ 0 ] );
+				}
+	
+				// The elements to wrap the target around
+				wrap = jQuery( html, this[ 0 ].ownerDocument ).eq( 0 ).clone( true );
+	
+				if ( this[ 0 ].parentNode ) {
+					wrap.insertBefore( this[ 0 ] );
+				}
+	
+				wrap.map( function() {
+					var elem = this;
+	
+					while ( elem.firstElementChild ) {
+						elem = elem.firstElementChild;
+					}
+	
+					return elem;
+				} ).append( this );
+			}
+	
+			return this;
+		},
+	
+		wrapInner: function( html ) {
+			if ( jQuery.isFunction( html ) ) {
+				return this.each( function( i ) {
+					jQuery( this ).wrapInner( html.call( this, i ) );
+				} );
+			}
+	
+			return this.each( function() {
+				var self = jQuery( this ),
+					contents = self.contents();
+	
+				if ( contents.length ) {
+					contents.wrapAll( html );
+	
+				} else {
+					self.append( html );
+				}
+			} );
+		},
+	
+		wrap: function( html ) {
+			var isFunction = jQuery.isFunction( html );
+	
+			return this.each( function( i ) {
+				jQuery( this ).wrapAll( isFunction ? html.call( this, i ) : html );
+			} );
+		},
+	
+		unwrap: function( selector ) {
+			this.parent( selector ).not( "body" ).each( function() {
+				jQuery( this ).replaceWith( this.childNodes );
+			} );
+			return this;
+		}
+	} );
+	
+	
+	jQuery.expr.pseudos.hidden = function( elem ) {
+		return !jQuery.expr.pseudos.visible( elem );
+	};
+	jQuery.expr.pseudos.visible = function( elem ) {
+		return !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+	};
+	
+	
+	
+	
+	jQuery.ajaxSettings.xhr = function() {
+		try {
+			return new window.XMLHttpRequest();
+		} catch ( e ) {}
+	};
+	
+	var xhrSuccessStatus = {
+	
+			// File protocol always yields status code 0, assume 200
+			0: 200,
+	
+			// Support: IE <=9 only
+			// #1450: sometimes IE returns 1223 when it should be 204
+			1223: 204
+		},
+		xhrSupported = jQuery.ajaxSettings.xhr();
+	
+	support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
+	support.ajax = xhrSupported = !!xhrSupported;
+	
+	jQuery.ajaxTransport( function( options ) {
+		var callback, errorCallback;
+	
+		// Cross domain only allowed if supported through XMLHttpRequest
+		if ( support.cors || xhrSupported && !options.crossDomain ) {
+			return {
+				send: function( headers, complete ) {
+					var i,
+						xhr = options.xhr();
+	
+					xhr.open(
+						options.type,
+						options.url,
+						options.async,
+						options.username,
+						options.password
+					);
+	
+					// Apply custom fields if provided
+					if ( options.xhrFields ) {
+						for ( i in options.xhrFields ) {
+							xhr[ i ] = options.xhrFields[ i ];
+						}
+					}
+	
+					// Override mime type if needed
+					if ( options.mimeType && xhr.overrideMimeType ) {
+						xhr.overrideMimeType( options.mimeType );
+					}
+	
+					// X-Requested-With header
+					// For cross-domain requests, seeing as conditions for a preflight are
+					// akin to a jigsaw puzzle, we simply never set it to be sure.
+					// (it can always be set on a per-request basis or even using ajaxSetup)
+					// For same-domain requests, won't change header if already provided.
+					if ( !options.crossDomain && !headers[ "X-Requested-With" ] ) {
+						headers[ "X-Requested-With" ] = "XMLHttpRequest";
+					}
+	
+					// Set headers
+					for ( i in headers ) {
+						xhr.setRequestHeader( i, headers[ i ] );
+					}
+	
+					// Callback
+					callback = function( type ) {
+						return function() {
+							if ( callback ) {
+								callback = errorCallback = xhr.onload =
+									xhr.onerror = xhr.onabort = xhr.onreadystatechange = null;
+	
+								if ( type === "abort" ) {
+									xhr.abort();
+								} else if ( type === "error" ) {
+	
+									// Support: IE <=9 only
+									// On a manual native abort, IE9 throws
+									// errors on any property access that is not readyState
+									if ( typeof xhr.status !== "number" ) {
+										complete( 0, "error" );
+									} else {
+										complete(
+	
+											// File: protocol always yields status 0; see #8605, #14207
+											xhr.status,
+											xhr.statusText
+										);
+									}
+								} else {
+									complete(
+										xhrSuccessStatus[ xhr.status ] || xhr.status,
+										xhr.statusText,
+	
+										// Support: IE <=9 only
+										// IE9 has no XHR2 but throws on binary (trac-11426)
+										// For XHR2 non-text, let the caller handle it (gh-2498)
+										( xhr.responseType || "text" ) !== "text"  ||
+										typeof xhr.responseText !== "string" ?
+											{ binary: xhr.response } :
+											{ text: xhr.responseText },
+										xhr.getAllResponseHeaders()
+									);
+								}
+							}
+						};
+					};
+	
+					// Listen to events
+					xhr.onload = callback();
+					errorCallback = xhr.onerror = callback( "error" );
+	
+					// Support: IE 9 only
+					// Use onreadystatechange to replace onabort
+					// to handle uncaught aborts
+					if ( xhr.onabort !== undefined ) {
+						xhr.onabort = errorCallback;
+					} else {
+						xhr.onreadystatechange = function() {
+	
+							// Check readyState before timeout as it changes
+							if ( xhr.readyState === 4 ) {
+	
+								// Allow onerror to be called first,
+								// but that will not handle a native abort
+								// Also, save errorCallback to a variable
+								// as xhr.onerror cannot be accessed
+								window.setTimeout( function() {
+									if ( callback ) {
+										errorCallback();
+									}
+								} );
+							}
+						};
+					}
+	
+					// Create the abort callback
+					callback = callback( "abort" );
+	
+					try {
+	
+						// Do send the request (this may raise an exception)
+						xhr.send( options.hasContent && options.data || null );
+					} catch ( e ) {
+	
+						// #14683: Only rethrow if this hasn't been notified as an error yet
+						if ( callback ) {
+							throw e;
+						}
+					}
+				},
+	
+				abort: function() {
+					if ( callback ) {
+						callback();
+					}
+				}
+			};
+		}
+	} );
+	
+	
+	
+	
+	// Prevent auto-execution of scripts when no explicit dataType was provided (See gh-2432)
+	jQuery.ajaxPrefilter( function( s ) {
+		if ( s.crossDomain ) {
+			s.contents.script = false;
+		}
+	} );
+	
+	// Install script dataType
+	jQuery.ajaxSetup( {
+		accepts: {
+			script: "text/javascript, application/javascript, " +
+				"application/ecmascript, application/x-ecmascript"
+		},
+		contents: {
+			script: /\b(?:java|ecma)script\b/
+		},
+		converters: {
+			"text script": function( text ) {
+				jQuery.globalEval( text );
+				return text;
+			}
+		}
+	} );
+	
+	// Handle cache's special case and crossDomain
+	jQuery.ajaxPrefilter( "script", function( s ) {
+		if ( s.cache === undefined ) {
+			s.cache = false;
+		}
+		if ( s.crossDomain ) {
+			s.type = "GET";
+		}
+	} );
+	
+	// Bind script tag hack transport
+	jQuery.ajaxTransport( "script", function( s ) {
+	
+		// This transport only deals with cross domain requests
+		if ( s.crossDomain ) {
+			var script, callback;
+			return {
+				send: function( _, complete ) {
+					script = jQuery( "<script>" ).prop( {
+						charset: s.scriptCharset,
+						src: s.url
+					} ).on(
+						"load error",
+						callback = function( evt ) {
+							script.remove();
+							callback = null;
+							if ( evt ) {
+								complete( evt.type === "error" ? 404 : 200, evt.type );
+							}
+						}
+					);
+	
+					// Use native DOM manipulation to avoid our domManip AJAX trickery
+					document.head.appendChild( script[ 0 ] );
+				},
+				abort: function() {
+					if ( callback ) {
+						callback();
+					}
+				}
+			};
+		}
+	} );
+	
+	
+	
+	
+	var oldCallbacks = [],
+		rjsonp = /(=)\?(?=&|$)|\?\?/;
+	
+	// Default jsonp settings
+	jQuery.ajaxSetup( {
+		jsonp: "callback",
+		jsonpCallback: function() {
+			var callback = oldCallbacks.pop() || ( jQuery.expando + "_" + ( nonce++ ) );
+			this[ callback ] = true;
+			return callback;
+		}
+	} );
+	
+	// Detect, normalize options and install callbacks for jsonp requests
+	jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
+	
+		var callbackName, overwritten, responseContainer,
+			jsonProp = s.jsonp !== false && ( rjsonp.test( s.url ) ?
+				"url" :
+				typeof s.data === "string" &&
+					( s.contentType || "" )
+						.indexOf( "application/x-www-form-urlencoded" ) === 0 &&
+					rjsonp.test( s.data ) && "data"
+			);
+	
+		// Handle iff the expected data type is "jsonp" or we have a parameter to set
+		if ( jsonProp || s.dataTypes[ 0 ] === "jsonp" ) {
+	
+			// Get callback name, remembering preexisting value associated with it
+			callbackName = s.jsonpCallback = jQuery.isFunction( s.jsonpCallback ) ?
+				s.jsonpCallback() :
+				s.jsonpCallback;
+	
+			// Insert callback into url or form data
+			if ( jsonProp ) {
+				s[ jsonProp ] = s[ jsonProp ].replace( rjsonp, "$1" + callbackName );
+			} else if ( s.jsonp !== false ) {
+				s.url += ( rquery.test( s.url ) ? "&" : "?" ) + s.jsonp + "=" + callbackName;
+			}
+	
+			// Use data converter to retrieve json after script execution
+			s.converters[ "script json" ] = function() {
+				if ( !responseContainer ) {
+					jQuery.error( callbackName + " was not called" );
+				}
+				return responseContainer[ 0 ];
+			};
+	
+			// Force json dataType
+			s.dataTypes[ 0 ] = "json";
+	
+			// Install callback
+			overwritten = window[ callbackName ];
+			window[ callbackName ] = function() {
+				responseContainer = arguments;
+			};
+	
+			// Clean-up function (fires after converters)
+			jqXHR.always( function() {
+	
+				// If previous value didn't exist - remove it
+				if ( overwritten === undefined ) {
+					jQuery( window ).removeProp( callbackName );
+	
+				// Otherwise restore preexisting value
+				} else {
+					window[ callbackName ] = overwritten;
+				}
+	
+				// Save back as free
+				if ( s[ callbackName ] ) {
+	
+					// Make sure that re-using the options doesn't screw things around
+					s.jsonpCallback = originalSettings.jsonpCallback;
+	
+					// Save the callback name for future use
+					oldCallbacks.push( callbackName );
+				}
+	
+				// Call if it was a function and we have a response
+				if ( responseContainer && jQuery.isFunction( overwritten ) ) {
+					overwritten( responseContainer[ 0 ] );
+				}
+	
+				responseContainer = overwritten = undefined;
+			} );
+	
+			// Delegate to script
+			return "script";
+		}
+	} );
+	
+	
+	
+	
+	// Support: Safari 8 only
+	// In Safari 8 documents created via document.implementation.createHTMLDocument
+	// collapse sibling forms: the second one becomes a child of the first one.
+	// Because of that, this security measure has to be disabled in Safari 8.
+	// https://bugs.webkit.org/show_bug.cgi?id=137337
+	support.createHTMLDocument = ( function() {
+		var body = document.implementation.createHTMLDocument( "" ).body;
+		body.innerHTML = "<form></form><form></form>";
+		return body.childNodes.length === 2;
+	} )();
+	
+	
+	// Argument "data" should be string of html
+	// context (optional): If specified, the fragment will be created in this context,
+	// defaults to document
+	// keepScripts (optional): If true, will include scripts passed in the html string
+	jQuery.parseHTML = function( data, context, keepScripts ) {
+		if ( typeof data !== "string" ) {
+			return [];
+		}
+		if ( typeof context === "boolean" ) {
+			keepScripts = context;
+			context = false;
+		}
+	
+		var base, parsed, scripts;
+	
+		if ( !context ) {
+	
+			// Stop scripts or inline event handlers from being executed immediately
+			// by using document.implementation
+			if ( support.createHTMLDocument ) {
+				context = document.implementation.createHTMLDocument( "" );
+	
+				// Set the base href for the created document
+				// so any parsed elements with URLs
+				// are based on the document's URL (gh-2965)
+				base = context.createElement( "base" );
+				base.href = document.location.href;
+				context.head.appendChild( base );
+			} else {
+				context = document;
+			}
+		}
+	
+		parsed = rsingleTag.exec( data );
+		scripts = !keepScripts && [];
+	
+		// Single tag
+		if ( parsed ) {
+			return [ context.createElement( parsed[ 1 ] ) ];
+		}
+	
+		parsed = buildFragment( [ data ], context, scripts );
+	
+		if ( scripts && scripts.length ) {
+			jQuery( scripts ).remove();
+		}
+	
+		return jQuery.merge( [], parsed.childNodes );
+	};
+	
+	
+	/**
+	 * Load a url into a page
+	 */
+	jQuery.fn.load = function( url, params, callback ) {
+		var selector, type, response,
+			self = this,
+			off = url.indexOf( " " );
+	
+		if ( off > -1 ) {
+			selector = jQuery.trim( url.slice( off ) );
+			url = url.slice( 0, off );
+		}
+	
+		// If it's a function
+		if ( jQuery.isFunction( params ) ) {
+	
+			// We assume that it's the callback
+			callback = params;
+			params = undefined;
+	
+		// Otherwise, build a param string
+		} else if ( params && typeof params === "object" ) {
+			type = "POST";
+		}
+	
+		// If we have elements to modify, make the request
+		if ( self.length > 0 ) {
+			jQuery.ajax( {
+				url: url,
+	
+				// If "type" variable is undefined, then "GET" method will be used.
+				// Make value of this field explicit since
+				// user can override it through ajaxSetup method
+				type: type || "GET",
+				dataType: "html",
+				data: params
+			} ).done( function( responseText ) {
+	
+				// Save response for use in complete callback
+				response = arguments;
+	
+				self.html( selector ?
+	
+					// If a selector was specified, locate the right elements in a dummy div
+					// Exclude scripts to avoid IE 'Permission Denied' errors
+					jQuery( "<div>" ).append( jQuery.parseHTML( responseText ) ).find( selector ) :
+	
+					// Otherwise use the full result
+					responseText );
+	
+			// If the request succeeds, this function gets "data", "status", "jqXHR"
+			// but they are ignored because response was set above.
+			// If it fails, this function gets "jqXHR", "status", "error"
+			} ).always( callback && function( jqXHR, status ) {
+				self.each( function() {
+					callback.apply( this, response || [ jqXHR.responseText, status, jqXHR ] );
+				} );
+			} );
+		}
+	
+		return this;
+	};
+	
+	
+	
+	
+	// Attach a bunch of functions for handling common AJAX events
+	jQuery.each( [
+		"ajaxStart",
+		"ajaxStop",
+		"ajaxComplete",
+		"ajaxError",
+		"ajaxSuccess",
+		"ajaxSend"
+	], function( i, type ) {
+		jQuery.fn[ type ] = function( fn ) {
+			return this.on( type, fn );
+		};
+	} );
+	
+	
+	
+	
+	jQuery.expr.pseudos.animated = function( elem ) {
+		return jQuery.grep( jQuery.timers, function( fn ) {
+			return elem === fn.elem;
+		} ).length;
+	};
+	
+	
+	
+	
+	/**
+	 * Gets a window from an element
+	 */
+	function getWindow( elem ) {
+		return jQuery.isWindow( elem ) ? elem : elem.nodeType === 9 && elem.defaultView;
+	}
+	
+	jQuery.offset = {
+		setOffset: function( elem, options, i ) {
+			var curPosition, curLeft, curCSSTop, curTop, curOffset, curCSSLeft, calculatePosition,
+				position = jQuery.css( elem, "position" ),
+				curElem = jQuery( elem ),
+				props = {};
+	
+			// Set position first, in-case top/left are set even on static elem
+			if ( position === "static" ) {
+				elem.style.position = "relative";
+			}
+	
+			curOffset = curElem.offset();
+			curCSSTop = jQuery.css( elem, "top" );
+			curCSSLeft = jQuery.css( elem, "left" );
+			calculatePosition = ( position === "absolute" || position === "fixed" ) &&
+				( curCSSTop + curCSSLeft ).indexOf( "auto" ) > -1;
+	
+			// Need to be able to calculate position if either
+			// top or left is auto and position is either absolute or fixed
+			if ( calculatePosition ) {
+				curPosition = curElem.position();
+				curTop = curPosition.top;
+				curLeft = curPosition.left;
+	
+			} else {
+				curTop = parseFloat( curCSSTop ) || 0;
+				curLeft = parseFloat( curCSSLeft ) || 0;
+			}
+	
+			if ( jQuery.isFunction( options ) ) {
+	
+				// Use jQuery.extend here to allow modification of coordinates argument (gh-1848)
+				options = options.call( elem, i, jQuery.extend( {}, curOffset ) );
+			}
+	
+			if ( options.top != null ) {
+				props.top = ( options.top - curOffset.top ) + curTop;
+			}
+			if ( options.left != null ) {
+				props.left = ( options.left - curOffset.left ) + curLeft;
+			}
+	
+			if ( "using" in options ) {
+				options.using.call( elem, props );
+	
+			} else {
+				curElem.css( props );
+			}
+		}
+	};
+	
+	jQuery.fn.extend( {
+		offset: function( options ) {
+	
+			// Preserve chaining for setter
+			if ( arguments.length ) {
+				return options === undefined ?
+					this :
+					this.each( function( i ) {
+						jQuery.offset.setOffset( this, options, i );
+					} );
+			}
+	
+			var docElem, win, rect, doc,
+				elem = this[ 0 ];
+	
+			if ( !elem ) {
+				return;
+			}
+	
+			// Support: IE <=11 only
+			// Running getBoundingClientRect on a
+			// disconnected node in IE throws an error
+			if ( !elem.getClientRects().length ) {
+				return { top: 0, left: 0 };
+			}
+	
+			rect = elem.getBoundingClientRect();
+	
+			// Make sure element is not hidden (display: none)
+			if ( rect.width || rect.height ) {
+				doc = elem.ownerDocument;
+				win = getWindow( doc );
+				docElem = doc.documentElement;
+	
+				return {
+					top: rect.top + win.pageYOffset - docElem.clientTop,
+					left: rect.left + win.pageXOffset - docElem.clientLeft
+				};
+			}
+	
+			// Return zeros for disconnected and hidden elements (gh-2310)
+			return rect;
+		},
+	
+		position: function() {
+			if ( !this[ 0 ] ) {
+				return;
+			}
+	
+			var offsetParent, offset,
+				elem = this[ 0 ],
+				parentOffset = { top: 0, left: 0 };
+	
+			// Fixed elements are offset from window (parentOffset = {top:0, left: 0},
+			// because it is its only offset parent
+			if ( jQuery.css( elem, "position" ) === "fixed" ) {
+	
+				// Assume getBoundingClientRect is there when computed position is fixed
+				offset = elem.getBoundingClientRect();
+	
+			} else {
+	
+				// Get *real* offsetParent
+				offsetParent = this.offsetParent();
+	
+				// Get correct offsets
+				offset = this.offset();
+				if ( !jQuery.nodeName( offsetParent[ 0 ], "html" ) ) {
+					parentOffset = offsetParent.offset();
+				}
+	
+				// Add offsetParent borders
+				parentOffset = {
+					top: parentOffset.top + jQuery.css( offsetParent[ 0 ], "borderTopWidth", true ),
+					left: parentOffset.left + jQuery.css( offsetParent[ 0 ], "borderLeftWidth", true )
+				};
+			}
+	
+			// Subtract parent offsets and element margins
+			return {
+				top: offset.top - parentOffset.top - jQuery.css( elem, "marginTop", true ),
+				left: offset.left - parentOffset.left - jQuery.css( elem, "marginLeft", true )
+			};
+		},
+	
+		// This method will return documentElement in the following cases:
+		// 1) For the element inside the iframe without offsetParent, this method will return
+		//    documentElement of the parent window
+		// 2) For the hidden or detached element
+		// 3) For body or html element, i.e. in case of the html node - it will return itself
+		//
+		// but those exceptions were never presented as a real life use-cases
+		// and might be considered as more preferable results.
+		//
+		// This logic, however, is not guaranteed and can change at any point in the future
+		offsetParent: function() {
+			return this.map( function() {
+				var offsetParent = this.offsetParent;
+	
+				while ( offsetParent && jQuery.css( offsetParent, "position" ) === "static" ) {
+					offsetParent = offsetParent.offsetParent;
+				}
+	
+				return offsetParent || documentElement;
+			} );
+		}
+	} );
+	
+	// Create scrollLeft and scrollTop methods
+	jQuery.each( { scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function( method, prop ) {
+		var top = "pageYOffset" === prop;
+	
+		jQuery.fn[ method ] = function( val ) {
+			return access( this, function( elem, method, val ) {
+				var win = getWindow( elem );
+	
+				if ( val === undefined ) {
+					return win ? win[ prop ] : elem[ method ];
+				}
+	
+				if ( win ) {
+					win.scrollTo(
+						!top ? val : win.pageXOffset,
+						top ? val : win.pageYOffset
+					);
+	
+				} else {
+					elem[ method ] = val;
+				}
+			}, method, val, arguments.length );
+		};
+	} );
+	
+	// Support: Safari <=7 - 9.1, Chrome <=37 - 49
+	// Add the top/left cssHooks using jQuery.fn.position
+	// Webkit bug: https://bugs.webkit.org/show_bug.cgi?id=29084
+	// Blink bug: https://bugs.chromium.org/p/chromium/issues/detail?id=589347
+	// getComputedStyle returns percent when specified for top/left/bottom/right;
+	// rather than make the css module depend on the offset module, just check for it here
+	jQuery.each( [ "top", "left" ], function( i, prop ) {
+		jQuery.cssHooks[ prop ] = addGetHookIf( support.pixelPosition,
+			function( elem, computed ) {
+				if ( computed ) {
+					computed = curCSS( elem, prop );
+	
+					// If curCSS returns percentage, fallback to offset
+					return rnumnonpx.test( computed ) ?
+						jQuery( elem ).position()[ prop ] + "px" :
+						computed;
+				}
+			}
+		);
+	} );
+	
+	
+	// Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
+	jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
+		jQuery.each( { padding: "inner" + name, content: type, "": "outer" + name },
+			function( defaultExtra, funcName ) {
+	
+			// Margin is only for outerHeight, outerWidth
+			jQuery.fn[ funcName ] = function( margin, value ) {
+				var chainable = arguments.length && ( defaultExtra || typeof margin !== "boolean" ),
+					extra = defaultExtra || ( margin === true || value === true ? "margin" : "border" );
+	
+				return access( this, function( elem, type, value ) {
+					var doc;
+	
+					if ( jQuery.isWindow( elem ) ) {
+	
+						// $( window ).outerWidth/Height return w/h including scrollbars (gh-1729)
+						return funcName.indexOf( "outer" ) === 0 ?
+							elem[ "inner" + name ] :
+							elem.document.documentElement[ "client" + name ];
+					}
+	
+					// Get document width or height
+					if ( elem.nodeType === 9 ) {
+						doc = elem.documentElement;
+	
+						// Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height],
+						// whichever is greatest
+						return Math.max(
+							elem.body[ "scroll" + name ], doc[ "scroll" + name ],
+							elem.body[ "offset" + name ], doc[ "offset" + name ],
+							doc[ "client" + name ]
+						);
+					}
+	
+					return value === undefined ?
+	
+						// Get width or height on the element, requesting but not forcing parseFloat
+						jQuery.css( elem, type, extra ) :
+	
+						// Set width or height on the element
+						jQuery.style( elem, type, value, extra );
+				}, type, chainable ? margin : undefined, chainable );
+			};
+		} );
+	} );
+	
+	
+	jQuery.fn.extend( {
+	
+		bind: function( types, data, fn ) {
+			return this.on( types, null, data, fn );
+		},
+		unbind: function( types, fn ) {
+			return this.off( types, null, fn );
+		},
+	
+		delegate: function( selector, types, data, fn ) {
+			return this.on( types, selector, data, fn );
+		},
+		undelegate: function( selector, types, fn ) {
+	
+			// ( namespace ) or ( selector, types [, fn] )
+			return arguments.length === 1 ?
+				this.off( selector, "**" ) :
+				this.off( types, selector || "**", fn );
+		}
+	} );
+	
+	jQuery.parseJSON = JSON.parse;
+	
+	
+	
+	
+	// Register as a named AMD module, since jQuery can be concatenated with other
+	// files that may use define, but not via a proper concatenation script that
+	// understands anonymous AMD modules. A named AMD is safest and most robust
+	// way to register. Lowercase jquery is used because AMD module names are
+	// derived from file names, and jQuery is normally delivered in a lowercase
+	// file name. Do this after creating the global so that if an AMD module wants
+	// to call noConflict to hide this version of jQuery, it will work.
+	
+	// Note that for maximum portability, libraries that are not jQuery should
+	// declare themselves as anonymous modules, and avoid setting a global if an
+	// AMD loader is present. jQuery is a special case. For more information, see
+	// https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
+	
+	if ( true ) {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+			return jQuery;
+		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	}
+	
+	
+	
+	
+	
+	var
+	
+		// Map over jQuery in case of overwrite
+		_jQuery = window.jQuery,
+	
+		// Map over the $ in case of overwrite
+		_$ = window.$;
+	
+	jQuery.noConflict = function( deep ) {
+		if ( window.$ === jQuery ) {
+			window.$ = _$;
+		}
+	
+		if ( deep && window.jQuery === jQuery ) {
+			window.jQuery = _jQuery;
+		}
+	
+		return jQuery;
+	};
+	
+	// Expose jQuery and $ identifiers, even in AMD
+	// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
+	// and CommonJS for browser emulators (#13566)
+	if ( !noGlobal ) {
+		window.jQuery = window.$ = jQuery;
+	}
+	
+	
+	return jQuery;
+	} ) );
+
+
+/***/ },
+/* 172 */
+/*!********************************!*\
+  !*** ./app/vendor/time_ago.js ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	/**
+	 * Timeago is a jQuery plugin that makes it easy to support automatically
+	 * updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago").
+	 *
+	 * @name timeago
+	 * @version 1.5.3
+	 * @requires jQuery v1.2.3+
+	 * @author Ryan McGeary
+	 * @license MIT License - http://www.opensource.org/licenses/mit-license.php
+	 *
+	 * For usage and examples, visit:
+	 * http://timeago.yarp.com/
+	 *
+	 * Copyright (c) 2008-2015, Ryan McGeary (ryan -[at]- mcgeary [*dot*] org)
+	 */
+	
+	(function (factory) {
+	  if (true) {
+	    // AMD. Register as an anonymous module.
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ 171)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if ((typeof module === 'undefined' ? 'undefined' : _typeof(module)) === 'object' && _typeof(module.exports) === 'object') {
+	    factory(require('jquery'));
+	  } else {
+	    // Browser globals
+	    factory(jQuery);
+	  }
+	})(function ($) {
+	  $.timeago = function (timestamp) {
+	    if (timestamp instanceof Date) {
+	      return inWords(timestamp);
+	    } else if (typeof timestamp === "string") {
+	      return inWords($.timeago.parse(timestamp));
+	    } else if (typeof timestamp === "number") {
+	      return inWords(new Date(timestamp));
+	    } else {
+	      return inWords($.timeago.datetime(timestamp));
+	    }
+	  };
+	  var $t = $.timeago;
+	
+	  $.extend($.timeago, {
+	    settings: {
+	      refreshMillis: 60000,
+	      allowPast: true,
+	      allowFuture: false,
+	      localeTitle: false,
+	      cutoff: 0,
+	      autoDispose: true,
+	      strings: {
+	        prefixAgo: null,
+	        prefixFromNow: null,
+	        suffixAgo: "ago",
+	        suffixFromNow: "from now",
+	        inPast: 'any moment now',
+	        seconds: "less than a minute",
+	        minute: "about a minute",
+	        minutes: "%d minutes",
+	        hour: "about an hour",
+	        hours: "about %d hours",
+	        day: "a day",
+	        days: "%d days",
+	        month: "about a month",
+	        months: "%d months",
+	        year: "about a year",
+	        years: "%d years",
+	        wordSeparator: " ",
+	        numbers: []
+	      }
+	    },
+	
+	    inWords: function inWords(distanceMillis) {
+	      if (!this.settings.allowPast && !this.settings.allowFuture) {
+	        throw 'timeago allowPast and allowFuture settings can not both be set to false.';
+	      }
+	
+	      var $l = this.settings.strings;
+	      var prefix = $l.prefixAgo;
+	      var suffix = $l.suffixAgo;
+	      if (this.settings.allowFuture) {
+	        if (distanceMillis < 0) {
+	          prefix = $l.prefixFromNow;
+	          suffix = $l.suffixFromNow;
+	        }
+	      }
+	
+	      if (!this.settings.allowPast && distanceMillis >= 0) {
+	        return this.settings.strings.inPast;
+	      }
+	
+	      var seconds = Math.abs(distanceMillis) / 1000;
+	      var minutes = seconds / 60;
+	      var hours = minutes / 60;
+	      var days = hours / 24;
+	      var years = days / 365;
+	
+	      function substitute(stringOrFunction, number) {
+	        var string = $.isFunction(stringOrFunction) ? stringOrFunction(number, distanceMillis) : stringOrFunction;
+	        var value = $l.numbers && $l.numbers[number] || number;
+	        return string.replace(/%d/i, value);
+	      }
+	
+	      var words = seconds < 45 && substitute($l.seconds, Math.round(seconds)) || seconds < 90 && substitute($l.minute, 1) || minutes < 45 && substitute($l.minutes, Math.round(minutes)) || minutes < 90 && substitute($l.hour, 1) || hours < 24 && substitute($l.hours, Math.round(hours)) || hours < 42 && substitute($l.day, 1) || days < 30 && substitute($l.days, Math.round(days)) || days < 45 && substitute($l.month, 1) || days < 365 && substitute($l.months, Math.round(days / 30)) || years < 1.5 && substitute($l.year, 1) || substitute($l.years, Math.round(years));
+	
+	      var separator = $l.wordSeparator || "";
+	      if ($l.wordSeparator === undefined) {
+	        separator = " ";
+	      }
+	      return $.trim([prefix, words, suffix].join(separator));
+	    },
+	
+	    parse: function parse(iso8601) {
+	      var s = $.trim(iso8601);
+	      s = s.replace(/\.\d+/, ""); // remove milliseconds
+	      s = s.replace(/-/, "/").replace(/-/, "/");
+	      s = s.replace(/T/, " ").replace(/Z/, " UTC");
+	      s = s.replace(/([\+\-]\d\d)\:?(\d\d)/, " $1$2"); // -04:00 -> -0400
+	      s = s.replace(/([\+\-]\d\d)$/, " $100"); // +09 -> +0900
+	      return new Date(s);
+	    },
+	    datetime: function datetime(elem) {
+	      var iso8601 = $t.isTime(elem) ? $(elem).attr("datetime") : $(elem).attr("title");
+	      return $t.parse(iso8601);
+	    },
+	    isTime: function isTime(elem) {
+	      // jQuery's `is()` doesn't play well with HTML5 in IE
+	      return $(elem).get(0).tagName.toLowerCase() === "time"; // $(elem).is("time");
+	    }
+	  });
+	
+	  // functions that can be called via $(el).timeago('action')
+	  // init is default when no action is given
+	  // functions are called with context of a single element
+	  var functions = {
+	    init: function init() {
+	      var refresh_el = $.proxy(refresh, this);
+	      refresh_el();
+	      var $s = $t.settings;
+	      if ($s.refreshMillis > 0) {
+	        this._timeagoInterval = setInterval(refresh_el, $s.refreshMillis);
+	      }
+	    },
+	    update: function update(timestamp) {
+	      var date = timestamp instanceof Date ? timestamp : $t.parse(timestamp);
+	      $(this).data('timeago', { datetime: date });
+	      if ($t.settings.localeTitle) $(this).attr("title", date.toLocaleString());
+	      refresh.apply(this);
+	    },
+	    updateFromDOM: function updateFromDOM() {
+	      $(this).data('timeago', { datetime: $t.parse($t.isTime(this) ? $(this).attr("datetime") : $(this).attr("title")) });
+	      refresh.apply(this);
+	    },
+	    dispose: function dispose() {
+	      if (this._timeagoInterval) {
+	        window.clearInterval(this._timeagoInterval);
+	        this._timeagoInterval = null;
+	      }
+	    }
+	  };
+	
+	  $.fn.timeago = function (action, options) {
+	    var fn = action ? functions[action] : functions.init;
+	    if (!fn) {
+	      throw new Error("Unknown function name '" + action + "' for timeago");
+	    }
+	    // each over objects here and call the requested function
+	    this.each(function () {
+	      fn.call(this, options);
+	    });
+	    return this;
+	  };
+	
+	  function refresh() {
+	    var $s = $t.settings;
+	
+	    //check if it's still visible
+	    if ($s.autoDispose && !$.contains(document.documentElement, this)) {
+	      //stop if it has been removed
+	      $(this).timeago("dispose");
+	      return this;
+	    }
+	
+	    var data = prepareData(this);
+	
+	    if (!isNaN(data.datetime)) {
+	      if ($s.cutoff == 0 || Math.abs(distance(data.datetime)) < $s.cutoff) {
+	        $(this).text(inWords(data.datetime));
+	      } else {
+	        if ($(this).attr('title').length > 0) {
+	          $(this).text($(this).attr('title'));
+	        }
+	      }
+	    }
+	    return this;
+	  }
+	
+	  function prepareData(element) {
+	    element = $(element);
+	    if (!element.data("timeago")) {
+	      element.data("timeago", { datetime: $t.datetime(element) });
+	      var text = $.trim(element.text());
+	      if ($t.settings.localeTitle) {
+	        element.attr("title", element.data('timeago').datetime.toLocaleString());
+	      } else if (text.length > 0 && !($t.isTime(element) && element.attr("title"))) {
+	        element.attr("title", text);
+	      }
+	    }
+	    return element.data("timeago");
+	  }
+	
+	  function inWords(date) {
+	    return $t.inWords(distance(date));
+	  }
+	
+	  function distance(date) {
+	    return new Date().getTime() - date.getTime();
+	  }
+	
+	  // fix for IE6 suckage
+	  document.createElement("abbr");
+	  document.createElement("time");
+	});
 
 /***/ }
 /******/ ]);

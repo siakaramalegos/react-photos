@@ -1,0 +1,19 @@
+#photos-frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 40px;
+}
+
+.photo footer {
+  display: flex;
+  justify-content: space-between;
+}
