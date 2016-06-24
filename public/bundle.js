@@ -99,9 +99,11 @@
 	      photos: Photos.instagramResponse().data,
 	      filters: Photos.filterList(),
 	      tags: Photos.tagList(),
-	      selectedFilter: '',
-	      selectedTag: ''
+	      selectedFilter: 'All',
+	      selectedTag: 'All'
 	    };
+	    _this.filterBy = _this.filterBy.bind(_this);
+	    _this.filterPhotos = _this.filterPhotos.bind(_this);
 	    return _this;
 	  }
 	
@@ -111,8 +113,39 @@
 	      if (field === 'Filter') {
 	        this.setState({ selectedFilter: value });
 	      } else {
-	        this.setState({ tagFilter: value });
+	        this.setState({ selectedTag: value });
 	      }
+	    }
+	  }, {
+	    key: 'filterPhotos',
+	    value: function filterPhotos() {
+	      var photos = this.state.photos,
+	          selectedFilter = this.state.selectedFilter,
+	          selectedTag = this.state.selectedTag;
+	
+	      // Skip filtering if no selection made
+	      if (selectedTag !== 'All' || selectedFilter !== 'All') {
+	        photos = photos.filter(function (photo) {
+	          var filterMatch = false,
+	              tagMatch = false;
+	
+	          if (selectedTag === 'All') {
+	            tagMatch = true;
+	          } else if (photo.tags) {
+	            tagMatch = photo.tags.join(' ').indexOf(selectedTag) !== -1;
+	          }
+	
+	          if (selectedFilter === 'All') {
+	            filterMatch = true;
+	          } else {
+	            filterMatch = photo.filter === selectedFilter;
+	          }
+	
+	          return filterMatch && tagMatch;
+	        });
+	      }
+	
+	      return photos;
 	    }
 	  }, {
 	    key: 'render',
@@ -131,7 +164,7 @@
 	          tags: this.state.tags,
 	          selectedTag: this.state.selectedTag,
 	          filterBy: this.filterBy }),
-	        _react2.default.createElement(_PhotosFrame2.default, { photos: this.state.photos })
+	        _react2.default.createElement(_PhotosFrame2.default, { photos: this.filterPhotos() })
 	      );
 	    }
 	  }]);
@@ -31456,11 +31489,13 @@
 	        _react2.default.createElement(_Dropdown2.default, {
 	          options: this.props.filters,
 	          name: 'Filter',
-	          value: this.props.selectedFilter }),
+	          value: this.props.selectedFilter,
+	          filterBy: this.props.filterBy }),
 	        _react2.default.createElement(_Dropdown2.default, {
 	          options: this.props.tags,
 	          name: 'Tag',
-	          value: this.props.selectedTag })
+	          value: this.props.selectedTag,
+	          filterBy: this.props.filterBy })
 	      );
 	    }
 	  }]);
@@ -31500,13 +31535,26 @@
 	var Dropdown = function (_React$Component) {
 	  _inherits(Dropdown, _React$Component);
 	
-	  function Dropdown() {
+	  function Dropdown(props) {
 	    _classCallCheck(this, Dropdown);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Dropdown).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Dropdown).call(this, props));
+	
+	    _this.state = {
+	      value: _this.props.value
+	    };
+	    _this.handleChange = _this.handleChange.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(Dropdown, [{
+	    key: "handleChange",
+	    value: function handleChange(event) {
+	      this.setState({ value: event.target.value }, function () {
+	        this.props.filterBy(this.props.name, this.state.value);
+	      });
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      var options = this.props.options,
@@ -31530,7 +31578,17 @@
 	        ),
 	        _react2.default.createElement(
 	          "select",
-	          { className: "form-control", value: this.props.value },
+	          {
+	            className: "form-control",
+	            value: this.state.value,
+	            onChange: this.handleChange },
+	          _react2.default.createElement(
+	            "option",
+	            { value: "All" },
+	            "All ",
+	            name,
+	            "s"
+	          ),
 	          renderedOptions
 	        )
 	      );

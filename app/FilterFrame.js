@@ -8,11 +8,13 @@ class FilterFrame extends React.Component {
         <Dropdown
           options={this.props.filters}
           name={'Filter'}
-          value={this.props.selectedFilter} />
+          value={this.props.selectedFilter}
+          filterBy={this.props.filterBy} />
         <Dropdown
           options={this.props.tags}
           name={'Tag'}
-          value={this.props.selectedTag} />
+          value={this.props.selectedTag}
+          filterBy={this.props.filterBy} />
       </div>
     );
   }
