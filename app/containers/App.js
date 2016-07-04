@@ -4,6 +4,7 @@ import { browserHistory } from 'react-router'
 // Components
 import PhotosFrame from './PhotosFrame'
 import FilterFrame from './FilterFrame'
+import PaginationFrame from './PaginationFrame'
 
 // Fake API response
 import * as Photos from '../photos.js'
@@ -72,7 +73,8 @@ class App extends React.Component {
   render () {
     const pageNumber = this.props.params.pageNumber
     const startIndex = pageNumber * 12 - 12
-    const pagePhotos = this.filterPhotos().slice(startIndex, startIndex + 12)
+    const filteredPhotos = this.filterPhotos()
+    const pagePhotos = filteredPhotos.slice(startIndex, startIndex + 12)
 
     return (
       <div id="app">
@@ -83,6 +85,9 @@ class App extends React.Component {
           tags={this.state.tags}
           selectedTag={this.state.selectedTag}
           filterBy={this.filterBy} />
+        <PaginationFrame
+          pageCount={Math.ceil(filteredPhotos.length / 12)}
+          pageNumber={pageNumber} />
         <PhotosFrame photos={pagePhotos} />
       </div>
     );
