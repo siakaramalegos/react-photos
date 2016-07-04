@@ -60,6 +60,10 @@ class App extends React.Component {
   }
 
   render () {
+    const pageNumber = this.props.params.pageNumber
+    const startIndex = pageNumber * 12 - 12
+    const pagePhotos = this.filterPhotos().slice(startIndex, startIndex + 12)
+
     return (
       <div id="app">
         <h1>Photo Gallery</h1>
@@ -69,7 +73,7 @@ class App extends React.Component {
           tags={this.state.tags}
           selectedTag={this.state.selectedTag}
           filterBy={this.filterBy} />
-        <PhotosFrame photos={this.filterPhotos()} pageNumber={this.props.params.pageNumber} />
+        <PhotosFrame photos={pagePhotos} />
       </div>
     );
   }
