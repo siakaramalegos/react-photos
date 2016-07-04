@@ -29,7 +29,7 @@ class App extends React.Component {
     }
   }
 
-  filterPhotos (){
+  filterPhotos () {
     var photos = this.state.photos,
         selectedFilter = this.state.selectedFilter,
         selectedTag = this.state.selectedTag;
@@ -69,7 +69,7 @@ class App extends React.Component {
           tags={this.state.tags}
           selectedTag={this.state.selectedTag}
           filterBy={this.filterBy} />
-        <PhotosFrame photos={this.filterPhotos()} />
+        <PhotosFrame photos={this.filterPhotos()} pageNumber={this.props.params.pageNumber} />
       </div>
     );
   }

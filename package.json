@@ -4,7 +4,8 @@
   "description": "This is part 2 of the Viking Code School [angular-widgets](https://github.com/siakaramalegos/assignment_angular_widgets) assignment that I wrote using React instead of AngularJS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --inline --content-base ./public --history-api-fallback"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "jquery": "^3.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "webpack": "^1.13.1"
+    "react-router": "^2.5.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
