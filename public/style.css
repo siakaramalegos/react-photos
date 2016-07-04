@@ -17,3 +17,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+#filter-frame {
+  display: flex;
+  justify-content: space-between;
+}
+
+#filter-frame div {
+  width: 30%;
+}

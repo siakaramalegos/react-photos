@@ -1,6 +1,6 @@
 import React from 'react';
 import JQuery from "jquery";
-import "./vendor/time_ago.js";
+import "../vendor/time_ago.js";
 
 class Photo extends React.Component {
   render () {

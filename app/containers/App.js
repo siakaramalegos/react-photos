@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-// Fake API response
-import * as Photos from './photos.js';
+import React from 'react'
 
 // Components
-import PhotosFrame from './PhotosFrame.js';
-import FilterFrame from './FilterFrame.js';
+import PhotosFrame from './PhotosFrame'
+import FilterFrame from './FilterFrame'
 
-class Main extends React.Component {
+// Fake API response
+import * as Photos from '../photos.js'
+
+class App extends React.Component {
   constructor (){
     super();
     this.state = {
@@ -62,7 +61,7 @@ class Main extends React.Component {
 
   render () {
     return (
-      <div id="main">
+      <div id="app">
         <h1>Photo Gallery</h1>
         <FilterFrame
           filters={this.state.filters}
@@ -76,7 +75,4 @@ class Main extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Main />,
-  document.getElementById('app')
-);
+export default App
