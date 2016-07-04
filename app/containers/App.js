@@ -1,4 +1,5 @@
 import React from 'react'
+import { browserHistory } from 'react-router'
 
 // Components
 import PhotosFrame from './PhotosFrame'
@@ -21,11 +22,20 @@ class App extends React.Component {
     this.filterPhotos = this.filterPhotos.bind(this);
   }
 
+  resetPagination () {
+    const path = '/1'
+    browserHistory.push(path)
+  }
+
   filterBy (field, value) {
     if (field === 'Filter') {
-      this.setState({selectedFilter: value})
+      this.setState({selectedFilter: value}, () => {
+        this.resetPagination()
+      })
     } else {
-      this.setState({selectedTag: value})
+      this.setState({selectedTag: value}, () => {
+        this.resetPagination()
+      })
     }
   }
 
